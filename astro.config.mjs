@@ -6,6 +6,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://gerrardgroupinc.app',
+  site: 'https://gerrardgroupinc.netlify.app',
   integrations: [react(), partytown(), sitemap()]
 });
