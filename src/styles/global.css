@@ -50,9 +50,9 @@ body {
 }
 
 .nav-text {
-	font-size: clamp(.5rem, 1.3vw, 2rem);
+	font-size: clamp(.5rem, 1.5vw, 2rem);
 	font-weight: bold;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	text-decoration: none;
 	color: #425abd;
 	font-family: 'Rokkitt', serif;
@@ -271,7 +271,7 @@ footer i:hover {
 		transition: transform 350ms ease-out;
 		background: #22334a;
 		z-index: -1;
-		top: 6.05rem;
+		top: 5.4rem;
 	}
 	
 	.primary-navigation[data-visible="true"] {
@@ -308,7 +308,7 @@ footer i:hover {
 		position: absolute;
 		width: 2rem;
 		aspect-ratio: 1;
-		top: 1.8rem;
+		top: 1rem;
 		right: 2rem;
 		z-index: 9999;
 		border: 0;
@@ -342,80 +342,26 @@ footer i:hover {
 }
 
 @media (min-width: 40rem) and (max-width: 55rem) {
-	.primary-header {
-		position: sticky;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: 9999;
-		background: #ffffff;
-		box-shadow: inherit;
-		border-radius: 0;
-	}
-	
 	.flex {
-		justify-content: inherit;
-		align-items: flex-start;
-		padding: 1rem;
+		display: grid;
+		justify-content: center;
+		padding-inline: 0;
 	}
 	
-	.primary-navigation {
-		gap: 3em;
-		position: fixed;
-		inset: 0% 0 0 25%;
-		flex-direction: column;
-		list-style: circle;
-		padding: min(30vh, 1.5rem) 2em;
-		padding-right: 0;
-		transform: translateX(100%);
-		transition: transform 350ms ease-out;
-		background: #22334a;
-		z-index: -1;
-		top: 6.05rem;
-	}
-	
-	.primary-navigation[data-visible="true"] {
-		transform: translateX(0%);
+	.primary-header {
+		padding-inline: 0;
 	}
 
-	.primary-navigation li::marker {
-		color: #d7d7d7;
-		margin: 0;
+	.image-container {
+		text-align: center;
+	}
+
+	.logo {
+		max-width: 300px;
 	}
 	
 	.nav-text {
-		color: #d7d7d7;
-		font-size: clamp(1rem, 2vh, 3rem);
-		padding: 1rem .5rem;
-		border-bottom: 1px solid white;
-	}
-	
-	.nav-text:hover {
-		background-color: white;
-		color: #22334a;
-		border-bottom: none;
-		border-radius: 0;
-		text-decoration: none;
-		padding: 0 inherit;
-	}
-
-	.nav-text:before {
-		display: none;
-	}
-	
-	.mobile-nav-toggle {
-		display: block;
-		position: absolute;
-		width: 2rem;
-		aspect-ratio: 1;
-		top: 1.6rem;
-		right: 2rem;
-		z-index: 9999;
-		border: 0;
-		color: rgb(0, 0, 0);
-		background: none;
-		background-repeat: no-repeat;
-		font-size: 26px;
+		font-size: clamp(.5rem, 2.2vw, 2rem);
 	}
 	
 	footer {
