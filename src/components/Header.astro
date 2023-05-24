@@ -38,9 +38,11 @@
 	const visibility = primaryNav.getAttribute("data-visible");
 		
 	if (visibility === "false") {
+		navToggle.style.color = "white";
 		primaryNav.setAttribute("data-visible", true);
 		navToggle.setAttribute("aria-expand", true);
 	} else if (visibility === "true") {
+		navToggle.style.color = "black";
 		primaryNav.setAttribute("data-visible", false);
 		navToggle.setAttribute("aria-expand", false);
 	}

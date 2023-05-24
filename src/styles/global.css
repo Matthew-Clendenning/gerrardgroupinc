@@ -265,16 +265,15 @@ footer i:hover {
 	.primary-navigation {
 		gap: 3em;
 		position: fixed;
-		inset: 0% 0 0 25%;
+		inset: 0 0 0 0;
 		flex-direction: column;
 		list-style: circle;
-		padding: min(30vh, 1.5rem) 2em;
+		padding: min(30vh, 5rem) 2em;
 		padding-right: 0;
 		transform: translateX(100%);
 		transition: transform 350ms ease-out;
 		background: #22334a;
-		z-index: -1;
-		top: 5.4rem;
+		z-index: 999;
 	}
 	
 	.primary-navigation[data-visible="true"] {
@@ -317,22 +316,30 @@ footer i:hover {
 		font-size: 26px;
 	}
 
+	footer .logo {
+		display: none;
+	}
+
     footer {
-		display: grid;
+		display: flex;
 		justify-items: center;
 		justify-content: space-around;
-		padding-inline: 0;
-		gap: .5rem;
+		padding-inline: 20px;
+		gap: 1rem;
 	}
 	
 	footer i {
-		font-size: clamp(1rem, 4vh, 2rem);
+		font-size: clamp(1rem, 3vh, 2rem);
 	}
 	
 	footer h3 {
 		display: grid;
 		gap: .5rem;
 		font-size: clamp(.5rem, 2vh, 3rem);
+	}
+
+	footer h3 span {
+		font-size: clamp(1rem, 2vw, 2rem)
 	}
 	
 	#back-to-top-btn {
