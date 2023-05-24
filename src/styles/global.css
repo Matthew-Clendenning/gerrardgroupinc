@@ -16,18 +16,23 @@ body {
 	overflow-x: hidden;
 }
 
-.flex {
+.sticky {
 	position: sticky;
-	top: 0;
 	left: 0;
 	right: 0;
+	bottom: 0;
+	top: 0;
+	background: #fff;
+	z-index: 9999;
+}
+
+.flex {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 2rem;
 	gap: 1rem;
 	background: #fff;
-	z-index: 9999;
 }
 
 .primary-header {
