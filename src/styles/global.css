@@ -303,7 +303,7 @@ footer i:hover {
 		transition: transform 350ms ease-out;
 		background: #22334a;
 		z-index: -1;
-		top: 6rem;
+		top: 6.05rem;
 	}
 	
 	.primary-navigation[data-visible="true"] {
