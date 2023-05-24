@@ -26,6 +26,7 @@
 .image-container img {
     overflow: hidden;
     width: 100%;
+    max-width: 200px;
     height: 200px;
 }
 
