@@ -16,10 +16,6 @@ body {
 	overflow-x: hidden;
 }
 
-#primary-navigation {
-	display: flex;
-}
-
 .flex {
 	position: sticky;
 	top: 0;
@@ -35,6 +31,10 @@ body {
 }
 
 .primary-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
 	box-shadow: 0 15px 30px -10px #0000007c;
 }
 
@@ -242,6 +242,9 @@ footer i:hover {
 }
 
 @media (max-width: 40rem) {
+	#primary-navigation {
+		align-items: flex-start;
+	}
 	.primary-header {
 		position: sticky;
 		top: 0;
@@ -249,13 +252,13 @@ footer i:hover {
 		left: 0;
 		z-index: 9999;
 		background: #ffffff;
-		box-shadow: inherit;
 		border-radius: 0;
+		padding-right: 0;
+		padding-left: 1rem;
 	}
 	
 	.flex {
 		justify-content: inherit;
-		align-items: flex-start;
 		padding: 1rem;
 	}
 	
@@ -305,11 +308,7 @@ footer i:hover {
 	
 	.mobile-nav-toggle {
 		display: block;
-		position: absolute;
-		width: 2rem;
 		aspect-ratio: 1;
-		top: 1rem;
-		right: 2rem;
 		z-index: 9999;
 		border: 0;
 		color: rgb(0, 0, 0);
@@ -342,7 +341,7 @@ footer i:hover {
 }
 
 @media (min-width: 40rem) and (max-width: 55rem) {
-	.flex {
+	.primary-header {
 		display: grid;
 		justify-content: center;
 		padding-inline: 0;
