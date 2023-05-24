@@ -1,0 +1,176 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import "../styles/Card.css";
+---
+
+<Layout title="Contact - Gerrard Group Inc" 
+    description="Contact the gerrard group company." 
+    title2="Contact - Gerrard Group Inc" 
+    url="https://www.gerrardgroupinc.com/contact"
+    name="Contact - Gerrard Group Inc" 
+    url2="https://www.gerrardgroupinc.com/contact" 
+    title3="Contact - Gerrard Group Inc"
+    url3="https://www.gerrardgroupinc.com/contact">
+    <main class="page-container">
+        <h1 class="title"><span class="title-text"></span><span class="cursor">&nbsp;</span></h1>
+        <section class="cards">
+            <div class="one">
+                <Card 
+                    name="Daniel Gerrard"
+                    body="President & CEO"
+                    email="Gerrardmachinery@gmail.com"
+                    phone="847-894-3434"
+                    btnName="CONTACT"
+                    imageURL="/gerrardgroupinc/..//images/dan.jpg"
+                    alt="dan gerrard"
+                    href="mailto:Gerrardmachinery@gmail.com"
+                />
+            </div>
+            <div class="two">
+                <Card 
+                    name="Mike Kletecka"
+                    body="Vice President - Auctions, Liquidiations, Acquisitions"
+                    email="Mike@Gerrardgroupinc.com"
+                    phone="818-355-5169"
+                    btnName="CONTACT"
+                    imageURL="/gerrardgroupinc/..//images/mike copy.png"
+                    alt="mike kletecka"
+                    href="mailto:Mike@Gerrardgroupinc.com"
+                />
+            </div>
+            <div class="three">
+                <Card 
+                    name="Sara Vera"
+                    body="Vice President - Mexico/South America"
+                    email="Sara.Gerrardmachinery@gmail.com"
+                    phone="847-322-0431"
+                    btnName="CONTACT"
+                    imageURL=""
+                    alt="sara gerrard"
+                    href="mailto:Sara.Gerrardmachinery@gmail.com"
+                />
+            </div>
+            <div class="four">
+                <Card 
+                    name="Jamie Gumpel"
+                    body="Vice President - Healthcare/Medical"
+                    email="Gerrardmachinery@gmail.com"
+                    phone="713-298-9050"
+                    btnName="CONTACT"
+                    imageURL=""
+                    alt="jamie gumpel"
+                    href="mailto:Gerrardmachinery@gmail.com"
+                />
+            </div>
+            <div class="five">
+                <Card 
+                    name="Matthew Clendenning"
+                    body="Vice President - Web Development"
+                    email="Matthewclendenning@outlook.com"
+                    phone="312-522-8606"
+                    btnName="CONTACT"
+                    imageURL=""
+                    alt="matthew clendenning"
+                    href="mailto:Matthewclendenning@outlook.com"
+                />
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style is:inline>
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 3rem;
+    }
+
+    .one {
+        opacity: 0;
+        transform: translateY(4rem);
+	    animation: fadeInUp 1.3s ease-in-out 2s forwards;
+    }
+
+    .two {
+        opacity: 0;
+        transform: translateY(4rem);
+	    animation: fadeInUp 1.3s ease-in-out 2.3s forwards;
+    }
+
+    .three {
+        opacity: 0;
+        transform: translateY(4rem);
+	    animation: fadeInUp 1.3s ease-in-out 2.6s forwards;
+    }
+
+    .four {
+        opacity: 0;
+        transform: translateY(4rem);
+	    animation: fadeInUp 1.3s ease-in-out 2.9s forwards;
+    }
+
+    .five {
+        opacity: 0;
+        transform: translateY(4rem);
+	    animation: fadeInUp 1.3s ease-in-out 3.2s forwards;
+    }
+
+    @keyframes fadeInUp {
+	    to {
+	        opacity: 100%; 
+	        transform: translateY(0); 
+	    }
+    }
+
+    .page-container {
+        display: grid;
+        justify-items: center;
+        margin: 3rem 0;
+    }
+    
+    .title {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-thickness: 6%;
+        font-size: clamp(1rem, 3.8vh, 5rem);
+        font-family: 'Rokkitt', serif;
+        color: #055895;
+        margin-bottom: 3rem;
+    }
+
+    .link-text {
+        pointer-events: none;
+        color: black;
+        text-decoration: none;
+    }
+</style>
+
+<script is:inline>
+    const typedTextSpan = document.querySelector(".title-text");
+    const cursor = document.querySelector(".cursor");
+    const textArray = ["Contact the Gerrard Group"];
+    const typingDelay = 70;
+
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    
+    function type() {
+        if(charIndex < textArray[textArrayIndex].length) {
+            if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++
+            setTimeout(type, typingDelay);
+            }
+            else {
+                cursor.classList.remove("typing");
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        if(textArray.length) setTimeout(type, typingDelay + 250);
+    });
+</script>

@@ -1,0 +1,181 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title='Auctions - Gerrard Group Inc' 
+    description="Past auctions that the Gerrard Group has worked with." 
+    title2="Auctions - Gerrard Group Inc" 
+    url="https://www.gerrardgroupinc.com/auctions"
+    name="Auctions - Gerrard Group Inc" 
+    url2="https://www.gerrardgroupinc.com/auctions" 
+    title3="Auctions - Gerrard Group Inc" 
+    url3="https://www.gerrardgroupinc.com/auctions">
+    <main class="page-container">
+        <h1 class="title"><span class="title-text"></span><span class="cursor">&nbsp;</span></h1>
+        <section class="cards">
+            <Card 
+                href="../images/nashville_steel_1.jpg"
+                href2="https://www.bidspotter.com/en-us/auction-catalogues/bscgerr"
+                name="Nashville Steel Corp. - Steel Processing Equipment"
+                body="Auction Starts Ending: July 23, 10:00 AM CST in Nashville, TN"
+                x_link="Online Bidding on Bidspotter"
+            />
+            <Card 
+                href="../images/electrolux_bro_cover.jpg"
+                name="Electrolux 3-Day Live/Webcast & Online Auction"
+                body="Auction Starts Ending January 28, 2020 10:00 AM CST in St. Cloud, MN"
+            />
+            <Card 
+                href="https://www.youtube.com/watch?v=qPnewz242x0&feature=youtu.be"
+                name="VIDEO: Electrolux Day 1 Auction Equipment Preview"
+                body="January 28, 2020"
+            />
+            <Card 
+                href="https://www.youtube.com/watch?v=KvgDy_l9_aI&feature=youtu.be"
+                name="VIDEO: Electrolux Day 2 Auction Equipment Preview"
+                body="January 29, 2020"
+            />
+            <Card 
+                href="https://www.youtube.com/watch?v=RYjPigp9f5I&feature=youtu.be"
+                name="VIDEO: Electrolux Day 3 Auction Equipment Preview"
+                body="January 30, 2020"
+            />
+        </section>
+    </main>
+</Layout>
+
+<style is:inline>
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin: 3rem 2rem;
+    }
+    
+    .title {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-thickness: 6%;
+        font-size: clamp(2rem, 3.8vh, 5rem);
+        font-family: 'Rokkitt', serif;
+        color: #055895;
+        margin-bottom: 3rem;
+    }
+
+    .card-container {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 650px;
+        height: auto;
+        overflow: hidden;
+        transition: .3s;
+        animation: ease-in;
+        background-image: linear-gradient(120deg, rgb(223, 232, 255), rgb(255, 255, 255));
+    }
+    
+    .card-container:hover {
+        transform: scale(1.03);
+        box-shadow: 0px 0px 15px #2d5673;
+    }
+    
+    .card-content {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        padding-inline: 2rem;
+    }
+    
+    .card-title {
+        margin-bottom: .5rem;
+    }
+    
+    .card-body {
+        display: grid;
+        font-size: clamp(.5rem, 2.2vh, 3rem);
+        margin: 1rem 0;
+        gap: .5rem;
+    }
+
+    .card-phone, .card-email, .image-container, .btn {
+        display: none;
+    }
+    
+    h2 {
+        display: flex;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    
+    h2,p {
+        font-family: 'Rokkitt', serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .catalog a:hover {
+        text-decoration: underline;
+    }
+    
+    .catalog a {
+        color: #425abd;
+        text-decoration: none;
+    }
+    
+    .link-text {
+        border: 2px solid black;
+        padding: .5rem;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .link-text:hover {
+        background: #425abd;
+        color: white;
+        box-shadow: 0 0 30px #425abd;
+    }
+    
+    @media (max-width: 40rem) {
+        .card-container:hover {
+            transform: scale(1);
+        }
+    }
+</style>
+
+<script is:inline>
+    const typedTextSpan = document.querySelector(".title-text");
+    const cursor = document.querySelector(".cursor");
+    const textArray = ["Past Auctions"];
+    const typingDelay = 70;
+
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    
+    function type() {
+        if(charIndex < textArray[textArrayIndex].length) {
+            if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++
+            setTimeout(type, typingDelay);
+            }
+            else {
+                cursor.classList.remove("typing");
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        if(textArray.length) setTimeout(type, typingDelay + 250);
+    });
+</script>

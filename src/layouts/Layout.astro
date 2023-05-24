@@ -1,36 +1,50 @@
 ---
+import '../styles/global.css'
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 export interface Props {
-	title: string;
+    title: string;
+	description?: string;
+	title2: string;
+	url: string;
+	name: string;
+	url2: string;
+	title3: string;
+	url3: string;
 }
 
-const { title } = Astro.props;
+const { title, description, title2, url, name, url2, title3, url3 } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 		<title>{title}</title>
+		<link rel="icon" type="image/png" href="/gerrardgroupinc/..//images/danny's logo.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content={description} />
+		<meta property="og:site_name" content="Gerrard Group Inc">
+		<meta property="og:title" content={title2}>
+		<meta property="og:url" content={url}>
+		<meta property="og:type" content="website">
+		<meta itemprop="name" content={name}>
+		<meta itemprop="url" content={url2}>
+		<meta name="twitter:title" content={title3}>
+		<meta name="twitter:url" content={url3}>
+		<meta name="twitter:card" content="summary">
+		<script src="../scripts/BTT.js"></script>
+		<script type="text/partytown" src="https://kit.fontawesome.com/e163b7e8b4.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<Header />
 		<slot />
-	</body>
+		<Footer />
+    </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>

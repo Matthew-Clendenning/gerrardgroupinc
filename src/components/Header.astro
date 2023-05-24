@@ -1,0 +1,49 @@
+<button id="back-to-top-btn">
+	<span class="sr-only">Scroll to Top</span>
+	<i class="fa-solid fa-angles-up"></i>
+</button>
+<header class="primary-header flex">
+	<div class="imageContainer">
+		<span><img src="/gerrardgroupinc/../images/dans logo copy.png" alt="gerrard group logo"></span>
+    </div>
+	<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+		<span class="sr-only">Menu</span>
+		<i class="fa-solid fa-bars"></i>
+	</button>
+	<nav>
+		<ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+			<li>
+				<a class="nav-text" href="/">HOME</a>
+			</li>
+			<li>
+                <a class="nav-text" href="/auctions">AUCTIONS</a>
+			</li>
+			<li>
+				<a class="nav-text" href="/liquidations">LIQUIDATION/SURPLUS</a>
+			</li>
+			<li>
+				<a class="nav-text" href="/services">SERVICES</a>
+			</li>
+			<li>	
+				<a class="nav-text" href="/contact">CONTACT</a>
+    		</li>
+		</ul>
+	</nav>
+</header>
+
+<script is:inline>
+	const primaryNav = document.querySelector(".primary-navigation");
+	const navToggle = document.querySelector(".mobile-nav-toggle");
+
+	navToggle.addEventListener('click', () => {
+	const visibility = primaryNav.getAttribute("data-visible");
+		
+	if (visibility === "false") {
+		primaryNav.setAttribute("data-visible", true);
+		navToggle.setAttribute("aria-expand", true);
+	} else if (visibility === "true") {
+		primaryNav.setAttribute("data-visible", false);
+		navToggle.setAttribute("aria-expand", false);
+	}
+	});
+</script>

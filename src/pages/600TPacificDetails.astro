@@ -1,0 +1,209 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import { Carousel } from "../components/Carousel.jsx";
+import { slides3 } from "../data/carouselData.json";
+---
+
+<Layout title="600 Ton Pacific Model - 8378 - Gerrard Group Inc" 
+    description="" 
+    title2="600 Ton Pacific Model - 8378 - Gerrard Group Inc" 
+    url="https://www.gerrardgroupinc.com/liquidationssurplus/hydraulicpresses/600tonpacificmodel" 
+    name="600 Ton Pacific Model - 8378 - Gerrard Group Inc" 
+    url2="https://www.gerrardgroupinc.com/liquidationssurplus/hydraulicpresses/600tonpacificmodel" 
+    title3="600 Ton Pacific Model - 8378 - Gerrard Group Inc"
+    url3="https://www.gerrardgroupinc.com/liquidationssurplus/hydraulicpresses/600tonpacificmodel">
+    <Directory 
+        title="600 Ton Pacific Model"
+        page="Hydraulic Presses"
+        page2="Machine Details"
+        href="/liquidations"
+        href2="/PacificHP"
+    />
+    <main class="page-container">
+        <section class="machine-details">
+            <Carousel client:load
+                data={slides3}
+            />
+            <section class="machine-title">
+				<h2>600 Ton Pacific Model 600-D-10-54 Downstroke Self Contained Hydraulic 
+				Press – New 1979 Housing Type – Gib Guided - Dual Cylinder –“T-Slotted” Bed 
+				and Slide</h2>
+				<p>Serial No.: <strong>8378 (1979)</strong></p>
+				<hr>
+			<div class="machine-info-container">
+				<div class="details">
+					<h4>Bed Area (Nominal):<span>123" L-R x 54" F-B (T-Slotted F-B)</span></h4>
+					<h4>Slide Area (Nominal):<span>123" L-R x 54" F-B (T-Slotted F-B)</span></h4>
+					<h4>Distance Between Housings:<span>25" L-R</span></h4>
+					<h4>Stroke of Gib Guided Slide:<span>0" - 18" Max.</span></h4>
+					<h4>Daylight Opening:<span>36" Max.</span></h4>
+					<h4>Max. Upper Die Weight:<span>10,000 lbs.</span></h4>
+					<h4>Speeds Approx.:<span>192 IPM Fast Closing</span></h4>
+					<div class="padding">
+						<h4><span>74 IPM Slow Close</span></h4>
+						<h4><span>25 IPM Pressing</span></h4>
+						<h4><span>45 IPM Slow Return</span></h4>
+						<h4><span>123 IPM Fast Return</span></h4>
+					</div>
+					<h4>Power Unit (Top Rear):<span>60 HP 460/3/60 Motor Driving Hydraulic Unit.</span></h4>
+					<h4>Weight Approx.:<span>106,000 lbs.</span></h4>
+					<h4>Physical Dimension Approx.:<span>13' L-R x 5' F-B x 26' H</span></h4>
+					<h4>Controls:<span class="controls">Push Button Operation with Stroke, Pressure and 
+					Speed Control. Allen Bradley PLC Added in 2000. Light Curtains.</span></h4>
+				</div>
+			</div>
+			</section>
+        </section>
+    </main>
+</Layout>
+
+<style is:inline>
+    .page-container {
+        padding-inline: 2rem;
+    }
+
+    .machine-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        margin: 5rem 0;
+        padding: 1rem;
+        gap: 0rem;
+        box-shadow: 1px 1px 10px black;
+	    border-radius: 10px;
+    }
+
+    .machine-title {
+        width: 50%;
+        box-shadow: 1px 1px 10px black;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .machine-title h2 {
+        font-size: clamp(.5rem, 3vh, 3rem);
+        font-family: "Rokkitt", sans-serif;
+        letter-spacing: .8px;
+        margin: 0;
+        color: #425abd;
+    }
+
+    .machine-title p {
+	    font-size: clamp(.5rem, 2vh, 3rem);
+	    font-family: "Rokkitt", sans-serif;
+        margin: 1em 0;
+    }
+
+    .machine-info-container {
+    	display: flex;
+    	align-items: flex-start;
+    	justify-content: space-between;
+    	gap: 3rem;
+	    margin-top: 2rem;
+    }
+
+    .details {
+	    display: grid;
+	    align-items: flex-start;
+	    gap: .5rem;
+    }
+
+    h4 {
+        display: flex;
+        justify-content: space-between;
+        font-size: clamp(.5rem, 2vh, 3rem);
+        font-family: "Rokkitt", sans-serif;
+        letter-spacing: .8px;
+        margin: 0;
+        color: #425abd;
+    }
+
+    .details span {
+        display: grid;
+        justify-content: flex-start;
+        color: black;
+        font-size: clamp(.5rem, 2vh, 3rem);
+        font-family: "Rokkitt", sans-serif;
+        margin: 0;
+    }
+
+    .padding {
+        display: grid;
+        gap: .5rem;
+        justify-items: end;
+    }
+
+    .controls {
+	    width: 60%;
+    }
+
+    @media (max-width: 40rem) {
+        .page-container {
+            padding-inline: .5rem;
+        }
+
+        .machine-details {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .carousel {
+		    width: 90%;
+		    height: 250px;
+	    }
+
+        .arrow-left {
+            left: -1rem;
+        }
+
+        .arrow-right {
+            right: -1rem;
+        }
+
+        .machine-title {
+		    width: auto;
+        }
+        
+        .machine-title h2 {
+            font-size: clamp(.5rem, 2.5vh, 3rem);
+        }
+        
+        .details {
+            gap: 1rem;
+        }
+        
+        h4 {
+            display: grid;
+            justify-content: flex-start;
+        }
+        
+        .padding {
+            justify-items: start;
+            gap: 1rem;
+        }
+    }
+
+    @media (min-width: 40rem) and (max-width: 60rem) {
+        .machine-details {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .machine-title {
+            width: auto;
+        }
+
+        .carousel {
+		    width: 70%;
+		    height: 400px;
+	    }
+    }
+</style>

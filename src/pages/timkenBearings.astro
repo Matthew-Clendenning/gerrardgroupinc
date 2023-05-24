@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import Card from "../components/Card.astro";
+import "../styles/Card.css";
+---
+
+<Layout title="Timken Bearings - Gerrard Group Inc" 
+    description=""
+    title2="Timken Bearings - Gerrard Group Inc" 
+    url="https://www.gerrardgroupinc.com/liquidationssurplus/bearings" 
+    name="Timken Bearings - Gerrard Group Inc" 
+    url2="https://www.gerrardgroupinc.com/liquidationssurplus/bearings" 
+    title3="Timken Bearings - Gerrard Group Inc"
+    url3="https://www.gerrardgroupinc.com/liquidationssurplus/bearings">
+    <Directory 
+        title="Timken Heavy Duty Bearings"
+        href="/liquidations"
+        page="Bearings"
+    />
+    <main class="page-container">
+        <section class="cards">
+            <Card 
+                name="Timken Heavy Duty Bearings"
+                imageURL="../images/bearing.jfif"
+                btnName="More Details"
+                href="/timkenDetails"
+            />
+        </section>
+    </main>
+</Layout>
+
+<style is:inline>
+    .page-directory h3 span {
+        display: none;
+    }
+    
+    .href2 {
+        pointer-events: none;
+    }
+
+    .page-container {
+        padding: 5rem 0;
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card-container {
+        height: 420px;
+    }
+
+    .image-container img {
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .card-content {
+        margin: 0;
+    }
+
+    .card-title {
+        margin: 0;
+    }
+
+    .container h2 {
+        display: none;
+    }
+
+    .link-text {
+        pointer-events: none;
+        color: black;
+        text-decoration: none;
+    }
+
+    .btn a {
+        font-size: clamp(1rem, 1.5vh, 3rem);
+    }
+
+    .card-phone, .card-email, .card-body {
+        display: none;
+    }
+</style>

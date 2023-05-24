@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import { Carousel } from "../components/Carousel.jsx";
+import { slides } from "../data/carouselData.json";
+---
+
+<Layout title="timkenDetails - Gerrard Group Inc" 
+    description="timken bearing details" 
+    title2="- Gerrard Group Inc" 
+    url="https://www.gerrardgroupinc.com/liquidationssurplus/bearings/timkenbearings" 
+    name="- Gerrard Group Inc" 
+    url2="https://www.gerrardgroupinc.com/liquidationssurplus/bearings/timkenbearings" 
+    title3="- Gerrard Group Inc"
+    url3="https://www.gerrardgroupinc.com/liquidationssurplus/bearings/timkenbearings">
+    <Directory 
+        title=""
+        page="Bearings"
+        page2="Machine Details"
+        href="/liquidations"
+        href2="/timkenBearings"
+    />
+    <main class="page-container">
+        
+    </main>
+</Layout>
+
+<style is:inline>
+    .machine-details {
+        display: flex;
+        justify-content: center;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        margin: 5rem 0;
+    }
+</style>

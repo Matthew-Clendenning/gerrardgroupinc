@@ -1,81 +1,414 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Gerrard Group Inc"
+    description="Professional Industrial Auctions, Liquidations, Appraisals, Consulting Services and Used Machinery Sales. Experienced industrial asset and disposition experts in used CNC,vfabricating machinery & equipment, rubber & plastics, machine tools, coil processing, stamping presses and many others. Aerospace, mining, foundry, biotech, automotive, maerial handling, pharmaceuticals and more." 
+    title2="Gerrard Group Inc" 
+    url="https://www.gerrardgroupinc.com" 
+    name="Gerrard Group Inc" 
+    url2="https://www.gerrardgroupinc.com" 
+    title3="Gerrard Group Inc" 
+    url3="https://www.gerrardgroupinc.com">
+	<header class="welcome">
+        <div>
+            <h1 class="welcome-text"><span class="intro"></span><span class="cursor">&nbsp;</span></h1>
+            <h1 class="moto-text"><span class="moto"></span><span class="cursor2">&nbsp;</span></h1>
+        </div>
+        <img class="banner" src="/gerrardgroupinc/../images/gerrard_montage_3.jpg" alt="machines in a warehouse">
+    </header>
+    <main class="body-wrapper">
+        <div class="container">
+            <div class="imageContainer2">
+                <span><img class="img-workers" src="/gerrardgroupinc/../images/Factory+People+2.jpg" alt="people in a factory"></span>
+            </div>
+            <article class="comp-info">
+                <h2>About Gerrard Group / Gerrard Machinery Company</h2>
+                <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
+                    Liquidations for a wide variety of Machinery, Equipment and other Assets.
+                    Our used machinery division, <strong>Gerrard Machinery Company, LLC</strong>, buys and 
+                    sells industrial machinery and equipment as a regular course of business. 
+                    This diversity gives us a broader understanding of both the retail and 
+                    wholesale markets which puts our clients at a huge advantage. This, along 
+                    with our strategic partners around the country and abroad, our group is 
+                    able to service a wide variety of business sectors.</p>
+
+                <p>In addition to Auctions and Liquidations, we provide Appraisal and 
+                    Consulting Services to help determine <strong>highest possible returns</strong> of Company 
+                    Assets. We are not a “High Volume” or “Cookie Cutter” company, we believe 
+                    every project comes with its own needs and expectations. Our team has the 
+                    knowledge, dedication and understanding you need.</p>
+
+                <p>Whether it’s a single piece of equipment, plant relocation, multiple 
+                    facilities, or demolition projects, we are your trusted source. Talk to 
+                    one of our team members to discuss how we can help.</p>
+            </article>
+        </div>
+        <div class="description">
+            <article class="comp-special">
+                <h2>Gerrard Group / Gerrard Machinery Company Specializes In...</h2>
+                <ul>
+                    <li>Auctions</li>
+                    <li>Liquidation</li>
+                    <li>Appraisals</li>
+                    <li>Retail Used Machinery Sales</li>
+                    <li>Machinery & Equipment Buy and Sell Programs</li>
+                    <li>Demolition & Remediation Projects</li>
+                    <li>Consulting</li>
+                </ul>
+            </article>
+            <article class="industries">
+                <h2>Industries</h2>
+                <ul>
+                    <li>Fabricating, Metal, Rubber & Plastics Equip.</li>
+                    <li>CNC & Robotics</li>
+                    <li>Tooling & Support Equip.</li>
+                    <li>Construction & Mining</li>
+                    <li>Yellow Iron</li>
+                    <li>Oil & Gas</li>
+                    <li>Transportation</li>
+                    <li>Aerospace</li>
+                    <li>Energy Sector</li>
+                    <li>Warehouse & Support</li>
+                    <li>Food & Beverage</li>
+                    <li>Pulp & Packaging</li>
+                    <li>High-Tech & Biotech</li>
+                    <li>Medical, Dental & Pharmaceutical</li>
+                    <li>Raw, WIP & Finished Inventories<br> (used for, or made from
+                    mfg. equipment)</li>
+                </ul>
+            </article>
+        </div>
+        <section class="locations">
+            <h2><strong>Offices Located In:</strong></h2>
+            <ul>
+                <li>St. Louis, MO</li>
+                <li>Chicago, IL</li>
+                <li>Spokane, WA</li>
+            </ul>
+        </section>
+    </main>
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+<style is:inline>
+    .banner {
+	    width: 100%;
+	    height: 300px;
+	    border: 1px solid black;
+	    opacity: 40%;
+    }
+
+    .welcome {
+        text-align: center;
+        position: relative;
+    }
+
+    .welcome div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        color: #003860;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        gap: .5rem;
+    }
+
+    .welcome-text {
+        font-size: clamp(1rem, 4vh, 10rem);
+        font-family: 'Rokkitt', serif;
+        font-weight: normal;
+        margin: 0;
+        overflow: hidden;
+    }
+    .moto-text {
+        font-size: clamp(1rem, 4vh, 5rem);
+        font-family: 'Rokkitt', serif;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .cursor2 {
+        display: inline-block;
+        width: 3px;
+        background-color: #ccc;
+        margin-left: .1rem;
+        animation: blink .8s infinite;
+    }
+
+    .cursor2.typing {
+        animation: none;
+    }
+
+    .body-wrapper {
+	    padding-inline: 2rem;
+    }
+
+    .container {
+        font-family: 'Kanit', sans-serif;
+        margin-top: 7rem;
+	    margin-inline: 2rem;
+	    margin-bottom: 0;
+    }
+
+    .comp-info h2 {
+	    text-align: center;
+	    color: #425abd;
+        margin: 0;
+    }
+
+    .comp-info p {
+	    font-size: clamp(.5rem, 2.2vh, 3rem);
+	    line-height: 35px;
+	    text-indent: 55px;
+    }
+
+    .imageContainer2 {
+        width: 40%;
+        height: auto;
+    }
+
+    .imageContainer2 > span {
+        display: block;
+    }
+
+    .imageContainer2 > span > img {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-right: 1rem;
+        border: 1px solid black;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+	    font-family: 'Kanit', sans-serif;
+        gap: 5rem;
+        margin-top: 7rem;
+    }
+
+    /*.description li { 
+        list-style: none;
+    }
+
+    .description li:before { 
+        content:''; padding-right:10px
+    }*/
+
+    .comp-special {
+        display: grid;
+        justify-content: space-around;
+	    font-size: clamp(.5rem, 1.6vh, 2rem);
+	    list-style-position: inside;
+    }
+
+    .comp-special h2 {
+        font-size: clamp(1rem, 2.8vh, 3rem);
+        text-align: center;
+        color: #425abd;
+        margin: 0;
+    }
+
+    .comp-special ul {
+        line-height: 44px;
+	    padding: 0;
+	    margin: 0;
+	    font-size: clamp(.5rem, 2vh, 3rem);
+    }
+
+    .industries {
+        display: grid;
+        justify-content: space-around;
+	    font-size: clamp(.5rem, 1.6vh, 2rem);
+	    list-style-position: inside;
+    }
+
+    .industries h2 {
+        font-size: clamp(1rem, 3vh, 3rem);
+        text-align: center;
+        color: #425abd;
+        margin: 0;
+    }
+
+    .industries ul {
+	    font-size: clamp(.5rem, 2vh, 3rem);
+	    line-height: 44px;
+	    padding: 0;
+	    margin: 0;
+        column-count: 2;
+    }
+
+    .locations {
+	    font-family: 'Kanit', sans-serif;
+	    text-align: center;
+	    margin: 5rem 0;
+    }
+
+    .locations h2 {
+        margin: 0;
+        margin-bottom: 1rem;
+    	color: #425abd;
+    }
+
+    .locations ul {
+    	display: flex;
+    	justify-content: center;
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    gap: 2rem;
+    }
+
+    .locations li {
+	    font-size: clamp(.5rem, 2.2vh, 3rem);
+	    font-weight: bold;
+	    text-decoration: underline;
+    }
+
+    @media (max-width: 40rem) {
+        .welcome div {
+		    gap: 1rem;
+	    }
+
+        .banner {
+            height: 200px;
+        }
+	
+	    .welcome-text {
+		    font-size: clamp(1rem, 4vh, 5rem);
+	    }
+	
+	    .moto-text {
+		    font-size: clamp(.5rem, 3vh, 5rem);
+	    }
+
+        .body-wrapper {
+            padding-inline: 1rem;
+        }
+
+        .container {
+            display: grid;
+            margin-top: 1rem;
+            margin-inline: 0;
+        }
+
+        .comp-info {
+            margin-top: 2rem;
+        }
+
+        .comp-info h2 {
+            font-size: clamp(1rem, 3vh, 3rem);
+        }
+
+        .comp-info p {
+            text-indent: 25px;
+        }
+
+        .imageContainer2 {
+            display: none;
+            width: 100%;
+        }
+
+        .description {
+            margin-top: 3rem;
+            display: grid;
+            gap: 3rem;
+        }
+
+        .description ul {
+            text-align: center;
+            column-count: 1;
+            font-size: clamp(1rem, 2vh, 3rem);
+        }
+
+        .locations {
+            margin: 2.5rem 0;
+        }
+    }
+
+    @media (min-width: 40rem) and (max-width: 60rem) {
+        .container {
+            margin-inline: .2rem;
+        }
+
+        .comp-info {
+            margin-top: 3rem;
+        }
+
+        .imageContainer2 {
+            width: 50%;
+            height: auto;
+        }
+
+        .description {
+            display: grid;
+            gap: 3rem;
+        }
+
+        .comp-special h2 {
+            width: 100%;
+        }
+
+        .comp-special ul {
+            text-align: center;
+        }
+
+        .industries ul {
+            column-count: 3;
+        }
+    }
+
+    @media (min-width: 60rem) {
+    }
 </style>
+
+<script is:inline>
+    const typedTextSpan = document.querySelector(".intro");
+    const cursor = document.querySelector(".cursor");
+    const typedText = document.querySelector(".moto");
+    const cursor2 = document.querySelector(".cursor2");
+
+    const textArray = ["Welcome to Gerrard Machinery Company"];
+    const titleArray = ["Buyer's and Sellers of Industrial Machinery and Equipment"];
+    const typingDelay = 70;
+
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    let titleArrayIndex = 0;
+    let charIndex2 = 0;
+
+    function type() {
+	    if(charIndex < textArray[textArrayIndex].length) {
+	    	if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
+		    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+		    charIndex++
+		    setTimeout(type, typingDelay);
+	    }
+	    else {
+		    cursor.classList.remove("typing");
+	    }
+    }
+
+    function typer() {
+	    if(charIndex2 < titleArray[titleArrayIndex].length) {
+	    	if(!cursor2.classList.contains("typing")) cursor2.classList.add("typing");
+	    	typedText.textContent += titleArray[titleArrayIndex].charAt(charIndex2);
+		    charIndex2++
+		    setTimeout(typer, typingDelay);
+	    }
+	    else {
+	    	cursor2.classList.remove("typing");
+	    }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+	    if(textArray.length) setTimeout(type, typingDelay + 250);
+	    if(titleArray.length) setTimeout(typer, typingDelay + 3700);
+    });
+</script>

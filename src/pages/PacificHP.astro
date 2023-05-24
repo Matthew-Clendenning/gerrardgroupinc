@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import Card from "../components/Card.astro";
+import "../styles/Card.css";
+---
+
+<Layout title="Hydraulic Presses - Gerrard Group Inc" 
+    description="" 
+    title2="Hydraulic Presses - Gerrard Group Inc" 
+    url="https://www.gerrardgroupinc.com/liquidationssurplus/hydraulicpresses" 
+    name="Hydraulic Presses - Gerrard Group Inc" 
+    url2="https://www.gerrardgroupinc.com/liquidationssurplus/hydraulicpresses" 
+    title3="Hydraulic Presses - Gerrard Group Inc"
+    url3="https://www.gerrardgroupinc.com/liquidationssurplus/hydraulicpresses">
+    <Directory 
+        title="Hydraulic Presses"
+        href="/liquidations"
+        page="Hydraulic Presses"
+    />
+    <main class="page-container">
+        <section class="cards">
+            <Card 
+                name="200T Pacific Hydraulic Press"
+                imageURL="/gerrardgroupinc/..//images/10744-press-1.JPG"
+                btnName="More Details"
+                href="/200TPacificDetails"
+                alt="img1"
+            />
+            <Card 
+                name="300T Pacific Hydraulic Press"
+                imageURL="/gerrardgroupinc/..//images/10743-press-1.jpg"
+                btnName="More Details"
+                href="/300TPacificDetails"
+                alt="img2"
+            />
+            <Card 
+                name="600T Pacific Hydraulic Press"
+                imageURL="/gerrardgroupinc/..//images/10742-press-1.jpg"
+                btnName="More Details"
+                href="/600TPacificDetails"
+                alt="img3"
+            />
+        </section>
+    </main>
+</Layout>
+
+<style is:inline>
+    .page-directory h3 span {
+        display: none;
+    }
+
+    .href2 {
+        pointer-events: none;
+    }
+
+    .page-container {
+        padding: 5rem 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card-container {
+        height: 420px;
+    }
+
+    .image-container img {
+        width: 300px;
+        height: 230px;
+        border-radius: 10px;
+    }
+
+    .card-content {
+        margin: 0;
+    }
+
+    .card-title {
+        margin: 0;
+    }
+
+    .container h2 {
+        display: none;
+    }
+
+    .link-text {
+        font-size: clamp(1rem, 3vh, 3rem);
+        pointer-events: none;
+        color: black;
+        text-decoration: none;
+    }
+
+    .btn a {
+        font-size: clamp(1rem, 1.5vh, 3rem);
+    }
+    
+    .card-phone, .card-email, .card-body {
+        display: none;
+    }
+</style>

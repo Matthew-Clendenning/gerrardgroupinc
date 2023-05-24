@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import '../styles/Card.css';
+---
+
+<Layout title="Services - Gerrard Group Inc" 
+    description="The Gerrard Group services in Auctions, Liquidations, Buying & Selling Equipment, Appraisals, and Consulting." 
+    title2="Services - Gerrard Group Inc" 
+    url="https://www.gerrardgroupinc.com/services"
+    name="Services - Gerrard Group Inc" 
+    url2="https://www.gerrardgroupinc.com/services" 
+    title3="Services - Gerrard Group Inc"
+    url3="https://www.gerrardgroupinc.com/services">
+    <main class="page-container">
+        <h1 class="title"><span class="title-text"></span><span class="cursor">&nbsp;</span></h1>
+        <section class="cards">
+            <Card 
+                name="Auctions, Liquidations and Buying & Selling of Equipment:"
+                body="Our group meticulously evaluates each project and the client’s needs, then develops and executes the optimum marketing and sale scenario to achieve highest returns. Equally important, Our commission programs or buy-outs are developed to maximize returns, which often puts more money in our client’s pockets."
+            />
+            <Card 
+                name="Appraisal Services:"
+                body="Our appraisers perform properly researched 'gross & net' Forced Liquidation (FL), Orderly Liquidation (OL) and Fair Market Value (FMV) appraisals which adhere to USPAP (Uniform Standards of Professional Appraisal Practice). Also, based on the project, We can perform 'Desk Top', non- inspected appraisals."
+            />
+            <Card 
+                name="Consulting Services:"
+                body="Our group provides consulting services to determine the highest and best use of a company’s assets and inventory, which can be helpful in business making decisions."
+            />
+        </section>
+    </main>
+</Layout>
+
+<style is:inline>
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .page-container {
+        display: grid;
+        justify-items: center;
+        margin: 3rem 0;
+    }
+    
+    .title {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-thickness: 6%;
+        font-size: clamp(2rem, 3.8vh, 5rem);
+        font-family: 'Rokkitt', serif;
+        color: #055895;
+        margin-bottom: 3rem;
+    }
+
+    .card-container {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin-inline: 8rem;
+        overflow: hidden;
+        transition: .3s;
+        animation: ease-in;
+        background-image: linear-gradient(120deg, rgb(223, 232, 255), rgb(255, 255, 255));
+    }
+    
+    .card-container:hover {
+        transform: scale(1);
+        box-shadow: 0px 0px 15px #2d5673;
+    }
+    
+    .card-content {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin: 1rem;
+        margin-top: .5rem;
+    }
+    
+    .card-title {
+        margin-bottom: .5rem;
+    }
+    
+    .card-body {
+        display: grid;
+        font-size: clamp(.5rem, 2.2vh, 3rem);
+        margin: 1rem 0;
+        gap: .5rem;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    h2,p {
+        font-family: 'Rokkitt', serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-phone, .card-email, .image-container, .btn {
+        display: none;
+    }
+
+    @media (max-width: 40rem) {
+        .card-container {
+            margin-inline: 3rem;
+        }
+    }
+</style>
+
+<script is:inline>
+    const typedTextSpan = document.querySelector(".title-text");
+    const cursor = document.querySelector(".cursor");
+    const textArray = ["Services"];
+    const typingDelay = 70;
+
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    
+    function type() {
+        if(charIndex < textArray[textArrayIndex].length) {
+            if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++
+            setTimeout(type, typingDelay);
+            }
+            else {
+                cursor.classList.remove("typing");
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        if(textArray.length) setTimeout(type, typingDelay + 250);
+    });
+</script>
