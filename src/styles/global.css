@@ -286,7 +286,7 @@ footer i:hover {
 	
 	.nav-text {
 		color: #ffffff;
-		font-size: clamp(1rem, 2.2vh, 3rem);
+		font-size: clamp(1rem, 2.5vh, 3rem);
 		padding: 1rem .5rem;
 		border-bottom: 1px solid white;
 	}
@@ -313,6 +313,13 @@ footer i:hover {
 		background: none;
 		background-repeat: no-repeat;
 		font-size: 26px;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
 	}
 
 	footer .logo {
