@@ -120,7 +120,6 @@ footer h3 {
 	color: #fff;
 	font-family: 'Rokkitt', serif;
 	font-size: clamp(.5rem, 2.5vh, 3rem);
-	letter-spacing: 1px;
 }
 
 footer h3 span {
