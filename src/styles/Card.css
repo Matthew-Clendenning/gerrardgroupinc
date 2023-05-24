@@ -28,6 +28,7 @@
     width: 100%;
     max-width: 200px;
     height: 200px;
+    box-shadow: 0 0 7px #666;
 }
 
 .card-content {
@@ -61,7 +62,7 @@
 }
 
 .card-email p {
-    letter-spacing: .8px;
+    letter-spacing: .3px;
 }
 
 h2 {

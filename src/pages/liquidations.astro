@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from "../components/Card.astro";
+import "../styles/Card.css";
 ---
 
 <Layout title="Liquidations & Surplus - Gerrard Group Inc" 
@@ -10,7 +12,30 @@ import Layout from '../layouts/Layout.astro';
     url3="https://www.gerrardgroupinc.com/liquidationssurplus">
     <main class="page-container">
         <h1 class="title"><span class="title-text"></span><span class="cursor">&nbsp;</span></h1>
-        <div class="nav-title">
+        <section class="cards">
+            <Card 
+                name="200T Pacific Hydraulic Press"
+                imageURL="/gerrardgroupinc/..//images/10744-press-1.JPG"
+                btnName="More Details"
+                href="/200TPacificDetails"
+                alt="img1"
+            />
+            <Card 
+                name="300T Pacific Hydraulic Press"
+                imageURL="/gerrardgroupinc/..//images/10743-press-1.jpg"
+                btnName="More Details"
+                href="/300TPacificDetails"
+                alt="img2"
+            />
+            <Card 
+                name="600T Pacific Hydraulic Press"
+                imageURL="/gerrardgroupinc/..//images/10742-press-1.jpg"
+                btnName="More Details"
+                href="/600TPacificDetails"
+                alt="img3"
+            />
+        </section>
+        <!--<div class="nav-title">
             <h2>Machine Navigation</h2>
             <p>Shop by Category</p>
         </div>
@@ -60,14 +85,14 @@ import Layout from '../layouts/Layout.astro';
                         <ul>
                             <li>
                                 <a href="#"></a>
-                                <!--<a href="/timkenBearings">Timken Heavy Duty Bearings</a>-->
+                                <a href="/timkenBearings">Timken Heavy Duty Bearings</a>
                             </li>
                         </ul>
                         <h4 class ="type-c">C</h4>
                         <ul>
                             <li>
                                 <a href="#"></a>
-                                <!--<a href="/CNC-Turning">CNC Turning Machines</a>-->
+                                <a href="/CNC-Turning">CNC Turning Machines</a>
                             </li>
                         </ul>
                         <h4 class ="none">D</h4>
@@ -168,7 +193,7 @@ import Layout from '../layouts/Layout.astro';
                         <ul>
                             <li>
                                 <a href="#"></a>
-                                <!--<a href="/straight-side-presses">Straight Sidee 4 Point Presses</a>-->
+                                <a href="/straight-side-presses">Straight Sidee 4 Point Presses</a>
                             </li>
                         </ul>
                         <h4 class="none">T</h4>
@@ -215,12 +240,64 @@ import Layout from '../layouts/Layout.astro';
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div>-->
     </main>
 </Layout>
 
-<style>
-    html {
+<style is:inline>
+    .href2 {
+        pointer-events: none;
+    }
+
+    .page-container {
+        padding: 5rem 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card-container {
+        height: 400px;
+    }
+
+    .image-container img {
+        width: 280px;
+        height: 230px;
+        max-width: inherit;
+        border-radius: 10px;
+    }
+
+    .card-content {
+        margin: 0;
+    }
+
+    .card-title {
+        margin: 0;
+    }
+
+    .container h2 {
+        display: none;
+    }
+
+    .link-text {
+        font-size: clamp(1rem, 3vh, 3rem);
+        pointer-events: none;
+        color: black;
+        text-decoration: none;
+    }
+
+    .btn a {
+        font-size: clamp(1rem, 1.5vh, 3rem);
+    }
+    
+    .card-phone, .card-email, .card-body {
+        display: none;
+    }
+    /*html {
         scroll-behavior: smooth;
     }
 
@@ -231,7 +308,7 @@ import Layout from '../layouts/Layout.astro';
         font-family: 'Rokkitt', serif;
         margin: 3rem 0;
         padding-inline: 2rem;
-    }
+    }*/
     
     .title {
         text-align: center;
@@ -242,10 +319,21 @@ import Layout from '../layouts/Layout.astro';
         font-family: 'Rokkitt', serif;
         color: #055895;
         margin: 0;
-        margin-bottom: 3rem;
+        padding-bottom: 5rem;
     }
 
-    .container {
+    @media (max-width: 40rem) {
+        .image-container img {
+            width: 280px;
+            height: 230px;
+        }
+
+        .card-container {
+            padding-inline: 2rem;
+        }
+    }
+
+    /*.container {
         font-family: 'Rokkitt', serif;
         display: flex;
         flex-wrap: wrap;
@@ -372,7 +460,7 @@ import Layout from '../layouts/Layout.astro';
         .index-col {
             width: 100%;
         }
-    }
+    }*/
 </style>
 
 <script src="../scripts/header-script.js"></script>
