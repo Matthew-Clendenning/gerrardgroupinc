@@ -3,6 +3,9 @@ const backToTopButton = document.querySelector("#back-to-top-btn");
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
+  if (window.outerWidth < "641") {
+    backToTopButton.style.display = "none";
+  }
   if (window.pageYOffset > 300) { // Show backToTopButton
     if(!backToTopButton.classList.contains("btnEntrance")) {
       backToTopButton.classList.remove("btnExit");

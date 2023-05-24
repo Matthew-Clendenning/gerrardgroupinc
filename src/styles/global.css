@@ -378,9 +378,7 @@ footer i:hover {
 	}
 	
 	#back-to-top-btn {
-		font-size: 20px;
-		width: 40px;
-		height: 40px;
+		display: none;
 	}
 }
 
