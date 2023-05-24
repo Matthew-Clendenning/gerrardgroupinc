@@ -12,8 +12,8 @@ import Layout from "../layouts/Layout.astro";
     url3="https://www.gerrardgroupinc.com">
 	<header class="welcome">
         <div>
-            <h1 class="welcome-text"><span class="intro"></span><span class="cursor">&nbsp;</span></h1>
-            <h1 class="moto-text"><span class="moto"></span><span class="cursor2">&nbsp;</span></h1>
+            <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
+            <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
         </div>
         <img class="banner" src="../images/gerrard_montage_3.jpg" alt="machines in a warehouse">
     </header>
@@ -120,14 +120,12 @@ import Layout from "../layouts/Layout.astro";
     .welcome-text {
         font-size: clamp(1rem, 4vh, 10rem);
         font-family: 'Rokkitt', serif;
-        font-weight: normal;
         margin: 0;
         overflow: hidden;
     }
     .moto-text {
         font-size: clamp(1rem, 4vh, 5rem);
         font-family: 'Rokkitt', serif;
-        font-weight: normal;
         margin: 0;
     }
 
