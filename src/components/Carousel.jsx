@@ -1,8 +1,6 @@
 import "../styles/Carousel.css";
 import React, { useState } from "react";
-import pkg from "react-icons/bs/index.esm.js";
-
-const { BsArrowLeftCircleFill, BsArrowRightCircleFill } = pkg;
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs/index.js";
 
 export const Carousel = ({ data }) => {
     const [slide, setSlide] = useState(0);
