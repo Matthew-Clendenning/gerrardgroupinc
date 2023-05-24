@@ -49,6 +49,17 @@
     gap: .5rem;
 }
 
+.card-phone {
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 .card-email p {
     letter-spacing: .8px;
 }
