@@ -112,10 +112,18 @@ import "../styles/Card.css";
 	    animation: fadeInUp 1.3s ease-in-out 2.9s forwards;
     }
 
+    .four img {
+        box-shadow: none;
+    }
+
     .five {
         opacity: 0;
         transform: translateY(4rem);
 	    animation: fadeInUp 1.3s ease-in-out 3.2s forwards;
+    }
+
+    .five img {
+        box-shadow: none;
     }
 
     @keyframes fadeInUp {
@@ -139,7 +147,9 @@ import "../styles/Card.css";
         font-size: clamp(1rem, 3.8vh, 5rem);
         font-family: 'Rokkitt', serif;
         color: #055895;
+        margin: 0;
         margin-bottom: 3rem;
+        padding-inline: 2rem;
     }
 
     .link-text {
