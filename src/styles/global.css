@@ -83,11 +83,6 @@ body {
 	text-align: left;
 }
 
-.imageContainer > a {
-	width: 100%;
-	height: 10px;
-}
-
 .imageContainer > span {
 	display: block;
 }
@@ -314,6 +309,11 @@ footer i:hover {
 		color: #d7d7d7;
 		margin: 0;
 	}
+
+	.imageContainer > span > img {
+		width: 80%;
+		height: 50px;
+	}
 	
 	.nav-text {
 		color: #d7d7d7;
@@ -340,7 +340,7 @@ footer i:hover {
 		position: absolute;
 		width: 2rem;
 		aspect-ratio: 1;
-		top: 2rem;
+		top: 1.8rem;
 		right: 2rem;
 		z-index: 9999;
 		border: 0;
