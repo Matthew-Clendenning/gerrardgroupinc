@@ -326,14 +326,16 @@ footer i:hover {
 	}
 
 	footer .logo {
-		display: none;
+		display: inherit;
+		width: 50%;
 	}
 
     footer {
 		display: flex;
 		justify-items: center;
-		justify-content: space-around;
-		padding-inline: 20px;
+		justify-content: space-between;
+		padding-inline: 10px;
+		padding-left: 0;
 		gap: 1rem;
 	}
 	
@@ -342,13 +344,13 @@ footer i:hover {
 	}
 	
 	footer h3 {
-		display: grid;
-		gap: .5rem;
-		font-size: clamp(.5rem, 2vh, 3rem);
+		display: none;
 	}
 
-	footer h3 span {
-		font-size: clamp(1rem, 2vw, 2rem)
+	footer div h3 {
+		display: inherit;
+		gap: .5rem;
+		font-size: clamp(.5rem, 2vh, 3rem);
 	}
 	
 	#back-to-top-btn {
