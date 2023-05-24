@@ -106,6 +106,7 @@ h2,p {
 @media (max-width: 40rem) {
     .card-container {
         width: 320px;
+        height: auto;
     }
 
     .card-container:hover {

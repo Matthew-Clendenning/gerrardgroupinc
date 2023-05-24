@@ -66,7 +66,7 @@ import "../styles/Card.css";
     }
 
     .card-container {
-        height: 420px;
+        height: 400px;
     }
 
     .image-container img {
@@ -101,5 +101,16 @@ import "../styles/Card.css";
     
     .card-phone, .card-email, .card-body {
         display: none;
+    }
+
+    @media (max-width: 40rem) {
+        .image-container img {
+            width: 280px;
+            height: 230px;
+        }
+
+        .card-container {
+            padding-inline: 2rem;
+        }
     }
 </style>
