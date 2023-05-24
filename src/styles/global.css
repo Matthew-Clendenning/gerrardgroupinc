@@ -213,6 +213,7 @@ footer i:hover {
 }
 
 #back-to-top-btn {
+	text-align: center;
 	position: fixed;
 	bottom: 25px;
 	right: 25px;
