@@ -45,7 +45,7 @@
 
 .card-body {
     display: grid;
-    font-size: clamp(.5rem, 2.2vh, 3rem);
+    font-size: clamp(.5rem, 2.4vh, 3rem);
     margin: 1rem 0;
     gap: .5rem;
 }

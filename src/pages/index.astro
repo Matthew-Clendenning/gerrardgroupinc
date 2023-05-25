@@ -19,9 +19,7 @@ import Layout from "../layouts/Layout.astro";
     </header>
     <main class="body-wrapper">
         <div class="container">
-            <div class="imageContainer2">
-                <span><img class="img-workers" src="../images/Factory+People+2.jpg" alt="people in a factory"></span>
-            </div>
+            <img class="img-workers" src="../images/Factory+People+2.jpg" alt="people in a factory">
             <article class="comp-info">
                 <h2>About Gerrard Group / Gerrard Machinery Company</h2>
                 <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
@@ -142,52 +140,47 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .body-wrapper {
+        font-family: 'Kanit', sans-serif;
 	    padding-inline: 2rem;
     }
 
     .container {
-        font-family: 'Kanit', sans-serif;
-        margin-top: 7rem;
-	    margin-inline: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5rem;
 	    margin-bottom: 0;
     }
 
+    .comp-info {
+        width: 80%;
+        height: auto;
+    }
+
     .comp-info h2 {
+        font-size: clamp(1rem, 2.8vh, 3rem);
 	    text-align: center;
 	    color: #425abd;
         margin: 0;
     }
 
     .comp-info p {
-	    font-size: clamp(.5rem, 2.2vh, 3rem);
-	    line-height: 35px;
+	    font-size: clamp(.5rem, 1.9vh, 3rem);
 	    text-indent: 55px;
     }
 
-    .imageContainer2 {
-        width: 40%;
-        height: auto;
-    }
-
-    .imageContainer2 > span {
-        display: block;
-    }
-
-    .imageContainer2 > span > img {
-        float: left;
+    .img-workers {
         width: 100%;
-        height: auto;
-        margin-right: 1rem;
-        border: 1px solid black;
+        max-width: 500px;
     }
 
     .description {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-	    font-family: 'Kanit', sans-serif;
         gap: 5rem;
-        margin-top: 7rem;
+        margin-top: 3rem;
     }
 
     /*.description li { 
@@ -213,7 +206,7 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .comp-special ul {
-        line-height: 44px;
+        line-height: 30px;
 	    padding: 0;
 	    margin: 0;
 	    font-size: clamp(.5rem, 2vh, 3rem);
@@ -234,15 +227,14 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .industries ul {
+        line-height: 30px;
 	    font-size: clamp(.5rem, 2vh, 3rem);
-	    line-height: 44px;
 	    padding: 0;
 	    margin: 0;
         column-count: 2;
     }
 
     .locations {
-	    font-family: 'Kanit', sans-serif;
 	    text-align: center;
 	    margin: 5rem 0;
     }
@@ -271,6 +263,7 @@ import Layout from "../layouts/Layout.astro";
     @media (max-width: 40rem) {
         .welcome div {
 		    gap: 1rem;
+            padding-inline: .5rem;
 	    }
 
         .banner {
@@ -278,11 +271,11 @@ import Layout from "../layouts/Layout.astro";
         }
 	
 	    .welcome-text {
-		    font-size: clamp(1rem, 4vh, 5rem);
+		    font-size: clamp(1rem, 3vh, 5rem);
 	    }
 	
 	    .moto-text {
-		    font-size: clamp(.5rem, 3vh, 5rem);
+		    font-size: clamp(.5rem, 2.5vh, 5rem);
 	    }
 
         .body-wrapper {
@@ -296,20 +289,20 @@ import Layout from "../layouts/Layout.astro";
         }
 
         .comp-info {
+            width: inherit;
             margin-top: 2rem;
         }
 
         .comp-info h2 {
-            font-size: clamp(1rem, 3vh, 3rem);
+            font-size: clamp(1rem, 2.5vh, 3rem);
         }
 
         .comp-info p {
             text-indent: 25px;
         }
 
-        .imageContainer2 {
+        .img-workers {
             display: none;
-            width: 100%;
         }
 
         .description {
@@ -321,42 +314,107 @@ import Layout from "../layouts/Layout.astro";
         .description ul {
             text-align: center;
             column-count: 1;
-            font-size: clamp(1rem, 2vh, 3rem);
+        }
+
+        .comp-special h2 {
+            font-size: clamp(.5rem, 5.5vw, 3rem);
+        }
+
+        .comp-special ul {
+            font-size: clamp(.5rem, 4.5vw, 3rem);
+        }
+
+        .industries h2 {
+            font-size: clamp(.5rem, 5.5vw, 3rem);
+        }
+
+        .industries ul {
+            font-size: clamp(.5rem, 4.5vw, 3rem);
         }
 
         .locations {
             margin: 2.5rem 0;
         }
+
+        .locations h2 {
+            font-size: clamp(.5rem, 5.5vw, 3rem);
+        }
+
+        .locations ul {
+            gap: 1rem;
+        }
+
+        .locations ul li {
+            font-size: clamp(.5rem, 4.5vw, 3rem);
+        }
     }
 
     @media (min-width: 40rem) and (max-width: 60rem) {
+        .welcome-text {
+            font-size: clamp(1rem, 3vh, 5rem);
+            font-family: 'Rokkitt', serif;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .moto-text {
+            font-size: clamp(1rem, 3vh, 5rem);
+            font-family: 'Rokkitt', serif;
+            margin: 0;
+        }
+
+        .body-wrapper {
+            padding-inline: 0;
+        }
+
         .container {
-            margin-inline: .2rem;
+            display: block;
+            margin-inline: 1rem;
         }
 
         .comp-info {
+            width: inherit;
             margin-top: 3rem;
         }
 
-        .imageContainer2 {
-            width: 50%;
-            height: auto;
+        .comp-info h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
+        }
+
+        .comp-info p {
+            font-size: 14px;
+        }
+
+        .img-workers {
+            float: left;
+            max-width: 300px;
+            margin-right: .8rem;
         }
 
         .description {
             display: grid;
             gap: 3rem;
+            margin-inline: 2rem;
         }
 
         .comp-special h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
             width: 100%;
         }
 
         .comp-special ul {
+            font-size: clamp(.5rem, 2.4vw, 2rem);
+            line-height: 44px;
             text-align: center;
         }
 
+        .industries h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
+        }
+
         .industries ul {
+            font-size: clamp(.5rem, 2.4vw, 2rem);
+            line-height: 44px;
             column-count: 3;
         }
     }
