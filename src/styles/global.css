@@ -88,7 +88,7 @@ body {
 	width: 100%;
 	max-width: 200px;
 	height: auto;
-	aspect-ratio: inherit;
+	aspect-ratio: 3;
 }
 
 .cursor {
