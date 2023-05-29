@@ -12,9 +12,10 @@ export interface Props {
 	url2: string;
 	title3: string;
 	url3: string;
+	canon: string;
 }
 
-const { title, description, title2, url, name, url2, title3, url3 } = Astro.props as Props;
+const { title, description, title2, url, name, url2, title3, url3, canon } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -30,6 +31,7 @@ const { title, description, title2, url, name, url2, title3, url3 } = Astro.prop
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canon}>
 		<meta property="og:site_name" content="Gerrard Group Inc">
 		<meta property="og:title" content={title2}>
 		<meta property="og:url" content={url}>
