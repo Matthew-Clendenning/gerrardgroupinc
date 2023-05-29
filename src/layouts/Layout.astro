@@ -25,6 +25,7 @@ const { title, description, title2, url, name, url2, title3, url3 } = Astro.prop
 		<link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
 		<title>{title}</title>
 		<link rel="icon" type="image/png" href="../images/danny's logo.png">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content={description} />
@@ -38,7 +39,7 @@ const { title, description, title2, url, name, url2, title3, url3 } = Astro.prop
 		<meta name="twitter:url" content={url3}>
 		<meta name="twitter:card" content="summary">
 		<!--<script src="../scripts/BTT.js"></script>-->
-		<script type="text/partytown" src="https://kit.fontawesome.com/e163b7e8b4.js" crossorigin="anonymous" defer></script>
+		<script src="https://kit.fontawesome.com/e163b7e8b4.js" crossorigin="anonymous" defer></script>
 	</head>
 	<body>
 		<Header />
