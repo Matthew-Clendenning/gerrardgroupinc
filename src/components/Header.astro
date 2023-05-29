@@ -34,6 +34,23 @@
 	const primaryNav = document.querySelector(".primary-navigation");
 	const navToggle = document.querySelector(".mobile-nav-toggle");
 
+	function closeMenu() {
+		primaryNav.setAttribute("data-visible", false);
+		navToggle.setAttribute("data-visible", false);
+	}
+
+	window.addEventListener('popstate', function () {
+		closeMenu();
+	});
+
+	const navLinks = document.querySelectorAll(".primary-navigation a");
+
+	navLinks.forEach(function (link) {
+		link.addEventListener('click', function () {
+			closeMenu();
+		});
+	});
+
 	navToggle.addEventListener('click', () => {
 	const visibility = primaryNav.getAttribute("data-visible");
 		
