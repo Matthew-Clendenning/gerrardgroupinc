@@ -81,7 +81,7 @@ body {
 
 .image-header {
 	display: flex;
-	width: 100%;
+	width: 20%;
 }
 
 .logo {
@@ -329,7 +329,7 @@ footer i:hover {
 	}
 
 	.image-header {
-		width: 50%;
+		width: 40%;
 	}
 
 	footer .logo {
