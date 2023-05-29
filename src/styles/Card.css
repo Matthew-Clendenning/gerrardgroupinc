@@ -113,4 +113,8 @@ h2,p {
     .card-container:hover {
         transform: scale(1);
     }
+
+    .btn a {
+        font-size: clamp(.5rem, 2vh, 2rem);
+    }
 }
