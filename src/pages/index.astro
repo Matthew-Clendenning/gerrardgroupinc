@@ -78,7 +78,7 @@ import Layout from "../layouts/Layout.astro";
             </article>
         </div>
         <section class="locations">
-            <h2><strong>Offices Located In:</strong></h2>
+            <h3><strong>Offices Located In:</strong></h3>
             <ul>
                 <li>St. Louis, MO</li>
                 <li>Chicago, IL</li>
@@ -118,13 +118,11 @@ import Layout from "../layouts/Layout.astro";
 
     .welcome-text {
         font-size: clamp(1rem, 4vh, 10rem);
-        font-family: 'Rokkitt', serif;
         margin: 0;
         overflow: hidden;
     }
     .moto-text {
         font-size: clamp(1rem, 4vh, 5rem);
-        font-family: 'Rokkitt', serif;
         margin: 0;
     }
 
@@ -141,7 +139,7 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .body-wrapper {
-        font-family: 'Kanit', sans-serif;
+        font-family: 'Rokkitt', serif;
 	    padding-inline: 2rem;
     }
 
@@ -160,21 +158,20 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .comp-info h2 {
-        font-size: clamp(1rem, 2.8vh, 3rem);
+        font-size: clamp(1rem, 3vh, 3rem);
 	    text-align: center;
 	    color: #425abd;
         margin: 0;
     }
 
     .comp-info p {
-	    font-size: clamp(.5rem, 2.2vh, 1.2rem);
+	    font-size: clamp(.5rem, 2.4vh, 1.5rem);
 	    text-indent: 55px;
     }
 
     .img-workers {
         width: 100%;
-        max-width: 470px;
-        height: 280px;
+        max-width: 500px;
     }
 
     .description {
@@ -213,7 +210,7 @@ import Layout from "../layouts/Layout.astro";
         line-height: 30px;
 	    padding: 0 2rem;
 	    margin: 0;
-	    font-size: clamp(.5rem, 2vh, 3rem);
+	    font-size: clamp(.5rem, 2.3vh, 3rem);
     }
 
     .industries {
@@ -233,7 +230,7 @@ import Layout from "../layouts/Layout.astro";
 
     .industries ul {
         line-height: 30px;
-	    font-size: clamp(.5rem, 2vh, 3rem);
+	    font-size: clamp(.5rem, 2.3vh, 3rem);
 	    padding: 0;
 	    margin: 0;
         column-count: 2;
@@ -245,7 +242,8 @@ import Layout from "../layouts/Layout.astro";
 	    margin: 5rem 0;
     }
 
-    .locations h2 {
+    .locations h3 {
+        font-size: clamp(1rem, 2.8vh, 3rem);
         margin: 0;
         margin-bottom: 1rem;
     	color: #425abd;
@@ -255,6 +253,7 @@ import Layout from "../layouts/Layout.astro";
     	display: flex;
     	justify-content: center;
 	    list-style: none;
+        font-size: clamp(.5rem, 2.5vh, 3rem);
 	    padding: 0;
 	    margin: 0;
 	    gap: 2rem;
