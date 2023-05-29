@@ -323,6 +323,10 @@ footer i:hover {
 		user-select: none;
 	}
 
+	.logo {
+		width: 50%;
+	}
+
 	footer .logo {
 		display: inherit;
 		width: 50%;
