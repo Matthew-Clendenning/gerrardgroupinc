@@ -79,6 +79,11 @@ body {
 	width: 100%;
 }
 
+.image-header {
+	display: flex;
+	width: 100%;
+}
+
 .logo {
 	width: 100%;
 	max-width: 200px;
@@ -323,7 +328,7 @@ footer i:hover {
 		user-select: none;
 	}
 
-	.logo {
+	.image-header {
 		width: 50%;
 	}
 
