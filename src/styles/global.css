@@ -377,6 +377,8 @@ footer i:hover {
 	}
 
 	.image-header {
+		display: block;
+		width: 100%;
 		text-align: center;
 	}
 
