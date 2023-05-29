@@ -113,6 +113,7 @@ import Layout from "../layouts/Layout.astro";
         bottom: 0;
         z-index: 1000;
         gap: .5rem;
+        padding-inline: .5rem;
     }
 
     .welcome-text {
@@ -148,7 +149,7 @@ import Layout from "../layouts/Layout.astro";
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
         margin-top: 5rem;
 	    margin-bottom: 0;
     }
@@ -397,7 +398,7 @@ import Layout from "../layouts/Layout.astro";
         }
 
         .comp-info p {
-            font-size: 14px;
+            font-size: clamp(.5rem, 1.6vh, 1.5rem);
         }
 
         .img-workers {
@@ -421,6 +422,7 @@ import Layout from "../layouts/Layout.astro";
             font-size: clamp(.5rem, 2.4vw, 2rem);
             line-height: 44px;
             text-align: center;
+            list-style-position: inside;
         }
 
         .industries h2 {
@@ -431,6 +433,7 @@ import Layout from "../layouts/Layout.astro";
             font-size: clamp(.5rem, 2.4vw, 2rem);
             line-height: 44px;
             column-count: 3;
+            list-style-position: inside;
         }
     }
 

@@ -14,6 +14,7 @@ body {
 	min-height: 100vh;
 	background: #fff;
 	overflow-x: hidden;
+	font-family: 'Rokkitt', serif;
 }
 
 .sticky {
@@ -59,7 +60,6 @@ body {
 	letter-spacing: 1px;
 	text-decoration: none;
 	color: #425abd;
-	font-family: 'Rokkitt', serif;
 	padding: 6px;
 	position: relative;
 }
@@ -118,13 +118,11 @@ footer h3 {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
-	font-family: 'Rokkitt', serif;
 	font-size: clamp(.5rem, 2.5vh, 3rem);
 }
 
 footer h3 span {
 	color: #003860;
-	font-family: 'Rokkitt', serif;
 	font-size: clamp(.5rem, 2.2vh, 3rem);
 }
 
@@ -166,7 +164,6 @@ footer i:hover {
 
 .bottom p {
 	font-size: clamp(.5rem, 2vh, 2rem);
-	font-family: 'Rokkitt', serif;
 	color: white;
 	margin: 0;
 	padding: 1rem;
@@ -336,7 +333,6 @@ footer i:hover {
 		justify-content: space-between;
 		padding-inline: 10px;
 		padding-left: 0;
-		gap: 1rem;
 	}
 	
 	footer i {
@@ -374,7 +370,7 @@ footer i:hover {
 	}
 
 	.logo {
-		max-width: 300px;
+		max-width: 250px;
 	}
 	
 	.nav-text {
@@ -383,5 +379,13 @@ footer i:hover {
 	
 	footer {
 		padding-inline: .5rem;
+	}
+
+	footer h3 {
+		font-size: clamp(.5rem, 2vh, 2rem);
+	}
+
+	footer h3 span {
+		font-size: clamp(.5rem, 2vh, 2rem);
 	}
 }
