@@ -424,7 +424,7 @@ footer i:hover {
 	}
 
 	.locations h2 {
-		font-size: clamp(.5rem, 5.5vw, 3rem);
+		font-size: clamp(1rem, 6vw, 3rem);
 	}
 
 	.locations ul {
@@ -432,7 +432,7 @@ footer i:hover {
 	}
 
 	.locations ul li {
-		font-size: clamp(.5rem, 4vw, 3rem);
+		font-size: clamp(.5rem, 3vw, 3rem);
 	}
 
 	footer .logo {
