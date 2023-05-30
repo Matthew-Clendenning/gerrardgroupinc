@@ -1,7 +1,11 @@
 @font-face {
 	font-family: "Satoshi";
 	src: url("../../fonts/Satoshi-Regular.woff2")
-	format("woff2");
+	format("woff2"),
+	url("../../fonts/Satoshi-Regular.woff")
+	format("woff"),
+	url("../../fonts/Satoshi-Regular.tff")
+	format("tff");
 	font-style: normal;
 	font-weight: 400;
 }
@@ -64,7 +68,6 @@ body {
 
 .nav-text {
 	font-size: clamp(.5rem, 1.5vw, 1.3rem);
-	letter-spacing: 1px;
 	text-decoration: none;
 	color: #425abd;
 	padding: 6px;
