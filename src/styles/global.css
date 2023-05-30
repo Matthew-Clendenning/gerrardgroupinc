@@ -419,6 +419,14 @@ footer i:hover {
 		max-width: 150px;
 	}
 
+	.welcome-text {
+		font-size: clamp(1rem, 3vh, 5rem);
+	}
+
+	.moto-text {
+		font-size: clamp(.5rem, 2.5vh, 5rem);
+	}
+
 	.comp-info p {
 	    font-size: clamp(1rem, 2.5vh, 2rem);
 	    text-indent: 45px;
