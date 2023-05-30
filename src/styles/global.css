@@ -411,11 +411,8 @@ footer i:hover {
 		position: inherit;
 	}
 
-	.logo {
-		max-width: 150px;
-	}
-
 	footer .logo {
+		max-width: 150px;
 		display: inherit;
 	}
 
