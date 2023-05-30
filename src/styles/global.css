@@ -419,6 +419,11 @@ footer i:hover {
 		max-width: 150px;
 	}
 
+	.comp-info p {
+	    font-size: clamp(1rem, 2.5vh, 2rem);
+	    text-indent: 45px;
+    }
+
 	.locations {
 		margin: 2.5rem 0;
 	}
