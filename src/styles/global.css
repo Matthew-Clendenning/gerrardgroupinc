@@ -58,7 +58,6 @@ body {
 
 .nav-text {
 	font-size: clamp(.5rem, 1.5vw, 1.3rem);
-	font-weight: bold;
 	letter-spacing: 1px;
 	text-decoration: none;
 	color: #425abd;
@@ -370,9 +369,10 @@ footer i:hover {
 
 @media (min-width: 40rem) and (max-width: 60rem) {
 	.primary-header {
-		display: grid;
-		justify-content: center;
+		display: flex;
+		justify-content: space-between;
 		padding-inline: 0;
+		padding: .3rem;
 	}
 	
 	.primary-header {
@@ -381,16 +381,17 @@ footer i:hover {
 
 	.image-header {
 		display: block;
-		width: 100%;
+		width: max-content;
 		text-align: center;
+		padding-left: 1rem;
 	}
 
 	.logo {
-		max-width: 200px;
+		max-width: 100px;
 	}
 	
 	.nav-text {
-		font-size: clamp(.5rem, 2.2vw, 2rem);
+		font-size: clamp(.5rem, 1.5vw, 2rem);
 	}
 	
 	footer {
