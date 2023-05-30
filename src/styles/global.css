@@ -367,7 +367,7 @@ footer i:hover {
 	}
 }
 
-@media (min-width: 50rem) and (max-width: 60rem) {
+@media (min-width: 40rem) and (max-width: 60rem) {
 	.primary-header {
 		display: flex;
 		justify-content: space-between;
