@@ -16,6 +16,7 @@ export const Carousel = ({ data }) => {
     return (
         <div className="carousel">
             <BsArrowLeftCircleFill 
+                title="Navigate left"
                 className="arrow arrow-left" 
                 onClick={prevSlide}
             />
@@ -30,6 +31,7 @@ export const Carousel = ({ data }) => {
                 );
         })}
         <BsArrowRightCircleFill 
+            title="Navigate right"
             className="arrow arrow-right" 
             onClick={nextSlide}
         />
