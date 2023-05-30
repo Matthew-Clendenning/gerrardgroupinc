@@ -369,6 +369,78 @@ import Layout from "../layouts/Layout.astro";
         }
     }
 
+    @media (min-width: 60rem) and (max-width: 70rem) {
+        .welcome-text {
+            font-size: clamp(1rem, 3vh, 5rem);
+            font-family: 'Rokkitt', serif;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .moto-text {
+            font-size: clamp(1rem, 3vh, 5rem);
+            font-family: 'Rokkitt', serif;
+            margin: 0;
+        }
+
+        .body-wrapper {
+            padding-inline: 0;
+        }
+
+        .container {
+            display: block;
+            margin-inline: 1rem;
+        }
+
+        .comp-info {
+            width: inherit;
+            margin-top: 3rem;
+        }
+
+        .comp-info h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
+        }
+
+        .comp-info p {
+            font-size: clamp(.5rem, 1.8vh, 1.5rem);
+        }
+
+        .img-workers {
+            float: left;
+            max-width: 300px;
+            margin-right: .8rem;
+        }
+
+        .description {
+            display: grid;
+            gap: 3rem;
+            margin-inline: 2rem;
+        }
+
+        .comp-special h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
+            width: 100%;
+        }
+
+        .comp-special ul {
+            font-size: clamp(.5rem, 2.4vw, 2rem);
+            line-height: 44px;
+            text-align: center;
+            list-style-position: inside;
+        }
+
+        .industries h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
+        }
+
+        .industries ul {
+            font-size: clamp(.5rem, 2.4vw, 2rem);
+            line-height: 44px;
+            column-count: 3;
+            list-style-position: inside;
+        }
+    }
+
     @media (min-width: 40rem) and (max-width: 60rem) {
         .welcome-text {
             font-size: clamp(1rem, 3vh, 5rem);
@@ -438,6 +510,99 @@ import Layout from "../layouts/Layout.astro";
             line-height: 44px;
             column-count: 3;
             list-style-position: inside;
+        }
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
+        .welcome-text {
+            font-size: clamp(1rem, 6.5vh, 5rem);
+        }
+
+        .moto-text {
+            font-size: clamp(.5rem, 6vh, 5rem);
+        }
+
+        .banner {
+		    height: 150px;
+	    }
+
+        .body-wrapper {
+            padding-inline: 1rem;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 0;
+            gap: 1rem;
+            margin-inline: 0;
+        }
+
+        .comp-info {
+            width: inherit;
+            margin-top: 3rem;
+        }
+
+        .comp-info h2 {
+            font-size: clamp(.5rem, 2.5vw, 2rem);
+        }
+
+        .comp-info p {
+            font-size: clamp(.5rem, 2.8vh, 2rem);
+            text-indent: 25px;
+        }
+
+        .img-workers {
+            float: left;
+            max-width: 250px;
+            margin-right: 0;
+        }
+
+        .description {
+            display: flex;
+            margin-top: 1.5rem;
+            margin-inline: 0;
+            gap: 3rem;
+        }
+
+        .comp-special h2 {
+            font-size: clamp(1rem, 2vw, 2rem);
+            width: 100%;
+        }
+
+        .comp-special ul {
+            font-size: clamp(.5rem, 2vw, 2rem);
+            line-height: 25px;
+            text-align: left;
+            padding: 0;
+            list-style-position: inside;
+        }
+
+        .industries h2 {
+            font-size: clamp(1rem, 2vw, 2rem);
+        }
+
+        .industries ul {
+            font-size: clamp(.5rem, 2vw, 2rem);
+            column-count: 2;
+            gap: .5rem;
+            line-height: 20px;
+            list-style-position: inside;
+        }
+
+        .locations {
+            margin: 2.5rem 0;
+        }
+
+        .locations h2 {
+            font-size: clamp(1rem, 7vw, 3rem);
+        }
+
+        .locations ul {
+            gap: 1rem;
+        }
+
+        .locations ul li {
+            font-size: clamp(.5rem, 2.5vw, 3rem);
         }
     }
 

@@ -142,7 +142,7 @@ import { slides } from "../data/carouselData.json";
 	    width: 60%;
     }
 
-    @media (max-width: 40rem) {
+    @media (max-width: 30rem) {
         .page-container {
             padding-inline: .5rem;
         }
@@ -204,7 +204,31 @@ import { slides } from "../data/carouselData.json";
 	    }
     }
 
-    /*@media (orientation: landscape) and (min-width: 10rem) and (max-width: 40rem) {
+    @media (min-width: 60rem) and (max-width: 70rem) {
+        .machine-details {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .machine-title {
+            width: auto;
+        }
+
+        .carousel {
+		    width: 70%;
+		    height: 400px;
+	    }
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
+        .directory-title {
+            font-size: clamp(1rem, 2vh, 3rem);
+        }
+
+        .page-title {
+            font-size: clamp(1rem, 5.5vh, 3rem);
+        }
+        
         .carousel {
             width: 65%;
             height: 350px;
@@ -218,8 +242,21 @@ import { slides } from "../data/carouselData.json";
             right: -1rem;
         }
 
+        .machine-details {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .machine-title {
+            width: auto;
+        }
+
         .machine-title h2 {
             font-size: clamp(1rem, 4vh, 3rem);
+        }
+
+        .machine-title p {
+            font-size: clamp(.5rem, 3vh, 3rem);
         }
 
         h4 {
@@ -229,5 +266,5 @@ import { slides } from "../data/carouselData.json";
         .details span {
             font-size: clamp(1rem, 3vh, 3rem);
         }
-    }*/
+    }
 </style>

@@ -105,6 +105,17 @@ h2,p {
 }
 
 @media (max-width: 40rem) {
+    .cards {
+        pointer-events: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
     .card-container {
         width: 320px;
         height: auto;
@@ -119,8 +130,14 @@ h2,p {
     }
 }
 
-/*@media (orientation: landscape) and (min-width: 10rem) and (max-width: 40rem) {
+@media (min-width: 60rem) and (max-width: 70rem) {
     .card-body {
-        font-size: clamp(.5rem, 4vh, 3rem);
+        font-size: clamp(1rem, 3vh, 3rem);
     }
-}*/
+}
+
+@media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
+    .card-body {
+        font-size: clamp(.5rem, 4.5vh, 3rem);
+    }
+}
