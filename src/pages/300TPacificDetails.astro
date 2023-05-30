@@ -205,4 +205,31 @@ import { slides2 } from "../data/carouselData.json";
 		    height: 400px;
 	    }
     }
+
+    @media screen and (orientation: landscape) and (max-width: 40rem) {
+        .carousel {
+            width: 65%;
+            height: 350px;
+        }
+
+        .arrow-left {
+            left: -1rem;
+        }
+
+        .arrow-right {
+            right: -1rem;
+        }
+
+        .machine-title h2 {
+            font-size: clamp(1rem, 4vh, 3rem);
+        }
+
+        h4 {
+            font-size: clamp(1rem, 3vh, 3rem);
+        }
+
+        .details span {
+            font-size: clamp(1rem, 3vh, 3rem);
+        }
+    }
 </style>

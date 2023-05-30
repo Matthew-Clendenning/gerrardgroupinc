@@ -406,7 +406,7 @@ footer i:hover {
 	}
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 40rem) {
 	.sticky {
 		position: inherit;
 	}
