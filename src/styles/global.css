@@ -483,6 +483,6 @@ footer i:hover {
 	}
 
 	#back-to-top-btn {
-		display: inherit;
+		display: none;
 	}
 }
