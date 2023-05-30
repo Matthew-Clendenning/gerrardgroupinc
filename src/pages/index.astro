@@ -16,7 +16,10 @@ import Layout from "../layouts/Layout.astro";
             <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
             <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
         </div>
-        <img class="banner" src="../images/gerrard_montage_3_copy.jpg" alt="machines in a warehouse">
+        <picture>
+            <source media="(max-width:40rem)" srcset="../images/gerrard_montage_3_copy.jpg">
+            <img class="banner" src="../images/gerrard_montage_3_copy2.jpg" alt="machines in a warehouse">
+        </picture>
     </header>
     <main class="body-wrapper">
         <div class="container">
