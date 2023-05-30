@@ -340,7 +340,6 @@ footer i:hover {
 
 	footer .logo {
 		display: inherit;
-		width: 50%;
 	}
 
     footer {
@@ -370,10 +369,6 @@ footer i:hover {
 }
 
 @media (min-width: 40rem) and (max-width: 60rem) {
-	.sticky {
-		position: inherit;
-	}
-
 	.primary-header {
 		display: grid;
 		justify-content: center;
@@ -408,5 +403,15 @@ footer i:hover {
 
 	footer h3 span {
 		font-size: clamp(.5rem, 2vh, 2rem);
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.sticky {
+		position: inherit;
+	}
+
+	footer h3 {
+		font-size: clamp(1rem, 2vh, 3rem);
 	}
 }
