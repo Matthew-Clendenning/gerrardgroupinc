@@ -432,6 +432,6 @@ footer i:hover {
 	}
 
 	footer i {
-		font-size: clamp(1rem, 3vh, 2rem);
+		font-size: clamp(1rem, 3.5vh, 3rem);
 	}
 }
