@@ -119,7 +119,7 @@ h2,p {
     }
 }
 
-@media (orientation: landscape) and (max-width: 40rem) {
+@media (orientation: landscape) and (min-width: 10rem) and (max-width: 40rem) {
     .card-body {
         font-size: clamp(.5rem, 4vh, 3rem);
     }

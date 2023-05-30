@@ -461,7 +461,7 @@ import Layout from "../layouts/Layout.astro";
         }
     }
 
-    @media (orientation: landscape) and (max-width: 40rem) {
+    @media (orientation: landscape) and (min-width: 10rem) and (max-width: 40rem) {
         .welcome-text {
             font-size: clamp(1rem, 6.5vh, 5rem);
         }
