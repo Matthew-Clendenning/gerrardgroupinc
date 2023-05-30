@@ -250,6 +250,12 @@ footer i:hover {
 }
 
 @media (max-width: 40rem) {
+	source {
+		display: block;
+		width: 200px;
+		height: 200px;
+	}
+
 	#primary-navigation {
 		align-items: flex-start;
 	}
