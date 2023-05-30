@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Satoshi";
-	src: url("../../fonts/Satoshi-Regular.woff2")
+	src: local("Satoshi Regular"),
+	url("../../fonts/Satoshi-Regular.woff2")
 	format("woff2"),
 	url("../../fonts/Satoshi-Regular.woff")
 	format("woff"),
