@@ -411,41 +411,8 @@ footer i:hover {
 		position: inherit;
 	}
 
-	.image-header {
-		width: 75%;
-	}
-
 	.logo {
 		max-width: 150px;
-	}
-
-	.welcome-text {
-		font-size: clamp(1rem, 6.5vh, 5rem);
-	}
-
-	.moto-text {
-		font-size: clamp(.5rem, 6vh, 5rem);
-	}
-
-	.comp-info p {
-	    font-size: clamp(1rem, 2.5vh, 2rem);
-	    text-indent: 45px;
-    }
-
-	.locations {
-		margin: 2.5rem 0;
-	}
-
-	.locations h2 {
-		font-size: clamp(1rem, 7vw, 3rem);
-	}
-
-	.locations ul {
-		gap: 1rem;
-	}
-
-	.locations ul li {
-		font-size: clamp(.5rem, 2.5vw, 3rem);
 	}
 
 	footer .logo {
