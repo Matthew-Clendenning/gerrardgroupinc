@@ -371,6 +371,75 @@ import Layout from "../layouts/Layout.astro";
 
     @media (min-width: 40rem) and (max-width: 60rem) {
         .welcome-text {
+            font-size: clamp(1rem, 4vh, 5rem);
+        }
+
+        .moto-text {
+            font-size: clamp(1rem, 3vh, 5rem);
+            font-family: 'Rokkitt', serif;
+            margin: 0;
+        }
+
+        .body-wrapper {
+            padding-inline: 0;
+        }
+
+        .container {
+            display: block;
+            margin-inline: 1rem;
+        }
+
+        .comp-info {
+            width: inherit;
+            margin-top: 3rem;
+        }
+
+        .comp-info h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
+        }
+
+        .comp-info p {
+            font-size: clamp(.5rem, 1.8vh, 1.5rem);
+        }
+
+        .img-workers {
+            float: left;
+            max-width: 300px;
+            margin-right: .8rem;
+        }
+
+        .description {
+            display: grid;
+            gap: 3rem;
+            margin-inline: 2rem;
+        }
+
+        .comp-special h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
+            width: 100%;
+        }
+
+        .comp-special ul {
+            font-size: clamp(.5rem, 2.4vw, 2rem);
+            line-height: 44px;
+            text-align: center;
+            list-style-position: inside;
+        }
+
+        .industries h2 {
+            font-size: clamp(.5rem, 2.8vw, 2rem);
+        }
+
+        .industries ul {
+            font-size: clamp(.5rem, 2.4vw, 2rem);
+            line-height: 44px;
+            column-count: 3;
+            list-style-position: inside;
+        }
+    }
+
+    @media (min-width: 60rem) and (max-width: 70rem) {
+        .welcome-text {
             font-size: clamp(1rem, 3vh, 5rem);
             font-family: 'Rokkitt', serif;
             margin: 0;
