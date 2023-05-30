@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+@font-face {
+	font-family: "Author";
+	src: url("../../fonts/Author-Regular.woff2")
+	format("woff2");
+	font-style: normal;
+	font-weight: normal;
+}
 
 * {
 	box-sizing: border-box;
@@ -16,7 +22,7 @@ body {
 	min-height: 100vh;
 	background: #fff;
 	overflow-x: hidden;
-	font-family: 'Rokkitt', serif;
+	font-family: "Author";
 }
 
 .sticky {
