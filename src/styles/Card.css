@@ -118,3 +118,9 @@ h2,p {
         font-size: clamp(.5rem, 2vh, 2rem);
     }
 }
+
+@media screen and (orientation: landscape) {
+    .card-body {
+        font-size: clamp(.5rem, 3.5vh, 3rem);
+    }
+}
