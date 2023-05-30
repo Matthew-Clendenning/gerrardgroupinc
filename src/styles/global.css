@@ -417,11 +417,11 @@ footer i:hover {
 	}
 
 	footer h3 {
-		font-size: clamp(.5rem, 2vh, 3rem);
+		font-size: clamp(.5rem, 3vh, 3rem);
 	}
 
 	footer h3 span {
-		font-size: clamp(.5rem, 2vh, 3rem);
+		font-size: clamp(.5rem, 3vh, 3rem);
 	}
 
 	footer div a i {
