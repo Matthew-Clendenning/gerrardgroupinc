@@ -3,7 +3,7 @@
 	src: url("../../fonts/Satoshi-Regular.woff2")
 	format("woff2");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 * {
@@ -22,7 +22,7 @@ body {
 	min-height: 100vh;
 	background: #fff;
 	overflow-x: hidden;
-	font-family: "Satoshi";
+	font-family: "Satoshi", sans-serif;
 }
 
 .sticky {
