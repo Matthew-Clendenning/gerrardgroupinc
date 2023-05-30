@@ -13,14 +13,18 @@ export interface Props {
     alt?: string;
     btnName?: string;
     target?: string;
+    srcset?: string;
 }
 
-const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
+const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target, srcset } = Astro.props as Props;
 ---
 
 <article class="card-container">
     <div class="image-container">
-        <img loading="lazy" src={imageURL} alt={alt} />
+        <picture>
+            <source media="(max-width:400px)" srcset={srcset}>
+            <img loading="lazy" src={imageURL} alt={alt} />
+        </picture>
     </div>
     <div class="card-content">
         <div class="card-title">
