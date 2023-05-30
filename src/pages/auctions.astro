@@ -156,6 +156,12 @@ import Card from "../components/Card.astro";
             transform: scale(1);
         }
     }
+
+    @media screen and (orientation: landscape) {
+        .card-body {
+            font-size: clamp(1rem, 2.5rem, 3rem);
+        }
+    }
 </style>
 
 <script async type="text/javascript" defer="defer" is:inline>
