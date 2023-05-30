@@ -252,6 +252,7 @@ footer i:hover {
 	#primary-navigation {
 		align-items: flex-start;
 	}
+
 	.primary-header {
 		position: sticky;
 		top: 0;
@@ -479,5 +480,9 @@ footer i:hover {
 
 	.bottom p {
 		font-size: clamp(.5rem, 3vh, 3rem);
+	}
+
+	#back-to-top-btn {
+		display: inherit;
 	}
 }
