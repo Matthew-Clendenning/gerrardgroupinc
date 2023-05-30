@@ -419,6 +419,22 @@ footer i:hover {
 		max-width: 150px;
 	}
 
+	.locations {
+		margin: 2.5rem 0;
+	}
+
+	.locations h2 {
+		font-size: clamp(.5rem, 5.5vw, 3rem);
+	}
+
+	.locations ul {
+		gap: 1rem;
+	}
+
+	.locations ul li {
+		font-size: clamp(.5rem, 4vw, 3rem);
+	}
+
 	footer .logo {
 		display: inherit;
 	}
