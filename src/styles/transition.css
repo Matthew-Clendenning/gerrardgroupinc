@@ -12,3 +12,9 @@
         transform: rotateX(0);
     }
 }
+
+@media (max-width: 40rem) {
+    #tran {
+        animation: transitionIn .1s;
+    }
+}
