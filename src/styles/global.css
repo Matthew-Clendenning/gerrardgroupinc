@@ -456,6 +456,10 @@ footer i:hover {
 	footer h3 span {
 		font-size: clamp(.5rem, 1.8vh, 2rem);
 	}
+
+	#back-to-top-btn {
+		display: none;
+	}
 }
 
 @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
