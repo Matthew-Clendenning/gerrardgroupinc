@@ -41,7 +41,6 @@ const { title, href, href2, page, page2 } = Astro.props as Props;
 	    color: white;
 	    padding: 15px 3rem;
 	    margin: 0;
-        letter-spacing: .3px;
     }
 
     .directory-title a {
@@ -58,6 +57,16 @@ const { title, href, href2, page, page2 } = Astro.props as Props;
 	    text-align: center;
 	    background: #425abd;
 	    padding: 30px;
+    }
+
+    .href2:hover {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
     }
 
     @media (max-width: 30rem) {
