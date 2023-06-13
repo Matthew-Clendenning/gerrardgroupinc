@@ -39,6 +39,7 @@ export const Carousel = ({ data }) => {
             {data.map((_, idx) => {
                 return (
                     <button 
+                        title="image indicator"
                         key={idx} 
                         onClick={() => setSlide(idx)} 
                         className={slide === idx ? "indicator" : "indicator indicator-inactive"}>

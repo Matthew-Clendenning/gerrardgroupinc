@@ -11,6 +11,27 @@
 	font-weight: 400;
 }
 
+#transition {
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@media (max-width: 40rem) {
+    #transition {
+        animation: transitionIn .3s;
+    }
+}
+
 * {
 	box-sizing: border-box;
 }

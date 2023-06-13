@@ -51,7 +51,7 @@
 }
 
 .indicator {
-    background-color: white;
+    background: white;
     height: .5rem;
     width: .5rem;
     border-radius: 100%;
@@ -63,5 +63,5 @@
 }
 
 .indicator-inactive {
-    background-color: grey;
+    background: grey;
 }
