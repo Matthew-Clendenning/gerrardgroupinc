@@ -1,1 +1,0 @@
-import"./hoisted.41b9a544.js";const i=document.querySelector(".primary-header");window.addEventListener("scroll",t);function t(){scrollY>350&&window.outerWidth>="641"?i.style.position="static":(window.outerWidth<"641",i.style.position="sticky")}
