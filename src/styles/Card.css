@@ -6,12 +6,9 @@
     width: 400px;
     height: 450px;
     overflow: hidden;
-    box-shadow: 0 0.1875rem 0.4375rem 0 rgba(0,0,0,.13), 0 0.0625rem 0.125rem 0 rgba(0,0,0,.11);
+    box-shadow: 0 10px 15px -3px #9ca3af, 0 4px 6px -4px #9ca3af;
     transition: .3s;
     animation: ease-in;
-    background-image: linear-gradient
-    (120deg, rgb(223, 232, 255), 
-    rgb(255, 255, 255));
 }
 
 .card-container:hover {
