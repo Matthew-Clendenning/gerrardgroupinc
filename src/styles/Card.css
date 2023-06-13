@@ -34,6 +34,7 @@
     justify-items: center;
     text-align: center;
     margin: .5rem 0;
+    padding-inline: 1rem;
 }
 
 .card-title {
