@@ -58,7 +58,7 @@ body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-	background: #fff;
+	background-color: rgb(236 240 243/1);
 	overflow-x: hidden;
 	font-family: "Satoshi", sans-serif;
 }
