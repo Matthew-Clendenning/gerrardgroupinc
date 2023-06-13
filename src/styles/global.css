@@ -13,23 +13,23 @@
 }
 
 #transition {
-    animation: transitionIn 1s;
+    animation: transitionIn .8s ease-in-out;
 }
 
 @keyframes transitionIn {
     from {
         opacity: 0;
-        transform: rotateX(-10deg);
+        transform: translate3d(0, 20px, 0);
     }
     to {
         opacity: 1;
-        transform: rotateX(0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
 @media (max-width: 40rem) {
     #transition {
-        animation: transitionIn .3s;
+        animation: transitionIn .3s ease-in-out;
     }
 }
 
