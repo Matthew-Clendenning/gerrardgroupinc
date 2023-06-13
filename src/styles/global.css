@@ -40,7 +40,7 @@
 
 @media (max-width: 40rem) {
     #transition {
-        animation: transitionInMobile .3s ease-in-out;
+        animation: transitionInMobile .5s ease-in-out;
     }
 }
 
