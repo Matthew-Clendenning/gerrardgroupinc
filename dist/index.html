@@ -24,14 +24,15 @@
 	<link rel="stylesheet" href="/_astro/200TPacificDetails.d4a8fb75.css" /><script type="module">const t=document.querySelector("#back-to-top-btn");window.addEventListener("scroll",l);function l(){window.outerWidth<"641"&&(t.style.display="none"),window.pageYOffset>300?t.classList.contains("btnEntrance")||(t.classList.remove("btnExit"),t.classList.add("btnEntrance"),t.style.display="block"):t.classList.contains("btnEntrance")&&(t.classList.remove("btnEntrance"),t.classList.add("btnExit"),setTimeout(function(){t.style.display="none"},250))}t.addEventListener("click",d);function d(){const o=window.pageYOffset,s=0-o,i=750;let e=null;window.requestAnimationFrame(c);function c(a){e||(e=a);const r=a-e;window.scrollTo(0,u(r,o,s,i)),r<i&&window.requestAnimationFrame(c)}}function u(n,o,s,i){return n/=i/2,n<1?s/2*n*n*n+o:(n-=2,s/2*(n*n*n+2)+o)}
 </script></head>
 	<body>
-		<button title="Back to top" id="back-to-top-btn" aria-label="back to top of page button">
+		<main id="transition">
+			<button title="Back to top" id="back-to-top-btn" aria-label="back to top of page button">
 	<i class="fa-solid fa-angles-up"></i>
 </button>
 <header class="primary-header sticky">
 	<div class="image-header">
 		<a title="Go to home" href="/">
 			<picture>
-				<source media="(max-width:40rem)" srcset="../images/dans logo copy6.jpg">
+				<source srcset="../images/dans logo copy6.png?v=1.0" media="(max-width: 40rem)">
 				<img class="logo" src="../images/dans logo copy5.png" alt="gerrard group logo">
 			</picture>
 		</a>
@@ -97,7 +98,6 @@
 	}
 	});
 </script>
-		<main id="transition">
 			
 	<header class="welcome">
         <div>
@@ -277,7 +277,7 @@
     }
 
     .comp-info p {
-	    font-size: clamp(.5rem, 2.4vh, 1.5rem);
+	    font-size: clamp(.5rem, 2vh, 2rem);
 	    text-indent: 55px;
     }
 
@@ -322,7 +322,7 @@
         line-height: 30px;
 	    padding: 0 2rem;
 	    margin: 0;
-	    font-size: clamp(.5rem, 2.3vh, 3rem);
+	    font-size: clamp(.5rem, 2vh, 2rem);
     }
 
     .industries {
@@ -342,7 +342,7 @@
 
     .industries ul {
         line-height: 30px;
-	    font-size: clamp(.5rem, 2.3vh, 3rem);
+	    font-size: clamp(.5rem, 2vh, 2rem);
 	    padding: 0;
 	    margin: 0;
         column-count: 2;
