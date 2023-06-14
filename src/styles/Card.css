@@ -29,6 +29,7 @@
     width: auto;
     height: 200px;
     aspect-ratio: 1;
+    border-radius: 10px;
     /*box-shadow: 0 0 7px #666;*/
 }
 
