@@ -403,8 +403,8 @@ footer i:hover {
 		padding-inline: 10px;
 	}
 	
-	footer i {
-		font-size: clamp(1rem, 3vh, 2rem);
+	.fa-brands, .fab {
+		font-size: 24px;
 	}
 	
 	footer h3 {
@@ -461,6 +461,10 @@ footer i:hover {
 	footer h3 span {
 		font-size: clamp(.5rem, 2vh, 2rem);
 	}
+
+	.fa-brands, .fab {
+		font-size: 28px;
+	}
 }
 
 @media (min-width: 40rem) and (max-width: 60rem) {
@@ -502,6 +506,10 @@ footer i:hover {
 		font-size: clamp(.5rem, 1.8vh, 2rem);
 	}
 
+	.fa-brands, .fab {
+		font-size: 28px;
+	}
+
 	#back-to-top-btn {
 		display: none;
 	}
@@ -533,8 +541,8 @@ footer i:hover {
 		font-size: clamp(.5rem, 3.5vh, 3rem);
 	}
 
-	footer div a i {
-		font-size: clamp(1rem, 4vh, 2rem);
+	.fa-brands, .fab {
+		font-size: 24px;
 	}
 
 	.bottom p {
