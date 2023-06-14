@@ -417,8 +417,9 @@ footer i:hover {
 		font-size: clamp(.5rem, 2vh, 3rem);
 	}
 	
-	#back-to-top-btn {
+	#back-to-top-btn, .fa-solid, .fa-angles-up {
 		display: none;
+		visibility: hidden;
 	}
 }
 
