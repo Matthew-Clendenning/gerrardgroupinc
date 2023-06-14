@@ -107,6 +107,12 @@ import Layout from "../layouts/Layout.astro";
                         </div>
                         <p>Retail Used Machinery Sales</p>
                     </div>
+                    <div class="special-list">
+                        <div class="img-container">
+                            <img src="../images/dollar-sign-icon.png" alt="" />
+                        </div>
+                        <p>Machinery & Equipment Buy and Sell Programs</p>
+                    </div>
                 </div>
             </article>
             <!--<div class="description">
@@ -277,24 +283,24 @@ import Layout from "../layouts/Layout.astro";
 
     .description {
         padding-inline: 1rem;
-        margin: 5rem 0;
+        margin: 5rem 10rem;
         max-width: 1200px;
-        margin: auto;
+        margin-inline: auto;
     }
 
     .description h2 {
-        text-align: center;
-        font-size: clamp(1rem, 2.8vh, 3rem);
+        font-size: clamp(1rem, 3.5vh, 3rem);
+	    text-align: center;
+	    color: #425abd;
         margin: 0;
-        margin-top: 5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
     }
 
     .specialties {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;
+        justify-content: space-evenly;
+        row-gap: 1rem;
     }
 
     .special-list {
@@ -302,10 +308,13 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .special-list p {
+        max-width: 150px;
+        margin-inline: auto;
         font-size: clamp(.5rem, 1.1rem, 3rem);
     }
 
     .img-container {
+        display: inline-flex;
         padding: 1rem;
         border-radius: 50%;
         background: linear-gradient(0deg, hsl(215, 45%, 49%), hsl(216, 100%, 82%));
@@ -490,6 +499,12 @@ import Layout from "../layouts/Layout.astro";
         .description {
             margin-top: 2rem;
             padding-inline: 1rem;
+        }
+
+        .specialties {
+            justify-content: center;
+            gap: 1rem;
+            row-gap: inherit;
         }
 
         .specialties img {
