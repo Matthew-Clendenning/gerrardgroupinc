@@ -1,6 +1,4 @@
 ---
-import '../styles/Card.css';
-
 export interface Props {
     name: string;
     body?: string;
@@ -49,3 +47,144 @@ const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, t
         </button>
     </div>
 </article>
+
+<style>
+    .card-container {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-content: space-between;
+        align-items: stretch;
+        width: 400px;
+        height: 450px;
+        overflow: hidden;
+        box-shadow: 0 10px 15px -3px #9ca3af, 0 4px 6px -4px #9ca3af;
+        transition: .3s;
+        animation: ease-in;
+        background: linear-gradient(0deg, hsl(212, 33%, 22%), hsl(216, 23%, 55%));
+        /*background-image: linear-gradient(to bottom, rgb(226, 233, 255), rgb(255, 255, 255));*/
+    }
+
+    .card-container:hover {
+        transform: scale(1.03);
+        box-shadow: 0px 0px 15px #002a65;
+        /*box-shadow: 0px 0px 15px #22334a;*/
+    }
+
+    .image-container {
+        margin-top: 1rem;
+    }
+
+    .image-container img {
+        overflow: hidden;
+        width: auto;
+        height: 200px;
+        aspect-ratio: 1;
+        border-radius: 10px;
+        box-shadow: 0px 0px 50px -20px white;
+        /*box-shadow: 0 0 7px #666;*/
+    }
+
+    .card-content {
+        color: white;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        margin: .5rem 0;
+        padding-inline: 1rem;
+    }
+
+    .card-title {
+        margin-bottom: .5rem;
+    }
+
+    .link-text {
+        color: white;
+        text-underline-offset: 5px;
+    }
+
+    .card-body {
+        display: grid;
+        font-size: clamp(.5rem, 2.4vh, 3rem);
+        margin: .5rem 0;
+        gap: .5rem;
+    }
+
+    .card-email p {
+        letter-spacing: .3px;
+    }
+
+    h2 {
+        display: flex;
+        text-align: center;
+    }
+
+    h2,p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn button {
+        padding: .5rem;
+        background-color: rgba(255, 255, 255, 0.001);
+        border: none;
+        transition: .2s;
+        margin-bottom: .5rem;
+        border-radius: 3px;
+    }
+
+    .btn button:hover {
+        background: rgba(27, 156, 252, .1);
+        transform: scale(1.03);
+    }
+
+    .btn a {
+        font-size: clamp(1rem, 1.5vh, 2rem);
+        text-transform: uppercase;
+        color: #4eb2ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    @media (max-width: 40rem) {
+        .card-container {
+            width: 320px;
+            height: auto;
+        }
+
+        .card-container:hover {
+            transform: scale(1);
+            box-shadow: none;
+        }
+
+        .catalog a:hover {
+            color: inherit;
+        }
+
+        .btn a {
+            font-size: clamp(.5rem, 2vh, 2rem);
+        }
+
+        .btn button:hover {
+            transform: scale(1);
+        }
+    }
+
+    @media (min-width: 60rem) and (max-width: 70rem) {
+        .card-body {
+            font-size: clamp(1rem, 3vh, 3rem);
+        }
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
+        .card-body {
+            font-size: clamp(.5rem, 4.5vh, 3rem);
+        }
+    }
+</style>
