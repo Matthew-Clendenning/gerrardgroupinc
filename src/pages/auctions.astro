@@ -16,6 +16,7 @@ import Card from "../components/Card.astro";
         <h1 class="title"><span class="title-text"></span><span class="cursor">&nbsp;</span></h1>
         <section class="cards">
             <Card 
+                imageURL="../images/nashville_steel_1_copy.jpg"
                 href="../images/nashville_steel_1.jpg"
                 href2="https://www.bidspotter.com/en-us/auction-catalogues/bscgerr"
                 name="Nashville Steel Corp. - Steel Processing Equipment"
@@ -51,7 +52,43 @@ import Card from "../components/Card.astro";
 </Layout>
 
 <style type="text/css" is:inline>
+    .page-container {
+        display: grid;
+        justify-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-inline: 2rem;
+    }
+
     .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .card-body {
+        font-size: clamp(.5rem, 2.2vh, 3rem);
+    }
+
+    .card-phone, .card-email, .image-container, .btn {
+        display: none;
+    }
+
+    @media (max-width: 40rem) {
+        .card-container:hover {
+            transform: scale(1);
+        }
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
+        .card-body {
+            font-size: clamp(1rem, 1.3rem, 3rem);
+        }
+    }
+    /*.cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -87,15 +124,6 @@ import Card from "../components/Card.astro";
         align-items: center;
         width: 650px;
         height: auto;
-        overflow: hidden;
-        transition: .3s;
-        animation: ease-in;
-        background-image: linear-gradient(120deg, rgb(210, 222, 255), rgb(255, 255, 255));
-    }
-    
-    .card-container:hover {
-        transform: scale(1.03);
-        box-shadow: 0px 0px 15px #2d5673;
     }
     
     .card-content {
@@ -118,16 +146,6 @@ import Card from "../components/Card.astro";
 
     .card-phone, .card-email, .image-container, .btn {
         display: none;
-    }
-    
-    h2 {
-        display: flex;
-        text-align: center;
-    }
-    
-    h2,p {
-        margin: 0;
-        padding: 0;
     }
     
     .catalog a:hover {
@@ -161,7 +179,7 @@ import Card from "../components/Card.astro";
         .card-body {
             font-size: clamp(1rem, 1.3rem, 3rem);
         }
-    }
+    }*/
 </style>
 
 <script async type="text/javascript" defer="defer" is:inline>
