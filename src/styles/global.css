@@ -552,4 +552,8 @@ footer i:hover {
 	#back-to-top-btn {
 		display: none;
 	}
+
+	@media (min-width: 1920px) {
+		
+	}
 }

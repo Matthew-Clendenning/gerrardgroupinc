@@ -216,7 +216,8 @@ import Layout from "../layouts/Layout.astro";
 	    text-indent: 55px;
     }
 
-    .wrapper img {
+    .comp-info-one img, .comp-info-two img {
+        width: 250px;
         filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
     }
 
@@ -237,7 +238,9 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .img-workers {
-        max-width: 300px;
+        width: 400px;
+        margin-right: 50px;
+        filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
     }
 
     /*.comp-info {
@@ -768,6 +771,27 @@ import Layout from "../layouts/Layout.astro";
         
         .page-container {
             padding-inline: 0;
+        }
+
+        .wrapper {
+            max-width: 1600px;
+        }
+
+        .gap {
+            gap: 25rem;
+        }
+
+        .wrapper p {
+            max-width: 1200px;
+        }
+
+        .comp-info-one img, .comp-info-two img {
+            width: 350px;
+            filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
+        }
+
+        .img-workers {
+            width: 500px;
         }
 
         /*.wrapper {
