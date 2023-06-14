@@ -177,7 +177,7 @@ footer h3 {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
-	text-shadow: 1px 1px #003860;
+	text-shadow: .7px .7px #003860;
 	font-size: clamp(.5rem, 2.5vh, 3rem);
 }
 
