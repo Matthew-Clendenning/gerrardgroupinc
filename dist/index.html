@@ -22,7 +22,7 @@
 		<meta name="format-detection" content="telephone=no">
 		
 		<script type="text/javascript" src="https://kit.fontawesome.com/e163b7e8b4.js" crossorigin="anonymous" defer="defer"></script>
-	<link rel="stylesheet" href="/_astro/200TPacificDetails.8aa48e36.css" /><script type="module">function f(){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}if(!f()){let a=function(){window.outerWidth<"641"&&(n.style.display="none"),window.pageYOffset>300?n.classList.contains("btnEntrance")||(n.classList.remove("btnExit"),n.classList.add("btnEntrance"),n.style.display="block"):n.classList.contains("btnEntrance")&&(n.classList.remove("btnEntrance"),n.classList.add("btnExit"),setTimeout(function(){n.style.display="none"},250))},r=function(){const i=window.pageYOffset,e=0-i,o=750;let s=null;window.requestAnimationFrame(d);function d(l){s||(s=l);const u=l-s;window.scrollTo(0,c(u,i,e,o)),u<o&&window.requestAnimationFrame(d)}},c=function(t,i,e,o){return t/=o/2,t<1?e/2*t*t*t+i:(t-=2,e/2*(t*t*t+2)+i)};var scrollFunction=a,smoothScrollBackToTop=r,easeInOutCubic=c;const n=document.querySelector("#back-to-top-btn");window.addEventListener("scroll",a),n.addEventListener("click",r)}
+	<link rel="stylesheet" href="/_astro/200TPacificDetails.b064d21c.css" /><script type="module">function f(){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}if(!f()){let a=function(){window.outerWidth<"641"&&(n.style.display="none"),window.pageYOffset>300?n.classList.contains("btnEntrance")||(n.classList.remove("btnExit"),n.classList.add("btnEntrance"),n.style.display="block"):n.classList.contains("btnEntrance")&&(n.classList.remove("btnEntrance"),n.classList.add("btnExit"),setTimeout(function(){n.style.display="none"},250))},r=function(){const i=window.pageYOffset,e=0-i,o=750;let s=null;window.requestAnimationFrame(d);function d(l){s||(s=l);const u=l-s;window.scrollTo(0,c(u,i,e,o)),u<o&&window.requestAnimationFrame(d)}},c=function(t,i,e,o){return t/=o/2,t<1?e/2*t*t*t+i:(t-=2,e/2*(t*t*t+2)+i)};var scrollFunction=a,smoothScrollBackToTop=r,easeInOutCubic=c;const n=document.querySelector("#back-to-top-btn");window.addEventListener("scroll",a),n.addEventListener("click",r)}
 </script></head>
 	<body id="transition">
 		<button title="Back to top" id="back-to-top-btn" aria-label="back to top of page button">
@@ -233,12 +233,12 @@
 	    width: 100%;
 	    height: 300px;
 	    opacity: 40%;
+        border-bottom: 1px solid rgba(35,39,47,1);
     }
 
     .welcome {
         text-align: center;
         position: relative;
-        height: auto;
     }
 
     .welcome div {
@@ -279,8 +279,8 @@
     }
 
     .page-background {
-        border-top: 1px solid rgba(35,39,47,.1);
-        background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#bcc1cd 90deg,#fff 1turn);
+        border-top: .1px solid rgba(35,39,47,0);
+        background-image: conic-gradient(from 90deg at -10% 100%,#ffffff 0deg,#dbecff 90deg,#fff 1turn);
     }
 
     /*.wrapper {
@@ -317,8 +317,9 @@
 	    text-indent: 55px;
     }
 
-    .wrapper img {
-        filter: drop-shadow(0 0 10px hsl(0, 0%, 40%));
+    .comp-info-one img, .comp-info-two img {
+        width: 250px;
+        filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
     }
 
     .comp-info-one {
@@ -338,7 +339,9 @@
     }
 
     .img-workers {
-        max-width: 300px;
+        width: 400px;
+        margin-right: 50px;
+        filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
     }
 
     /*.comp-info {
@@ -364,7 +367,8 @@
     }*/
 
     .desc-back {
-        background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#bcc1cd 90deg,#fff 1turn);    
+        border-top: 1px solid rgba(35,39,47,.1);
+        background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#dbecff 90deg,#fff 1turn);    
     }
 
     .description {
@@ -484,13 +488,12 @@
         }*/
 
         .wrapper {
-            row-gap: 3rem;
             padding-inline: 1rem;
+            margin-top: 2rem;
         }
 
         .wrapper h2 {
-            text-align: left;
-            margin-top: 2rem;
+            margin-top: 0;
         }
 
         .wrapper p {
@@ -503,6 +506,14 @@
         .comp-info-one, .comp-info-two, .comp-info-three {
             display: grid;
             gap: 2rem;
+        }
+
+        .comp-info-one img, .comp-info-two img {
+            width: inherit;
+        }
+
+        .img-workers {
+            max-width: 250px;
         }
 
         /*.comp-info {
@@ -527,6 +538,7 @@
             margin-top: 3rem;
             display: grid;
             gap: 3rem;
+            padding-top: 0;
             padding-inline: 1rem;
         }
 
@@ -593,20 +605,18 @@
         }
 
         .wrapper {
-            row-gap: 3rem;
+            padding-inline: 2rem;
         }
 
         .wrapper h2 {
-            text-align: left;
-            margin-top: 2rem;
         }
 
         .wrapper p {
-            width: inherit;
+            max-width: 600px;
         }
 
-        .comp-info-one, .comp-info-two {
-            display: grid;
+        .comp-info-one, .comp-info-two, .comp-info-three {
+            display: flex;
             gap: 0;
         }
 
@@ -757,8 +767,30 @@
 		    height: 150px;
 	    }
 
-        .page-container {
+        .wrapper {
             padding-inline: 1rem;
+            margin-top: 2rem;
+        }
+
+        .wrapper h2 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 3rem;
+        }
+
+        .wrapper p {
+            font-size: 14px;
+            text-indent: inherit;
+            max-width: 400px;
+        }
+
+        .comp-info-one, .comp-info-two, .comp-info-three {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .img-workers {
+            max-width: 250px;
         }
 
         /*.wrapper {
@@ -789,8 +821,9 @@
 
         .description {
             display: flex;
-            margin-top: 1.5rem;
             margin-inline: 0;
+            padding-inline: 1rem;
+            padding-top: 0;
             gap: 3rem;
         }
 
@@ -843,6 +876,27 @@
         
         .page-container {
             padding-inline: 0;
+        }
+
+        .wrapper {
+            max-width: 1600px;
+        }
+
+        .gap {
+            gap: 25rem;
+        }
+
+        .wrapper p {
+            max-width: 1200px;
+        }
+
+        .comp-info-one img, .comp-info-two img {
+            width: 350px;
+            filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
+        }
+
+        .img-workers {
+            width: 500px;
         }
 
         /*.wrapper {
