@@ -15,7 +15,7 @@
 .title {
 	text-align: center;
 	text-decoration: underline;
-	text-underline-offset: 5px;
+	text-underline-offset: 3px;
 	text-decoration-color: black;
 	text-decoration-thickness: 6%;
 	font-size: clamp(2rem, 3.8vh, 5rem);

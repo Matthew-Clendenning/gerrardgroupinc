@@ -45,17 +45,7 @@ import '../styles/Card.css';
         justify-items: center;
         margin-top: 3rem;
         margin-bottom: 3rem;
-    }
-    
-    .title {
-        text-align: center;
-        text-decoration: underline;
-        text-decoration-color: black;
-        text-decoration-thickness: 6%;
-        font-size: clamp(2rem, 3.8vh, 5rem);
-        color: #055895;
-        margin-top: 0;
-        margin-bottom: 3rem;
+        margin-inline: 2rem;
     }
 
     .card-container {
@@ -66,10 +56,6 @@ import '../styles/Card.css';
         width: auto;
         height: auto;
         margin-inline: 8rem;
-        overflow: hidden;
-        transition: .3s;
-        animation: ease-in;
-        background-image: linear-gradient(120deg, rgb(210, 222, 255), rgb(255, 255, 255));
     }
     
     .card-container:hover {
@@ -77,9 +63,6 @@ import '../styles/Card.css';
     }
     
     .card-content {
-        display: grid;
-        justify-content: center;
-        text-align: center;
         margin: 1rem;
         margin-top: .5rem;
     }
@@ -89,19 +72,10 @@ import '../styles/Card.css';
     }
     
     .card-body {
+        color: hsl(216, 53%, 84%);
         display: grid;
         font-size: clamp(.5rem, 2.7vh, 3rem);
         margin: 1rem 0;
-        gap: .5rem;
-    }
-    
-    h2 {
-        text-align: center;
-    }
-    
-    h2,p {
-        margin: 0;
-        padding: 0;
     }
 
     .card-phone, .card-email, .image-container, .btn {

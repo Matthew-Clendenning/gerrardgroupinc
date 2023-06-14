@@ -69,12 +69,35 @@ import Card from "../components/Card.astro";
         margin-bottom: 5rem;
     }
 
+    .card-container {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        width: 400px;
+        height: 330px;
+    }
+
+    .link-text:hover {
+        color:rgb(109, 189, 255)
+    }
+
     .card-body {
+        color: hsl(216, 53%, 84%);
         font-size: clamp(.5rem, 2.2vh, 3rem);
     }
 
     .card-phone, .card-email, .image-container, .btn {
         display: none;
+    }
+
+    .catalog a {
+        color: hsl(216, 53%, 84%);
+    }
+
+    .catalog a:hover {
+        color:rgb(109, 189, 255)
     }
 
     @media (max-width: 40rem) {
