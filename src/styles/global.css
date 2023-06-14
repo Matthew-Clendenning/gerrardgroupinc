@@ -90,7 +90,6 @@ body {
 	align-items: center;
 	padding: 1rem 2rem;
 	gap: 1rem;
-	background: #fff;
 }
 
 .primary-header {
@@ -108,7 +107,6 @@ body {
 .primary-navigation {
 	list-style: none;
 	margin: 0;
-	background: #fff;
 }
 
 .nav-text {
