@@ -333,7 +333,7 @@ footer i:hover {
 		padding-right: 0;
 		transform: translateX(100%);
 		transition: transform 350ms ease-out;
-		background: #22334a;
+		background: hsl(215, 37%, 21%);
 		z-index: 999;
 	}
 	
