@@ -659,8 +659,29 @@ import Layout from "../layouts/Layout.astro";
 		    height: 150px;
 	    }
 
-        .page-container {
+        .wrapper {
             padding-inline: 1rem;
+            margin-top: 2rem;
+        }
+
+        .wrapper h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .wrapper p {
+            font-size: 14px;
+            text-indent: inherit;
+            max-width: 400px;
+        }
+
+        .comp-info-one, .comp-info-two, .comp-info-three {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .img-workers {
+            max-width: 250px;
         }
 
         /*.wrapper {
@@ -691,8 +712,9 @@ import Layout from "../layouts/Layout.astro";
 
         .description {
             display: flex;
-            margin-top: 1.5rem;
             margin-inline: 0;
+            padding-inline: 1rem;
+            padding-top: 0;
             gap: 3rem;
         }
 
