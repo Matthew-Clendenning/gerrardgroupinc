@@ -49,11 +49,17 @@
         transform: translate3d(0, 0, 0);
     }
 }
-
-@media (max-width: 40rem) {
-    #transition {
-        animation: transitionInMobile .5s ease-in-out;
-    }
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%,0,0);
+		transform: translate3d(-100%,0,0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
 }
 
 * {
@@ -303,6 +309,10 @@ footer i:hover {
 }
 
 @media (max-width: 40rem) {
+	#transition {
+        animation: transitionInMobile .5s ease-in-out;
+    }
+
 	#primary-navigation {
 		align-items: flex-start;
 	}
