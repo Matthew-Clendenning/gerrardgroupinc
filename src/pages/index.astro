@@ -494,20 +494,18 @@ import Layout from "../layouts/Layout.astro";
         }
 
         .wrapper {
-            row-gap: 3rem;
+            padding-inline: 2rem;
         }
 
         .wrapper h2 {
-            text-align: left;
-            margin-top: 2rem;
         }
 
         .wrapper p {
-            width: inherit;
+            max-width: 600px;
         }
 
-        .comp-info-one, .comp-info-two {
-            display: grid;
+        .comp-info-one, .comp-info-two, .comp-info-three {
+            display: flex;
             gap: 0;
         }
 
