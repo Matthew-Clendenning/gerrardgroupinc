@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Specialties from "../components/Specialties.astro";
 ---
 
 <Layout title="Gerrard Group Inc"
@@ -84,34 +85,163 @@ import Layout from "../layouts/Layout.astro";
                 <h2><strong>Gerrard Group / Gerrard Machinery Company Specializes In...</strong></h2>
                 <div class="specialties">
                     <div class="special-list">
-                        <div class="img-container">
-                            <img loading="lazy" src="../images/auction-icon.png" alt="auction icon" />
-                        </div>
-                        <p>Auctions</p>
+                        <Specialties 
+                            src="../images/auction-icon.png"
+                            alt="auction icon"
+                            para="Auctions"
+                        />
                     </div>
                     <div class="special-list">
-                        <div class="img-container">
-                            <img loading="lazy" src="../images/liquidation-icon.png" alt="liquidation icon" />
-                        </div>
-                        <p>Liquidation</p>
+                        <Specialties 
+                            src="../images/liquidation-icon.png"
+                            alt="liquidation icon"
+                            para="Liquidation"
+                        />
                     </div>
                     <div class="special-list">
-                        <div class="img-container">
-                            <img loading="lazy" src="../images/appraisal-icon.png" alt="appraisal icon" />
-                        </div>
-                        <p>Appraisals</p>
+                        <Specialties 
+                            src="../images/appraisal-icon.png"
+                            alt="appraisal icon"
+                            para="Appraisals"
+                        />
                     </div>
                     <div class="special-list">
-                        <div class="img-container">
-                            <img loading="lazy" src="../images/used-machinery-icon.png" alt="" />
-                        </div>
-                        <p>Retail Used Machinery Sales</p>
+                        <Specialties 
+                            src="../images/used-machinery-icon.png"
+                            alt="cash register icon"
+                            para="Retail Used Machinery Sales"
+                        />
                     </div>
                     <div class="special-list">
-                        <div class="img-container">
-                            <img loading="lazy" src="../images/dollar-sign-icon.png" alt="" />
-                        </div>
-                        <p>Machinery & Equipment Buy and Sell Programs</p>
+                        <Specialties 
+                            src="../images/dollar-sign-icon.png"
+                            alt="dollar sign icon"
+                            para="Machinery & Equipment Buy and Sell Programs"
+                        />
+                    </div>
+                    <div class="special-list">
+                        <Specialties 
+                            src="../images/demolition-icon.png"
+                            alt="demolition icon"
+                            para="Demolition & Remediation Projects"
+                        />
+                    </div>
+                    <div class="special-list">
+                        <Specialties 
+                            src="../images/consulting-icon.png"
+                            alt="Consulting icon"
+                            para="Consulting"
+                        />
+                    </div>
+                </div>
+            </article>
+            <article class="industries">
+                <h2><strong>Industries</strong></h2>
+                <div class="industries-wrapper">
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/metals-icon.png"
+                            alt="metals icon"
+                            para="Fabricating, Metal, Rubber & Plastics Equip."
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/cnc-icon.png"
+                            alt="cnc icon"
+                            para="CNC & Robotics"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/tools-icon.png"
+                            alt="tools and equipment icon"
+                            para="Tooling & Support Equip."
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/construction-icon.png"
+                            alt="construction icon"
+                            para="Construction & Mining"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/iron-icon.png"
+                            alt="iron icon"
+                            para="Yellow Iron"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/oil-icon.png"
+                            alt="oil icon"
+                            para="Oil & Gas"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/transportation-icon.png"
+                            alt="transportation icon"
+                            para="Transportation"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/aerospace-icon.png"
+                            alt="aerospace icon"
+                            para="Aerospace"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/energy-icon.png"
+                            alt="energy sector icon"
+                            para="Energy Sector"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/warehouse-icon.png"
+                            alt="warehouse icon"
+                            para="Warehouse & Support"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/food-icon.png"
+                            alt="food and beverage icon"
+                            para="Food & Beverage"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/package-icon.png"
+                            alt="pulp & packaging icon"
+                            para="Pulp & Packaging"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/biotech-icon.png"
+                            alt="biotech icon"
+                            para="High-Tech & Biotech"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/pharmaceutical-icon.png"
+                            alt="pharmaceutical icon"
+                            para="Medical, Dental & Pharmaceutical"
+                        />
+                    </div>
+                    <div class="industries-list">
+                        <Specialties 
+                            src="../images/inventory-icon.png"
+                            alt="inventory icon"
+                            para="Raw, WIP & Finished Inventories (used for, or made from mfg. equipment)"
+                        />
                     </div>
                 </div>
             </article>
@@ -281,47 +411,64 @@ import Layout from "../layouts/Layout.astro";
         filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
     }
 
-    .description {
-        padding-inline: 1rem;
-        margin: 5rem 10rem;
-        max-width: 1200px;
-        margin-inline: auto;
+    .desc-back {
+        text-align: center;
+        border-top: 1px solid rgba(35,39,47,.1);
+        background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#dbecff 90deg,#fff 1turn);    
     }
 
-    .description h2 {
+    .desc-back h2 {
         font-size: clamp(1rem, 3.5vh, 3rem);
-	    text-align: center;
 	    color: #425abd;
         margin: 0;
         margin-bottom: 3rem;
+    }
+
+    .desc-back img {
+        width: 50px;
+    }
+
+    .desc-back p {
+        max-width: 97px;
+        margin-inline: auto;
+        font-size: clamp(.5rem, 1.1rem, 3rem);
+    }
+    
+    .description {
+        padding-inline: 1rem;
+        margin: 5rem 0;
+        margin-bottom: 8rem;
+        max-width: 1200px;
+        margin-inline: auto;
     }
 
     .specialties {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        row-gap: 1rem;
-    }
-
-    .special-list {
-        text-align: center;
-    }
-
-    .special-list p {
-        max-width: 150px;
-        margin-inline: auto;
-        font-size: clamp(.5rem, 1.1rem, 3rem);
+        gap: 1rem;
+        row-gap: .5rem;
     }
 
     .img-container {
         display: inline-flex;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 50%;
-        background-image: linear-gradient(145deg,rgba(174, 223, 255, 0.6) 0%,rgb(49, 93, 175) 100%);
+        background-image: linear-gradient(145deg,rgba(226, 249, 255, 0.6) 0%,rgb(49, 93, 175) 100%);
     }
 
-    .specialties img {
-        width: 50px;
+    .industries {
+        max-width: 1200px;
+        margin-inline: auto;
+        margin-bottom: 8rem;
+    }
+
+    .industries-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 3rem;
+        row-gap: .5rem;
     }
 
     /*.comp-info {
@@ -345,11 +492,6 @@ import Layout from "../layouts/Layout.astro";
         width: 100%;
         max-width: 500px;
     }*/
-
-    .desc-back {
-        border-top: 1px solid rgba(35,39,47,.1);
-        background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#dbecff 90deg,#fff 1turn);    
-    }
 
     /*.description {
         display: flex;

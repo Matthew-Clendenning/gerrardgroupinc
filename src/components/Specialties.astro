@@ -1,0 +1,14 @@
+---
+export interface Props {
+    para: string;
+    src: string;
+    alt: string;
+}
+
+const { para, src, alt } = Astro.props as Props;
+---
+
+<div class="img-container">
+    <img loading="lazy" src={src} alt={alt} />
+</div>
+<p>{para}</p>
