@@ -1,5 +1,10 @@
+---
+import { RxHamburgerMenu } from 'react-icons/Rx'
+import { BiUpArrowAlt } from 'react-icons/Bi'
+---
+
 <button title="Back to top" id="back-to-top-btn" aria-label="back to top of page button">
-	<i class="fa-solid fa-angles-up"></i>
+	<BiUpArrowAlt />
 </button>
 <header class="primary-header sticky">
 	<div class="image-header">
@@ -8,8 +13,7 @@
 		</a>
 	</div>
 	<button title="Navigation menu" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-		<span class="sr-only">Menu</span>
-		<i class="fa-solid fa-bars"></i>
+		<RxHamburgerMenu />
 	</button>
 	<nav>
 		<ul id="primary-navigation" data-visible="false" class="primary-navigation flex sticky">

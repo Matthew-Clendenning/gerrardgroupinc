@@ -15,7 +15,7 @@ if (!isMobile()) {
       if(!backToTopButton.classList.contains("btnEntrance")) {
         backToTopButton.classList.remove("btnExit");
         backToTopButton.classList.add("btnEntrance");
-        backToTopButton.style.display = "block";
+        backToTopButton.style.display = "flex";
       }
     }
     else { // Hide backToTopButton

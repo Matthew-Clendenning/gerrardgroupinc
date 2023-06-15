@@ -214,12 +214,12 @@ footer div a {
 	color: #0077B5;
 }
 
-footer i {
-	font-size: clamp(1rem, 4vh, 2rem);
+.linkedin {
+	font-size: clamp(1rem, 3vh, 2rem);
 }
 
-footer i:hover {
-	color: #3096ff;
+.linkedin:hover {
+	color: #1e94eb;
 }
 
 .bottom {
@@ -248,11 +248,14 @@ footer i:hover {
 }
 
 #back-to-top-btn {
+	display: flex;
+    align-items: center;
+    justify-content: center;
 	text-align: center;
 	position: fixed;
 	bottom: 25px;
 	right: 25px;
-	font-size: 26px;
+	font-size: 30px;
 	width: 50px;
 	height: 50px;
 	background-color: #fff;
@@ -413,7 +416,7 @@ footer i:hover {
 		padding-inline: 10px;
 	}
 	
-	.fa-brands, .fab {
+	.linkedin{
 		font-size: 24px;
 	}
 	
@@ -472,7 +475,7 @@ footer i:hover {
 		font-size: clamp(.5rem, 2vh, 2rem);
 	}
 
-	.fa-brands, .fab {
+	.linkedin{
 		font-size: 28px;
 	}
 }
@@ -516,7 +519,7 @@ footer i:hover {
 		font-size: clamp(.5rem, 1.8vh, 2rem);
 	}
 
-	.fa-brands, .fab {
+	.linkedin {
 		font-size: 28px;
 	}
 
@@ -551,7 +554,7 @@ footer i:hover {
 		font-size: clamp(.5rem, 3.5vh, 3rem);
 	}
 
-	.fa-brands, .fab {
+	.linkedin {
 		font-size: 24px;
 	}
 
