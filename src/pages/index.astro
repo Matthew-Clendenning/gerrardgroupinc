@@ -113,11 +113,11 @@ import IndexIcons from "../components/IndexIcons.astro";
                         />
                     </div>
                     <div class="special-list">
-                        <IndexIcons 
-                            src="../images/dollar-sign-icon.png"
-                            alt="dollar sign icon"
-                            para="Machinery & Equipment Buy and Sell Programs"
-                        />
+                        <div class="img-container">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <!--<img decoding="async" loading="lazy" src={src} alt={alt} />-->
+                        </div>
+                        <p>Machinery & Equipment Buy and Sell Programs</p>
                     </div>
                     <div class="special-list">
                         <IndexIcons 
@@ -419,6 +419,12 @@ import IndexIcons from "../components/IndexIcons.astro";
     }
 
     .desc-back img {
+        width: 50px;
+        height: auto;
+    }
+
+    .img-container i {
+        font-size: 50px;
         width: 50px;
         height: auto;
     }
