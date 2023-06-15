@@ -1,6 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import IndexIcons from "../components/IndexIcons.astro";
+import { RiAuctionLine } from 'react-icons/Ri';
+import { FiDollarSign } from 'react-icons/Fi';
+import { GiOilPump, GiMining, GiMedicines } from 'react-icons/Gi';
+import { BsAirplane, BsTruck, BsTools } from 'react-icons/bs';
+import { SlEnergy } from 'react-icons/Sl';
+import { MdOutlineWarehouse, MdOutlineFastfood } from 'react-icons/Md';
+import { TbPackages } from 'react-icons/Tb'
 ---
 
 <Layout title="Gerrard Group Inc"
@@ -85,53 +91,46 @@ import IndexIcons from "../components/IndexIcons.astro";
                 <h2><strong>Gerrard Group / Gerrard Machinery Company Specializes In...</strong></h2>
                 <div class="specialties">
                     <div class="special-list">
-                        <IndexIcons 
-                            src="../images/auction-icon.png"
-                            alt="auction icon"
-                            para="Auctions"
-                        />
-                    </div>
-                    <div class="special-list">
-                        <IndexIcons 
-                            src="../images/liquidation-icon.png"
-                            alt="liquidation icon"
-                            para="Liquidation"
-                        />
-                    </div>
-                    <div class="special-list">
-                        <IndexIcons 
-                            src="../images/appraisal-icon.png"
-                            alt="appraisal icon"
-                            para="Appraisals"
-                        />
-                    </div>
-                    <div class="special-list">
-                        <IndexIcons 
-                            src="../images/used-machinery-icon.png"
-                            alt="cash register icon"
-                            para="Retail Used Machinery Sales"
-                        />
+                        <div class="img-container">
+                            <RiAuctionLine size="50px"/>
+                        </div>
+                        <p>Auctions</p>
                     </div>
                     <div class="special-list">
                         <div class="img-container">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <!--<img decoding="async" loading="lazy" src={src} alt={alt} />-->
+                            <img decoding="async" loading="lazy" src="../images/liquidation-icon.png" alt="liquidation icon" />
+                        </div>
+                        <p>Liquidation</p>
+                    </div>
+                    <div class="special-list">
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/appraisal-icon.png" alt="apprasials icon" />
+                        </div>
+                        <p>Appraisals</p>
+                    </div>
+                    <div class="special-list">
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/retail-icon.png" alt="retail icon" />
+                        </div>
+                        <p>Retail Used Machinery Sales</p>
+                    </div>
+                    <div class="special-list">
+                        <div class="img-container">
+                            <FiDollarSign size="50px"/>
                         </div>
                         <p>Machinery & Equipment Buy and Sell Programs</p>
                     </div>
                     <div class="special-list">
-                        <IndexIcons 
-                            src="../images/demolition-icon.png"
-                            alt="demolition icon"
-                            para="Demolition & Remediation Projects"
-                        />
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/demolition-icon.png" alt="demolition icon" />
+                        </div>
+                        <p>Demolition & Remediation Projects</p>
                     </div>
                     <div class="special-list">
-                        <IndexIcons 
-                            src="../images/consulting-icon.png"
-                            alt="Consulting icon"
-                            para="Consulting"
-                        />
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/consulting-icon.png" alt="consulting icon" />
+                        </div>
+                        <p>Consulting</p>
                     </div>
                 </div>
             </article>
@@ -139,109 +138,94 @@ import IndexIcons from "../components/IndexIcons.astro";
                 <h2><strong>Industries</strong></h2>
                 <div class="industries-wrapper">
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/metals-icon.png"
-                            alt="metals icon"
-                            para="Fabricating, Metal, Rubber & Plastics Equip."
-                        />
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/fabrication-icon.png" alt="fabrication icon" />
+                        </div>
+                        <p>Fabricating, Metal, Rubber & Plastics Equip.</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/cnc-icon.png"
-                            alt="cnc icon"
-                            para="CNC & Robotics"
-                        />
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/cnc-icon.png" alt="cnc icon" />
+                        </div>
+                        <p>CNC & Robotics</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/tools-icon.png"
-                            alt="tools and equipment icon"
-                            para="Tooling & Support Equip."
-                        />
+                        <div class="img-container">
+                            <BsTools size="50px" />
+                        </div>
+                        <p>Tooling & Support Equip.</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/construction-icon.png"
-                            alt="construction icon"
-                            para="Construction & Mining"
-                        />
+                        <div class="img-container">
+                            <GiMining size="50px" />
+                        </div>
+                        <p>Construction & Mining</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/iron-icon.png"
-                            alt="iron icon"
-                            para="Yellow Iron"
-                        />
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/yellow-iron-icon.png" alt="yellow iron" />
+                        </div>
+                        <p>Yellow Iron</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/oil-icon.png"
-                            alt="oil icon"
-                            para="Oil & Gas"
-                        />
+                        <div class="img-container">
+                            <GiOilPump size="50px" />
+                        </div>
+                        <p>Oil & Gas</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/transportation-icon.png"
-                            alt="transportation icon"
-                            para="Transportation"
-                        />
+                        <div class="img-container">
+                            <BsTruck size="50px" />
+                        </div>
+                        <p>Transportation</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/aerospace-icon.png"
-                            alt="aerospace icon"
-                            para="Aerospace"
-                        />
+                        <div class="img-container">
+                            <BsAirplane size="50px" />
+                        </div>
+                        <p>Aerospace</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/energy-icon.png"
-                            alt="energy sector icon"
-                            para="Energy Sector"
-                        />
+                        <div class="img-container">
+                            <SlEnergy size="50px"/>
+                        </div>
+                        <p>Energy Sector</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/warehouse-icon.png"
-                            alt="warehouse icon"
-                            para="Warehouse & Support"
-                        />
+                        <div class="img-container">
+                            <MdOutlineWarehouse size="50px" />
+                        </div>
+                        <p>Warehouse & Support</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/food-icon.png"
-                            alt="food and beverage icon"
-                            para="Food & Beverage"
-                        />
+                        <div class="img-container">
+                            <MdOutlineFastfood size="50px" />
+                        </div>
+                        <p>Food & Beverage</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/package-icon.png"
-                            alt="pulp & packaging icon"
-                            para="Pulp & Packaging"
-                        />
+                        <div class="img-container">
+                            <TbPackages size="50px" />
+                        </div>
+                        <p>Pulp & Packaging</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/biotech-icon.png"
-                            alt="biotech icon"
-                            para="High-Tech & Biotech"
-                        />
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/biotech-icon.png" alt="biotech icon" />
+                        </div>
+                        <p>High-Tech & Biotech</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/pharmaceutical-icon.png"
-                            alt="pharmaceutical icon"
-                            para="Medical, Dental & Pharmaceutical"
-                        />
+                        <div class="img-container">
+                            <GiMedicines size="50px" />
+                        </div>
+                        <p>Medical, Dental & Pharmaceutical</p>
                     </div>
                     <div class="industries-list">
-                        <IndexIcons 
-                            src="../images/inventory-icon.png"
-                            alt="inventory icon"
-                            para="Raw, WIP & Finished Inventories (used for, or made from mfg. equipment)"
-                        />
+                        <div class="img-container">
+                            <img decoding="async" loading="lazy" src="../images/inventory-icon.png" alt="inventory icon" />
+                        </div>
+                        <p>Raw, WIP & Finished Inventories (used for, or made from mfg. equipment)</p>
                     </div>
                 </div>
             </article>
@@ -382,7 +366,7 @@ import IndexIcons from "../components/IndexIcons.astro";
 
     .comp-info-one img, .comp-info-two img, .comp-info-three img {
         width: 250px;
-        filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
+        filter: drop-shadow(0 0 5px hsl(215, 37%, 21%));
     }
 
     .comp-info-one, .comp-info-two, .comp-info-three {
@@ -419,12 +403,6 @@ import IndexIcons from "../components/IndexIcons.astro";
     }
 
     .desc-back img {
-        width: 50px;
-        height: auto;
-    }
-
-    .img-container i {
-        font-size: 50px;
         width: 50px;
         height: auto;
     }
@@ -473,10 +451,6 @@ import IndexIcons from "../components/IndexIcons.astro";
         padding-inline: 1rem;
         gap: 2rem;
         row-gap: .5rem;
-    }
-
-    .industries .img-container {
-        background-image: linear-gradient(145deg,rgb(233, 244, 255) 0%,rgb(22, 73, 115) 100%);
     }
 
     /*.comp-info {
