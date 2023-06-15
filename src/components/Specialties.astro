@@ -9,6 +9,6 @@ const { para, src, alt } = Astro.props as Props;
 ---
 
 <div class="img-container">
-    <img loading="lazy" src={src} alt={alt} />
+    <img decoding="async" loading="lazy" src={src} alt={alt} />
 </div>
 <p>{para}</p>
