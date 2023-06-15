@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from '@astrojs/image/components';
 import { RiAuctionLine } from 'react-icons/ri/index.js';
 import { FiDollarSign } from 'react-icons/fi/index.js';
 import { GiOilPump, GiMining, GiMedicines } from 'react-icons/gi/index.js';
@@ -34,7 +35,13 @@ import { TbPackages } from 'react-icons/tb/index.js'
                 <h2><strong>About Gerrard Group / Gerrard Machinery Company</strong></h2>
                 <div class="gap">
                     <div class="comp-info-one">
-                        <img src="../images/robot_arm.png" alt="robot arm image" />
+                        <Image
+                            src="../images/robot_arm.png" 
+                            alt="robot arm image" 
+                            width={250}
+                            height={250}
+                            format="webp"
+                        />
                         <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
                             Liquidations for a wide variety of Machinery, Equipment and other Assets.
                             Our used machinery division, <strong>Gerrard Machinery Company, LLC</strong>, buys and 
@@ -46,7 +53,13 @@ import { TbPackages } from 'react-icons/tb/index.js'
                         </p>
                     </div>
                     <div class="comp-info-two">
-                        <img loading="lazy" src="../images/warehouse.png" alt="warehouse image" />
+                        <Image
+                            src="../images/warehouse.png" 
+                            alt="warehouse image" 
+                            width={250}
+                            height={250}
+                            format="webp"
+                        />
                         <p>In addition to Auctions and Liquidations, we provide Appraisal and 
                             Consulting Services to help determine <strong>highest possible returns</strong> of Company 
                             Assets. We are not a “High Volume” or “Cookie Cutter” company, we believe 
@@ -55,7 +68,13 @@ import { TbPackages } from 'react-icons/tb/index.js'
                         </p>
                     </div>
                     <div class="comp-info-three">
-                        <img loading="lazy" loading="lazy" src="../images/people_talking.png" alt="people in a factory" />
+                        <Image 
+                            src="../images/people_talking.png" 
+                            alt="people in a factory" 
+                            width={250}
+                            height={250}
+                            format="webp"
+                        />
                         <p>Whether it’s a single piece of equipment, plant relocation, multiple 
                             facilities, or demolition projects, we are your trusted source. Talk to 
                             one of our team members to discuss how we can help.
@@ -98,19 +117,37 @@ import { TbPackages } from 'react-icons/tb/index.js'
                     </div>
                     <div class="special-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/liquidation-icon.png" alt="liquidation icon" />
+                            <Image 
+                                src="/images/liquidation-icon.png"
+                                alt="liquidation icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>Liquidation</p>
                     </div>
                     <div class="special-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/appraisal-icon.png" alt="apprasials icon" />
+                            <Image 
+                                src="/images/appraisal-icon.png"
+                                alt="apprasials icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>Appraisals</p>
                     </div>
                     <div class="special-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/retail-icon.png" alt="retail icon" />
+                            <Image 
+                                src="/images/retail-icon.png"
+                                alt="retail icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>Retail Used Machinery Sales</p>
                     </div>
@@ -122,13 +159,25 @@ import { TbPackages } from 'react-icons/tb/index.js'
                     </div>
                     <div class="special-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/demolition-icon.png" alt="demolition icon" />
+                            <Image 
+                                src="/images/demolition-icon.png"
+                                alt="demolition icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>Demolition & Remediation Projects</p>
                     </div>
                     <div class="special-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/consulting-icon.png" alt="consulting icon" />
+                            <Image 
+                                src="/images/consulting-icon.png"
+                                alt="consulting icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>Consulting</p>
                     </div>
@@ -139,13 +188,25 @@ import { TbPackages } from 'react-icons/tb/index.js'
                 <div class="industries-wrapper">
                     <div class="industries-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/fabrication-icon.png" alt="fabrication icon" />
+                            <Image 
+                                src="/images/fabrication-icon.png"
+                                alt="fabrication icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>Fabricating, Metal, Rubber & Plastics Equip.</p>
                     </div>
                     <div class="industries-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/cnc-icon.png" alt="cnc icon" />
+                            <Image 
+                                src="/images/cnc-icon.png"
+                                alt="cnc icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>CNC & Robotics</p>
                     </div>
@@ -163,7 +224,13 @@ import { TbPackages } from 'react-icons/tb/index.js'
                     </div>
                     <div class="industries-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/yellow-iron-icon.png" alt="yellow iron" />
+                            <Image 
+                                src="/images/yellow-iron-icon.png"
+                                alt="yellow iron icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>Yellow Iron</p>
                     </div>
@@ -211,7 +278,13 @@ import { TbPackages } from 'react-icons/tb/index.js'
                     </div>
                     <div class="industries-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/biotech-icon.png" alt="biotech icon" />
+                            <Image 
+                                src="/images/biotech-icon.png"
+                                alt="biotech icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>High-Tech & Biotech</p>
                     </div>
@@ -223,7 +296,13 @@ import { TbPackages } from 'react-icons/tb/index.js'
                     </div>
                     <div class="industries-list">
                         <div class="img-container">
-                            <img decoding="async" loading="lazy" src="../images/inventory-icon.png" alt="inventory icon" />
+                            <Image 
+                                src="/images/inventory-icon.png"
+                                alt="inventory icon"
+                                height={150}
+                                width={150}
+                                format="webp"
+                            />
                         </div>
                         <p>Raw, WIP & Finished Inventories (used for, or made from mfg. equipment)</p>
                     </div>
@@ -615,6 +694,7 @@ import { TbPackages } from 'react-icons/tb/index.js'
         .comp-info-one img, .comp-info-two img, .comp-info-three img {
             margin: auto;
             width: 200px;
+            height: 200px;
         }
 
         .img-workers {

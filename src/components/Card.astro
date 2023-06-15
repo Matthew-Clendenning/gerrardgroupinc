@@ -1,4 +1,6 @@
 ---
+import { Image } from '@astrojs/image/components';
+
 export interface Props {
     name: string;
     body?: string;
@@ -11,26 +13,27 @@ export interface Props {
     alt?: string;
     btnName?: string;
     target?: string;
-    srcset?: string;
 }
 
-const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target, srcset } = Astro.props as Props;
+const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
 ---
 
 <article class="card-container">
     <div class="image-container">
-        <picture>
-            <source media="(max-width:40rem)" srcset={srcset}>
-            <img loading="lazy" src={imageURL} alt={alt} />
-        </picture>
+        {imageURL && <Image src={imageURL} 
+            alt={alt} 
+            height={300}
+            width={300}
+            format='webp'
+        />}
     </div>
     <div class="card-content">
         <div class="card-title">
-            <h2><a class="link-text" href={href} target="_blank">{name}</a></h2>
+            <h2><a title="Title of card" class="link-text" href={href} target="_blank">{name}</a></h2>
         </div>
         <div class="card-body">
             <p>{body}</p>
-            <p class="catalog"><a href={href2} target="_blank"><strong>{x_link}</strong></a></p>
+            <p class="catalog"><a title="Catalog link" href={href2} target="_blank"><strong>{x_link}</strong></a></p>
         </div>
         <div class="card-phone">
             <p><b>Phone:</b> <span>{phone}</span></p>
@@ -41,9 +44,7 @@ const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, t
     </div>
     <div class="btn">
         <button>
-            <a href={href} target={target}>
-                {btnName}
-            </a>
+            <a title="contact button" href={href} target={target}>{btnName}</a>
         </button>
     </div>
 </article>
