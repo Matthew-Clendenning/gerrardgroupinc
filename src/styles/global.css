@@ -87,7 +87,7 @@
 	color: white;
 	z-index: 99999;
 	padding-inline: 0.5rem;
-	animation: fadeOut 2s ease-in-out 5s forwards;
+	animation: fadeOut 1s ease-in-out 5s forwards;
 }
 
 .title-screen--hidden {
