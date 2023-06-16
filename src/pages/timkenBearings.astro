@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Directory from "../components/MachineDirectory.astro";
 import Card from "../components/Card.astro";
+
+import placeHolder from '../assets/placeholder-person-square.png';
 ---
 
 <Layout title="Timken Bearings - Gerrard Group Inc" 
@@ -22,9 +24,10 @@ import Card from "../components/Card.astro";
         <section class="cards">
             <Card 
                 name="Timken Heavy Duty Bearings"
-                imageURL="../images/bearing.jfif"
+                imageURL={placeHolder}
                 btnName="More Details"
                 href="/timkenDetails"
+                alt=""
             />
         </section>
     </main>
