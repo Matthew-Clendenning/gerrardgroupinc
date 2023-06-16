@@ -9,6 +9,7 @@ import { SlEnergy } from 'react-icons/sl/index.js';
 import { MdOutlineWarehouse, MdOutlineFastfood } from 'react-icons/md/index.js';
 import { TbPackages } from 'react-icons/tb/index.js'
 
+import banner from '../../public/images/gerrard_montage_3_final.jpg';
 import warehouse from '../assets/warehouse.png';
 import workers from '../assets/people_talking.png';
 import robotArm from '../assets/robot_arm.png';
@@ -28,10 +29,7 @@ import robotArm from '../assets/robot_arm.png';
             <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
             <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
         </div>
-        <picture>
-            <source media="(max-width:40rem)" srcset="../images/gerrard_montage_3_copy3.jpg">
-            <img class="banner" src="../images/gerrard_montage_3_final.jpg" alt="machines in a warehouse">
-        </picture>
+            <Image class="banner" src={banner} alt="machines in a warehouse" />
     </header>
     <main class="page-container">
         <div class="page-background">
@@ -448,7 +446,7 @@ import robotArm from '../assets/robot_arm.png';
     }
 
     .comp-info-one img, .comp-info-two img, .comp-info-three img {
-        width: 250px;
+        width: 300px;
         height: auto;
         filter: drop-shadow(0 0 5px hsl(215, 37%, 21%));
     }
