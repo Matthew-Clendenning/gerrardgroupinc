@@ -31,24 +31,12 @@
 @keyframes transitionIn {
     from {
         opacity: 0;
-        /*transform: translate3d(0, 20px, 0);*/
     }
     to {
         opacity: 1;
-        /*transform: translate3d(0, 0, 0);*/
     }
 }
 
-@keyframes transitionInMobile {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 5px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
 @keyframes fadeInLeft {
 	0% {
 		opacity: 0;
@@ -348,7 +336,7 @@ footer div a {
 
 @media (max-width: 40rem) {
 	#transition {
-        animation: transitionInMobile .5s ease-in-out;
+        animation: transitionIn .5s ease-in-out;
     }
 
 	#primary-navigation {
