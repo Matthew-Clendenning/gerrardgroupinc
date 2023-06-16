@@ -12,7 +12,5 @@ export default defineConfig({
   },
   integrations: [react(), sitemap({
     filter: page => page !== "https://gerrardgroupinc.netlify.app/PacificHP/" && page !== "https://gerrardgroupinc.netlify.app/timkenBearings/" && page !== "https://gerrardgroupinc.netlify.app/timkenDetails/"
-  }), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
   })],
 });
