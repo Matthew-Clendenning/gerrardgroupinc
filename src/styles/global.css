@@ -50,44 +50,6 @@
 	}
 }*/
 
-@keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-		z-index: -9999;
-	}
-}
-
-.title-screen {
-	opacity: 1;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	display: grid;
-	align-content: center;
-	text-align: center;
-	gap: 1rem;
-	background: linear-gradient(0deg, hsl(215, 37%, 21%), hsl(216, 23%, 55%));
-	color: white;
-	z-index: 99999;
-	padding-inline: 0.5rem;
-	animation: fadeOut 1s ease-in-out 4s forwards;
-}
-
-.title-screen--hidden {
-	opacity: 0;
-	visibility: hidden;
-}
-
-.title-screen h1 {
-	font-size: 30px;
-	font-weight: normal;
-}
-
 * {
 	box-sizing: border-box;
 }
