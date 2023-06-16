@@ -8,6 +8,10 @@ import { BsAirplane, BsTruck, BsTools } from 'react-icons/bs/index.js';
 import { SlEnergy } from 'react-icons/sl/index.js';
 import { MdOutlineWarehouse, MdOutlineFastfood } from 'react-icons/md/index.js';
 import { TbPackages } from 'react-icons/tb/index.js'
+
+import warehouse from '../assets/warehouse.png';
+import workers from '../assets/people_talking.png';
+import robotArm from '../assets/robot_arm.png';
 ---
 
 <Layout title="Gerrard Group Inc"
@@ -35,11 +39,9 @@ import { TbPackages } from 'react-icons/tb/index.js'
                 <h2><strong>About Gerrard Group / Gerrard Machinery Company</strong></h2>
                 <div class="gap">
                     <div class="comp-info-one">
-                        <Image
-                            src="/images/robot_arm.png" 
+                        <Image 
+                            src={robotArm} 
                             alt="robot arm image" 
-                            width={250}
-                            height={250}
                             format="webp"
                         />
                         <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
@@ -54,11 +56,8 @@ import { TbPackages } from 'react-icons/tb/index.js'
                     </div>
                     <div class="comp-info-two">
                         <Image 
-                            src="/images/warehouse_copy.png" 
-                            alt="warehouse image"
-                            height={245}
-                            width={400}
-                            quality={100}
+                            src={warehouse} 
+                            alt="warehouse image" 
                             format="webp"
                         />
                         <p>In addition to Auctions and Liquidations, we provide Appraisal and 
@@ -70,11 +69,8 @@ import { TbPackages } from 'react-icons/tb/index.js'
                     </div>
                     <div class="comp-info-three">
                         <Image 
-                            src="/images/people_talking.png" 
+                            src={workers} 
                             alt="people in a factory" 
-                            width={250}
-                            height={250}
-                            quality={100}
                             format="webp"
                         />
                         <p>Whether it’s a single piece of equipment, plant relocation, multiple 
@@ -446,6 +442,8 @@ import { TbPackages } from 'react-icons/tb/index.js'
     }
 
     .comp-info-one img, .comp-info-two img, .comp-info-three img {
+        width: 250px;
+        height: auto;
         filter: drop-shadow(0 0 5px hsl(215, 37%, 21%));
     }
 
@@ -695,7 +693,7 @@ import { TbPackages } from 'react-icons/tb/index.js'
         .comp-info-one img, .comp-info-two img, .comp-info-three img {
             margin: auto;
             width: 200px;
-            height: 200px;
+            height: auto;
         }
 
         .img-workers {

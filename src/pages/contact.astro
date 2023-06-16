@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+
+import dan from '../assets/dan.jpg';
+import mike from '../assets/mike copy1.jpg';
+import sara from '../assets/sara-copy1.jpg';
+import placeHolder from '../assets/placeholder-person-square.png';
 ---
 
 <Layout title="Contact - Gerrard Group Inc" 
@@ -22,7 +27,7 @@ import Card from "../components/Card.astro";
                     email="Gerrardmachinery@gmail.com"
                     phone="847-894-3434"
                     btnName="CONTACT"
-                    imageURL="/images/dan.jpg"
+                    imageURL={dan}
                     alt="dan gerrard"
                     href="mailto:Gerrardmachinery@gmail.com"
                     href2="#"
@@ -35,7 +40,7 @@ import Card from "../components/Card.astro";
                     email="Mike@Gerrardgroupinc.com"
                     phone="818-355-5169"
                     btnName="CONTACT"
-                    imageURL="/images/mike copy1.jpg"
+                    imageURL={mike}
                     alt="mike kletecka"
                     href="mailto:Mike@Gerrardgroupinc.com"
                     href2="#"
@@ -48,7 +53,7 @@ import Card from "../components/Card.astro";
                     email="Sara.Gerrardmachinery@gmail.com"
                     phone="847-322-0431"
                     btnName="CONTACT"
-                    imageURL="/images/sara-copy1.jpg"
+                    imageURL={sara}
                     alt="sara gerrard"
                     href="mailto:Sara.Gerrardmachinery@gmail.com"
                     href2="#"
@@ -61,7 +66,7 @@ import Card from "../components/Card.astro";
                     email="Gerrardmachinery@gmail.com"
                     phone="713-298-9050"
                     btnName="CONTACT"
-                    imageURL="/images/placeholder-person-square.png"
+                    imageURL={placeHolder}
                     alt="jamie gumpel"
                     href="mailto:Gerrardmachinery@gmail.com"
                     href2="#"
@@ -74,7 +79,7 @@ import Card from "../components/Card.astro";
                     email="Matthewclendenning@outlook.com"
                     phone="312-522-8606"
                     btnName="CONTACT"
-                    imageURL="/images/placeholder-person-square.png"
+                    imageURL={placeHolder}
                     alt="matthew clendenning"
                     href="mailto:Matthewclendenning@outlook.com"
                     href2="#"

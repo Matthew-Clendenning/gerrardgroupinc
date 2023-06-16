@@ -6,7 +6,7 @@ export interface Props {
     body?: string;
     email?: string;
     phone?: string;
-    imageURL?: string;
+    imageURL?: ImageMetadata;
     href?: string;
     href2?: string;
     x_link?: string;
@@ -20,10 +20,9 @@ const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, t
 
 <article class="card-container">
     <div class="image-container">
-        {imageURL && <Image src={imageURL} 
-            alt={alt} 
-            height={500}
-            width={500}
+        {imageURL && <Image 
+            src={imageURL} 
+            alt={alt}
             format='webp'
         />}
     </div>
