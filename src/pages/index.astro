@@ -429,6 +429,17 @@ import inventory from '../assets/inventory-icon.png';
         }
     }
 
+    @keyframes transitionUp {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 50px, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
     /*.welcome {
         text-align: center;
         position: relative;
@@ -737,9 +748,9 @@ import inventory from '../assets/inventory-icon.png';
         }
 
         .welcome img {
+            height: 250px;
+            top: 55%;
             display: none;
-            height: 200px;
-            top: 0;
         }
 
         .welcome div {
@@ -982,18 +993,7 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     @media (min-width: 40rem) and (max-width: 60rem) {
-        @keyframes transitionUp {
-            from {
-                opacity: 0;
-                transform: translate3d(0, 50px, 0);
-            }
-            to {
-                opacity: 1;
-                transform: translate3d(0, 0, 0);
-            }
-        }
-
-        .welcome {
+       .welcome {
             display: grid;
             align-items: normal;
             justify-content: normal;
