@@ -919,9 +919,6 @@ import inventory from '../assets/inventory-icon.png';
             padding-inline: 2rem;
         }
 
-        .wrapper h2 {
-        }
-
         .wrapper p {
             max-width: 600px;
         }
@@ -986,6 +983,17 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     @media (min-width: 40rem) and (max-width: 60rem) {
+        @keyframes transitionUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 50px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
         .welcome {
             display: grid;
             align-items: normal;
@@ -997,7 +1005,9 @@ import inventory from '../assets/inventory-icon.png';
         }
 
         .welcome img {
+            height: 200px;
             top: 0;
+            animation: transitionUp 2s ease;
         }
 
         .welcome div {
