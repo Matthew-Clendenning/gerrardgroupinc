@@ -1005,7 +1005,6 @@ import inventory from '../assets/inventory-icon.png';
         }
 
         .welcome img {
-            height: 200px;
             top: 0;
             animation: transitionUp 2s ease;
         }
@@ -1097,6 +1096,12 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
+        .welcome img {
+            height: 250px;
+            top: 0;
+            animation: transitionUp 2s ease;
+        }
+
         .welcome-text {
             font-size: clamp(1rem, 6.5vh, 5rem);
         }
