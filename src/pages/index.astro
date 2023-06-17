@@ -9,6 +9,7 @@ import { SlEnergy } from 'react-icons/sl/index.js';
 import { MdOutlineWarehouse, MdOutlineFastfood } from 'react-icons/md/index.js';
 import { TbPackages } from 'react-icons/tb/index.js'
 
+import indexPic from '../assets/index-pic.png';
 import banner from '../../public/images/gerrard_montage_3_final.jpg';
 import warehouse from '../assets/warehouse.png';
 import workers from '../assets/people_talking.png';
@@ -24,15 +25,18 @@ import robotArm from '../assets/robot_arm.png';
     title3="Gerrard Group Inc" 
     url3="https://www.gerrardgroupinc.com"
     canon="https://www.gerrardgroupinc.com">
-	<header class="welcome">
+	<div class="welcome">
         <div>
-            <h1 class="welcome-text"><strong>Welcome to Gerrard Machinery Company</strong><span class="cursor" style="display: none">&nbsp;</span></h1>
-            <h1 class="moto-text"><strong>Buyer's and Sellers of Industrial Machinery and Equipment</strong><span class="cursor2" style="display: none">&nbsp;</span></h1>
-            <!--<h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
-            <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>-->
+            <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
+            <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
         </div>
-            <Image class="banner" src={banner} alt="machines in a warehouse" loading="eager" />
-    </header>
+        <Image src={indexPic} alt="" height={indexPic.height} width={indexPic.width} format="webp" />
+        <!--<div>
+            <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
+            <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
+        </div>
+            <Image class="banner" src={banner} alt="machines in a warehouse" loading="eager" />-->
+    </div>
     <main class="page-container">
         <div class="page-background">
             <article class="wrapper">
@@ -368,6 +372,54 @@ import robotArm from '../assets/robot_arm.png';
     }
 
     .welcome {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        height: 100vh;
+        padding-right: 2rem;
+        background-image: conic-gradient(from 150deg at -10% 100%,#ffffff 120deg,#70b3ff 90deg,hsl(216, 35%, 18%) 1turn);
+    }
+
+    .welcome div {
+        display: grid;
+        justify-items: start;
+        align-content: center;
+        gap: .5rem;
+        position: relative;
+        top: -10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 2rem;
+        color: white;
+    }
+
+    .welcome img {
+        position: relative;
+        top: -10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: 500px;
+        animation: fadeInLeft 1s ease;
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(100%,0,0);
+            transform: translate3d(100%,0,0);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    /*.welcome {
         text-align: center;
         position: relative;
     }
@@ -385,22 +437,22 @@ import robotArm from '../assets/robot_arm.png';
         z-index: 1000;
         gap: .5rem;
         padding-inline: .5rem;
-    }
+    }*/
 
     .welcome-text {
-        font-size: clamp(1rem, 4vh, 10rem);
+        font-size: clamp(1rem, 3.5vh, 5rem);
         margin: 0;
         overflow: hidden;
     }
     .moto-text {
-        font-size: clamp(1rem, 4vh, 5rem);
+        font-size: clamp(1rem, 3.5vh, 5rem);
         margin: 0;
     }
 
     .cursor2 {
         display: inline-block;
         width: 3px;
-        background-color: #ccc;
+        background-color: #ffffff;
         margin-left: .1rem;
         animation: blink .8s infinite;
     }
@@ -480,12 +532,13 @@ import robotArm from '../assets/robot_arm.png';
     .desc-back {
         text-align: center;
         border-top: 1px solid rgba(35,39,47,.1);
-        background-image: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#dbecff 90deg,#fff 1turn);    
+        background-image: conic-gradient(from 150deg at -10% 100%,#ffffff 120deg,#70b3ff 90deg,hsl(216, 35%, 18%) 1turn);
     }
 
     .desc-back h2 {
         font-size: clamp(1rem, 3.5vh, 3rem);
-	    color: #425abd;
+	    color: rgb(255, 255, 255);
+        text-shadow: .7px .7px #003860;
         margin: 0;
         margin-bottom: 3rem;
     }
@@ -498,6 +551,7 @@ import robotArm from '../assets/robot_arm.png';
     .desc-back p {
         max-width: 97px;
         margin-inline: auto;
+        color: white;
         font-size: clamp(.5rem, 1.1rem, 3rem);
     }
     
@@ -513,7 +567,6 @@ import robotArm from '../assets/robot_arm.png';
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding-inline: 1rem;
         gap: 2rem;
         row-gap: .5rem;
     }
@@ -522,8 +575,8 @@ import robotArm from '../assets/robot_arm.png';
         display: inline-flex;
         padding: 1.5rem;
         border-radius: 50%;
-        background-image: linear-gradient(145deg,rgba(226, 249, 255, 0.6) 0%,rgb(49, 93, 175) 100%);
-        box-shadow: 0 10px 15px -3px #9ca3af, 0 4px 6px -4px #9ca3af;
+        background-image: linear-gradient(145deg,rgba(216, 216, 216, 0.6) 0%,rgb(255, 255, 255) 100%);
+        box-shadow: 1px 1px 5px rgba(216, 216, 216, 0.6) inset, 0 10px 15px -5px #000000, 0 4px 6px -4px #ffffff;
     }
 
     .industries {
@@ -629,14 +682,14 @@ import robotArm from '../assets/robot_arm.png';
 
     .locations {
 	    text-align: center;
-	    margin-bottom: 5rem;
+	    padding-bottom: 5rem;
     }
 
     .locations h3 {
         font-size: clamp(1rem, 2.8vh, 3rem);
         margin: 0;
         margin-bottom: 1rem;
-    	color: #425abd;
+    	color: white;
     }
 
     .locations ul {
@@ -650,16 +703,43 @@ import robotArm from '../assets/robot_arm.png';
     }
 
     .locations li {
+        color: #9dd5ff;
 	    font-size: clamp(.5rem, 2.2vh, 3rem);
 	    font-weight: bold;
 	    text-decoration: underline;
+        text-underline-offset: 3px;
     }
 
     @media (max-width: 40rem) {
-        .welcome div {
+        /*.welcome div {
 		    gap: 1rem;
             padding-inline: .5rem;
-	    }
+	    }*/
+
+        .welcome {
+            display: grid;
+            align-items: normal;
+            justify-content: normal;
+            justify-items: center;
+            align-content: center;
+            padding: 0;
+            gap: .5rem;
+        }
+
+        .welcome img {
+            display: none;
+            height: 200px;
+            top: 0;
+        }
+
+        .welcome div {
+            position: absolute;
+            text-align: center;
+            justify-items: center;
+            padding-inline: 1rem;
+            top: 0;
+            text-shadow: .7px .7px #003860;
+        }
 
         .banner {
             height: 200px;
@@ -717,7 +797,6 @@ import robotArm from '../assets/robot_arm.png';
 
         .description {
             margin-top: 2rem;
-            padding-inline: 1rem;
         }
 
         .specialties {
@@ -732,6 +811,10 @@ import robotArm from '../assets/robot_arm.png';
 
         .industries {
             margin-bottom: 1rem;
+        }
+
+        .industries-wrapper {
+            gap: 1.5rem;
         }
 
         /*.comp-info {
@@ -794,7 +877,7 @@ import robotArm from '../assets/robot_arm.png';
         }*/
 
         .locations {
-            margin: 3.5rem 0;
+            padding: 3.5rem 0;
         }
 
         .locations h2 {
@@ -893,6 +976,27 @@ import robotArm from '../assets/robot_arm.png';
     }
 
     @media (min-width: 40rem) and (max-width: 60rem) {
+        .welcome {
+            display: grid;
+            align-items: normal;
+            justify-content: normal;
+            justify-items: center;
+            align-content: center;
+            padding: 0;
+            gap: .5rem;
+        }
+
+        .welcome img {
+            top: 0;
+        }
+
+        .welcome div {
+            text-align: center;
+            justify-items: center;
+            padding-inline: 1rem;
+            top: 0;
+        }
+
         .welcome-text {
             font-size: clamp(1rem, 3vh, 5rem);
             margin: 0;
@@ -1071,7 +1175,7 @@ import robotArm from '../assets/robot_arm.png';
         }*/
 
         .locations {
-            margin: 2.5rem 0;
+            padding: 2.5rem 0;
         }
 
         .locations h2 {

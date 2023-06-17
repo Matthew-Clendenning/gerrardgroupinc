@@ -143,7 +143,7 @@ body {
 .cursor {
 	display: inline-block;
 	width: 3px;
-	background-color: #ccc;
+	background-color: #ffffff;
 	margin-left: .1rem;
 	animation: blink .8s infinite;
 }
@@ -162,7 +162,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.5rem 2rem;
-	background: #b1bfd3;
+	background: #bdd1ec;
 }
 
 footer h3 {
