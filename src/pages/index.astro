@@ -40,7 +40,13 @@ import inventory from '../assets/inventory-icon.png';
             <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
             <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
         </div>
-        <Image src={indexPic} alt="industrial machines image" height={indexPic.height} width={indexPic.width} format="webp" />
+        <Image 
+            src={indexPic} 
+            alt="industrial machines image" 
+            height={indexPic.height} 
+            width={indexPic.width} 
+            format="webp" 
+        />
         <!--<div>
             <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
             <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
@@ -414,6 +420,7 @@ import inventory from '../assets/inventory-icon.png';
         width: auto;
         height: 500px;
         animation: fadeInLeft 1s ease;
+        filter: drop-shadow(0 0 50px #ecf7ff);
     }
 
     /*.welcome {
