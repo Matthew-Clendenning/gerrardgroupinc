@@ -7,6 +7,9 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://gerrardgroupinc.netlify.app',
+  build: {
+    inlineStylesheets: 'auto'
+  },
   experimental: {
     assets: true
    },
