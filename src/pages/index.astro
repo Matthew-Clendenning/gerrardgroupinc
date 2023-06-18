@@ -729,20 +729,20 @@ import inventory from '../assets/inventory-icon.png';
             justify-items: center;
             align-content: center;
             padding: 0;
-            gap: .5rem;
+            gap: 1rem;
         }
 
         .welcome img {
+            position: static;
             height: 250px;
-            top: 55%;
-            animation: none;
+            animation: transitionUp 1s ease-in;
         }
 
         .welcome div {
-            position: absolute;
+            position: relative;
             text-align: center;
             justify-items: center;
-            top: 10%;
+            top: 0;
             text-shadow: .7px .7px #003860;
         }
 
