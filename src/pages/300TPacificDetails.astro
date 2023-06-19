@@ -32,23 +32,23 @@ import { slides2 } from "../data/carouselData.json";
 				<hr>
 			<div class="machine-info-container">
 				<div class="details">
-					<h4>Bed Area (Nominal):<span>123" L-R x 60" F-B (T-Slotted F-B)</span></h4>
-					<h4>Slide Area (Nominal):<span>123" L-R x 60" F-B (T-Slotted F-B)</span></h4>
-					<h4>Distance Between Housings:<span>28" L-R</span></h4>
-					<h4>Stroke of Gib Guided Slide:<span>0" - 18" Max.</span></h4>
-					<h4>Daylight Opening:<span>33" Max.</span></h4>
-					<h4>Speeds Approx.:<span>215 IPM Fast Closing</span></h4>
+					<div class="carousel-info">Bed Area (Nominal):<span>123" L-R x 60" F-B (T-Slotted F-B)</span></div>
+					<div class="carousel-info">Slide Area (Nominal):<span>123" L-R x 60" F-B (T-Slotted F-B)</span></div>
+					<div class="carousel-info">Distance Between Housings:<span>28" L-R</span></div>
+					<div class="carousel-info">Stroke of Gib Guided Slide:<span>0" - 18" Max.</span></div>
+					<div class="carousel-info">Daylight Opening:<span>33" Max.</span></div>
+					<div class="carousel-info">Speeds Approx.:<span>215 IPM Fast Closing</span></div>
 					<div class="padding">
-						<h4><span>80 IPM Slow Close</span></h4>
-						<h4><span>25 IPM Pressing</span></h4>
-						<h4><span>48 IPM Slow Return</span></h4>
-						<h4><span>132 IPM Fast Return</span></h4>
+						<div class="carousel-info"><span>80 IPM Slow Close</span></div>
+						<div class="carousel-info"><span>25 IPM Pressing</span></div>
+						<div class="carousel-info"><span>48 IPM Slow Return</span></div>
+						<div class="carousel-info"><span>132 IPM Fast Return</span></div>
 					</div>
-					<h4>Power Unit (Top Rear):<span>40 HP 460/3/60 Motor Driving Hydraulic Unit.</span></h4>
-					<h4>Weight Approx.:<span>73,000 lbs.</span></h4>
-					<h4>Physical Dimension Approx.:<span>L-R x 5' F-B x H</span></h4>
-					<h4>Controls:<span class="controls">Push Button Operation with Stroke, Pressure and 
-					Speed Control. Allen Bradley PLC Added in 2000. Light Curtains.</span></h4>
+					<div class="carousel-info">Power Unit (Top Rear):<span>40 HP 460/3/60 Motor Driving Hydraulic Unit.</span></div>
+					<div class="carousel-info">Weight Approx.:<span>73,000 lbs.</span></div>
+					<div class="carousel-info">Physical Dimension Approx.:<span>L-R x 5' F-B x H</span></div>
+					<div class="carousel-info">Controls:<span class="controls">Push Button Operation with Stroke, Pressure and 
+					Speed Control. Allen Bradley PLC Added in 2000. Light Curtains.</span></div>
 				</div>
 			</div>
 			</section>
@@ -56,7 +56,7 @@ import { slides2 } from "../data/carouselData.json";
     </main>
 </Layout>
 
-<style type="text/css" is:inline>
+<style is:inline>
     .page-container {
         padding-inline: 2rem;
     }
@@ -111,7 +111,7 @@ import { slides2 } from "../data/carouselData.json";
 	    gap: .5rem;
     }
 
-    h4 {
+    .carousel-info {
         display: flex;
         justify-content: space-between;
         font-size: clamp(.5rem, 2vh, 3rem);
@@ -172,7 +172,7 @@ import { slides2 } from "../data/carouselData.json";
             gap: 1rem;
         }
         
-        h4 {
+        .carousel-info {
             display: grid;
             justify-content: flex-start;
         }
@@ -254,7 +254,7 @@ import { slides2 } from "../data/carouselData.json";
             font-size: clamp(.5rem, 3vh, 3rem);
         }
 
-        h4 {
+        .carousel-info {
             font-size: clamp(1rem, 3vh, 3rem);
         }
 
