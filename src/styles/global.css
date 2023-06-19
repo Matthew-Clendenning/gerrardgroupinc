@@ -5,7 +5,7 @@
 	format("woff2"),
 	url("../../public/fonts/Satoshi-Regular.woff")
 	format("woff"),
-	url("../../public/fonts/Satoshi-Regular.tff")
+	url("../../public/fonts/Satoshi-Regular.ttf")
 	format("tff");
 	font-style: normal;
 	font-weight: 400;
@@ -94,6 +94,7 @@ body {
 	padding: 0;
 	min-height: 100vh;
 	overflow-x: hidden;
+	font-family: "Satoshi Regular", sans-serif;
 }
 
 .sticky {
