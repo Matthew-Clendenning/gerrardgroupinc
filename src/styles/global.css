@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "Satoshi";
 	src: local("Satoshi Regular"),
-	url("../../fonts/Satoshi-Regular.woff2")
+	url("../../public/fonts/Satoshi-Regular.woff2")
 	format("woff2"),
-	url("../../fonts/Satoshi-Regular.woff")
+	url("../../public/fonts/Satoshi-Regular.woff")
 	format("woff"),
-	url("../../fonts/Satoshi-Regular.tff")
+	url("../../public/fonts/Satoshi-Regular.tff")
 	format("tff");
 	font-style: normal;
 	font-weight: 400;
