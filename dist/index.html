@@ -43,16 +43,16 @@
 				<a class="nav-text" href="/"><strong>HOME</strong></a>
 			</li>
 			<li>
-                <a class="nav-text" href="/auctions"><strong>AUCTIONS</strong></a>
+                <a class="nav-text" href="/auctions/"><strong>AUCTIONS</strong></a>
 			</li>
 			<li>
-				<a class="nav-text" href="/liquidations"><strong>LIQUIDATION/SURPLUS</strong></a>
+				<a class="nav-text" href="/liquidations/"><strong>LIQUIDATION/SURPLUS</strong></a>
 			</li>
 			<li>
-				<a class="nav-text" href="/services"><strong>SERVICES</strong></a>
+				<a class="nav-text" href="/services/"><strong>SERVICES</strong></a>
 			</li>
 			<li>	
-				<a class="nav-text" href="/contact"><strong>CONTACT</strong></a>
+				<a class="nav-text" href="/contact/"><strong>CONTACT</strong></a>
     		</li>
 		</ul>
 	</nav>
@@ -100,7 +100,7 @@
             <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
             <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
         </div>
-        <img src="/_astro/index-pic.ca93a1dc_258pkH.webp" alt="industrial machines image" width="1024" height="928" loading="lazy" decoding="async">
+        <img src="/_astro/index-pic.ca93a1dc_Z1qj2pu.webp" alt="industrial machines image" loading="eager" width="1024" height="928" decoding="async">
         <!--<div>
             <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
             <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
@@ -412,6 +412,7 @@
         width: auto;
         height: 500px;
         animation: fadeInLeft 1s ease;
+        filter: drop-shadow(0 0 50px #ecf7ff);
     }
 
     /*.welcome {
@@ -719,20 +720,20 @@
             justify-items: center;
             align-content: center;
             padding: 0;
-            gap: .5rem;
         }
 
         .welcome img {
+            position: static;
             height: 250px;
-            top: 55%;
-            display: none;
+            animation: transitionUp 1s ease-in;
         }
 
         .welcome div {
-            position: absolute;
+            position: relative;
             text-align: center;
             justify-items: center;
-            top: 10%;
+            top: 0;
+            padding-inline: 1rem;
             text-shadow: .7px .7px #003860;
         }
 
