@@ -1,6 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import { RxHamburgerMenu } from 'react-icons/rx/index.js';
 import { BiUpArrowAlt } from 'react-icons/bi/index.js';
+
+import logo from '../../public/images/dans logo copy6.png';
 ---
 
 <button title="Back to top" id="back-to-top-btn" aria-label="back to top of page button">
@@ -9,7 +12,15 @@ import { BiUpArrowAlt } from 'react-icons/bi/index.js';
 <header class="primary-header sticky">
 	<div class="image-header">
 		<a title="Go to home" href="/">
-			<img class="logo" src="../images/dans logo copy6.png?version=1" alt="gerrard group logo"/>
+			<Image 
+				class="logo" 
+				src={logo} 
+				alt="gerrard group logo"
+				width={logo.width} 
+				height={logo.height}
+				loading="eager"
+				format="webp"
+			/>
 		</a>
 	</div>
 	<button title="Navigation menu" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">

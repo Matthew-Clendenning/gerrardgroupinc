@@ -1,10 +1,21 @@
 ---
+import { Image } from 'astro:assets';
 import { BsLinkedin } from 'react-icons/bs/index.js'
+
+import logo from '../../public/images/dans logo copy6.png';
 ---
 
 <footer>
     <a title="Go to home" href="/">
-        <img loading="lazy" class="logo" src="../images/dans logo copy6.png" alt="gerrard group logo">
+        <Image 
+            class="logo" 
+            src={logo} 
+            alt="gerrard group logo"
+            width={logo.width} 
+            height={logo.height}
+            loading="eager"
+            format="webp"
+        />
     </a>
     <h3>Phone: <span>847-894-3434</span> | Email: <a href="mailto:gerrardmachinery@gmail.com" target="_blank">
     <span>gerrardmachinery@gmail.com</span></a>
