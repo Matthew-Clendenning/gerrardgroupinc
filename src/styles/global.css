@@ -170,7 +170,7 @@ body {
 .cursor {
 	display: inline-block;
 	width: 3px;
-	background-color: #ffffff;
+	background-color: #000000;
 	margin-left: .1rem;
 	animation: blink .8s infinite;
 }
