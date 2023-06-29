@@ -35,38 +35,81 @@ import inventory from '../assets/inventory-icon.png';
     title3="Gerrard Group Inc" 
     url3="https://www.gerrardgroupinc.com"
     canon="https://www.gerrardgroupinc.com">
-	<article class="welcome">
-        <div>
-            <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
-            <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
-        </div>
-        <Image 
-            src={indexPic} 
-            alt="industrial machines image" 
-            height={indexPic.height} 
-            width={indexPic.width} 
-            loading="eager"
-            format="webp" 
-        />
-        <!--<div>
-            <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
-            <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
-        </div>
-            <Image class="banner" src={banner} alt="machines in a warehouse" loading="eager" />-->
-    </article>
-    <main class="page-container">
-        <div class="page-background">
-            <article class="wrapper">
-                <h2><strong>About Gerrard Group / Gerrard Machinery Company</strong></h2>
-                <div class="gap">
-                    <div class="comp-info-one">
-                        <Image 
-                            src={robotArm} 
-                            alt="robot arm image"
-                            height={robotArm.height}
-                            width={robotArm.width}
-                            format="webp"
-                        />
+    <main>
+        <section class="welcome">
+            <div>
+                <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
+                <h2 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h2>
+            </div>
+            <Image 
+                src={indexPic} 
+                alt="industrial machines image" 
+                height={indexPic.height} 
+                width={indexPic.width} 
+                loading="eager"
+                format="webp" 
+            />
+            <!--<div>
+                <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
+                <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
+            </div>
+                <Image class="banner" src={banner} alt="machines in a warehouse" loading="eager" />-->
+        </section>
+        <section class="page-container">
+            <div class="page-background">
+                <article class="wrapper">
+                    <h2><strong>About Gerrard Group / Gerrard Machinery Company</strong></h2>
+                    <div class="gap">
+                        <div class="comp-info-one">
+                            <Image 
+                                src={robotArm} 
+                                alt="robot arm image"
+                                height={robotArm.height}
+                                width={robotArm.width}
+                                format="webp"
+                            />
+                            <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
+                                Liquidations for a wide variety of Machinery, Equipment and other Assets.
+                                Our used machinery division, <strong>Gerrard Machinery Company, LLC</strong>, buys and 
+                                sells industrial machinery and equipment as a regular course of business. 
+                                This diversity gives us a broader understanding of both the retail and 
+                                wholesale markets which puts our clients at a huge advantage. This, along 
+                                with our strategic partners around the country and abroad, our group is 
+                                able to service a wide variety of business sectors.
+                            </p>
+                        </div>
+                        <div class="comp-info-two">
+                            <Image 
+                                src={warehouse} 
+                                alt="warehouse image"
+                                height={warehouse.height}
+                                width={warehouse.width} 
+                                format="webp"
+                            />
+                            <p>In addition to Auctions and Liquidations, we provide Appraisal and 
+                                Consulting Services to help determine <strong>highest possible returns</strong> of Company 
+                                Assets. We are not a “High Volume” or “Cookie Cutter” company, we believe 
+                                every project comes with its own needs and expectations. Our team has the 
+                                knowledge, dedication and understanding you need.
+                            </p>
+                        </div>
+                        <div class="comp-info-three">
+                            <Image 
+                                src={workers} 
+                                alt="people in a factory"
+                                height={workers.height}
+                                width={workers.width} 
+                                format="webp"
+                            />
+                            <p>Whether it’s a single piece of equipment, plant relocation, multiple 
+                                facilities, or demolition projects, we are your trusted source. Talk to 
+                                one of our team members to discuss how we can help.
+                            </p>
+                        </div>
+                    </div>
+                    <!--<img class="img-workers" loading="lazy" src="../images/Factory+People+2_copy.jpg" alt="people in a factory">
+                    <article class="comp-info">
+                        <h2><strong>About Gerrard Group / Gerrard Machinery Company</strong></h2>
                         <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
                             Liquidations for a wide variety of Machinery, Equipment and other Assets.
                             Our used machinery division, <strong>Gerrard Machinery Company, LLC</strong>, buys and 
@@ -74,309 +117,268 @@ import inventory from '../assets/inventory-icon.png';
                             This diversity gives us a broader understanding of both the retail and 
                             wholesale markets which puts our clients at a huge advantage. This, along 
                             with our strategic partners around the country and abroad, our group is 
-                            able to service a wide variety of business sectors.
-                        </p>
-                    </div>
-                    <div class="comp-info-two">
-                        <Image 
-                            src={warehouse} 
-                            alt="warehouse image"
-                            height={warehouse.height}
-                            width={warehouse.width} 
-                            format="webp"
-                        />
+                            able to service a wide variety of business sectors.</p>
+        
                         <p>In addition to Auctions and Liquidations, we provide Appraisal and 
                             Consulting Services to help determine <strong>highest possible returns</strong> of Company 
                             Assets. We are not a “High Volume” or “Cookie Cutter” company, we believe 
                             every project comes with its own needs and expectations. Our team has the 
-                            knowledge, dedication and understanding you need.
-                        </p>
-                    </div>
-                    <div class="comp-info-three">
-                        <Image 
-                            src={workers} 
-                            alt="people in a factory"
-                            height={workers.height}
-                            width={workers.width} 
-                            format="webp"
-                        />
+                            knowledge, dedication and understanding you need.</p>
+        
                         <p>Whether it’s a single piece of equipment, plant relocation, multiple 
                             facilities, or demolition projects, we are your trusted source. Talk to 
-                            one of our team members to discuss how we can help.
-                        </p>
-                    </div>
-                </div>
-                <!--<img class="img-workers" loading="lazy" src="../images/Factory+People+2_copy.jpg" alt="people in a factory">
-                <article class="comp-info">
-                    <h2><strong>About Gerrard Group / Gerrard Machinery Company</strong></h2>
-                    <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
-                        Liquidations for a wide variety of Machinery, Equipment and other Assets.
-                        Our used machinery division, <strong>Gerrard Machinery Company, LLC</strong>, buys and 
-                        sells industrial machinery and equipment as a regular course of business. 
-                        This diversity gives us a broader understanding of both the retail and 
-                        wholesale markets which puts our clients at a huge advantage. This, along 
-                        with our strategic partners around the country and abroad, our group is 
-                        able to service a wide variety of business sectors.</p>
-    
-                    <p>In addition to Auctions and Liquidations, we provide Appraisal and 
-                        Consulting Services to help determine <strong>highest possible returns</strong> of Company 
-                        Assets. We are not a “High Volume” or “Cookie Cutter” company, we believe 
-                        every project comes with its own needs and expectations. Our team has the 
-                        knowledge, dedication and understanding you need.</p>
-    
-                    <p>Whether it’s a single piece of equipment, plant relocation, multiple 
-                        facilities, or demolition projects, we are your trusted source. Talk to 
-                        one of our team members to discuss how we can help.</p>
-                </article>-->
-            </article>
-        </div>
-        <div class="desc-back">
-            <article class="description">
-                <h2><strong>Gerrard Group / Gerrard Machinery Company Specializes In...</strong></h2>
-                <div class="specialties">
-                    <div class="special-list">
-                        <div class="img-container">
-                            <RiAuctionLine size="50px"/>
-                        </div>
-                        <p>Auctions</p>
-                    </div>
-                    <div class="special-list">
-                        <div class="img-container">
-                            <Image 
-                                src={liquidation}
-                                alt="liquidation icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>Liquidation</p>
-                    </div>
-                    <div class="special-list">
-                        <div class="img-container">
-                            <Image 
-                                src={appraisal}
-                                alt="apprasials icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>Appraisals</p>
-                    </div>
-                    <div class="special-list">
-                        <div class="img-container">
-                            <Image 
-                                src={retail}
-                                alt="retail icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>Retail Used Machinery Sales</p>
-                    </div>
-                    <div class="special-list">
-                        <div class="img-container">
-                            <FiDollarSign size="50px"/>
-                        </div>
-                        <p>Machinery & Equipment Buy and Sell Programs</p>
-                    </div>
-                    <div class="special-list">
-                        <div class="img-container">
-                            <Image 
-                                src={demolition}
-                                alt="demolition icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>Demolition & Remediation Projects</p>
-                    </div>
-                    <div class="special-list">
-                        <div class="img-container">
-                            <Image 
-                                src={consulting}
-                                alt="consulting icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>Consulting</p>
-                    </div>
-                </div>
-            </article>
-            <article class="industries">
-                <h2><strong>Industries</strong></h2>
-                <div class="industries-wrapper">
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <Image 
-                                src={fabrication}
-                                alt="fabrication icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>Fabricating, Metal, Rubber & Plastics Equip.</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <Image 
-                                src={cnc}
-                                alt="cnc icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>CNC & Robotics</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <BsTools size="50px" />
-                        </div>
-                        <p>Tooling & Support Equip.</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <GiMining size="50px" />
-                        </div>
-                        <p>Construction & Mining</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <Image 
-                                src={yellow}
-                                alt="yellow iron icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>Yellow Iron</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <GiOilPump size="50px" />
-                        </div>
-                        <p>Oil & Gas</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <BsTruck size="50px" />
-                        </div>
-                        <p>Transportation</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <BsAirplane size="50px" />
-                        </div>
-                        <p>Aerospace</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <SlEnergy size="50px"/>
-                        </div>
-                        <p>Energy Sector</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <MdOutlineWarehouse size="50px" />
-                        </div>
-                        <p>Warehouse & Support</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <MdOutlineFastfood size="50px" />
-                        </div>
-                        <p>Food & Beverage</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <TbPackages size="50px" />
-                        </div>
-                        <p>Pulp & Packaging</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <Image 
-                                src={biotech}
-                                alt="biotech icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>High-Tech & Biotech</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <GiMedicines size="50px" />
-                        </div>
-                        <p>Medical, Dental & Pharmaceutical</p>
-                    </div>
-                    <div class="industries-list">
-                        <div class="img-container">
-                            <Image 
-                                src={inventory}
-                                alt="inventory icon"
-                                height={150}
-                                width={150}
-                                format="webp"
-                            />
-                        </div>
-                        <p>Raw, WIP & Finished Inventories (used for, or made from mfg. equipment)</p>
-                    </div>
-                </div>
-            </article>
-            <!--<div class="description">
-                <article class="comp-special">
+                            one of our team members to discuss how we can help.</p>
+                    </article>-->
+                </article>
+            </div>
+            <div class="desc-back">
+                <article class="description">
                     <h2><strong>Gerrard Group / Gerrard Machinery Company Specializes In...</strong></h2>
-                    <ul>
-                        <li>Auctions</li>
-                        <li>Liquidation</li>
-                        <li>Appraisals</li>
-                        <li>Retail Used Machinery Sales</li>
-                        <li>Machinery & Equipment Buy and Sell Programs</li>
-                        <li>Demolition & Remediation Projects</li>
-                        <li>Consulting</li>
-                    </ul>
+                    <div class="specialties">
+                        <div class="special-list">
+                            <div class="img-container">
+                                <RiAuctionLine size="50px"/>
+                            </div>
+                            <p>Auctions</p>
+                        </div>
+                        <div class="special-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={liquidation}
+                                    alt="liquidation icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>Liquidation</p>
+                        </div>
+                        <div class="special-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={appraisal}
+                                    alt="apprasials icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>Appraisals</p>
+                        </div>
+                        <div class="special-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={retail}
+                                    alt="retail icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>Retail Used Machinery Sales</p>
+                        </div>
+                        <div class="special-list">
+                            <div class="img-container">
+                                <FiDollarSign size="50px"/>
+                            </div>
+                            <p>Machinery & Equipment Buy and Sell Programs</p>
+                        </div>
+                        <div class="special-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={demolition}
+                                    alt="demolition icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>Demolition & Remediation Projects</p>
+                        </div>
+                        <div class="special-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={consulting}
+                                    alt="consulting icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>Consulting</p>
+                        </div>
+                    </div>
                 </article>
                 <article class="industries">
                     <h2><strong>Industries</strong></h2>
-                    <ul>
-                        <li>Fabricating, Metal, Rubber & Plastics Equip.</li>
-                        <li>CNC & Robotics</li>
-                        <li>Tooling & Support Equip.</li>
-                        <li>Construction & Mining</li>
-                        <li>Yellow Iron</li>
-                        <li>Oil & Gas</li>
-                        <li>Transportation</li>
-                        <li>Aerospace</li>
-                        <li>Energy Sector</li>
-                        <li>Warehouse & Support</li>
-                        <li>Food & Beverage</li>
-                        <li>Pulp & Packaging</li>
-                        <li>High-Tech & Biotech</li>
-                        <li>Medical, Dental & Pharmaceutical</li>
-                        <li>Raw, WIP & Finished Inventories<br> (used for, or made from
-                        mfg. equipment)</li>
-                    </ul>
+                    <div class="industries-wrapper">
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={fabrication}
+                                    alt="fabrication icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>Fabricating, Metal, Rubber & Plastics Equip.</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={cnc}
+                                    alt="cnc icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>CNC & Robotics</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <BsTools size="50px" />
+                            </div>
+                            <p>Tooling & Support Equip.</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <GiMining size="50px" />
+                            </div>
+                            <p>Construction & Mining</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={yellow}
+                                    alt="yellow iron icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>Yellow Iron</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <GiOilPump size="50px" />
+                            </div>
+                            <p>Oil & Gas</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <BsTruck size="50px" />
+                            </div>
+                            <p>Transportation</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <BsAirplane size="50px" />
+                            </div>
+                            <p>Aerospace</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <SlEnergy size="50px"/>
+                            </div>
+                            <p>Energy Sector</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <MdOutlineWarehouse size="50px" />
+                            </div>
+                            <p>Warehouse & Support</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <MdOutlineFastfood size="50px" />
+                            </div>
+                            <p>Food & Beverage</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <TbPackages size="50px" />
+                            </div>
+                            <p>Pulp & Packaging</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={biotech}
+                                    alt="biotech icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>High-Tech & Biotech</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <GiMedicines size="50px" />
+                            </div>
+                            <p>Medical, Dental & Pharmaceutical</p>
+                        </div>
+                        <div class="industries-list">
+                            <div class="img-container">
+                                <Image 
+                                    src={inventory}
+                                    alt="inventory icon"
+                                    height={150}
+                                    width={150}
+                                    format="webp"
+                                />
+                            </div>
+                            <p>Raw, WIP & Finished Inventories (used for, or made from mfg. equipment)</p>
+                        </div>
+                    </div>
                 </article>
-            </div>-->
-            <section class="locations">
-                <h3><strong>Offices Located In:</strong></h3>
-                <ul>
-                    <li>St. Louis, MO</li>
-                    <li>Chicago, IL</li>
-                    <li>Spokane, WA</li>
-                </ul>
-            </section>
-        </div>
+                <!--<div class="description">
+                    <article class="comp-special">
+                        <h2><strong>Gerrard Group / Gerrard Machinery Company Specializes In...</strong></h2>
+                        <ul>
+                            <li>Auctions</li>
+                            <li>Liquidation</li>
+                            <li>Appraisals</li>
+                            <li>Retail Used Machinery Sales</li>
+                            <li>Machinery & Equipment Buy and Sell Programs</li>
+                            <li>Demolition & Remediation Projects</li>
+                            <li>Consulting</li>
+                        </ul>
+                    </article>
+                    <article class="industries">
+                        <h2><strong>Industries</strong></h2>
+                        <ul>
+                            <li>Fabricating, Metal, Rubber & Plastics Equip.</li>
+                            <li>CNC & Robotics</li>
+                            <li>Tooling & Support Equip.</li>
+                            <li>Construction & Mining</li>
+                            <li>Yellow Iron</li>
+                            <li>Oil & Gas</li>
+                            <li>Transportation</li>
+                            <li>Aerospace</li>
+                            <li>Energy Sector</li>
+                            <li>Warehouse & Support</li>
+                            <li>Food & Beverage</li>
+                            <li>Pulp & Packaging</li>
+                            <li>High-Tech & Biotech</li>
+                            <li>Medical, Dental & Pharmaceutical</li>
+                            <li>Raw, WIP & Finished Inventories<br> (used for, or made from
+                            mfg. equipment)</li>
+                        </ul>
+                    </article>
+                </div>-->
+                <section class="locations">
+                    <h3><strong>Offices Located In:</strong></h3>
+                    <ul>
+                        <li>St. Louis, MO</li>
+                        <li>Chicago, IL</li>
+                        <li>Spokane, WA</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
     </main>
 </Layout>
 
