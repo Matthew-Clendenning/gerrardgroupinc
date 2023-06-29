@@ -25,7 +25,7 @@ import { slides3 } from "../data/carouselData.json";
             <Carousel client:load
                 data={slides3}
             />
-            <article class="machine-title">
+            <article class="machine">
 				<h2>600 Ton Pacific Model 600-D-10-54 Downstroke Self Contained Hydraulic 
 				Press – New 1979 Housing Type – Gib Guided - Dual Cylinder –“T-Slotted” Bed 
 				and Slide</h2>
@@ -81,20 +81,20 @@ import { slides3 } from "../data/carouselData.json";
 	    border-radius: 10px;
     }
 
-    .machine-title {
+    .machine {
         width: 50%;
         box-shadow: 1px 1px 10px black;
         border-radius: 10px;
         padding: 1rem;
     }
 
-    .machine-title h2 {
+    .machine h2 {
         font-size: clamp(.5rem, 3vh, 3rem);
         margin: 0;
         color: #425abd;
     }
 
-    .machine-title p {
+    .machine p {
 	    font-size: clamp(.5rem, 2vh, 3rem);
         margin: 1em 0;
     }
@@ -119,6 +119,7 @@ import { slides3 } from "../data/carouselData.json";
         font-size: clamp(.5rem, 2vh, 3rem);
         margin: 0;
         color: #425abd;
+        font-weight: bold;
     }
 
     .details span {
@@ -162,11 +163,11 @@ import { slides3 } from "../data/carouselData.json";
             right: -1rem;
         }
 
-        .machine-title {
+        .machine {
 		    width: auto;
         }
         
-        .machine-title h2 {
+        .machine h2 {
             font-size: clamp(.5rem, 2.5vh, 3rem);
         }
         
@@ -191,7 +192,7 @@ import { slides3 } from "../data/carouselData.json";
             gap: 1rem;
         }
 
-        .machine-title {
+        .machine {
             width: auto;
         }
 
@@ -207,7 +208,7 @@ import { slides3 } from "../data/carouselData.json";
             gap: 1rem;
         }
 
-        .machine-title {
+        .machine {
             width: auto;
         }
 
@@ -244,15 +245,15 @@ import { slides3 } from "../data/carouselData.json";
             gap: 1rem;
         }
 
-        .machine-title {
+        .machine {
             width: auto;
         }
 
-        .machine-title h2 {
+        .machine h2 {
             font-size: clamp(1rem, 4vh, 3rem);
         }
 
-        .machine-title p {
+        .machine p {
             font-size: clamp(.5rem, 3vh, 3rem);
         }
 
