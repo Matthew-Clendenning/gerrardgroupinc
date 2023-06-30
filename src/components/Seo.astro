@@ -1,0 +1,17 @@
+---
+import jsonLDGenerator from "../js/jsonLD";
+
+const {
+  url = Astro.url,
+  frontmatter,
+} = Astro.props;
+
+const jsonLD = jsonLDGenerator({
+  type: frontmatter ? "post" : "website",
+  post: frontmatter,
+  url,
+});
+---
+
+<!-- JSON LD -->
+<Fragment set:html={jsonLD} />
