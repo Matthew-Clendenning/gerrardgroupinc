@@ -94,5 +94,66 @@
             "src": "../images/10742-press-13.jpg",
             "alt": "600 Ton Pacific Model 600-D-10-54 Downstroke Self Contained Hydraulic Press"
         }
+    ],
+
+    "slides4": [
+        {
+            "src": "../images/IMG_1264.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/IMG_1265.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/IMG_1266.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/IMG_1267.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/IMG_1268.jpg",
+            "alt": ""
+        }
+    ],
+
+    "slides5": [
+        {
+            "src": "../images/pallet-jack-1.png",
+            "alt": ""
+        },
+        {
+            "src": "../images/pallet-jack-2.png",
+            "alt": ""
+        }
+    ],
+
+    "slides6": [
+        {
+            "src": "../images/unnamed.png",
+            "alt": ""
+        },
+        {
+            "src": "../images/unnamed1.png",
+            "alt": ""
+        },
+        {
+            "src": "../images/unnamed2.png",
+            "alt": ""
+        },
+        {
+            "src": "../images/unnamed3.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/unnamed4.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/unnamed 5.png",
+            "alt": ""
+        }
     ]
 }

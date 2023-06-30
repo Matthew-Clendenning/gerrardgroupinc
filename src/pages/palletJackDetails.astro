@@ -2,28 +2,28 @@
 import Layout from "../layouts/Layout.astro";
 import Directory from "../components/MachineDirectory.astro";
 import { Carousel } from "../components/Carousel.jsx";
-import { slides4 } from "../data/carouselData.json";
+import { slides5 } from "../data/carouselData.json";
 ---
 
-<Layout title="Process - Cooling Towers | Gerrard Group Inc" 
-    description="Process - Cooling Towers"
-    title2="Process - Cooling Towers | Gerrard Group Inc" 
-    url="https://gerrardgroupinc.netlify.app/cTowersDetails/" 
-    name="Process - Cooling Towers | Gerrard Group Inc" 
-    url2="https://gerrardgroupinc.netlify.app/cTowersDetails/" 
-    title3="Process - Cooling Towers | Gerrard Group Inc"
-    url3="https://gerrardgroupinc.netlify.app/cTowersDetails/"
-    canon="https://gerrardgroupinc.netlify.app/cTowersDetails/">
+<Layout title="Pallet Jack | Gerrard Group Inc" 
+    description="Pallet Jack"
+    title2="Pallet Jack | Gerrard Group Inc" 
+    url="https://gerrardgroupinc.netlify.app/palletJackDetails/" 
+    name="Pallet Jack | Gerrard Group Inc" 
+    url2="https://gerrardgroupinc.netlify.app/palletJackDetails/" 
+    title3="Pallet Jack | Gerrard Group Inc"
+    url3="https://gerrardgroupinc.netlify.app/palletJackDetails/"
+    canon="https://gerrardgroupinc.netlify.app/palletJackDetails/">
     <Directory 
-        title="Process - Cooling Towers"
-        page="Cooling Towers"
+        title="Pallet Jack"
+        page="Jacks"
         page2="Machine Details"
         href="/liquidations"
     />
     <main class="page-container">
         <section class="machine-details">
             <Carousel client:load
-                data={slides4}
+                data={slides5}
             />
         </section>
     </main>
