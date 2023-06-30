@@ -9,10 +9,8 @@ import { SlEnergy } from 'react-icons/sl/index.js';
 import { MdOutlineWarehouse, MdOutlineFastfood } from 'react-icons/md/index.js';
 import { TbPackages } from 'react-icons/tb/index.js'
 
-import indexPic from '../assets/index-pic.png';
-import warehouse from '../assets/warehouse.png';
-import workers from '../assets/people_talking.png';
-import robotArm from '../assets/robot_arm.png';
+import workers from '../assets/Factory+People+2.jpg';
+import banner from '../assets/gerrard_montage_3_final.jpg';
 
 import liquidation from '../assets/liquidation-icon.png';
 import appraisal from '../assets/appraisal-icon.png';
@@ -42,73 +40,26 @@ import inventory from '../assets/inventory-icon.png';
                 <h2 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h2>
             </div>
             <Image 
-                src={indexPic} 
-                alt="industrial machines image" 
-                height={indexPic.height} 
-                width={indexPic.width} 
+                class="banner" 
+                src={banner}
+                height={banner.height}
+                width={banner.width}
+                alt="machines in a warehouse" 
                 loading="eager"
                 format="webp" 
             />
-            <!--<div>
-                <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
-                <h1 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h1>
-            </div>
-                <Image class="banner" src={banner} alt="machines in a warehouse" loading="eager" />-->
         </section>
         <section class="page-container">
             <div class="page-background">
                 <article class="wrapper">
-                    <h2><strong>About Gerrard Group / Gerrard Machinery Company</strong></h2>
-                    <div class="gap">
-                        <div class="comp-info-one">
-                            <Image 
-                                src={robotArm} 
-                                alt="robot arm image"
-                                height={robotArm.height}
-                                width={robotArm.width}
-                                format="webp"
-                            />
-                            <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
-                                Liquidations for a wide variety of Machinery, Equipment and other Assets.
-                                Our used machinery division, <strong>Gerrard Machinery Company, LLC</strong>, buys and 
-                                sells industrial machinery and equipment as a regular course of business. 
-                                This diversity gives us a broader understanding of both the retail and 
-                                wholesale markets which puts our clients at a huge advantage. This, along 
-                                with our strategic partners around the country and abroad, our group is 
-                                able to service a wide variety of business sectors.
-                            </p>
-                        </div>
-                        <div class="comp-info-two">
-                            <Image 
-                                src={warehouse} 
-                                alt="warehouse image"
-                                height={warehouse.height}
-                                width={warehouse.width} 
-                                format="webp"
-                            />
-                            <p>In addition to Auctions and Liquidations, we provide Appraisal and 
-                                Consulting Services to help determine <strong>highest possible returns</strong> of Company 
-                                Assets. We are not a “High Volume” or “Cookie Cutter” company, we believe 
-                                every project comes with its own needs and expectations. Our team has the 
-                                knowledge, dedication and understanding you need.
-                            </p>
-                        </div>
-                        <div class="comp-info-three">
-                            <Image 
-                                src={workers} 
-                                alt="people in a factory"
-                                height={workers.height}
-                                width={workers.width} 
-                                format="webp"
-                            />
-                            <p>Whether it’s a single piece of equipment, plant relocation, multiple 
-                                facilities, or demolition projects, we are your trusted source. Talk to 
-                                one of our team members to discuss how we can help.
-                            </p>
-                        </div>
-                    </div>
-                    <!--<img class="img-workers" loading="lazy" src="../images/Factory+People+2_copy.jpg" alt="people in a factory">
-                    <article class="comp-info">
+                    <Image 
+                        class="img-workers" 
+                        src={workers}
+                        alt="people in a factory"
+                        loading="eager"
+                        format="webp" 
+                    />
+                    <div class="comp-info">
                         <h2><strong>About Gerrard Group / Gerrard Machinery Company</strong></h2>
                         <p><strong>Gerrard Group / Gerrard Machinery Company</strong> specializes in Auctions and 
                             Liquidations for a wide variety of Machinery, Equipment and other Assets.
@@ -128,7 +79,7 @@ import inventory from '../assets/inventory-icon.png';
                         <p>Whether it’s a single piece of equipment, plant relocation, multiple 
                             facilities, or demolition projects, we are your trusted source. Talk to 
                             one of our team members to discuss how we can help.</p>
-                    </article>-->
+                    </div>
                 </article>
             </div>
             <div class="desc-back">
@@ -334,41 +285,6 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                     </div>
                 </article>
-                <!--<div class="description">
-                    <article class="comp-special">
-                        <h2><strong>Gerrard Group / Gerrard Machinery Company Specializes In...</strong></h2>
-                        <ul>
-                            <li>Auctions</li>
-                            <li>Liquidation</li>
-                            <li>Appraisals</li>
-                            <li>Retail Used Machinery Sales</li>
-                            <li>Machinery & Equipment Buy and Sell Programs</li>
-                            <li>Demolition & Remediation Projects</li>
-                            <li>Consulting</li>
-                        </ul>
-                    </article>
-                    <article class="industries">
-                        <h2><strong>Industries</strong></h2>
-                        <ul>
-                            <li>Fabricating, Metal, Rubber & Plastics Equip.</li>
-                            <li>CNC & Robotics</li>
-                            <li>Tooling & Support Equip.</li>
-                            <li>Construction & Mining</li>
-                            <li>Yellow Iron</li>
-                            <li>Oil & Gas</li>
-                            <li>Transportation</li>
-                            <li>Aerospace</li>
-                            <li>Energy Sector</li>
-                            <li>Warehouse & Support</li>
-                            <li>Food & Beverage</li>
-                            <li>Pulp & Packaging</li>
-                            <li>High-Tech & Biotech</li>
-                            <li>Medical, Dental & Pharmaceutical</li>
-                            <li>Raw, WIP & Finished Inventories<br> (used for, or made from
-                            mfg. equipment)</li>
-                        </ul>
-                    </article>
-                </div>-->
                 <section class="locations">
                     <h3><strong>Offices Located In:</strong></h3>
                     <ul>
@@ -391,42 +307,6 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     .welcome {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-        height: 100vh;
-        padding-right: 2rem;
-        background-image: conic-gradient(from 150deg at -10% 100%,#ffffff 120deg,#70b3ff 90deg,hsl(216, 35%, 18%) 1turn);
-    }
-
-    .welcome div {
-        display: grid;
-        justify-items: start;
-        align-content: center;
-        gap: .5rem;
-        position: relative;
-        top: -10%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 0 2rem;
-        color: white;
-    }
-
-    .welcome img {
-        position: relative;
-        top: -10%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: auto;
-        height: 500px;
-        animation: fadeInLeft 1s ease;
-        filter: drop-shadow(0 0 50px #ecf7ff);
-    }
-
-    /*.welcome {
         text-align: center;
         position: relative;
     }
@@ -444,27 +324,26 @@ import inventory from '../assets/inventory-icon.png';
         z-index: 1000;
         gap: .5rem;
         padding-inline: .5rem;
-    }*/
+    }
 
     .welcome-text {
-        font-size: clamp(1rem, 3.5vh, 5rem);
+        font-size: clamp(1rem, 3.5vh, 3rem);
         margin: 0;
         overflow: hidden;
     }
     .moto-text {
-        color: hsl(215, 100%, 91%);
-        font-size: clamp(1rem, 3.5vh, 5rem);
+        font-size: clamp(1rem, 3vh, 3rem);
         margin: 0;
     }
 
     .cursor {
-        background-color: #ffffff;
+        background-color: #003860;
     }
 
     .cursor2 {
         display: inline-block;
         width: 3px;
-        background-color: #ffffff;
+        background-color: #003860;
         margin-left: .1rem;
         animation: blink .8s infinite;
     }
@@ -478,19 +357,13 @@ import inventory from '../assets/inventory-icon.png';
         background-image: conic-gradient(from 90deg at -10% 100%,#ffffff 0deg,#dbecff 90deg,#fff 1turn);
     }
 
-    /*.wrapper {
+    .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
-        margin-top: 5rem;
-	    margin-bottom: 0;
-    }*/
-
-    .wrapper {
-        max-width: 1200px;
-        margin: auto;
-        margin-block: 5rem;
+        margin-block: 10rem;
+        padding-inline: 1rem;
     }
 
     .gap {
@@ -505,41 +378,25 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     .wrapper p {
-        max-width: 800px;
-        margin: auto;
         font-size: clamp(.5rem, 2.3vh, 2rem);
 	    text-indent: 55px;
     }
 
-    .comp-info-one img, .comp-info-two img, .comp-info-three img {
-        width: 300px;
+    .comp-info {
+        width: 80%;
         height: auto;
-        filter: drop-shadow(0 0 5px hsl(215, 37%, 21%));
     }
 
-    .comp-info-two img {
-        width: 350px;
+    .comp-info h2 {
+	    text-align: center;
+	    color: #425abd;
+        margin: 0;
     }
 
-    .comp-info-one, .comp-info-two, .comp-info-three {
-        gap: .5rem;
-        margin-bottom: 10rem;
-    }
-
-    .comp-info-one {
-        display: flex;
-        align-items: center;
-    }
-
-    .comp-info-two {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .comp-info-three {
-        display: flex;
-        align-items: center;
+    .img-workers {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
     }
 
     .desc-back {
@@ -580,6 +437,8 @@ import inventory from '../assets/inventory-icon.png';
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        max-width: 1000px;
+        margin-inline: auto;
         gap: 2rem;
         row-gap: .5rem;
     }
@@ -593,7 +452,7 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     .industries {
-        max-width: 1200px;
+        max-width: 1000px;
         margin-inline: auto;
         margin-bottom: 8rem;
     }
@@ -606,92 +465,6 @@ import inventory from '../assets/inventory-icon.png';
         gap: 2rem;
         row-gap: .5rem;
     }
-
-    /*.comp-info {
-        width: 80%;
-        height: auto;
-    }
-
-    .comp-info h2 {
-        font-size: clamp(1rem, 3vh, 3rem);
-	    text-align: center;
-	    color: #425abd;
-        margin: 0;
-    }
-
-    .comp-info p {
-	    font-size: clamp(.5rem, 2vh, 2rem);
-	    text-indent: 55px;
-    }
-
-    .img-workers {
-        width: 100%;
-        max-width: 500px;
-    }*/
-
-    /*.description {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        gap: 5rem;
-        margin-top: 3rem;
-        padding: 2rem;
-    }
-
-    .description li { 
-        list-style: none;
-    }
-
-    .description li:before { 
-        content:''; padding-right:10px
-    }*/
-
-    /*.comp-special {
-        display: grid;
-        justify-content: space-around;
-	    font-size: clamp(.5rem, 1.6vh, 2rem);
-	    list-style-position: outside;
-    }
-
-    .comp-special h2 {
-        width: 95%;
-        font-size: clamp(1rem, 2.8vh, 3rem);
-        text-align: center;
-        color: #425abd;
-        margin: 0;
-        margin-bottom: 1rem;
-    }
-
-    .comp-special ul {
-        line-height: 30px;
-	    padding: 0 2rem;
-	    margin: 0;
-	    font-size: clamp(.5rem, 2vh, 2rem);
-    }
-
-    .industries {
-        display: grid;
-        justify-content: space-around;
-	    font-size: clamp(.5rem, 1.6vh, 2rem);
-	    list-style-position: outside;
-    }
-
-    .industries h2 {
-        font-size: clamp(1rem, 3vh, 3rem);
-        text-align: center;
-        color: #425abd;
-        margin: 0;
-        margin-bottom: 1rem;
-    }
-
-    .industries ul {
-        line-height: 30px;
-	    font-size: clamp(.5rem, 2vh, 2rem);
-	    padding: 0;
-	    margin: 0;
-        column-count: 2;
-        gap: 1.6rem;
-    }*/
 
     .locations {
 	    text-align: center;
@@ -724,11 +497,6 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     @media (max-width: 40rem) {
-        /*.welcome div {
-		    gap: 1rem;
-            padding-inline: .5rem;
-	    }*/
-
         .welcome {
             display: grid;
             align-items: normal;
@@ -738,24 +506,15 @@ import inventory from '../assets/inventory-icon.png';
             padding: 0;
         }
 
-        .welcome img {
-            position: static;
-            height: 250px;
-            animation: transitionUp 1s ease-in;
-        }
-
         .welcome div {
-            position: relative;
             text-align: center;
             justify-items: center;
-            top: 0;
             padding-inline: 1rem;
-            text-shadow: .7px .7px #003860;
         }
 
-        /*.banner {
+        .banner {
             height: 200px;
-        }*/
+        }
 	
 	    .welcome-text {
 		    font-size: clamp(1rem, 4vh, 5rem);
@@ -765,50 +524,23 @@ import inventory from '../assets/inventory-icon.png';
 		    font-size: clamp(.5rem, 3vh, 5rem);
 	    }
 
-        /*.wrapper {
-            display: grid;
-            margin-top: 1rem;
-            margin-inline: 0;
-        }*/
-
         .wrapper {
             padding-inline: 1rem;
             margin-block: 2rem;
         }
 
-        .wrapper h2 {
-            margin-top: 3rem;
-        }
-
-        .wrapper p {
-            text-indent: inherit;
+        .comp-info {
             width: inherit;
-            max-width: inherit;
-            margin: 0;
+            margin-top: 2rem;
         }
 
-        .comp-info-one, .comp-info-two, .comp-info-three {
-            display: grid;
-            gap: 2rem;
-            margin-bottom: 6.25rem;
-        }
-
-        .comp-info-three {
-            margin-bottom: 3rem;
-        }
-
-        .comp-info-one img, .comp-info-two img, .comp-info-three img {
-            margin: auto;
-            width: 200px;
-            height: auto;
-        }
-
-        .comp-info-one img, .comp-info-two img {
-            width: 250px;
+        .comp-info p {
+            font-size: clamp(1rem, 2vh, 3rem);
+            text-indent: 25px;
         }
 
         .img-workers {
-            max-width: 250px;
+            display: none;
         }
 
         .desc-back h2 {
@@ -835,65 +567,6 @@ import inventory from '../assets/inventory-icon.png';
         .industries-wrapper {
             gap: 1.5rem;
         }
-
-        /*.comp-info {
-            width: inherit;
-            margin-top: 2rem;
-        }
-
-        .comp-info h2 {
-            font-size: clamp(1rem, 2.8vh, 3rem);
-        }
-
-        .comp-info p {
-            font-size: clamp(1rem, 2vh, 3rem);
-            text-indent: 25px;
-        }
-
-        .img-workers {
-            display: none;
-        }
-
-        .description {
-            margin-top: 3rem;
-            display: grid;
-            gap: 3rem;
-            padding-top: 0;
-            padding-inline: 1rem;
-        }
-
-        .description ul {
-            text-align: center;
-            column-count: 1;
-        }
-
-        .comp-special {
-            list-style-position: inside;
-        }
-
-        .comp-special h2 {
-            width: 100%;
-            font-size: clamp(.5rem, 5.5vw, 3rem);
-        }
-
-        .comp-special ul {
-            line-height: 35px;
-            font-size: clamp(.5rem, 4.5vw, 3rem);
-            padding-inline: 2rem;
-        }
-
-        .industries {
-            list-style-position: inside;
-        }
-
-        .industries h2 {
-            font-size: clamp(.5rem, 5.5vw, 3rem);
-        }
-
-        .industries ul {
-            line-height: 35px;
-            font-size: clamp(.5rem, 4.5vw, 3rem);
-        }*/
 
         .locations {
             padding: 3.5rem 0;
@@ -928,16 +601,7 @@ import inventory from '../assets/inventory-icon.png';
             padding-inline: 2rem;
         }
 
-        .wrapper p {
-            max-width: 600px;
-        }
-
-        .comp-info-one, .comp-info-two, .comp-info-three {
-            display: flex;
-            gap: 0;
-        }
-
-        /*.wrapper {
+        .wrapper {
             display: block;
             margin-inline: 1rem;
         }
@@ -960,35 +624,6 @@ import inventory from '../assets/inventory-icon.png';
             max-width: 300px;
             margin-right: .8rem;
         }
-
-        .description {
-            display: grid;
-            gap: 3rem;
-            margin-inline: 0;
-        }
-
-        .comp-special h2 {
-            font-size: clamp(.5rem, 2.8vw, 2rem);
-            width: 100%;
-        }
-
-        .comp-special ul {
-            font-size: clamp(.5rem, 2.4vw, 2rem);
-            line-height: 44px;
-            text-align: center;
-            list-style-position: inside;
-        }
-
-        .industries h2 {
-            font-size: clamp(.5rem, 2.8vw, 2rem);
-        }
-
-        .industries ul {
-            font-size: clamp(.5rem, 2.4vw, 2rem);
-            line-height: 44px;
-            column-count: 3;
-            list-style-position: inside;
-        }*/
     }
 
     @media (min-width: 40rem) and (max-width: 60rem) {
@@ -1000,11 +635,6 @@ import inventory from '../assets/inventory-icon.png';
             align-content: center;
             padding: 0;
             gap: .5rem;
-        }
-
-        .welcome img {
-            top: 0;
-            animation: transitionUp 2s ease;
         }
 
         .welcome div {
@@ -1030,16 +660,7 @@ import inventory from '../assets/inventory-icon.png';
             padding-inline: 1rem;
         }
 
-        .wrapper p {
-            width: inherit;
-        }
-
-        .comp-info-one, .comp-info-two, .comp-info-three {
-            display: flex;
-            gap: 1rem;
-        }
-
-        /*.wrapper {
+        .wrapper {
             display: block;
             margin-inline: 1rem;
         }
@@ -1062,44 +683,9 @@ import inventory from '../assets/inventory-icon.png';
             max-width: 300px;
             margin-right: .8rem;
         }
-
-        .description {
-            display: grid;
-            gap: 3rem;
-            margin-inline: 0;
-        }
-
-        .comp-special h2 {
-            font-size: clamp(.5rem, 2.8vw, 2rem);
-            width: 100%;
-        }
-
-        .comp-special ul {
-            font-size: clamp(.5rem, 2.4vw, 2rem);
-            line-height: 44px;
-            text-align: center;
-            list-style-position: inside;
-        }
-
-        .industries h2 {
-            font-size: clamp(.5rem, 2.8vw, 2rem);
-        }
-
-        .industries ul {
-            font-size: clamp(.5rem, 2.4vw, 2rem);
-            line-height: 44px;
-            column-count: 3;
-            list-style-position: inside;
-        }*/
     }
 
     @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
-        .welcome img {
-            height: 250px;
-            top: 0;
-            animation: transitionUp 2s ease;
-        }
-
         .welcome-text {
             font-size: clamp(1rem, 6.5vh, 5rem);
         }
@@ -1123,39 +709,12 @@ import inventory from '../assets/inventory-icon.png';
             margin-bottom: 3rem;
         }
 
-        .wrapper p {
-            font-size: 14px;
-            text-indent: inherit;
-            max-width: 400px;
-        }
-
-        .comp-info-one, .comp-info-two, .comp-info-three {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .comp-info-one img, .comp-info-two img, .comp-info-three img {
-            margin: auto;
-            width: 200px;
-            height: auto;
-        }
-
-        .comp-info-two img {
-            width: 220px;
-        }
-
         .industries {
             margin-bottom: 2rem;
         }
 
-        /*.img-workers {
+        .img-workers {
             max-width: 250px;
-        }
-
-        .wrapper {
-            display: block;
-            margin-top: 0;
-            margin-inline: 0;
         }
 
         .comp-info {
@@ -1178,39 +737,6 @@ import inventory from '../assets/inventory-icon.png';
             margin-right: 10px;
         }
 
-        .description {
-            display: flex;
-            margin-inline: 0;
-            padding-inline: 1rem;
-            padding-top: 0;
-            gap: 3rem;
-        }
-
-        .comp-special h2 {
-            font-size: clamp(1rem, 2vw, 2rem);
-            width: 100%;
-        }
-
-        .comp-special ul {
-            font-size: clamp(.5rem, 2vw, 2rem);
-            line-height: 25px;
-            text-align: left;
-            padding: 0;
-            list-style-position: inside;
-        }
-
-        .industries h2 {
-            font-size: clamp(1rem, 2vw, 2rem);
-        }
-
-        .industries ul {
-            font-size: clamp(.5rem, 2vw, 2rem);
-            column-count: 2;
-            gap: .5rem;
-            line-height: 20px;
-            list-style-position: inside;
-        }*/
-
         .locations {
             padding: 2.5rem 0;
         }
@@ -1229,9 +755,9 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     @media (min-width: 1920px) {
-        /*.banner {
+        .banner {
             height: 450px;
-        }*/
+        }
         
         .welcome {
             justify-content: space-around;
@@ -1241,28 +767,7 @@ import inventory from '../assets/inventory-icon.png';
             padding-inline: 0;
         }
 
-        .wrapper {
-            max-width: 1600px;
-        }
-
-        .gap {
-            gap: 5rem;
-        }
-
-        .wrapper p {
-            max-width: 1200px;
-        }
-
-        .comp-info-one img, .comp-info-two img {
-            width: 350px;
-            filter: drop-shadow(0 0 10px hsl(215, 37%, 21%));
-        }
-
-        .comp-info-two img {
-            width: 400px;
-        }
-
-        /*.img-workers {
+        .img-workers {
             width: 500px;
         }
 
@@ -1274,7 +779,7 @@ import inventory from '../assets/inventory-icon.png';
 
         .comp-info {
             width: 60%;
-        }*/
+        }
     }
 </style>
 
