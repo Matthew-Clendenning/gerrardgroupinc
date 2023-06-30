@@ -27,7 +27,7 @@ export default function jsonLDGenerator({ type, post, url }) {
       "@context": "https://schema.org/",
       "@type": "WebSite",
       "name": "${siteData.title}",
-      "url": "${import.meta.env.SITE}"
+      "url": "www.gerrardgroupinc.com"
       }
     </script>`;
 }
