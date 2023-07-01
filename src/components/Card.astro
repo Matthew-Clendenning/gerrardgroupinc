@@ -23,6 +23,7 @@ const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, t
         {imageURL && <Image 
             src={imageURL} 
             alt={alt}
+            loading='eager'
             format='webp'
         />}
     </div>
