@@ -1,5 +1,5 @@
 [[headers]]
-for = "/*"
-    [headers.values]
-    X-Content-Type-Options = "nosniff"
-    Cache-Control = "public, max-age=31536000"
+for = "/*.js"
+  [headers.values]
+  Cache-Control = "public, max-age=31536000"
+  Query-String = "v=1.0"
