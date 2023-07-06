@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 
 export interface Props {
+    title?: string;
     name: string;
     body?: string;
     email?: string;
@@ -15,7 +16,7 @@ export interface Props {
     target?: string;
 }
 
-const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
+const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
 ---
 
 <article class="card-container">
@@ -29,7 +30,7 @@ const { name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, t
     </div>
     <div class="card-content">
         <div class="card-title">
-            <h2><a title="Title of card" class="link-text" href={href} target="_blank">{name}</a></h2>
+            <h2><a title={title} class="link-text" href={href} target="_blank">{name}</a></h2>
         </div>
         <div class="card-body">
             <p>{body}</p>

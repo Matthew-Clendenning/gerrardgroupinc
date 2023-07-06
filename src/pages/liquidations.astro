@@ -22,6 +22,7 @@ import pressThree from '../assets/10742-press-1.jpeg';
         <h1 class="title"><span class="title-text"></span><span class="cursor">&nbsp;</span></h1>
         <section class="coming-soon">
             <Card 
+                title="Cooling Towers"
                 name="Process - Cooling Towers"
                 body="*COMING SOON*"
                 imageURL={soon1}
@@ -30,6 +31,7 @@ import pressThree from '../assets/10742-press-1.jpeg';
                 alt="Process - Cooling Towers inside a warehouse"
             />
             <Card 
+                title="Pallet Jack"
                 name="Pallet Jack"
                 body="*COMING SOON*"
                 imageURL={soon2}
@@ -38,6 +40,7 @@ import pressThree from '../assets/10742-press-1.jpeg';
                 alt="Picture of Pallet Jacks inside a warehouse"
             />
             <Card 
+                title="Racking"
                 name="Racking"
                 body="*COMING SOON*"
                 imageURL={soon3}
@@ -48,6 +51,7 @@ import pressThree from '../assets/10742-press-1.jpeg';
         </section>
         <section class="cards">
             <Card 
+                title="200 ton Pacific Hydraulic Press"
                 name="200T Pacific Hydraulic Press"
                 imageURL={pressOne}
                 btnName="More Details"
@@ -55,6 +59,7 @@ import pressThree from '../assets/10742-press-1.jpeg';
                 alt="200 ton Pacific Hydraulic Press being displayed for selling"
             />
             <Card 
+                title="300 ton Pacific Hydraulic Press"
                 name="300T Pacific Hydraulic Press"
                 imageURL={pressTwo}
                 btnName="More Details"
@@ -62,6 +67,7 @@ import pressThree from '../assets/10742-press-1.jpeg';
                 alt="300 ton Pacific Hydraulic Press being displayed for selling"
             />
             <Card 
+                title="600 ton Pacific Hydraulic Press"
                 name="600T Pacific Hydraulic Press"
                 imageURL={pressThree}
                 btnName="More Details"
@@ -333,7 +339,7 @@ import pressThree from '../assets/10742-press-1.jpeg';
 
     .link-text {
         font-size: clamp(1rem, 3vh, 3rem);
-        pointer-events: none;
+        cursor: default;
         /*color: black;*/
         text-decoration: none;
     }

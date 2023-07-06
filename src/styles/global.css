@@ -116,7 +116,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 1rem;
-	box-shadow: 0 15px 30px -10px #0000007c;
+	box-shadow: 0 10px 30px -25px #0000007c;
 }
 
 .mobile-nav-toggle {
@@ -185,7 +185,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.5rem 2rem;
-	background: #bdd1ec;
+	background: #aec4e1;
 }
 
 footer h3 {
@@ -193,7 +193,7 @@ footer h3 {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
-	text-shadow: .7px .7px #003860;
+	text-shadow: .7px .7px #000000;
 	font-size: clamp(.5rem, 2.5vh, 3rem);
 }
 
