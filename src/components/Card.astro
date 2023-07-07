@@ -17,7 +17,7 @@ export interface Props {
     target?: string;
 }
 
-const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
+const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, btnTitle, target } = Astro.props as Props;
 ---
 
 <article class="card-container">
@@ -46,7 +46,7 @@ const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btn
     </div>
     <div class="btn">
         <button>
-            <a title="contact button" href={href} target={target}>{btnName}</a>
+            <a title={btnTitle} href={href} target={target}>{btnName}</a>
         </button>
     </div>
 </article>
