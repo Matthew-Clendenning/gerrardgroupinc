@@ -6,7 +6,7 @@ export default function jsonLDGenerator({ type, post, url }) {
     return `<script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "BlogPosting",
+        "@type": "Website",
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "${url}"
