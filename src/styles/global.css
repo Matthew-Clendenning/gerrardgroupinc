@@ -581,3 +581,9 @@ footer div a {
 		display: none;
 	}
 }
+
+@media (min-width: 1920px) {
+	.nav-text {
+		font-size: clamp(.5rem, 1.3vw, 2rem);
+	}
+}
