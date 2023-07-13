@@ -515,11 +515,11 @@ footer div a {
 	}
 
 	.logo {
-		max-width: 100px;
+		max-width: 120px;
 	}
 	
 	.nav-text {
-		font-size: clamp(.5rem, 1.5vw, 2rem);
+		font-size: clamp(.5rem, 2vw, 2rem);
 	}
 	
 	footer {
