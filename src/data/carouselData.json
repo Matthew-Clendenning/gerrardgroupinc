@@ -98,23 +98,23 @@
 
     "slides4": [
         {
-            "src": "../images/IMG_1264.jpg",
+            "src": "../images/cooling-tower-1.jpg",
             "alt": "Cooling Tower Machine"
         },
         {
-            "src": "../images/IMG_1265.jpg",
+            "src": "../images/cooling-tower-2.jpg",
             "alt": "Cooling Tower Machine"
         },
         {
-            "src": "../images/IMG_1266.jpg",
+            "src": "../images/cooling-tower-3.jpg",
             "alt": "Cooling Tower Machine"
         },
         {
-            "src": "../images/IMG_1267.jpg",
+            "src": "../images/cooling-tower-4.jpg",
             "alt": "Cooling Tower Machine"
         },
         {
-            "src": "../images/IMG_1268.jpg",
+            "src": "../images/cooling-tower-5.jpg",
             "alt": "Cooling Tower Machine"
         }
     ],
@@ -132,27 +132,27 @@
 
     "slides6": [
         {
-            "src": "../images/unnamed.png",
+            "src": "../images/racking-img-1.png",
             "alt": "Racking Equipment inside a warehouse"
         },
         {
-            "src": "../images/unnamed1.png",
+            "src": "../images/racking-img-2.png",
             "alt": "Racking Equipment inside a warehouse"
         },
         {
-            "src": "../images/unnamed2.png",
+            "src": "../images/racking-img-3.png",
             "alt": "Racking Equipment inside a warehouse"
         },
         {
-            "src": "../images/unnamed3.jpg",
+            "src": "../images/racking-img-4.jpg",
             "alt": "Racking Equipment inside a warehouse"
         },
         {
-            "src": "../images/unnamed4.jpg",
+            "src": "../images/racking-img-5.jpg",
             "alt": "Racking Equipment inside a warehouse"
         },
         {
-            "src": "../images/unnamed 5.png",
+            "src": "../images/racking-img-6.png",
             "alt": "Racking Equipment inside a warehouse"
         }
     ]
