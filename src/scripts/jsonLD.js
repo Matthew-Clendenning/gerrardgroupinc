@@ -28,9 +28,6 @@ export default function jsonLDGenerator({ type, post, url }) {
         "@type": "WebSite",
         "name": "${siteData.title}",
         "url": "${import.meta.env.SITE}",
-        "potentialAction": {
-          "@type": "SearchAction",
-        }
       }
     </script>`;
 }
