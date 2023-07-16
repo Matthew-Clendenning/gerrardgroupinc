@@ -25,6 +25,8 @@ const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btn
         {imageURL && <Image 
             src={imageURL} 
             alt={alt}
+            width={imageURL.width}
+            height={imageURL.height}
             loading='eager'
             format='webp'
         />}
