@@ -223,9 +223,6 @@ footer h3 a span:hover {
 }
 
 footer h3 a {
-	border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(5,88,149,.3);
 	text-decoration: none;
 }
 
