@@ -17,9 +17,7 @@ export default defineConfig({
    },
    redirects: {
     '/liquidationssurplus': '/liquidations/',
-    '/coolingtowersdetails/': '/cooling-towers/',
-    '/auctions': '/auctions/',
-    '/services': '/services/'
+    '/coolingtowersdetails/': '/cooling-towers/'
    },
   integrations: [react(), sitemap({
     filter: (page) => 
