@@ -7,11 +7,19 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://gerrardgroupinc.com',
+  output: 'static',
   build: {
     inlineStylesheets: 'auto'
   },
   experimental: {
-    assets: true
+    assets: true,
+    redirects: true
+   },
+   redirects: {
+    '/liquidationssurplus': '/liquidations/',
+    '/coolingtowersdetails/': '/cooling-towers/',
+    '/auctions': '/auctions/',
+    '/services': '/services/'
    },
   integrations: [react(), sitemap({
     filter: (page) => 
