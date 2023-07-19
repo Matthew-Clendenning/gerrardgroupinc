@@ -13,12 +13,6 @@ export default defineConfig({
   },
   experimental: {
     assets: true,
-    redirects: true
-   },
-   redirects: {
-    '/liquidationssurplus': '/liquidations/',
-    '/coolingtowersdetails/': '/cooling-towers/',
-    '/rackingDetails/': '/rackingdetails/'
    },
   integrations: [react(), sitemap({
     filter: (page) => 
