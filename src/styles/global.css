@@ -1,5 +1,8 @@
 @font-face {
 	font-family: "Satoshi";
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
 	src: local("Satoshi Regular"),
 	url("/fonts/Satoshi-Regular.woff2")
 	format("woff2"),
@@ -7,20 +10,30 @@
 	format("woff"),
 	url("/fonts/Satoshi-Regular.ttf")
 	format("tff");
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
 }
 
 @font-face {
     font-family: 'Hero-New';
-    src: local('Hero New Regular'), 
-	url('/fonts/Hero New Regular.woff')
-	format('woff');
 	font-style: normal;
     font-weight: normal;
 	font-display: swap;
-    }
+    src: local('Hero New Regular'), 
+	url('/fonts/Hero New Regular.woff')
+	format('woff');
+}
+
+@font-face {
+	font-family: 'MerriweatherSans-Regular';
+	src: url('../fonts/MerriweatherSans-Regular.woff2')
+	format('woff2'),
+	url('../fonts/MerriweatherSans-Regular.woff')
+	format('woff'),
+	url('../fonts/MerriweatherSans-Regular.ttf')
+	format('truetype');
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
 
 .title {
 	text-align: center;
@@ -334,7 +347,7 @@ footer div a {
 
 @media (max-width: 40rem) {
 	h1, h2, h3, h4 {
-		letter-spacing: -1px;
+		font-family: "MerriweatherSans-Regular", sans-serif;
 	}
 
 	#transition {
