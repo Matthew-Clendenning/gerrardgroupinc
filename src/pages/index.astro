@@ -82,7 +82,7 @@ import inventory from '../assets/inventory-icon.png';
                     <div class="specialties">
                         <div class="special-item">
                             <div class="img-container">
-                                <RiAuctionLine size="40px"/>
+                                <RiAuctionLine/>
                             </div>
                             <p>Auctions</p>
                         </div>
@@ -124,7 +124,7 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="special-item">
                             <div class="img-container">
-                                <FiDollarSign size="40px"/>
+                                <FiDollarSign/>
                             </div>
                             <p>Machinery & Equipment Buy and Sell Programs</p>
                         </div>
@@ -183,13 +183,13 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <BsTools size="40px" />
+                                <BsTools />
                             </div>
                             <p>Tooling & Support Equip.</p>
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <GiMining size="40px" />
+                                <GiMining />
                             </div>
                             <p>Construction & Mining</p>
                         </div>
@@ -207,43 +207,43 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <GiOilPump size="40px" />
+                                <GiOilPump />
                             </div>
                             <p>Oil & Gas</p>
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <BsTruck size="40px" />
+                                <BsTruck />
                             </div>
                             <p>Transportation</p>
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <BsAirplane size="40px" />
+                                <BsAirplane />
                             </div>
                             <p>Aerospace</p>
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <SlEnergy size="40px"/>
+                                <SlEnergy/>
                             </div>
                             <p>Energy Sector</p>
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <MdOutlineWarehouse size="40px" />
+                                <MdOutlineWarehouse />
                             </div>
                             <p>Warehouse & Support</p>
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <MdOutlineFastfood size="40px" />
+                                <MdOutlineFastfood />
                             </div>
                             <p>Food & Beverage</p>
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <TbPackages size="40px" />
+                                <TbPackages />
                             </div>
                             <p>Pulp & Packaging</p>
                         </div>
@@ -261,7 +261,7 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <GiMedicines size="40px" />
+                                <GiMedicines />
                             </div>
                             <p>Medical, Dental & Pharmaceutical</p>
                         </div>
@@ -413,6 +413,11 @@ import inventory from '../assets/inventory-icon.png';
         color: white;
         font-size: clamp(.5rem, 1.1rem, 3rem);
     }
+
+    .specialties svg, .industries svg {
+        width: 50px;
+        height: 50px;
+    }
     
     .description {
         padding-inline: 1rem;
@@ -437,7 +442,7 @@ import inventory from '../assets/inventory-icon.png';
         padding: 1.5rem;
         border-radius: 50%;
         background-image: linear-gradient(145deg,rgba(216, 216, 216, 0.6) 0%,rgb(255, 255, 255) 100%);
-        box-shadow: 1px 1px 5px rgba(216, 216, 216, 0.6) inset, 0 10px 15px -5px #000000, 0 4px 6px -4px #ffffff;
+        box-shadow: 1px 1px 5px rgba(216, 216, 216, 0.6) inset, 0 7px 15px -5px #000000, 0 4px 6px -4px #ffffff;
     }
 
     .industries {
@@ -540,6 +545,10 @@ import inventory from '../assets/inventory-icon.png';
             margin-top: 3rem;
         }
 
+        .desc-back p {
+            max-width: 88px;
+        }
+
         .description {
             margin-top: 2rem;
         }
@@ -549,8 +558,13 @@ import inventory from '../assets/inventory-icon.png';
             gap: 1.5rem;
         }
 
-        .specialties img {
+        .specialties img, .industries img {
             width: 40px;
+        }
+
+        .specialties svg, .industries svg {
+            width: 40px;
+            height: 40px;
         }
 
         .img-container {
