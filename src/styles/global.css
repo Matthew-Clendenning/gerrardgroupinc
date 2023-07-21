@@ -207,7 +207,7 @@ footer h3 {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
-	text-shadow: .7px .7px #000000;
+	text-shadow: 1px 1px #000000;
 	font-size: clamp(.5rem, 2.5vh, 3rem);
 }
 
@@ -219,7 +219,7 @@ footer h3 span {
 
 footer h3 a span:hover {
 	color: #1e94eb;
-	transition: .2s ease-in-out;
+	transition: .1s ease-in-out;
 }
 
 footer h3 a {
@@ -228,7 +228,7 @@ footer h3 a {
 
 footer h3 a:hover {
 	color: #1e94eb;
-	transition: .2s ease-in-out;
+	transition: .1s ease-in-out;
 }
 
 footer div a {
