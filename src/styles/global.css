@@ -354,6 +354,7 @@ footer div a {
 		background: #ffffff;
 		border-radius: 0;
 		padding-right: 0;
+		padding-block: .8rem;
 	}
 	
 	.flex {
@@ -429,11 +430,12 @@ footer div a {
 	}
 
 	.logo {
-		max-width: 180px;
+		max-width: 130px;
 	}
 
 	footer .logo {
 		display: inherit;
+		max-width: 150px;
 	}
 
     footer {
