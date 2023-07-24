@@ -20,5 +20,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "sharp": "^0.32.1"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.2"
   }
 }

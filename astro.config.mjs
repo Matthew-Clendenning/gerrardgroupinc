@@ -13,7 +13,7 @@ export default defineConfig({
   },
   experimental: {
     assets: true,
-   },
+  },
   integrations: [react(), sitemap({
     filter: (page) => 
       page !== "https://gerrardgroupinc.com/PacificHP/" && 
