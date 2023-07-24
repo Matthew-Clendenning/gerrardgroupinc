@@ -68,7 +68,11 @@ const { title, href, href2, page, page2 } = Astro.props as Props;
         user-select: none;
     }
 
-    @media (max-width: 30rem) {
+    @media (max-width: 40rem) {
+        .container {
+            padding-block: 1.5rem;
+        }
+
         .directory-title {
             text-align: center;
             font-size: clamp(.5rem, 2vh, 3rem);
