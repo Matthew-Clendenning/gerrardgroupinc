@@ -6,7 +6,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://gerrardgroupinc.com',
+  site: 'https://gerrardgroupinc.com/',
   output: 'static',
   build: {
     inlineStylesheets: 'auto'
@@ -15,6 +15,13 @@ export default defineConfig({
     assets: true,
   },
   integrations: [react(), sitemap({
+    lastmod: new Date('2023-07-24'),
+    i18n: {
+      defaultLocale: 'en',
+      locales: {
+        en: 'en-US'
+      }
+    },
     filter: (page) => 
       page !== "https://gerrardgroupinc.com/PacificHP/" && 
       page !== "https://gerrardgroupinc.com/timkenBearings/" && 
