@@ -14,46 +14,40 @@ import placeHolder from '../assets/placeholder-person-square.png';
     <main class="page-container">
         <h1 class="title"><span class="title-text"></span><span class="cursor">&nbsp;</span></h1>
         <section class="cards">
-            <div class="one">
-                <Card 
-                    title="Daniel Gerrard"
-                    name="Daniel Gerrard"
-                    body="President & CEO"
-                    email="Gerrardmachinery@gmail.com"
-                    phone="847-894-3434"
-                    btnName="Contact"
-                    imageURL={dan}
-                    alt="dan gerrard"
-                    href="mailto:Gerrardmachinery@gmail.com"
-                />
-            </div>
-            <div class="two">
-                <Card 
-                    title="Mike Kletecka"
-                    name="Mike Kletecka"
-                    body="Vice President - Auctions, Liquidiations, Acquisitions"
-                    email="Mike@Gerrardgroupinc.com"
-                    phone="818-355-5169"
-                    btnName="CONTACT"
-                    imageURL={mike}
-                    alt="mike kletecka"
-                    href="mailto:Mike@Gerrardgroupinc.com"
-                />
-            </div>
-            <div class="three">
-                <Card 
-                    title="Sara Vera"
-                    name="Sara Vera"
-                    body="Vice President - Mexico/South America"
-                    email="Sara.Gerrardmachinery@gmail.com"
-                    phone="847-322-0431"
-                    btnName="CONTACT"
-                    imageURL={sara}
-                    alt="sara gerrard"
-                    href="mailto:Sara.Gerrardmachinery@gmail.com"
-                />
-            </div>
-            <div class="four">
+            <Card 
+                title="Daniel Gerrard"
+                name="Daniel Gerrard"
+                body="President & CEO"
+                email="Gerrardmachinery@gmail.com"
+                phone="847-894-3434"
+                btnName="Contact"
+                imageURL={dan}
+                alt="dan gerrard"
+                href="mailto:Gerrardmachinery@gmail.com"
+            />
+            <Card 
+                title="Mike Kletecka"
+                name="Mike Kletecka"
+                body="Vice President - Auctions, Liquidiations, Acquisitions"
+                email="Mike@Gerrardgroupinc.com"
+                phone="818-355-5169"
+                btnName="CONTACT"
+                imageURL={mike}
+                alt="mike kletecka"
+                href="mailto:Mike@Gerrardgroupinc.com"
+            />
+            <Card 
+                title="Sara Vera"
+                name="Sara Vera"
+                body="Vice President - Mexico/South America"
+                email="Sara.Gerrardmachinery@gmail.com"
+                phone="847-322-0431"
+                btnName="CONTACT"
+                imageURL={sara}
+                alt="sara gerrard"
+                href="mailto:Sara.Gerrardmachinery@gmail.com"
+            />
+            <div class="shadow-fix">
                 <Card 
                     title="Jamie Gumpel"
                     name="Jamie Gumpel"
@@ -66,7 +60,7 @@ import placeHolder from '../assets/placeholder-person-square.png';
                     href="mailto:Gerrardmachinery@gmail.com"
                 />
             </div>
-            <div class="five">
+            <div class="shadow-fix">
                 <Card 
                     title="Matthew Clendenning"
                     name="Matthew Clendenning"
@@ -92,51 +86,14 @@ import placeHolder from '../assets/placeholder-person-square.png';
         gap: 3rem;
     }
 
-    .one {
-        opacity: 0;
-        transform: translateY(4rem);
-	    animation: fadeInUp 1.3s ease-in-out 2s forwards;
-    }
-
-    .two {
-        opacity: 0;
-        transform: translateY(4rem);
-	    animation: fadeInUp 1.3s ease-in-out 2.3s forwards;
-    }
-
-    .three {
-        opacity: 0;
-        transform: translateY(4rem);
-	    animation: fadeInUp 1.3s ease-in-out 2.6s forwards;
-    }
-
-    .four {
-        opacity: 0;
-        transform: translateY(4rem);
-	    animation: fadeInUp 1.3s ease-in-out 2.9s forwards;
-    }
-
-    .four img {
+    .shadow-fix img {
         box-shadow: none;
         filter: drop-shadow(0 0 30px hsl(0, 0%, 20%));
     }
 
-    .five {
-        opacity: 0;
-        transform: translateY(4rem);
-	    animation: fadeInUp 1.3s ease-in-out 3.2s forwards;
-    }
-
-    .five img {
+    .shadow-fix img {
         box-shadow: none;
         filter: drop-shadow(0 0 30px hsl(0, 0%, 20%));
-    }
-
-    @keyframes fadeInUp {
-	    to {
-	        opacity: 100%; 
-	        transform: translateY(0); 
-	    }
     }
 
     .page-container {
@@ -153,70 +110,6 @@ import placeHolder from '../assets/placeholder-person-square.png';
 
     .card-email span, .card-phone span {
         color: hsl(216, 53%, 84%);
-    }
-
-    @media (max-width: 40rem) {
-        .one {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-
-        .two {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-
-        .three {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-
-        .four {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-
-        .five {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
-        .one {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-
-        .two {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-
-        .three {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-
-        .four {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
-
-        .five {
-            opacity: 1;
-            transform: none;
-            animation: none;
-        }
     }
 </style>
 
