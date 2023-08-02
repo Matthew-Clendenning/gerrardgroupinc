@@ -2,8 +2,6 @@ import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 
-import image from "@astrojs/image";
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://gerrardgroupinc.com/',
@@ -13,9 +11,10 @@ export default defineConfig({
   },
   experimental: {
     assets: true,
+    //viewTransitions: true
   },
   integrations: [react(), sitemap({
-    lastmod: new Date('2023-07-24'),
+    lastmod: new Date('2023-08-02'),
     i18n: {
       defaultLocale: 'en',
       locales: {
@@ -26,7 +25,5 @@ export default defineConfig({
       page !== "https://gerrardgroupinc.com/PacificHP/" && 
       page !== "https://gerrardgroupinc.com/timkenBearings/" && 
       page !== "https://gerrardgroupinc.com/timkenDetails/",
-  }), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
   })],
 });
