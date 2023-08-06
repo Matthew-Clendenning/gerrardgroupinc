@@ -14,7 +14,7 @@ export default defineConfig({
     //viewTransitions: true
   },
   integrations: [react(), sitemap({
-    lastmod: new Date('2023-08-02'),
+    lastmod: new Date('2023-08-06'),
     i18n: {
       defaultLocale: 'en',
       locales: {
