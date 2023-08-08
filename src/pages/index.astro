@@ -30,8 +30,8 @@ import inventory from '../assets/inventory-icon.png';
     <main>
         <section class="welcome">
             <div>
-                <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
-                <h2 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h2>
+                <h1 class="welcome-text"><strong><span class="intro">Welcome to Gerrard Machinery Company</span></strong></h1><!--<span class="cursor">&nbsp;</span>-->
+                <h2 class="moto-text"><strong><span class="moto">Buyer's and Sellers of Industrial Machinery and Equipment</span></strong></h2><!--<span class="cursor2">&nbsp;</span>-->
             </div>
             <Image 
                 class="banner" 
@@ -296,7 +296,7 @@ import inventory from '../assets/inventory-icon.png';
     .banner {
 	    width: 100%;
 	    height: 400px;
-	    opacity: 40%;
+	    opacity: 30%;
         border-bottom: 1px solid rgba(35,39,47,1);
     }
 
@@ -330,7 +330,7 @@ import inventory from '../assets/inventory-icon.png';
         margin: 0;
     }
 
-    .cursor {
+    /*.cursor {
         background-color: #003860;
     }
 
@@ -344,7 +344,7 @@ import inventory from '../assets/inventory-icon.png';
 
     .cursor2.typing {
         animation: none;
-    }
+    }*/
 
     .wrapper {
         display: flex;
@@ -787,7 +787,7 @@ import inventory from '../assets/inventory-icon.png';
     }
 </style>
 
-<script async type="text/javascript" defer="defer" is:inline>
+<!--<script async type="text/javascript" defer="defer" is:inline>
     const typedTextSpan = document.querySelector(".intro");
     const cursor = document.querySelector(".cursor");
     const typedText = document.querySelector(".moto");
@@ -831,4 +831,4 @@ import inventory from '../assets/inventory-icon.png';
 	    if(textArray.length) setTimeout(type, typingDelay + 250);
 	    if(titleArray.length) setTimeout(typer, typingDelay + 3700);
     });
-</script>
+</script>-->
