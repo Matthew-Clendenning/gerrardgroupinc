@@ -11,7 +11,7 @@ export default defineConfig({
   },
   experimental: {
     assets: true,
-    viewTransitions: true
+    //viewTransitions: true
   },
   integrations: [react(), sitemap({
     lastmod: new Date('2023-08-06'),
