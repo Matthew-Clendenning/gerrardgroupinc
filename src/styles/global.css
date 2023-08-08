@@ -48,6 +48,21 @@ h1, h2, h3 {
 	margin-top: 0;
 }
 
+#transition {
+    animation: transitionIn .8s ease-in-out;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+		transform: translate3d(0, 10px, 0);
+    }
+    to {
+        opacity: 1;
+		transform: translate3d(0, 0, 0);
+    }
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -285,6 +300,10 @@ footer div a {
 	h1, h2, h3, h4 {
 		letter-spacing: -1px;
 	}
+
+	#transition {
+        animation: transitionIn .5s ease-in-out;
+    }
 
 	#primary-navigation {
 		align-items: flex-start;
