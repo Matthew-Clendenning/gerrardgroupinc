@@ -17,9 +17,7 @@ export default defineConfig({
     lastmod: new Date('2024-04-03'),
     i18n: {
       defaultLocale: 'en',
-      locales: {
-        en: 'en-US'
-      }
+      locales: ["en"]
     },
     filter: (page) => 
       page !== "https://gerrardgroupinc.com/PacificHP/" && 
