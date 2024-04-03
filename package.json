@@ -20,6 +20,6 @@
     "react-icons": "^4.9.0"
   },
   "devDependencies": {
-    "cypress": "^12.17.2"
+    "cypress": "^13.7.2"
   }
 }
