@@ -9,10 +9,6 @@ export default defineConfig({
   build: {
     inlineStylesheets: 'auto'
   },
-  experimental: {
-    assets: true,
-    //viewTransitions: true
-  },
   integrations: [react(), sitemap({
     lastmod: new Date('2024-04-03'),
     i18n: {

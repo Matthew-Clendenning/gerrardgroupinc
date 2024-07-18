@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^3.1.1",
-    "@astrojs/sitemap": "^3.1.2",
+    "@astrojs/react": "^3.6.0",
+    "@astrojs/sitemap": "^3.1.6",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
-    "astro": "^4.5.15",
+    "astro": "^4.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0"
