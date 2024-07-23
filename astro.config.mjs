@@ -10,10 +10,15 @@ export default defineConfig({
     inlineStylesheets: 'auto'
   },
   integrations: [react(), sitemap({
-    lastmod: new Date('2024-04-03'),
+    priority: 0.7,
+    lastmod: new Date('2024-07-23'),
     i18n: {
       defaultLocale: 'en',
-      locales: ["en"]
+      locales: {
+        en: 'en-US',
+        es: 'es-ES',
+        fr: 'fr-CA',
+      }
     },
     filter: (page) => 
       page !== "https://gerrardgroupinc.com/PacificHP/" && 
