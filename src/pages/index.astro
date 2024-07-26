@@ -30,8 +30,9 @@ import inventory from '../assets/inventory-icon.png';
     <main>
         <section class="welcome">
             <div>
-                <h1 class="welcome-text"><strong><span class="intro">Welcome to Gerrard Machinery Company</span></strong></h1><!--<span class="cursor">&nbsp;</span>-->
-                <h2 class="moto-text"><strong><span class="moto">Buyer's and Sellers of Industrial Machinery and Equipment</span></strong></h2><!--<span class="cursor2">&nbsp;</span>-->
+                <p class="welcome-start">Welcome To</p>
+                <h1 class="welcome-text"><strong><span class="intro"></span></strong><span class="cursor">&nbsp;</span></h1>
+                <!--<h2 class="moto-text"><strong><span class="moto"></span></strong><span class="cursor2">&nbsp;</span></h2>-->
             </div>
             <Image 
                 class="banner" 
@@ -320,17 +321,24 @@ import inventory from '../assets/inventory-icon.png';
         padding-inline: .5rem;
     }
 
-    .welcome-text {
-        font-size: clamp(1rem, 3.5vh, 3rem);
-        margin: 0;
-        overflow: hidden;
-    }
-    .moto-text {
-        font-size: clamp(1rem, 3vh, 3rem);
+    .welcome-start {
+        font-size: clamp(1rem, 2.5vh, 3rem);
         margin: 0;
     }
 
-    /*.cursor {
+    .welcome-text {
+        font-size: clamp(1rem, 4vh, 5rem);
+        text-transform: uppercase;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    /*.moto-text {
+        font-size: clamp(1rem, 3vh, 3rem);
+        margin: 0;
+    }*/
+
+    .cursor {
         background-color: #003860;
     }
 
@@ -344,7 +352,7 @@ import inventory from '../assets/inventory-icon.png';
 
     .cursor2.typing {
         animation: none;
-    }*/
+    }
 
     .wrapper {
         display: flex;
@@ -509,16 +517,22 @@ import inventory from '../assets/inventory-icon.png';
         }
 
         .banner {
-            height: 200px;
+            height: 600px;
         }
 	
 	    .welcome-text {
-		    font-size: clamp(1rem, 3vh, 5rem);
+            width: 100%;
+		    font-size: clamp(1rem, 3.5vh, 5rem);
 	    }
+
+        .welcome-start {
+            font-size: clamp(1rem, 2.3vh, 3rem);
+        }
 	
-	    .moto-text {
+	    /*.moto-text {
+            width: 100%;
 		    font-size: clamp(.5rem, 2.5vh, 5rem);
-	    }
+	    }*/
 
         .wrapper {
             padding-inline: 1rem;
@@ -793,7 +807,7 @@ import inventory from '../assets/inventory-icon.png';
     const typedText = document.querySelector(".moto");
     const cursor2 = document.querySelector(".cursor2");
 
-    const textArray = ["Welcome to Gerrard Machinery Company"];
+    const textArray = ["Gerrard Machinery Company"];
     const titleArray = ["Buyer's and Sellers of Industrial Machinery and Equipment"];
     const typingDelay = 70;
 
