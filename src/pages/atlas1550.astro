@@ -2,51 +2,39 @@
 import Layout from "../layouts/Layout.astro";
 import Directory from "../components/MachineDirectory.astro";
 import { Carousel } from "../components/Carousel.jsx";
-import { slides2 } from "../data/carouselData.json";
+import { slides9 } from "../data/carouselData.json";
 ---
 
-<Layout title="300 Ton Pacific Hydraulic Press | Gerrard Group Inc" 
-    description="300 Ton Pacific Model 300-D-10-60 Downstroke Self Contained Hydraulic Press – New 1979 Housing Type – Gib Guided - Dual Cylinder –“T-Slotted” Bed and Slide."
-    canon="https://gerrardgroupinc.com/300-ton-pacific-hydraulic-press/"
+<Layout
+    title="Atlas Copco XRVS 1550 CD Portable Air Compressor | Gerrard Group Inc"
+    description="Atlas Copco, Model XRVS 1550 CD, High Pressure, Diesel, Portable Air Compressor – New 2014 (Only 1942 Hours). Equipped with Cat Diesel Engine, After Cooler, Water Separator, Electric Block Heater."
+    canon=""
     >
     <Directory 
-        title="300 Ton Pacific Model Hydraulic Press"
-        page="Hydraulic Presses"
+        title="Atlas Copco XRVS 1550 CD Portable Air Compressor"
+        page=""
         page2="Machine Details"
         href="/liquidations"
     />
     <main class="page-container">
         <section class="machine-details">
             <Carousel client:load
-                data={slides2}
+                data={slides9}
             />
             <article class="machine">
-				<h2>300 Ton Pacific Model 300-D-10-60 Downstroke Self Contained Hydraulic Press – New 1979
-				Housing Type – Gib Guided - Dual Cylinder –“T-Slotted” Bed and Slide</h2>
-				<p>Serial No.: <strong>8378 (1978)</strong></p>
+				<h2>Atlas Copco, Model XRVS 1550 CD, High Pressure, Diesel, Portable Air Compressor– New 2016 (Only 1415 Hours)</h2>
+				<p>Model: <strong>XRVS 1550 CD7 T2 TANDEM EB AFT</strong></p>
 				<hr>
                 <div class="machine-info-container">
                     <div class="details">
-                        <div class="carousel-info">Bed Area (Nominal):<span>123" L-R x 60" F-B (T-Slotted F-B)</span></div>
-                        <div class="carousel-info">Slide Area (Nominal):<span>123" L-R x 60" F-B (T-Slotted F-B)</span></div>
-                        <div class="carousel-info">Distance Between Housings:<span>28" L-R</span></div>
-                        <div class="carousel-info">Stroke of Gib Guided Slide:<span>0" - 18" Max.</span></div>
-                        <div class="carousel-info">Daylight Opening:<span>33" Max.</span></div>
-                        <div class="carousel-info">Speeds Approx.:<span>215 IPM Fast Closing</span></div>
-                        <div class="padding">
-                            <div class="carousel-info"><span>80 IPM Slow Close</span></div>
-                            <div class="carousel-info"><span>25 IPM Pressing</span></div>
-                            <div class="carousel-info"><span>48 IPM Slow Return</span></div>
-                            <div class="carousel-info"><span>132 IPM Fast Return</span></div>
-                        </div>
-                        <div class="carousel-info">Power Unit (Top Rear):<span>40 HP 460/3/60 Motor Driving Hydraulic Unit.</span></div>
-                        <div class="carousel-info">Weight Approx.:<span>73,000 lbs.</span></div>
-                        <div class="carousel-info">Physical Dimension Approx.:<span>L-R x 5' F-B x H</span></div>
-                        <div class="carousel-info">Controls:<span class="controls">Push Button Operation with Stroke, Pressure and 
-                        Speed Control. Allen Bradley PLC Added in 2000. Light Curtains.</span></div>
+                        <div class="carousel-info">Capacity:<span>1544cfm @ 363psi (Norm.)<br>1350cfm @ 506psi (Max.)</span></div>
+                        <div class="carousel-info">Fuel Capacity:<span>240 Gallon</span></div>
+                        <div class="carousel-info">Frame:<span>Tandem Axle with Electric Brakes</span></div>
+                        <div class="carousel-info">Equipped With:<span>Cat Diesel Engine, After Cooler, Water<br>Separator, Electric Block Heater</span></div>
+                        <div class="carousel-info">Weight Approx.:<span>GVWR (kg): 8095<br>GAWR (kg): 9070</span></div>
                     </div>
                 </div>
-			</article>
+            </article>
         </section>
     </main>
 </Layout>

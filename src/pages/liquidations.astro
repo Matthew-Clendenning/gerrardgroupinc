@@ -9,11 +9,16 @@ import soon3 from '../assets/racking-img-1.png';
 import pressOne from "../assets/200-ton-pacific-press-1.jpeg";
 import pressTwo from '../assets/300-ton-pacific-press-1.jpeg';
 import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
+
+import AirCompOne from "../assets/atlas-copco-1500-1.jpg";
+import AirCompTwo from "../assets/atlas-copco-1550-1.jpg";
+import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
 ---
 
 <Layout title="Liquidations/Surplus | Gerrard Group Inc" 
     description="Exceptional pricing on surplus CNC machinery, hydraulic presses, mechanical presses, fabricating machinery, and many more. Check this page often for new additions."
-    canon="https://gerrardgroupinc.com/liquidations/">
+    canon="https://gerrardgroupinc.com/liquidations/"
+    >
     <main class="page-container">
         <h1 class="title"><span class="title-text">Liquidations and Surplus</span></h1><!--<span class="cursor">&nbsp;</span>-->
         <section class="coming-soon">
@@ -25,6 +30,7 @@ import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
                 btnName='More Details'
                 href="/cooling-towers/"
                 alt="Process - Cooling Towers inside a warehouse"
+                loading="eager"
             />
             <Card 
                 title="Pallet Jack"
@@ -33,7 +39,8 @@ import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
                 imageURL={soon2}
                 btnName='More Details'
                 href="/palletJackDetails/"
-                alt="Picture of Pallet Jacks inside a warehouse"
+                alt="Collection of Pallet Jacks inside a warehouse"
+                loading="eager"
             />
             <Card 
                 title="Racking"
@@ -43,6 +50,7 @@ import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
                 btnName='More Details'
                 href="/rackingDetails/"
                 alt="A row of Racking materials inside a warehouse"
+                loading="eager"
             />
         </section>
         <section class="cards">
@@ -53,6 +61,7 @@ import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
                 btnName="More Details"
                 href="/200-ton-pacific-hydraulic-press/"
                 alt="200 ton Pacific Hydraulic Press being displayed for selling"
+                loading="eager"
             />
             <Card 
                 title="300 ton Pacific Hydraulic Press"
@@ -61,6 +70,7 @@ import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
                 btnName="More Details"
                 href="/300-ton-pacific-hydraulic-press/"
                 alt="300 ton Pacific Hydraulic Press being displayed for selling"
+                loading="eager"
             />
             <Card 
                 title="600 ton Pacific Hydraulic Press"
@@ -69,6 +79,34 @@ import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
                 btnName="More Details"
                 href="/600-ton-pacific-hydraulic-press/"
                 alt="600 ton Pacific Hydraulic Press being displayed for selling"
+                loading="eager"
+            />
+            <Card
+                title="Atlas Copco XRVS 1500 CD Portable Air Compressor"
+                name="Atlas Copco XRVS 1500 Portable Air Compressor"
+                imageURL={AirCompOne}
+                btnName="More Details"
+                href="/atlas1500/"
+                alt="The Outside of an Atlas Copco Portable Air Compressor"
+                loading="lazy"
+            />
+            <Card
+                title="Atlas Copco XRVS 1550 CD Portable Air Compressor"
+                name="Atlas Copco XRVS 1550 Portable Air Compressor"
+                imageURL={AirCompTwo}
+                btnName="More Details"
+                href="/atlas1550/"
+                alt="The Outside of an Atlas Copco Portable Air Compressor"
+                loading="lazy"
+            />
+            <Card
+                title="Atlas Copco XAS 1600 CD6 Portable Air Compressor"
+                name="Atlas Copco XAS 1600 Portable Air Compressor"
+                imageURL={AirCompThree}
+                btnName="More Details"
+                href="/atlas1600/"
+                alt="The Outside of an Atlas Copco Portable Air Compressor"
+                loading="lazy"
             />
         </section>
         <!--<div class="nav-title">
@@ -310,10 +348,6 @@ import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
-    }
-
-    .card-container {
-        height: 400px;
     }
 
     .image-container img {

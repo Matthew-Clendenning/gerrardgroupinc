@@ -155,5 +155,38 @@
             "src": "../images/racking-img-6.png",
             "alt": "Racking Equipment inside a warehouse"
         }
+    ],
+
+    "slides7": [
+        {
+            "src": "../images/atlas-copco-1500-1.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/atlas-copco-1500-2.jpg",
+            "alt": ""
+        }
+    ],
+
+    "slides8": [
+        {
+            "src": "../images/atlas-copco-1600-1.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/atlas-copco-1600-2.jpg",
+            "alt": ""
+        }
+    ],
+
+    "slides9": [
+        {
+            "src": "../images/atlas-copco-1550-1.jpg",
+            "alt": ""
+        },
+        {
+            "src": "../images/atlas-copco-1550-2.jpg",
+            "alt": ""
+        }
     ]
 }

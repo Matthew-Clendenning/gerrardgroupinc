@@ -7,7 +7,8 @@ import { slides3 } from "../data/carouselData.json";
 
 <Layout title="600 Ton Pacific Hydraulic Press | Gerrard Group Inc" 
     description="600 Ton Pacific Model 600-D-10-54 Downstroke Self Contained Hydraulic Press – New 1979 Housing Type – Gib Guided - Dual Cylinder –“T-Slotted” Bed and Slide."
-    canon="https://gerrardgroupinc.com/600-ton-pacific-hydraulic-press/">
+    canon="https://gerrardgroupinc.com/600-ton-pacific-hydraulic-press/"
+    >
     <Directory 
         title="600 Ton Pacific Model Hydraulic Press"
         page="Hydraulic Presses"
@@ -60,7 +61,7 @@ import { slides3 } from "../data/carouselData.json";
     .machine-details {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: stretch;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -68,16 +69,17 @@ import { slides3 } from "../data/carouselData.json";
         -ms-user-select: none;
         -o-user-select: none;
         user-select: none;
+        user-select: none;
         margin: 5rem 0;
         padding: 1rem;
         gap: 0rem;
-        box-shadow: 0 0 15px 0px rgba(0, 0, 0, .5), 0 4px 6px -4px rgba(0, 0, 0, .5);
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, .5), 0 4px 6px -4px rgba(0, 0, 0, .5);
 	    border-radius: 10px;
     }
 
     .machine {
         width: 50%;
-        box-shadow: 0 0 15px 0px rgba(0, 0, 0, .5), 0 4px 6px -4px rgba(0, 0, 0, .5);
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, .5), 0 4px 6px -4px rgba(0, 0, 0, .5);
         border-radius: 10px;
         padding: 1rem;
     }
@@ -89,22 +91,18 @@ import { slides3 } from "../data/carouselData.json";
     }
 
     .machine p {
-	    font-size: clamp(.5rem, 2vh, 3rem);
+	    font-size: clamp(.5rem, 1.7vh, 3rem);
         margin: 1em 0;
     }
 
     .machine-info-container {
-    	display: flex;
-    	align-items: flex-start;
-    	justify-content: space-between;
-    	gap: 3rem;
-	    margin-top: 2rem;
+	    margin-top: 3rem;
     }
 
     .details {
 	    display: grid;
 	    align-items: flex-start;
-	    gap: .5rem;
+	    gap: 1rem;
     }
 
     .carousel-info {
@@ -139,13 +137,17 @@ import { slides3 } from "../data/carouselData.json";
             padding-inline: .5rem;
         }
 
+        .machine-info-container {
+            margin-top: 1rem;
+        }
+
         .machine-details {
             flex-direction: column;
             gap: 1rem;
         }
 
         .carousel {
-		    width: 90%;
+            width: 100%;
 		    height: 250px;
 	    }
 
@@ -191,7 +193,7 @@ import { slides3 } from "../data/carouselData.json";
         }
 
         .carousel {
-		    width: 70%;
+            width: 100%;
 		    height: 400px;
 	    }
     }
@@ -207,7 +209,6 @@ import { slides3 } from "../data/carouselData.json";
         }
 
         .carousel {
-		    width: 70%;
 		    height: 400px;
 	    }
     }
@@ -222,7 +223,6 @@ import { slides3 } from "../data/carouselData.json";
         }
         
         .carousel {
-            width: 65%;
             height: 350px;
         }
 

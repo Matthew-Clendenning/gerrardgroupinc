@@ -2,8 +2,9 @@
 import { Image } from 'astro:assets';
 
 export interface Props {
-    title?: string;
     name: string;
+    loading?: "eager" | "lazy";
+    title?: string;
     body?: string;
     email?: string;
     phone?: string;
@@ -16,7 +17,7 @@ export interface Props {
     target?: string;
 }
 
-const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
+const { name, loading, title, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
 ---
 
 <article class="card-container">
@@ -26,7 +27,7 @@ const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btn
             alt={alt}
             width={imageURL.width}
             height={imageURL.height}
-            loading='eager'
+            loading={loading}
             format='webp'
         />}
     </div>
@@ -36,7 +37,7 @@ const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btn
         </div>
         <div class="card-body">
             <p>{body}</p>
-            <p class="catalog"><a title="Catalog link" href={href2} target="_blank"><strong>{x_link}</strong></a></p>
+            <p class="catalog"><a title="Catalog link" href={href2} target="_blank" aria-label="Link to an auction catalog"><strong>{x_link}</strong></a></p>
         </div>
         <div class="card-phone">
             <p><b>Phone:</b> <span>{phone}</span></p>
@@ -57,8 +58,6 @@ const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btn
         display: grid;
         justify-content: center;
         justify-items: center;
-        align-content: space-between;
-        align-items: stretch;
         width: 400px;
         height: 450px;
         overflow: hidden;
@@ -78,6 +77,7 @@ const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btn
 
     .image-container {
         margin-top: 1rem;
+        height: fit-content;
     }
 
     .image-container img {
@@ -96,6 +96,7 @@ const { title, name, body, email, phone, imageURL, href, href2, x_link, alt, btn
         justify-content: center;
         justify-items: center;
         text-align: center;
+        height: min-content;
         margin: .5rem 0;
         padding-inline: 1rem;
     }
