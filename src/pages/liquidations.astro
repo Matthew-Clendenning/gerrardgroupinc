@@ -21,7 +21,61 @@ import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
     >
     <main class="page-container">
         <h1 class="title"><span class="title-text">Liquidations and Surplus</span></h1><!--<span class="cursor">&nbsp;</span>-->
-        <section class="coming-soon">
+        <section class="cards">
+            <Card
+                title="Atlas Copco XRVS 1500 CD Portable Air Compressor"
+                name="Atlas Copco XRVS 1500 Portable Air Compressor"
+                imageURL={AirCompOne}
+                btnName="More Details"
+                href="/atlas1500/"
+                alt="The Outside of an Atlas Copco Portable Air Compressor"
+                loading="lazy"
+            />
+            <Card
+                title="Atlas Copco XRVS 1550 CD Portable Air Compressor"
+                name="Atlas Copco XRVS 1550 Portable Air Compressor"
+                imageURL={AirCompTwo}
+                btnName="More Details"
+                href="/atlas1550/"
+                alt="The Outside of an Atlas Copco Portable Air Compressor"
+                loading="lazy"
+            />
+            <Card
+                title="Atlas Copco XAS 1600 CD6 Portable Air Compressor"
+                name="Atlas Copco XAS 1600 Portable Air Compressor"
+                imageURL={AirCompThree}
+                btnName="More Details"
+                href="/atlas1600/"
+                alt="The Outside of an Atlas Copco Portable Air Compressor"
+                loading="lazy"
+            />
+            <Card 
+                title="200 ton Pacific Hydraulic Press"
+                name="200T Pacific Hydraulic Press"
+                imageURL={pressOne}
+                btnName="More Details"
+                href="/200-ton-pacific-hydraulic-press/"
+                alt="200 ton Pacific Hydraulic Press being displayed for selling"
+                loading="eager"
+            />
+            <Card 
+                title="300 ton Pacific Hydraulic Press"
+                name="300T Pacific Hydraulic Press"
+                imageURL={pressTwo}
+                btnName="More Details"
+                href="/300-ton-pacific-hydraulic-press/"
+                alt="300 ton Pacific Hydraulic Press being displayed for selling"
+                loading="eager"
+            />
+            <Card 
+                title="600 ton Pacific Hydraulic Press"
+                name="600T Pacific Hydraulic Press"
+                imageURL={pressThree}
+                btnName="More Details"
+                href="/600-ton-pacific-hydraulic-press/"
+                alt="600 ton Pacific Hydraulic Press being displayed for selling"
+                loading="eager"
+            />
             <Card 
                 title="Cooling Towers"
                 name="Process - Cooling Towers"
@@ -51,62 +105,6 @@ import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
                 href="/rackingDetails/"
                 alt="A row of Racking materials inside a warehouse"
                 loading="eager"
-            />
-        </section>
-        <section class="cards">
-            <Card 
-                title="200 ton Pacific Hydraulic Press"
-                name="200T Pacific Hydraulic Press"
-                imageURL={pressOne}
-                btnName="More Details"
-                href="/200-ton-pacific-hydraulic-press/"
-                alt="200 ton Pacific Hydraulic Press being displayed for selling"
-                loading="eager"
-            />
-            <Card 
-                title="300 ton Pacific Hydraulic Press"
-                name="300T Pacific Hydraulic Press"
-                imageURL={pressTwo}
-                btnName="More Details"
-                href="/300-ton-pacific-hydraulic-press/"
-                alt="300 ton Pacific Hydraulic Press being displayed for selling"
-                loading="eager"
-            />
-            <Card 
-                title="600 ton Pacific Hydraulic Press"
-                name="600T Pacific Hydraulic Press"
-                imageURL={pressThree}
-                btnName="More Details"
-                href="/600-ton-pacific-hydraulic-press/"
-                alt="600 ton Pacific Hydraulic Press being displayed for selling"
-                loading="eager"
-            />
-            <Card
-                title="Atlas Copco XRVS 1500 CD Portable Air Compressor"
-                name="Atlas Copco XRVS 1500 Portable Air Compressor"
-                imageURL={AirCompOne}
-                btnName="More Details"
-                href="/atlas1500/"
-                alt="The Outside of an Atlas Copco Portable Air Compressor"
-                loading="lazy"
-            />
-            <Card
-                title="Atlas Copco XRVS 1550 CD Portable Air Compressor"
-                name="Atlas Copco XRVS 1550 Portable Air Compressor"
-                imageURL={AirCompTwo}
-                btnName="More Details"
-                href="/atlas1550/"
-                alt="The Outside of an Atlas Copco Portable Air Compressor"
-                loading="lazy"
-            />
-            <Card
-                title="Atlas Copco XAS 1600 CD6 Portable Air Compressor"
-                name="Atlas Copco XAS 1600 Portable Air Compressor"
-                imageURL={AirCompThree}
-                btnName="More Details"
-                href="/atlas1600/"
-                alt="The Outside of an Atlas Copco Portable Air Compressor"
-                loading="lazy"
             />
         </section>
         <!--<div class="nav-title">
@@ -329,18 +327,6 @@ import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
 
     h2 {
         text-align: center;
-    }
-
-    .coming-soon {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        margin-bottom: 5rem;
-    }
-
-    .coming-soon .card-content {
-        padding-inline: 0;
     }
 
     .cards {
