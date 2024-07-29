@@ -79,7 +79,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-inline: 0.5rem;
+	padding: 0.5rem 0.5rem;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -300,6 +300,8 @@ footer div a {
 		background: #ffffff;
 		border-radius: 0;
 		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	
 	.flex {
