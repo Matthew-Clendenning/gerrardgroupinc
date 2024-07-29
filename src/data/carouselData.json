@@ -160,33 +160,44 @@
     "slides7": [
         {
             "src": "../images/atlas-copco-1500-1.jpg",
-            "alt": ""
+            "alt": "Outside look of an Atlas Copco XRVS 1550 CD Air Compressor"
         },
         {
             "src": "../images/atlas-copco-1500-2.jpg",
-            "alt": ""
+            "alt": "Inside look of an Atlas Copco XRVS 1550 CD Air Compressor"
         }
     ],
 
     "slides8": [
         {
             "src": "../images/atlas-copco-1600-1.jpg",
-            "alt": ""
+            "alt": "Outside look of an Atlas Copco XAS 1600 CD6 Air Compressor"
         },
         {
             "src": "../images/atlas-copco-1600-2.jpg",
-            "alt": ""
+            "alt": "Inside look of an Atlas Copco XAS 1600 CD6 Air Compressor"
         }
     ],
 
     "slides9": [
         {
             "src": "../images/atlas-copco-1550-1.jpg",
-            "alt": ""
+            "alt": "Outside look of an Atlas Copco XRVS 1550 CD7 Air Compressor"
         },
         {
             "src": "../images/atlas-copco-1550-2.jpg",
-            "alt": ""
+            "alt": "Inside look of an Atlas Copco XRVS 1550 CD7 Air Compressor"
+        }
+    ],
+
+    "slides10": [
+        {
+            "src": "../images/sullair-900-1.jpg",
+            "alt": "Outside look of a Sullair 900/1150XHADTQ - 1150ACCFM Air Compressor"
+        },
+        {
+            "src": "../images/sullair-900-2.jpg",
+            "alt": "inside look of a Sullair 900/1150XHADTQ - 1150ACCFM Air Compressor"
         }
     ]
 }

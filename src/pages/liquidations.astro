@@ -10,9 +10,10 @@ import pressOne from "../assets/200-ton-pacific-press-1.jpeg";
 import pressTwo from '../assets/300-ton-pacific-press-1.jpeg';
 import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
 
-import AirCompOne from "../assets/atlas-copco-1500-1.jpg";
-import AirCompTwo from "../assets/atlas-copco-1550-1.jpg";
-import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
+import airCompOne from "../assets/sullair-900-1.jpg";
+import airCompTwo from "../assets/atlas-copco-1500-1.jpg";
+import airCompThree from "../assets/atlas-copco-1550-1.jpg";
+import airCompFour from "../assets/atlas-copco-1600-1.jpg";
 ---
 
 <Layout title="Liquidations/Surplus | Gerrard Group Inc" 
@@ -23,31 +24,40 @@ import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
         <h1 class="title"><span class="title-text">Liquidations and Surplus</span></h1><!--<span class="cursor">&nbsp;</span>-->
         <section class="cards">
             <Card
+                title="SULLAIR Model 900/1150 Portable Air Compressor"
+                name="SULLAIR Model 900/1150 Portable Air Compressor"
+                imageURL={airCompOne}
+                btnName="More Details"
+                href="/sullair-air-compressor-900/"
+                alt="The Outside of a sullair Portable Air Compressor"
+                loading="eager"
+            />
+            <Card
                 title="Atlas Copco XRVS 1550 CD Portable Air Compressor"
                 name="Atlas Copco XRVS 1550 CD Portable Air Compressor"
-                imageURL={AirCompOne}
+                imageURL={airCompTwo}
                 btnName="More Details"
                 href="/atlas-copco-air-compressor-1550CD/"
                 alt="The Outside of an Atlas Copco Portable Air Compressor"
-                loading="lazy"
+                loading="eager"
             />
             <Card
                 title="Atlas Copco XRVS 1550 CD7 Portable Air Compressor"
                 name="Atlas Copco XRVS 1550 CD7 Portable Air Compressor"
-                imageURL={AirCompTwo}
+                imageURL={airCompThree}
                 btnName="More Details"
                 href="/atlas-copco-air-compressor-1550CD7/"
                 alt="The Outside of an Atlas Copco Portable Air Compressor"
-                loading="lazy"
+                loading="eager"
             />
             <Card
                 title="Atlas Copco XAS 1600 CD6 Portable Air Compressor"
                 name="Atlas Copco XAS 1600 CD6 Portable Air Compressor"
-                imageURL={AirCompThree}
+                imageURL={airCompFour}
                 btnName="More Details"
                 href="/atlas-copco-air-compressor-1600/"
                 alt="The Outside of an Atlas Copco Portable Air Compressor"
-                loading="lazy"
+                loading="eager"
             />
             <Card 
                 title="200 ton Pacific Hydraulic Press"
@@ -74,7 +84,7 @@ import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
                 btnName="More Details"
                 href="/600-ton-pacific-hydraulic-press/"
                 alt="600 ton Pacific Hydraulic Press being displayed for selling"
-                loading="eager"
+                loading="lazy"
             />
             <Card 
                 title="Cooling Towers"
@@ -84,7 +94,7 @@ import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
                 btnName='More Details'
                 href="/cooling-towers/"
                 alt="Process - Cooling Towers inside a warehouse"
-                loading="eager"
+                loading="lazy"
             />
             <Card 
                 title="Pallet Jack"
@@ -94,7 +104,7 @@ import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
                 btnName='More Details'
                 href="/palletJackDetails/"
                 alt="Collection of Pallet Jacks inside a warehouse"
-                loading="eager"
+                loading="lazy"
             />
             <Card 
                 title="Racking"
@@ -104,7 +114,7 @@ import AirCompThree from "../assets/atlas-copco-1600-1.jpg";
                 btnName='More Details'
                 href="/rackingDetails/"
                 alt="A row of Racking materials inside a warehouse"
-                loading="eager"
+                loading="lazy"
             />
         </section>
         <!--<div class="nav-title">
