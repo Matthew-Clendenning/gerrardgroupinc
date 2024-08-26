@@ -33,6 +33,10 @@ import { slides10 } from "../data/carouselData.json";
                         <div class="carousel-info">Equipped With:<span>Cat Diesel Engine, After Cooler, Water<br>Separator, Electric Block Heater</span></div>
                         <div class="carousel-info">Weight Approx.:<span>16,040 LB.<br>7,276 Kg.</span></div>
                     </div>
+                    <div class="pricing-container">
+                        <div class="price-info">Price: <span>$269,000.00</span></div>
+                        <div class="special-price-info"><strong>Special Sale Price: <span>$199,000.00</span></strong></div>
+                    </div>
                 </div>
             </article>
         </section>
@@ -106,6 +110,26 @@ import { slides10 } from "../data/carouselData.json";
         color: black;
         font-size: clamp(.5rem, 2vh, 3rem);
         margin: 0;
+    }
+
+    .pricing-container {
+        text-align: center;
+        margin-top: 3rem;
+        color: #425abd;
+    }
+
+    .pricing-container span {
+        color: black;
+    }
+
+    .price-info {
+        font-size: clamp(1rem, 2.2vh, 3rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .special-price-info {
+        font-size: clamp(.5rem, 2.5vh, 3rem);
+        text-decoration: underline;
     }
 
     .padding {

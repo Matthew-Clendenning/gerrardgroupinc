@@ -10,8 +10,8 @@ export default defineConfig({
     inlineStylesheets: 'auto'
   },
   integrations: [react(), sitemap({
-    priority: 0.7,
-    lastmod: new Date('2024-07-29'),
+    priority: 0.9,
+    lastmod: new Date('2024-08-16'),
     i18n: {
       defaultLocale: 'en',
       locales: {
