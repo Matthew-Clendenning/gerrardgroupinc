@@ -6,12 +6,15 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: 'https://gerrardgroupinc.com/',
   output: 'static',
+  prefetch: {
+    prefetchAll: true
+  },
   build: {
     inlineStylesheets: 'auto'
   },
   integrations: [react(), sitemap({
     priority: 0.9,
-    lastmod: new Date('2024-08-29'),
+    lastmod: new Date('2024-09-15'),
     i18n: {
       defaultLocale: 'en',
       locales: {

@@ -5,5 +5,4 @@ async function updatePage(urls) {
     await notifyIndexNow(urls);
 }
 
-// Example usage
-updatePage(['https://gerrardgroupinc.com/atlas-copco-air-compressor-1550cd7/', 'https://gerrardgroupinc.com/atlas-copco-air-compressor-1600/']);
+updatePage(['']);

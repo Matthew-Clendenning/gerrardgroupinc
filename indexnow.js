@@ -5,7 +5,7 @@ const ENDPOINT = 'https://www.bing.com/indexnow';
 export async function notifyIndexNow(urls) {
     try {
         const response = await axios.post(ENDPOINT, {
-            host: 'https://gerrardgroupinc.com/', // Replace with your domain
+            host: 'https://gerrardgroupinc.com/',
             key: 'y1e9c6031c5cb4a8b8167206256731297',
             keyLocation: `https://gerrardgroupinc.com/y1e9c6031c5cb4a8b8167206256731297.txt`,
             urlList: urls
