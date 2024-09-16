@@ -5,4 +5,4 @@ async function updatePage(urls) {
     await notifyIndexNow(urls);
 }
 
-updatePage(['']);
+updatePage(['https://gerrardgroupinc.com/atlas-copco-air-compressor-1550-cd/', 'https://gerrardgroupinc.com/atlas-copco-air-compressor-1550-cd7/']);
