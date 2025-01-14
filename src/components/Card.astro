@@ -61,17 +61,16 @@ const { name, loading, title, body, email, phone, imageURL, href, href2, x_link,
         width: 400px;
         height: 450px;
         overflow: hidden;
-        box-shadow: 0 10px 15px -3px #9ca3af, 0 4px 6px -4px #9ca3af;
+        box-shadow: 0 1px 15px -3px #9ca3af, 0 4px 6px -4px #9ca3af;
         transition: .3s;
         animation: ease-in;
         border-radius: 10px;
-        background: linear-gradient(0deg, hsl(215, 37%, 21%), hsl(216, 23%, 55%));
+        /*background: linear-gradient(0deg, hsl(215, 37%, 21%), hsl(216, 23%, 55%));
         /*background-image: linear-gradient(to bottom, rgb(226, 233, 255), rgb(255, 255, 255));*/
     }
 
     .card-container:hover {
-        transform: scale(1.03);
-        box-shadow: 0px 0px 15px -1px rgb(109, 189, 255);
+        transform: scale(1.01);
         /*box-shadow: 0px 0px 15px #22334a;*/
     }
 
@@ -86,12 +85,12 @@ const { name, loading, title, body, email, phone, imageURL, href, href2, x_link,
         height: 200px;
         aspect-ratio: 1;
         border-radius: 10px;
-        box-shadow: 0px 0px 30px -5px hsl(0, 0%, 0%);
+        box-shadow: 0px 0px 30px -8px hsl(0, 0%, 0%);
         /*box-shadow: 0 0 7px #666;*/
     }
 
     .card-content {
-        color: white;
+        color: #000;
         display: grid;
         justify-content: center;
         justify-items: center;
@@ -106,7 +105,7 @@ const { name, loading, title, body, email, phone, imageURL, href, href2, x_link,
     }
 
     .link-text {
-        color: white;
+        color: #000;
         text-underline-offset: 5px;
     }
 
@@ -117,8 +116,25 @@ const { name, loading, title, body, email, phone, imageURL, href, href2, x_link,
         gap: .5rem;
     }
 
+    .card-phone, .card-email {
+        font-size: 16px;
+    }
+
+    .card-phone {
+        color: #425abd;
+    }
+
+    .card-phone span {
+        color: #000;
+    }
+
     .card-email p {
+        color: #425abd;
         letter-spacing: .3px;
+    }
+
+    .card-email span {
+        color: #000;
     }
 
     h2 {

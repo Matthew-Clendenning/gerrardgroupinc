@@ -53,10 +53,6 @@ import Card from '../components/Card.astro';
         margin-inline: 8rem;
     }
     
-    .card-container:hover {
-        transform: scale(1);
-    }
-    
     .card-content {
         margin: 1rem;
         margin-bottom: 0;
@@ -65,9 +61,12 @@ import Card from '../components/Card.astro';
     .card-title {
         margin-bottom: .5rem;
     }
+
+    .link-text {
+        color: #425abd;
+    }
     
     .card-body {
-        color: hsl(216, 53%, 84%);
         display: grid;
         font-size: clamp(.5rem, 2.7vh, 3rem);
         margin: 1rem 0;

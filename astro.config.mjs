@@ -14,7 +14,7 @@ export default defineConfig({
   },
   integrations: [react(), sitemap({
     priority: 0.9,
-    lastmod: new Date('2024-09-16'),
+    lastmod: new Date('2025-01-14'),
     i18n: {
       defaultLocale: 'en',
       locales: {
