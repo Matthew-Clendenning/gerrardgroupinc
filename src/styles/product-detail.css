@@ -216,7 +216,7 @@
 
 /* Sold page (carousel only) */
 .pd-sold-layout {
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
 }

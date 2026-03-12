@@ -1,7 +1,11 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
+Disallow: /PacificHP/
+Disallow: /timkenBearings/
+Disallow: /timkenDetails/
 
-Sitemap: https://www.gerrardgroupinc.com/sitemap-index.xml
+# Sitemap
+Sitemap: https://gerrardgroupinc.com/sitemap-index.xml
+
+# Crawl-delay (optional, respected by some bots)
+Crawl-delay: 1

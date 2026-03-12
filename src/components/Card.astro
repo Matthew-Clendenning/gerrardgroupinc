@@ -17,7 +17,7 @@ export interface Props {
     target?: string;
 }
 
-const { name, loading, title, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
+const { name, loading = "lazy", title, body, email, phone, imageURL, href, href2, x_link, alt, btnName, target } = Astro.props as Props;
 ---
 
 <article class="card-container">

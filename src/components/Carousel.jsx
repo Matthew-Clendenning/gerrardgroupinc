@@ -23,9 +23,13 @@ export const Carousel = ({ data }) => {
             {data.map((item, idx) => {
                 return (
                     <img
-                        src={item.src} 
-                        alt={item.alt} 
-                        key={idx} 
+                        src={item.src}
+                        alt={item.alt}
+                        key={idx}
+                        width={640}
+                        height={480}
+                        loading={idx === 0 ? "eager" : "lazy"}
+                        decoding="async"
                         className={slide === idx ? "slide" : "slide slide-hidden"}
                     />
                 );

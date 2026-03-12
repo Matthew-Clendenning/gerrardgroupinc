@@ -3,25 +3,16 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from 'astro:assets';
 import { RiAuctionLine } from 'react-icons/ri/index.js';
 import { FiDollarSign } from 'react-icons/fi/index.js';
-import { GiOilPump, GiMining, GiMedicines } from 'react-icons/gi/index.js';
-import { BsAirplane, BsTruck, BsTools } from 'react-icons/bs/index.js';
+import { GiOilPump, GiMining, GiMedicines, GiWreckingBall } from 'react-icons/gi/index.js';
+import { BsAirplane, BsTruck, BsTools, BsShop } from 'react-icons/bs/index.js';
 import { SlEnergy } from 'react-icons/sl/index.js';
-import { MdOutlineWarehouse, MdOutlineFastfood } from 'react-icons/md/index.js';
-import { TbPackages } from 'react-icons/tb/index.js'
+import { MdOutlineWarehouse, MdOutlineFastfood, MdOutlineInventory2, MdOutlinePrecisionManufacturing, MdOutlineBiotech } from 'react-icons/md/index.js';
+import { TbPackages, TbFileAnalytics, TbBulb, TbTractor, TbRobot } from 'react-icons/tb/index.js';
+import { LuFactory } from 'react-icons/lu/index.js';
 
 import workers from '../assets/Factory+People+2.jpg';
 import banner from '../assets/gerrard_montage_3.jpg';
 
-import liquidation from '../assets/liquidation-icon.png';
-import appraisal from '../assets/appraisal-icon.png';
-import retail from '../assets/retail-icon.png';
-import demolition from '../assets/demolition-icon.png';
-import consulting from '../assets/consulting-icon.png';
-import fabrication from '../assets/fabrication-icon.png';
-import cnc from '../assets/cnc-icon.png';
-import yellow from '../assets/yellow-iron-icon.png';
-import biotech from '../assets/biotech-icon.png';
-import inventory from '../assets/inventory-icon.png';
 ---
 
 <Layout title="Industrial Machinery Auctions & Liquidations | Gerrard Group"
@@ -95,37 +86,19 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="special-item">
                             <div class="img-container">
-                                <Image 
-                                    src={liquidation}
-                                    width="100"
-                                    height="100"
-                                    alt="industrial equipment liquidation icon"
-                                    format="webp"
-                                />
+                                <MdOutlineInventory2/>
                             </div>
                             <p>Liquidation</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
-                                <Image 
-                                    src={appraisal}
-                                    width="100"
-                                    height="100"
-                                    alt="industrial appraisals icon"
-                                    format="webp"
-                                />
+                                <TbFileAnalytics/>
                             </div>
                             <p>Appraisals</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
-                                <Image 
-                                    src={retail}
-                                    width="100"
-                                    height="100"
-                                    alt="used machinery retail sales icon"
-                                    format="webp"
-                                />
+                                <BsShop/>
                             </div>
                             <p>Retail Used Machinery Sales</p>
                         </div>
@@ -137,25 +110,13 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="special-item">
                             <div class="img-container">
-                                <Image 
-                                    src={demolition}
-                                    width="100"
-                                    height="100"
-                                    alt="demolition and remediation projects icon"
-                                    format="webp"
-                                />
+                                <GiWreckingBall/>
                             </div>
                             <p>Demolition & Remediation Projects</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
-                                <Image 
-                                    src={consulting}
-                                    width="100"
-                                    height="100"
-                                    alt="industrial asset consulting icon"
-                                    format="webp"
-                                />
+                                <TbBulb/>
                             </div>
                             <p>Consulting</p>
                         </div>
@@ -166,25 +127,13 @@ import inventory from '../assets/inventory-icon.png';
                     <div class="industries-wrapper">
                         <div class="industries-item">
                             <div class="img-container">
-                                <Image 
-                                    src={fabrication}
-                                    width="100"
-                                    height="100"
-                                    alt="metal fabrication equipment icon"
-                                    format="webp"
-                                />
+                                <LuFactory/>
                             </div>
                             <p>Fabricating, Metal, Rubber & Plastics Equip.</p>
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <Image 
-                                    src={cnc}
-                                    width="100"
-                                    height="100"
-                                    alt="CNC machining and robotics equipment icon"
-                                    format="webp"
-                                />
+                                <TbRobot/>
                             </div>
                             <p>CNC & Robotics</p>
                         </div>
@@ -202,13 +151,7 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <Image 
-                                    src={yellow}
-                                    width="100"
-                                    height="100"
-                                    alt="yellow iron heavy equipment icon"
-                                    format="webp"
-                                />
+                                <TbTractor/>
                             </div>
                             <p>Yellow Iron</p>
                         </div>
@@ -256,13 +199,7 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <Image 
-                                    src={biotech}
-                                    width="100"
-                                    height="100"
-                                    alt="biotech and high-tech equipment icon"
-                                    format="webp"
-                                />
+                                <MdOutlineBiotech/>
                             </div>
                             <p>High-Tech & Biotech</p>
                         </div>
@@ -274,26 +211,20 @@ import inventory from '../assets/inventory-icon.png';
                         </div>
                         <div class="industries-item">
                             <div class="img-container">
-                                <Image 
-                                    src={inventory}
-                                    width="100"
-                                    height="100"
-                                    alt="raw materials and finished inventory icon"
-                                    format="webp"
-                                />
+                                <MdOutlineInventory2/>
                             </div>
                             <p>Raw, WIP & Finished Inventories (used for, or made from mfg. equipment)</p>
                         </div>
                     </div>
                 </section>
-                <section class="locations">
+                <!--<section class="locations">
                     <h3><strong>Offices Located In:</strong></h3>
                     <ul>
                         <li>St. Louis, MO</li>
                         <li>Chicago, IL</li>
                         <li>Spokane, WA</li>
                     </ul>
-                </section>
+                </section>-->
             </div>
         </section>
     </main>
@@ -450,7 +381,7 @@ import inventory from '../assets/inventory-icon.png';
     }
 
     .page-background {
-        padding-block: 8rem;
+        padding-block: 4rem;
         background: #f5f8fc;
         border-bottom: 1px solid rgba(5, 88, 149, 0.1);
     }
@@ -608,8 +539,8 @@ import inventory from '../assets/inventory-icon.png';
 
     .industries-wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
         max-width: 1100px;
         margin-inline: auto;
         text-align: left;
@@ -617,45 +548,47 @@ import inventory from '../assets/inventory-icon.png';
 
     .industries-item {
         display: flex;
-        align-items: flex-start;
-        gap: 0.55rem;
-        padding: 0.75rem 0.6rem;
-        background: none;
-        border: none;
-        transition: color var(--transition, 0.25s ease);
+        align-items: center;
+        gap: 0.85rem;
+        padding: 0.9rem 1.1rem;
+        background: var(--color-card, #fff);
+        border: 1px solid var(--color-border, #E5E7EB);
+        border-radius: var(--radius-sm, 6px);
+        transition: transform var(--transition, 0.25s ease), box-shadow var(--transition, 0.25s ease);
         cursor: default;
     }
 
     .industries-item::before {
-        content: '›';
-        color: var(--color-primary, #055895);
-        font-size: 1.1rem;
-        font-weight: 700;
-        line-height: 1.4;
-        flex-shrink: 0;
+        display: none;
     }
 
-    .industries-item:hover p {
-        color: var(--color-primary, #055895);
+    .industries-item:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,0.08));
     }
 
     .industries-item p {
         font-family: var(--font-body, "Source Sans 3", sans-serif);
-        font-size: clamp(0.82rem, 1rem, 1.1rem);
+        font-size: clamp(0.82rem, 0.95rem, 1.05rem);
         text-align: left;
         max-width: none;
-        color: var(--color-text, #1F2937);
-        font-weight: 500;
-        line-height: 1.4;
+        color: var(--color-dark, #111827);
+        font-weight: 600;
+        line-height: 1.35;
     }
 
     .industries .img-container {
-        display: none;
+        display: inline-flex;
+        padding: 0.55rem;
+        border-radius: 50%;
+        background: rgba(5, 88, 149, 0.08);
+        color: var(--color-primary, #055895);
+        flex-shrink: 0;
     }
 
-    .industries svg,
-    .industries img {
-        display: none;
+    .industries svg {
+        width: 22px;
+        height: 22px;
     }
 
     /* ═══════════════════════════════════════════
@@ -777,6 +710,7 @@ import inventory from '../assets/inventory-icon.png';
         }
 
         .industries-wrapper {
+            grid-template-columns: 1fr;
             gap: 0.5rem;
         }
 
@@ -850,6 +784,10 @@ import inventory from '../assets/inventory-icon.png';
             max-width: 300px;
             margin-right: .8rem;
         }
+
+        .industries-wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     @media (min-width: 40rem) and (max-width: 60rem) {
@@ -903,6 +841,10 @@ import inventory from '../assets/inventory-icon.png';
             float: left;
             max-width: 300px;
             margin-right: .8rem;
+        }
+
+        .industries-wrapper {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 

@@ -1,30 +1,252 @@
 ---
 import { Image } from 'astro:assets';
-import { BsLinkedin } from 'react-icons/bs/index.js'
+import { BsLinkedin } from 'react-icons/bs/index.js';
+import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi/index.js';
 
-import logo from '../../public/images/dans logo copy6.png';
+import logo from '../assets/dans logo copy6.png';
 ---
 
-<footer>
-    <a title="Home page" href="/">
-        <Image 
-            class="logo" 
-            src={logo} 
-            alt="Gerrard Group Inc - Industrial Machinery Company"
-            width={logo.width} 
-            height={logo.height}
-            loading="lazy"
-            format="webp"
-        />
-    </a>
-    <h3>Phone: <span>847-894-3434</span> | Email: <a href="mailto:gerrardmachinery@gmail.com" target="_blank">
-    <span>gerrardmachinery@gmail.com</span></a>
-    </h3>
-    <div>
-        <h3>Connect with us</h3>
-        <a class="linkedin" href="https://www.linkedin.com/company/gerrard-group-inc/" target="_blank" title="Linkedin page" aria-label="LinkedIn Profle Link"><BsLinkedin /></a>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-col footer-brand">
+            <a title="Home page" href="/">
+                <Image
+                    class="footer-logo"
+                    src={logo}
+                    alt="Gerrard Group Inc - Industrial Machinery Company"
+                    width={logo.width}
+                    height={logo.height}
+                    loading="lazy"
+                    format="png"
+                    quality={100}
+                />
+            </a>
+            <p class="footer-tagline">Buyers &amp; Sellers of Industrial Machinery and Equipment since 1993.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/auctions/">Auctions</a></li>
+                <li><a href="/liquidations/">Liquidation/Surplus</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-contact">
+                <li>
+                    <FiPhone />
+                    <a href="tel:8478943434">847-894-3434</a>
+                </li>
+                <li>
+                    <FiMail />
+                    <a href="mailto:gerrardmachinery@gmail.com">gerrardmachinery@gmail.com</a>
+                </li>
+                <li>
+                    <FiMapPin />
+                    <span>St. Louis &middot; Chicago &middot; Spokane</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-social">
+            <h4 class="footer-heading">Connect</h4>
+            <p class="footer-social-text">Follow us on LinkedIn for the latest equipment listings and industry news.</p>
+            <a class="footer-social-link" href="https://www.linkedin.com/company/gerrard-group-inc/" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
+                <BsLinkedin />
+            </a>
+        </div>
     </div>
 </footer>
-<section class="bottom">
-        <p>© Gerrard Group, Inc., all rights reserved	|	<a href="/contact"><span>Contact Us</span></a></p>
-</section>
+
+<div class="footer-bottom">
+    <p>&copy; {new Date().getFullYear()} Gerrard Group, Inc. All rights reserved.</p>
+</div>
+
+<style is:inline>
+    .site-footer {
+        background: linear-gradient(135deg, #0a192f 0%, #1d3557 100%);
+        padding: 3.5rem 2rem 3rem;
+    }
+
+    .footer-inner {
+        display: grid;
+        grid-template-columns: 1.4fr 0.8fr 1.2fr 1fr;
+        gap: 2.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        width: 100%;
+        max-width: 160px;
+        height: auto;
+        margin-bottom: 1rem;
+        filter: brightness(0) invert(1);
+    }
+
+    .footer-tagline {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.6;
+        margin: 0;
+        max-width: 260px;
+    }
+
+    .footer-heading {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.45);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin: 0 0 1.1rem;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .footer-links a {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.78);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+        color: var(--color-accent, #D97706);
+    }
+
+    .footer-contact {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+
+    .footer-contact li {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.78);
+    }
+
+    .footer-contact svg {
+        width: 16px;
+        height: 16px;
+        color: var(--color-accent, #D97706);
+        flex-shrink: 0;
+    }
+
+    .footer-contact a {
+        color: rgba(255, 255, 255, 0.78);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .footer-contact a:hover {
+        color: var(--color-accent, #D97706);
+    }
+
+    .footer-social-text {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.6;
+        margin: 0 0 1rem;
+        max-width: 220px;
+    }
+
+    .footer-social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: rgba(255, 255, 255, 0.8);
+        transition: all 0.2s ease;
+    }
+
+    .footer-social-link:hover {
+        background: var(--color-accent, #D97706);
+        border-color: var(--color-accent, #D97706);
+        color: #fff;
+        transform: translateY(-2px);
+    }
+
+    .footer-social-link svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-bottom {
+        background: rgba(5, 40, 75, 0.95);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: center;
+        padding: 0.85rem 1rem;
+    }
+
+    .footer-bottom p {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.45);
+        margin: 0;
+    }
+
+    @media (max-width: 60rem) {
+        .footer-inner {
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem 2rem;
+        }
+    }
+
+    @media (max-width: 40rem) {
+        .site-footer {
+            padding: 2.5rem 1.5rem 2rem;
+        }
+
+        .footer-inner {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-tagline,
+        .footer-social-text {
+            max-width: none;
+        }
+
+        .footer-contact li {
+            justify-content: center;
+        }
+
+        .footer-links {
+            gap: 0.5rem;
+        }
+    }
+</style>

@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import { RxHamburgerMenu } from 'react-icons/rx/index.js';
 import { BiUpArrowAlt } from 'react-icons/bi/index.js';
 
-import logo from '../../public/images/dans logo copy6.png';
+import logo from '../assets/dans logo copy6.png';
 ---
 
 <button type="button" title="Back to top" id="back-to-top-btn" aria-label="back to top of page button">
@@ -12,14 +12,15 @@ import logo from '../../public/images/dans logo copy6.png';
 <header class="primary-header sticky">
 	<div class="image-header">
 		<a title="Home page" href="/">
-			<Image 
-				class="logo" 
-				src={logo} 
+			<Image
+				class="logo"
+				src={logo}
 				alt="Gerrard Group Inc - Industrial Machinery Auctions and Liquidations"
-				width={logo.width} 
+				width={logo.width}
 				height={logo.height}
 				loading="eager"
-				format="webp"
+				format="png"
+				quality={100}
 			/>
 		</a>
 	</div>
@@ -48,14 +49,6 @@ import logo from '../../public/images/dans logo copy6.png';
 </header>
 
 <script is:inline>
-	// Offset body for fixed header
-	const header = document.querySelector(".primary-header");
-	function setBodyOffset() {
-		document.body.style.paddingTop = header.offsetHeight + "px";
-	}
-	setBodyOffset();
-	window.addEventListener("resize", setBodyOffset);
-
 	const primaryNav = document.querySelector(".primary-navigation");
 	const navToggle = document.querySelector(".mobile-nav-toggle");
 
