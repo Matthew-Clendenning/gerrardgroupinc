@@ -103,13 +103,13 @@ body {
 }
 
 .sticky {
-	position: sticky;
+	position: fixed;
 	left: 0;
 	right: 0;
-	bottom: 0;
 	top: 0;
 	background: #fff;
 	z-index: 9999;
+	width: 100%;
 }
 
 .flex {
@@ -344,11 +344,6 @@ footer div a {
 	}
 
 	.primary-header {
-		position: sticky;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: 9999;
 		background: #ffffff;
 		border-radius: 0;
 		padding-right: 0;
