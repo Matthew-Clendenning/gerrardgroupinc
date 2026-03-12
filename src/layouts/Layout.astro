@@ -9,49 +9,71 @@ export interface Props {
     title: string;
 	description: string;
 	canon: string;
+	jsonLdType?: string;
+	jsonLdData?: Record<string, any>;
 }
 
-const { title, description, canon } = Astro.props as Props;
+const { title, description, canon, jsonLdType, jsonLdData } = Astro.props as Props;
+const ogImage = new URL('/images/dans%20logo%20copy6.png', Astro.site || 'https://gerrardgroupinc.com').href;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{title}</title>
+		<meta name="description" content={description}>
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href={canon}>
+
+		<!-- Preconnect hints -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+		<!-- Google Fonts: Barlow Condensed (headings) + Source Sans 3 (body) -->
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#ffffff">
+		<meta name="msapplication-TileColor" content="#055895">
+		<meta name="theme-color" content="#055895">
 		<link rel="sitemap" href="/sitemap-index.xml" />
-		<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
-		<meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Mode1">
-		<meta charset="utf-8">
-		<meta content="text/html" http-equiv="Content-Type" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="title" content={title}>
-		<meta name="description" content={description}>
-		<link rel="canonical" href={canon}>
-		<meta name="og:site_name" property="og:site_name" content="Gerrard Group Inc">
-		<meta property="og:image" content="https://i.ibb.co/vxCtymF/danny-s-logo.png">
-		<meta property="og:image:width" content="183">
-		<meta property="og:image:height" content="141">
-		<meta name="og:locale" property="og:locale" content="en_US">
-		<meta name="og:title" property="og:title" content={title}>
-		<meta name="og:url" property="og:url" content={canon}>
-		<meta name="og:type" property="og:type" content="website">
-		<meta itemprop="name" content={title}>
-		<meta itemprop="url" content={canon}>
+
+		<!-- Open Graph -->
+		<meta property="og:site_name" content="Gerrard Group Inc">
+		<meta property="og:title" content={title}>
+		<meta property="og:description" content={description}>
+		<meta property="og:url" content={canon}>
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:image" content={ogImage}>
+		<meta property="og:image:width" content="500">
+		<meta property="og:image:height" content="139">
+		<meta property="og:image:alt" content="Gerrard Group Inc - Industrial Machinery Auctions & Liquidations">
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content={title}>
-		<meta name="twitter:url" content={canon}>
-		<meta name="twitter:card" content="summary">
+		<meta name="twitter:description" content={description}>
+		<meta name="twitter:image" content={ogImage}>
+		<meta name="twitter:image:alt" content="Gerrard Group Inc - Industrial Machinery Auctions & Liquidations">
+
+		<!-- Schema.org itemprop -->
+		<meta itemprop="name" content={title}>
+		<meta itemprop="description" content={description}>
+		<meta itemprop="url" content={canon}>
+
 		<meta name="format-detection" content="telephone=no">
 		<meta name="apple-mobile-web-app-title" content="Gerrard Group Inc">
 		<meta name="application-name" content="Gerrard Group Inc">
 		<meta name="google-site-verification" content="-sDys0daq54OU4V_RvMtLAo9ktYFLSXxlG8nyHmzRHQ" />
-		<Seo />
+		<Seo type={jsonLdType} data={jsonLdData} />
 		<script src="../scripts/BTT.js"></script>
 	</head>
 	<body id="transition">

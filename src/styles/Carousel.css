@@ -1,23 +1,25 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 .carousel {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 650px;
-    height: auto;
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-md, 10px);
+    overflow: hidden;
+    background: #111827;
 }
 
 .slide {
-    border-radius: 0.5rem;
-    box-shadow: 0 0 7px #666;
+    border-radius: 0;
+    box-shadow: none;
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .slide-hidden {
@@ -26,42 +28,77 @@
 
 .arrow {
     position: absolute;
-    width: 2rem;
-    height: 2rem;
-    color: white;
-    filter: drop-shadow(0 0 5px #555);
-}
-
-.arrow:hover {
+    width: 2.25rem;
+    height: 2.25rem;
+    color: rgba(255, 255, 255, 0.85);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+    transition: color 0.2s ease, transform 0.2s ease;
+    z-index: 10;
     cursor: pointer;
 }
 
+.arrow:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
 .arrow-left {
-    left: 1rem;
+    left: 12px;
 }
 
 .arrow-right {
-    right: 1rem;
+    right: 12px;
 }
 
 .indicators {
     display: flex;
     position: absolute;
-    bottom: 1rem;
+    bottom: 12px;
+    gap: 6px;
+    z-index: 10;
 }
 
 .indicator {
-    background: white;
-    height: .5rem;
-    width: .5rem;
-    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    height: 10px;
+    width: 8px;
+    border-radius: 80%;
     border: none;
     outline: none;
-    box-shadow: 0 0 5px #555;
-    margin: 0 .2rem;
     cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.indicator:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.indicator:not(.indicator-inactive) {
+    background: #fff;
+    transform: scale(1.2);
 }
 
 .indicator-inactive {
-    background: grey;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive overrides */
+@media (max-width: 640px) {
+    .carousel {
+        max-width: 100%;
+        border-radius: var(--radius-md, 10px);
+    }
+
+    .arrow {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .arrow-left {
+        left: 8px;
+    }
+
+    .arrow-right {
+        right: 8px;
+    }
 }

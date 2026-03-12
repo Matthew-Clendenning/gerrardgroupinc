@@ -1,0 +1,291 @@
+/* ─── Product Detail Page Shared Styles ─── */
+
+.pd-page {
+    background: var(--color-bg, #F9FAFB);
+}
+
+.pd-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+}
+
+/* Gallery + Info Layout */
+.pd-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+/* Info Panel */
+.pd-info {
+    background: var(--color-card, #fff);
+    border-radius: var(--radius-md, 10px);
+    padding: 28px;
+    box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.08));
+}
+
+.pd-info__title {
+    font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    color: var(--color-dark, #111827);
+    margin: 0 0 4px;
+    line-height: 1.2;
+}
+
+.pd-info__model {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary, #6B7280);
+    margin: 0 0 20px;
+}
+
+.pd-info__model strong {
+    color: var(--color-text, #1F2937);
+}
+
+.pd-info__divider {
+    border: none;
+    border-top: 1px solid var(--color-border, #E5E7EB);
+    margin: 0 0 20px;
+}
+
+/* Specs Table */
+.pd-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.pd-spec {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-border, #E5E7EB);
+    gap: 16px;
+}
+
+.pd-spec:last-child {
+    border-bottom: none;
+}
+
+.pd-spec__label {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-primary, #055895);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.pd-spec__value {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.85rem;
+    color: var(--color-text, #1F2937);
+    text-align: right;
+    line-height: 1.5;
+}
+
+/* Sub-values (like speed breakdowns) */
+.pd-spec-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid var(--color-border, #E5E7EB);
+    text-align: right;
+}
+
+.pd-spec-sub__value {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.83rem;
+    color: var(--color-text-secondary, #6B7280);
+}
+
+/* Pricing */
+.pd-pricing {
+    margin-top: 24px;
+    padding: 20px;
+    background: var(--color-bg, #F9FAFB);
+    border-radius: var(--radius-sm, 6px);
+    text-align: center;
+}
+
+.pd-pricing__original {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary, #6B7280);
+    text-decoration: line-through;
+    margin: 0 0 4px;
+}
+
+.pd-pricing__sale {
+    font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-dark, #111827);
+    margin: 0 0 4px;
+}
+
+.pd-pricing__label {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--color-success, #059669);
+    margin: 0;
+}
+
+.pd-pricing__contact {
+    font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-accent, #D97706);
+    margin: 0;
+}
+
+/* CTA Buttons */
+.pd-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.pd-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 1;
+    padding: 12px 20px;
+    font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: var(--radius-sm, 6px);
+    cursor: pointer;
+    transition: all var(--transition, 0.25s ease);
+    border: none;
+}
+
+.pd-btn--primary {
+    background: var(--color-accent, #D97706);
+    color: #fff;
+}
+
+.pd-btn--primary:hover {
+    background: var(--color-accent-hover, #B45309);
+    transform: translateY(-1px);
+}
+
+.pd-btn--secondary {
+    background: transparent;
+    border: 2px solid var(--color-primary, #055895);
+    color: var(--color-primary, #055895);
+}
+
+.pd-btn--secondary:hover {
+    background: var(--color-primary, #055895);
+    color: #fff;
+}
+
+/* Back to Inventory link */
+.pd-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-primary, #055895);
+    text-decoration: none;
+    margin-top: 32px;
+    transition: gap var(--transition, 0.25s ease);
+}
+
+.pd-back:hover {
+    gap: 10px;
+    text-decoration: underline;
+}
+
+/* Sold page (carousel only) */
+.pd-sold-layout {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pd-sold-badge {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 24px;
+    background: var(--color-sold, #DC2626);
+    color: #fff;
+    font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--radius-sm, 6px);
+}
+
+.pd-sold-text {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.95rem;
+    color: var(--color-text-secondary, #6B7280);
+    margin: 16px 0 0;
+    line-height: 1.6;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    .pd-content {
+        padding: 20px 16px 32px;
+    }
+
+    .pd-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pd-info {
+        padding: 20px;
+    }
+
+    .pd-spec {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .pd-spec__value {
+        text-align: left;
+    }
+
+    .pd-spec-sub {
+        text-align: left;
+    }
+
+    .pd-actions {
+        flex-direction: column;
+    }
+
+    .pd-pricing__sale {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .pd-layout {
+        gap: 24px;
+    }
+
+    .pd-info {
+        padding: 24px;
+    }
+}

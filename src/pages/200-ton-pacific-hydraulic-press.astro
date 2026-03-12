@@ -3,260 +3,103 @@ import Layout from "../layouts/Layout.astro";
 import Directory from "../components/MachineDirectory.astro";
 import { Carousel } from "../components/Carousel.jsx";
 import { slides } from "../data/carouselData.json";
+import "../styles/product-detail.css";
 ---
 
-<Layout 
-    title="200 Ton Pacific Hydraulic Press | Gerrard Group Inc" 
-    description="200 Ton Pacific Model 200-D-10-36 Downstroke Self Contained Hydraulic Press – New 1978 Housing Type – Gib Guided - Dual Cylinder –“T-Slotted” Bed and Slide."
+<Layout
+    title="200 Ton Pacific Hydraulic Press for Sale | Gerrard Group"
+    description="Used 200-ton Pacific Model 200-D-10-36 downstroke hydraulic press. Gib guided, dual cylinder, T-slotted bed, Allen Bradley PLC controls. Contact for pricing."
     canon="https://gerrardgroupinc.com/200-ton-pacific-hydraulic-press/"
+    jsonLdType="product"
+    jsonLdData={{
+        name: "200 Ton Pacific Model 200-D-10-36 Hydraulic Press",
+        description: "Pacific Model 200-D-10-36 Downstroke Self Contained Hydraulic Press, 200 Ton capacity, Gib Guided, Dual Cylinder, T-Slotted Bed and Slide, Allen Bradley PLC",
+        brand: "Pacific",
+        category: "Hydraulic Presses",
+        price: "0",
+        sku: "200-D-10-36-8380",
+        condition: "UsedCondition"
+    }}
     >
-    <Directory 
+    <Directory
         title="200 Ton Pacific Model Hydraulic Press"
         page="Hydraulic Presses"
         page2="Machine Details"
         href="/liquidations"
     />
-    <main class="page-container">
-        <section class="machine-details">
-            <Carousel client:load
-                data={slides}
-            />
-            <article class="machine">
-				<h2>200 Ton Pacific Model 200-D-10-36 Downstroke Self Contained Hydraulic Press – New 1978
-                    Housing Type – Gib Guided - Dual Cylinder –“T-Slotted” Bed and Slide</h2>
-				<p>Serial No.: <strong>8380 (1978)</strong></p>
-				<hr>
-                <div class="machine-info-container">
-                    <div class="details">
-                        <div class="carousel-info">Bed Area (Nominal):<span>123” L-R x 36” F-B (T-Slotted F-B)</span></div>
-                        <div class="carousel-info">Slide Area (Nominal):<span>123” L-R x 36” F-B (T-Slotted F-B)</span></div>
-                        <div class="carousel-info">Distance Between Housings:<span>" L-R</span></div>
-                        <div class="carousel-info">Stroke of Gib Guided Slide:<span>0" - 18" Max.</span></div>
-                        <div class="carousel-info">Daylight Opening:<span>30" Max.</span></div>
-                        <div class="carousel-info">Max. Upper Die Weight:<span>10,000 lbs.</span></div>
-                        <div class="carousel-info">Speeds Approx.:<span>187 IPM Fast Closing</span></div>
-                        <div class="padding">
-                            <div class="carousel-info"><span>89 IPM Slow Close</span></div>
-                            <div class="carousel-info"><span>34 IPM Pressing</span></div>
-                            <div class="carousel-info"><span>70 IPM Slow Return</span></div>
-                            <div class="carousel-info"><span>176 IPM Fast Return</span></div>
+    <main class="pd-page">
+        <div class="pd-content">
+            <div class="pd-layout">
+                <Carousel client:load data={slides} />
+                <article class="pd-info">
+                    <h2 class="pd-info__title">200 Ton Pacific Model 200-D-10-36 Downstroke Self Contained Hydraulic Press</h2>
+                    <p class="pd-info__model">Serial No.: <strong>8380 (1978)</strong> — Gib Guided, Dual Cylinder, T-Slotted Bed and Slide</p>
+                    <hr class="pd-info__divider">
+                    <div class="pd-specs">
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Bed Area (Nominal)</span>
+                            <span class="pd-spec__value">123" L-R x 36" F-B (T-Slotted F-B)</span>
                         </div>
-                        <div class="carousel-info">Power Unit (Top Rear):<span>30 HP 460/3/60 Motor Driving Hydraulic Unit.</span></div>
-                        <div class="carousel-info">Weight Approx.:<span>43,000 lbs.</span></div>
-                        <div class="carousel-info">Physical Dimension Approx.:<span>13' L-R x 5' F-B x 26' H</span></div>
-                        <div class="carousel-info">Controls:<span class="controls">Push Button Operation with Stroke, Pressure and 
-                        Speed Control. Allen Bradley PLC Added in 2000. Light Curtains.</span></div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Slide Area (Nominal)</span>
+                            <span class="pd-spec__value">123" L-R x 36" F-B (T-Slotted F-B)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Dist. Between Housings</span>
+                            <span class="pd-spec__value">L-R</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Stroke of Gib Guided Slide</span>
+                            <span class="pd-spec__value">0" — 18" Max.</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Daylight Opening</span>
+                            <span class="pd-spec__value">30" Max.</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Max. Upper Die Weight</span>
+                            <span class="pd-spec__value">10,000 lbs</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Speeds Approx.</span>
+                            <span class="pd-spec__value">187 IPM Fast Closing</span>
+                        </div>
+                        <div class="pd-spec-sub">
+                            <span class="pd-spec-sub__value">89 IPM Slow Close</span>
+                            <span class="pd-spec-sub__value">34 IPM Pressing</span>
+                            <span class="pd-spec-sub__value">70 IPM Slow Return</span>
+                            <span class="pd-spec-sub__value">176 IPM Fast Return</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Power Unit (Top Rear)</span>
+                            <span class="pd-spec__value">30 HP 460/3/60 Motor Driving Hydraulic Unit</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Weight Approx.</span>
+                            <span class="pd-spec__value">43,000 lbs</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Physical Dimensions</span>
+                            <span class="pd-spec__value">13' L-R x 5' F-B x 26' H</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Controls</span>
+                            <span class="pd-spec__value">Push Button Operation with Stroke, Pressure and Speed Control. Allen Bradley PLC Added in 2000. Light Curtains.</span>
+                        </div>
                     </div>
-                </div>
-            </article>
-        </section>
+                    <div class="pd-pricing">
+                        <p class="pd-pricing__contact">Contact for Pricing</p>
+                    </div>
+                    <div class="pd-actions">
+                        <a href="/contact/" class="pd-btn pd-btn--primary">Request a Quote</a>
+                        <a href="tel:+18478943434" class="pd-btn pd-btn--secondary">Call (847) 894-3434</a>
+                    </div>
+                </article>
+            </div>
+            <a href="/liquidations/" class="pd-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to All Equipment
+            </a>
+        </div>
     </main>
 </Layout>
-
-<style is:inline>
-    .page-container {
-        padding-inline: 2rem;
-    }
-
-    .machine-details {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: stretch;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-        user-select: none;
-        margin: 5rem 0;
-        padding: 1rem;
-        gap: 0rem;
-        box-shadow: 0 0 10px 0px rgba(0, 0, 0, .5), 0 4px 6px -4px rgba(0, 0, 0, .5);
-	    border-radius: 10px;
-    }
-
-    .machine {
-        width: 50%;
-        box-shadow: 0 0 5px 0px rgba(0, 0, 0, .5), 0 4px 6px -4px rgba(0, 0, 0, .5);
-        border-radius: 10px;
-        padding: 1rem;
-    }
-
-    .machine h2 {
-        font-size: clamp(.5rem, 3vh, 3rem);
-        margin: 0;
-        color: #425abd;
-    }
-
-    .machine p {
-	    font-size: clamp(.5rem, 1.7vh, 3rem);
-        margin: 1em 0;
-    }
-
-    .machine-info-container {
-	    margin-top: 3rem;
-    }
-
-    .details {
-	    display: grid;
-	    align-items: flex-start;
-	    gap: 1rem;
-    }
-
-    .carousel-info {
-        display: flex;
-        justify-content: space-between;
-        font-size: clamp(.5rem, 2vh, 3rem);
-        margin: 0;
-        color: #425abd;
-        font-weight: bold;
-    }
-
-    .details span {
-        display: grid;
-        justify-content: flex-start;
-        color: black;
-        font-size: clamp(.5rem, 2vh, 3rem);
-        margin: 0;
-    }
-
-    .padding {
-        display: grid;
-        gap: .5rem;
-        justify-items: end;
-    }
-
-    .controls {
-	    width: 60%;
-    }
-
-    @media (max-width: 40rem) {
-        .page-container {
-            padding-inline: .5rem;
-        }
-
-        .machine-info-container {
-            margin-top: 1rem;
-        }
-
-        .machine-details {
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .carousel {
-            width: 100%;
-		    height: 250px;
-	    }
-
-        .arrow-left {
-            left: -1rem;
-        }
-
-        .arrow-right {
-            right: -1rem;
-        }
-
-        .machine {
-		    width: auto;
-        }
-        
-        .machine h2 {
-            font-size: clamp(.5rem, 2.5vh, 3rem);
-        }
-        
-        .details {
-            gap: 1rem;
-        }
-        
-        .carousel-info {
-            display: grid;
-            justify-content: flex-start;
-        }
-        
-        .padding {
-            justify-items: start;
-            gap: 1rem;
-        }
-    }
-
-    @media (min-width: 40rem) and (max-width: 60rem) {
-        .machine-details {
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .machine {
-            width: auto;
-        }
-
-        .carousel {
-            width: 100%;
-		    height: 400px;
-	    }
-    }
-
-    @media (min-width: 60rem) and (max-width: 70rem) {
-        .machine-details {
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .machine {
-            width: auto;
-        }
-
-        .carousel {
-		    height: 400px;
-	    }
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
-        .directory-title {
-            font-size: clamp(.5rem, 3vh, 3rem);
-        }
-
-        .page-title {
-            font-size: clamp(1rem, 6vh, 3rem);
-        }
-        
-        .carousel {
-            height: 350px;
-        }
-
-        .arrow-left {
-            left: -1rem;
-        }
-
-        .arrow-right {
-            right: -1rem;
-        }
-
-        .machine-details {
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .machine {
-            width: auto;
-        }
-
-        .machine h2 {
-            font-size: clamp(1rem, 4vh, 3rem);
-        }
-
-        .machine p {
-            font-size: clamp(.5rem, 3vh, 3rem);
-        }
-
-        .carousel-info {
-            font-size: clamp(1rem, 3vh, 3rem);
-        }
-
-        .details span {
-            font-size: clamp(1rem, 3vh, 3rem);
-        }
-    }
-</style>

@@ -1,122 +1,262 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Services | Gerrard Group Inc" 
-    description="The Gerrard Machinery Company services in Auctions, Liquidations, Buying & Selling Equipment, Appraisals, and Consulting."
+<Layout title="Auction, Appraisal & Consulting Services | Gerrard Group"
+    description="Industrial machinery auctions, USPAP-compliant equipment appraisals, liquidation services, and asset consulting. Maximize returns on your surplus machinery and equipment."
     canon="https://gerrardgroupinc.com/services/"
+    jsonLdType="services"
     >
-    <main class="page-container">
-        <h1 class="title"><span class="title-text">Services</span></h1><!--<span class="cursor">&nbsp;</span>-->
-        <section class="cards">
-            <Card 
-                title="Auctions, Liquidations and Buying & Selling of Equipment:"
-                name="Auctions, Liquidations and Buying & Selling of Equipment:"
-                body="Our group meticulously evaluates each project and the client’s needs, then develops and executes the optimum marketing and sale scenario to achieve highest returns. Equally important, Our commission programs or buy-outs are developed to maximize returns, which often puts more money in our client’s pockets."
-            />
-            <Card 
-                title="Appraisal Services:"
-                name="Appraisal Services:"
-                body="Our appraisers perform properly researched 'gross & net' Forced Liquidation (FL), Orderly Liquidation (OL) and Fair Market Value (FMV) appraisals which adhere to USPAP (Uniform Standards of Professional Appraisal Practice). Also, based on the project, We can perform 'Desk Top', non- inspected appraisals."
-            />
-            <Card 
-                title="Consulting Services:"
-                name="Consulting Services:"
-                body="Our group provides consulting services to determine the highest and best use of a company’s assets and inventory, which can be helpful in business making decisions."
-            />
+    <main class="svc-page">
+        <!-- Hero -->
+        <section class="svc-hero">
+            <div class="svc-hero__inner">
+                <h1 class="svc-hero__title">Our Services</h1>
+                <p class="svc-hero__subtitle">Expert auction, appraisal, and consulting services designed to maximize the value of your industrial assets.</p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="svc-grid-section">
+            <div class="svc-grid">
+                <article class="svc-card">
+                    <div class="svc-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                    </div>
+                    <h2 class="svc-card__title">Auctions & Liquidations</h2>
+                    <p class="svc-card__text">Our group meticulously evaluates each project and the client's needs, then develops and executes the optimum marketing and sale scenario to achieve highest returns. Our commission programs or buy-outs are developed to maximize returns, which often puts more money in our client's pockets.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h2 class="svc-card__title">Appraisal Services</h2>
+                    <p class="svc-card__text">Our appraisers perform properly researched Forced Liquidation (FL), Orderly Liquidation (OL), and Fair Market Value (FMV) appraisals which adhere to USPAP (Uniform Standards of Professional Appraisal Practice). We also provide desk-top, non-inspected appraisals based on the project scope.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </div>
+                    <h2 class="svc-card__title">Consulting Services</h2>
+                    <p class="svc-card__text">Our group provides consulting services to determine the highest and best use of a company's assets and inventory. This analysis helps inform critical business decisions and ensures you get maximum value from your industrial equipment and surplus materials.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                    </div>
+                    <h2 class="svc-card__title">Buy & Sell Programs</h2>
+                    <p class="svc-card__text">Our used machinery division buys and sells industrial machinery and equipment as a regular course of business. This diversity gives us a broader understanding of both the retail and wholesale markets, putting our clients at a significant advantage.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h2 class="svc-card__title">Demolition & Remediation</h2>
+                    <p class="svc-card__text">Whether it's a single piece of equipment, plant relocation, multiple facilities, or demolition projects, our team manages the full scope. We coordinate removal, remediation, and asset recovery to ensure a smooth process from start to finish.</p>
+                </article>
+                <article class="svc-card">
+                    <div class="svc-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h2 class="svc-card__title">Strategic Partnerships</h2>
+                    <p class="svc-card__text">With strategic partners around the country and abroad, our group services a wide variety of business sectors. We are not a "high volume" or "cookie cutter" company — every project gets the individualized attention it deserves.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="svc-cta">
+            <div class="svc-cta__inner">
+                <h2 class="svc-cta__title">Ready to Discuss Your Project?</h2>
+                <p class="svc-cta__text">Every project is unique. Let our team evaluate your needs and develop a custom strategy to maximize your returns.</p>
+                <div class="svc-cta__actions">
+                    <a href="/contact/" class="svc-cta__btn svc-cta__btn--primary">Contact Our Team</a>
+                    <a href="/liquidations/" class="svc-cta__btn svc-cta__btn--secondary">Browse Inventory</a>
+                </div>
+            </div>
         </section>
     </main>
 </Layout>
 
 <style is:inline>
-    .cards {
+    .svc-page {
+        background: var(--color-bg, #F9FAFB);
+    }
+
+    .svc-hero {
+        background: linear-gradient(135deg, #0a192f 0%, #055895 50%, #044a7f 100%);
+        padding: 64px 24px 56px;
+        text-align: center;
+    }
+
+    .svc-hero__inner {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .svc-hero__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.75rem, 4vw, 3rem);
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .svc-hero__subtitle {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+        color: rgba(255, 255, 255, 0.82);
+        margin: 0;
+        line-height: 1.6;
+        max-width: 540px;
+        margin-inline: auto;
+    }
+
+    .svc-grid-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 48px 24px 56px;
+    }
+
+    .svc-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 24px;
+    }
+
+    .svc-card {
+        background: var(--color-card, #fff);
+        border-radius: var(--radius-md, 10px);
+        padding: 32px 28px;
+        box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.08));
+        border-top: 3px solid var(--color-primary, #055895);
+        transition: transform var(--transition, 0.25s ease), box-shadow var(--transition, 0.25s ease);
+    }
+
+    .svc-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg, 0 10px 28px rgba(0,0,0,0.1));
+    }
+
+    .svc-card__icon {
+        display: inline-flex;
+        padding: 12px;
+        border-radius: 50%;
+        background: rgba(5, 88, 149, 0.08);
+        color: var(--color-primary, #055895);
+        margin-bottom: 16px;
+    }
+
+    .svc-card__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--color-dark, #111827);
+        margin: 0 0 12px;
+    }
+
+    .svc-card__text {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.92rem;
+        color: var(--color-text-secondary, #6B7280);
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .svc-cta {
+        background: linear-gradient(135deg, #0a192f 0%, #1d3557 100%);
+        padding: 64px 24px;
+        text-align: center;
+    }
+
+    .svc-cta__inner {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .svc-cta__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 12px;
+    }
+
+    .svc-cta__text {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.78);
+        margin: 0 0 28px;
+        line-height: 1.6;
+    }
+
+    .svc-cta__actions {
         display: flex;
+        gap: 12px;
+        justify-content: center;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;
     }
 
-    .page-container {
-        display: grid;
-        justify-items: center;
-        margin: 3rem 0;
+    .svc-cta__btn {
+        display: inline-block;
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 13px 32px;
+        border-radius: var(--radius-sm, 6px);
+        transition: all var(--transition, 0.25s ease);
     }
 
-    .card-container {
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-        margin-inline: 8rem;
-    }
-    
-    .card-content {
-        margin: 1rem;
-        margin-bottom: 0;
-    }
-    
-    .card-title {
-        margin-bottom: .5rem;
+    .svc-cta__btn--primary {
+        background: var(--color-accent, #D97706);
+        color: #fff;
     }
 
-    .link-text {
-        color: #425abd;
-    }
-    
-    .card-body {
-        display: grid;
-        font-size: clamp(.5rem, 2.7vh, 3rem);
-        margin: 1rem 0;
+    .svc-cta__btn--primary:hover {
+        background: var(--color-accent-hover, #B45309);
+        transform: translateY(-2px);
     }
 
-    .card-phone, .card-email, .image-container, .btn {
-        display: none;
+    .svc-cta__btn--secondary {
+        background: transparent;
+        border: 2px solid rgba(255,255,255,0.5);
+        color: #fff;
     }
 
-    @media (max-width: 40rem) {
-        .card-container {
-            margin-inline: 1.5rem;
+    .svc-cta__btn--secondary:hover {
+        border-color: #fff;
+        background: rgba(255,255,255,0.1);
+    }
+
+    @media (max-width: 640px) {
+        .svc-hero {
+            padding: 40px 16px 36px;
         }
-    }
 
-    @media (min-width: 60rem) and (max-width: 70rem) {
-        .card-body {
-            font-size: clamp(1rem, 3vh, 3rem);
+        .svc-grid-section {
+            padding: 32px 16px 40px;
         }
-    }
 
-    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
-        .card-body {
-            font-size: clamp(1rem, 3vh, 3rem);
+        .svc-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .svc-card {
+            padding: 24px 20px;
+        }
+
+        .svc-cta {
+            padding: 48px 16px;
+        }
+
+        .svc-cta__actions {
+            flex-direction: column;
+            align-items: center;
         }
     }
 </style>
-
-<!--<script async type="text/javascript" defer="defer" is:inline>
-    const typedTextSpan = document.querySelector(".title-text");
-    const cursor = document.querySelector(".cursor");
-    const textArray = ["Services"];
-    const typingDelay = 70;
-
-    let textArrayIndex = 0;
-    let charIndex = 0;
-    
-    function type() {
-        if(charIndex < textArray[textArrayIndex].length) {
-            if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
-            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-            charIndex++
-            setTimeout(type, typingDelay);
-            }
-            else {
-                cursor.classList.remove("typing");
-        }
-    }
-    
-    document.addEventListener("DOMContentLoaded", function() {
-        if(textArray.length) setTimeout(type, typingDelay + 250);
-    });
-</script>-->

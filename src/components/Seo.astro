@@ -2,14 +2,14 @@
 import jsonLDGenerator from "../scripts/jsonLD";
 
 const {
-  url = Astro.url,
-  frontmatter,
+  type = "website",
+  data = {},
 } = Astro.props;
 
 const jsonLD = jsonLDGenerator({
-  type: frontmatter ? "post" : "website",
-  post: frontmatter,
-  url,
+  type,
+  data,
+  url: Astro.url?.href || "",
 });
 ---
 

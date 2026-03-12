@@ -1,112 +1,397 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import { Image } from 'astro:assets';
 
 import dan from '../assets/dan.jpg';
-import mike from '../assets/mike copy1.jpg';
-import sara from '../assets/sara-copy1.jpg';
 import placeHolder from '../assets/placeholder-person-square.png';
 ---
 
-<Layout title="Contact | Gerrard Group Inc" 
-    description="The Gerrard Machinery Company will buy or sell your used machinery. Contact us today with any questions you may have."
+<Layout title="Contact Us | Gerrard Group Inc"
+    description="Contact Gerrard Group for industrial machinery sales, auctions, liquidations, and appraisals. Call 847-894-3434 or email us. Offices in Chicago, St. Louis, and Spokane."
     canon="https://gerrardgroupinc.com/contact/"
     >
-    <main class="page-container">
-        <h1 class="title"><span class="title-text">Contact Us</span></h1><!--<span class="cursor">&nbsp;</span>-->
-        <article class="cards">
-            <Card 
-                title="Daniel Gerrard"
-                name="Daniel Gerrard"
-                body="President & CEO"
-                email="Gerrardmachinery@gmail.com"
-                phone="847-894-3434"
-                btnName="Contact"
-                imageURL={dan}
-                alt="dan gerrard"
-                href="mailto:Gerrardmachinery@gmail.com"
-                loading="eager"
-            />
-            <div class="shadow-fix">
-                <Card 
-                    title="Sara Vera"
-                    name="Sara Vera"
-                    body="Vice President - Mexico/South America"
-                    email="Sara.Gerrardmachinery@gmail.com"
-                    phone="847-322-0431"
-                    btnName="CONTACT"
-                    imageURL={placeHolder}
-                    alt="sara gerrard"
-                    href="mailto:Sara.Gerrardmachinery@gmail.com"
-                    loading="eager"
-                />
+    <main class="cnt-page">
+        <!-- Hero -->
+        <section class="cnt-hero">
+            <div class="cnt-hero__inner">
+                <h1 class="cnt-hero__title">Contact Us</h1>
+                <p class="cnt-hero__subtitle">Have a question about equipment or need a quote? Our team is ready to help.</p>
             </div>
-            <div class="shadow-fix">
-                <Card 
-                    title="Matthew Clendenning"
-                    name="Matthew Clendenning"
-                    body="Vice President - Web Development"
-                    email="Matthewclendenning@outlook.com"
-                    phone="312-522-8606"
-                    btnName="CONTACT"
-                    imageURL={placeHolder}
-                    alt="matthew clendenning"
-                    href="mailto:Matthewclendenning@outlook.com"
-                    loading="eager"
-                />
+        </section>
+
+        <!-- Contact Info Bar -->
+        <section class="cnt-info-bar">
+            <div class="cnt-info-bar__inner">
+                <a href="tel:+18478943434" class="cnt-info-bar__item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <span>(847) 894-3434</span>
+                </a>
+                <a href="mailto:gerrardmachinery@gmail.com" class="cnt-info-bar__item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>gerrardmachinery@gmail.com</span>
+                </a>
             </div>
-        </article>
+        </section>
+
+        <!-- Team Cards -->
+        <section class="cnt-team-section">
+            <h2 class="cnt-team-heading">Our Team</h2>
+            <div class="cnt-team">
+                <article class="cnt-member">
+                    <div class="cnt-member__photo-wrap">
+                        <Image
+                            src={dan}
+                            alt="Daniel Gerrard - President and CEO of Gerrard Group Inc"
+                            width={200}
+                            height={200}
+                            format="webp"
+                            loading="eager"
+                            class="cnt-member__photo"
+                        />
+                    </div>
+                    <div class="cnt-member__info">
+                        <h3 class="cnt-member__name">Daniel Gerrard</h3>
+                        <span class="cnt-member__role">President & CEO</span>
+                        <div class="cnt-member__contact">
+                            <a href="tel:+18478943434" class="cnt-member__link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                847-894-3434
+                            </a>
+                            <a href="mailto:Gerrardmachinery@gmail.com" class="cnt-member__link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                Gerrardmachinery@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="cnt-member">
+                    <div class="cnt-member__photo-wrap">
+                        <Image
+                            src={placeHolder}
+                            alt="Sara Vera - Vice President of Gerrard Group Inc"
+                            width={200}
+                            height={200}
+                            format="webp"
+                            loading="eager"
+                            class="cnt-member__photo"
+                        />
+                    </div>
+                    <div class="cnt-member__info">
+                        <h3 class="cnt-member__name">Sara Vera</h3>
+                        <span class="cnt-member__role">Vice President — Mexico/South America</span>
+                        <div class="cnt-member__contact">
+                            <a href="tel:+18473220431" class="cnt-member__link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                847-322-0431
+                            </a>
+                            <a href="mailto:Sara.Gerrardmachinery@gmail.com" class="cnt-member__link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                Sara.Gerrardmachinery@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="cnt-member">
+                    <div class="cnt-member__photo-wrap">
+                        <Image
+                            src={placeHolder}
+                            alt="Matthew Clendenning - Vice President Web Development at Gerrard Group Inc"
+                            width={200}
+                            height={200}
+                            format="webp"
+                            loading="eager"
+                            class="cnt-member__photo"
+                        />
+                    </div>
+                    <div class="cnt-member__info">
+                        <h3 class="cnt-member__name">Matthew Clendenning</h3>
+                        <span class="cnt-member__role">Vice President — Web Development</span>
+                        <div class="cnt-member__contact">
+                            <a href="tel:+13125228606" class="cnt-member__link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                312-522-8606
+                            </a>
+                            <a href="mailto:Matthewclendenning@outlook.com" class="cnt-member__link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                Matthewclendenning@outlook.com
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Locations -->
+        <!--<section class="cnt-locations">
+            <h2 class="cnt-locations__title">Our Offices</h2>
+            <div class="cnt-locations__grid">
+                <div class="cnt-loc">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Chicago, IL</span>
+                </div>
+                <div class="cnt-loc">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>St. Louis, MO</span>
+                </div>
+                <div class="cnt-loc">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Spokane, WA</span>
+                </div>
+            </div>
+        </section>-->
     </main>
 </Layout>
 
 <style is:inline>
-    .cards {
+    .cnt-page {
+        background: var(--color-bg, #F9FAFB);
+    }
+
+    .cnt-hero {
+        background: linear-gradient(135deg, #0a192f 0%, #055895 50%, #044a7f 100%);
+        padding: 64px 24px 56px;
+        text-align: center;
+    }
+
+    .cnt-hero__inner {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .cnt-hero__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.75rem, 4vw, 3rem);
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 12px;
+    }
+
+    .cnt-hero__subtitle {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+        color: rgba(255, 255, 255, 0.82);
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    /* Info Bar */
+    .cnt-info-bar {
+        background: #fff;
+        border-bottom: 1px solid var(--color-border, #E5E7EB);
+        padding: 16px 24px;
+    }
+
+    .cnt-info-bar__inner {
+        max-width: 800px;
+        margin: 0 auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        align-items: stretch;
-        gap: 3rem;
+        gap: 40px;
+        flex-wrap: wrap;
     }
 
-    .shadow-fix img {
-        box-shadow: none;
-    }
-
-    .page-container {
-        display: grid;
-        justify-items: center;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    .link-text {
-        pointer-events: none;
+    .cnt-info-bar__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--color-primary, #055895);
         text-decoration: none;
+        transition: color var(--transition, 0.25s ease);
     }
-</style>
 
-<!--<script async type="text/javascript" defer="defer" is:inline>
-    const typedTextSpan = document.querySelector(".title-text");
-    const cursor = document.querySelector(".cursor");
-    const textArray = ["Contact Gerrard Machinery"];
-    const typingDelay = 70;
+    .cnt-info-bar__item:hover {
+        color: var(--color-accent, #D97706);
+    }
 
-    let textArrayIndex = 0;
-    let charIndex = 0;
-    
-    function type() {
-        if(charIndex < textArray[textArrayIndex].length) {
-            if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
-            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-            charIndex++
-            setTimeout(type, typingDelay);
-            }
-            else {
-                cursor.classList.remove("typing");
+    .cnt-info-bar__item svg {
+        flex-shrink: 0;
+    }
+
+    /* Team Section */
+    .cnt-team-section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 48px 24px 56px;
+    }
+
+    .cnt-team-heading {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-dark, #111827);
+        text-align: center;
+        margin: 0 0 32px;
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    .cnt-team-heading::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background: var(--color-accent, #D97706);
+        border-radius: 2px;
+    }
+
+    .cnt-team {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px;
+    }
+
+    .cnt-member {
+        background: var(--color-card, #fff);
+        border-radius: var(--radius-md, 10px);
+        overflow: hidden;
+        box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.08));
+        transition: transform var(--transition, 0.25s ease), box-shadow var(--transition, 0.25s ease);
+        text-align: center;
+    }
+
+    .cnt-member:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg, 0 10px 28px rgba(0,0,0,0.1));
+    }
+
+    .cnt-member__photo-wrap {
+        background: linear-gradient(135deg, #055895 0%, #044a7f 100%);
+        padding: 24px 24px 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cnt-member__photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .cnt-member__info {
+        padding: 20px 24px 24px;
+    }
+
+    .cnt-member__name {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--color-dark, #111827);
+        margin: 0 0 4px;
+    }
+
+    .cnt-member__role {
+        display: block;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--color-primary, #055895);
+        margin-bottom: 16px;
+    }
+
+    .cnt-member__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .cnt-member__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.85rem;
+        color: var(--color-text-secondary, #6B7280);
+        text-decoration: none;
+        transition: color var(--transition, 0.25s ease);
+    }
+
+    .cnt-member__link:hover {
+        color: var(--color-primary, #055895);
+    }
+
+    .cnt-member__link svg {
+        color: var(--color-primary, #055895);
+        flex-shrink: 0;
+    }
+
+    /* Locations */
+    .cnt-locations {
+        background: linear-gradient(135deg, #0a192f 0%, #1d3557 100%);
+        padding: 48px 24px;
+        text-align: center;
+    }
+
+    .cnt-locations__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 24px;
+    }
+
+    .cnt-locations__grid {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .cnt-loc {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 24px;
+        border: 1px solid rgba(255,255,255,0.25);
+        border-radius: 24px;
+        background: rgba(255,255,255,0.06);
+        color: #e8f4fc;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .cnt-loc svg {
+        color: var(--color-accent, #D97706);
+    }
+
+    @media (max-width: 640px) {
+        .cnt-hero {
+            padding: 40px 16px 36px;
+        }
+
+        .cnt-info-bar__inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cnt-team-section {
+            padding: 32px 16px 40px;
+        }
+
+        .cnt-team {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .cnt-locations {
+            padding: 40px 16px;
+        }
+
+        .cnt-locations__grid {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
         }
     }
-    
-    document.addEventListener("DOMContentLoaded", function() {
-        if(textArray.length) setTimeout(type, typingDelay + 250);
-    });
-</script>-->
+</style>

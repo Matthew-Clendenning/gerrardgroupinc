@@ -10,75 +10,80 @@ export interface Props {
 const { title, href, href2, page, page2 } = Astro.props as Props;
 ---
 
-<div class="page-directory">
-    <h3 class="directory-title">
-        <a href={href}>Liquidations</a>	/	<!--<a class="href2" href={href2}>{page}</a>  <span>/</span>-->   {page2}
-    </h3>
-</div>
-<div class="container">
-    <h1 class="page-title">{title}</h1>
-</div>
+<nav class="detail-breadcrumb" aria-label="Breadcrumb">
+    <div class="detail-breadcrumb__inner">
+        <a href="/" class="detail-breadcrumb__link">Home</a>
+        <span class="detail-breadcrumb__sep" aria-hidden="true">/</span>
+        <a href={href} class="detail-breadcrumb__link">Liquidations</a>
+        <span class="detail-breadcrumb__sep" aria-hidden="true">/</span>
+        <span class="detail-breadcrumb__current">{page2 || title}</span>
+    </div>
+</nav>
+<header class="detail-hero">
+    <h1 class="detail-hero__title">{title}</h1>
+</header>
 
 <style>
-    .page-directory {
-	    width: 100%;
-	    height: auto;
-	    background: #464646;
+    .detail-breadcrumb {
+        background: var(--color-bg, #F9FAFB);
+        border-bottom: 1px solid var(--color-border, #E5E7EB);
+        padding: 12px 24px;
     }
 
-    .page-title {
-	    color: white;
-        font-size: clamp(1rem, 4vh, 3rem);
+    .detail-breadcrumb__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.85rem;
     }
 
-    h2 {
-        color: white;
-        font-size: clamp(1rem, 3.2vh, 3rem);
+    .detail-breadcrumb__link {
+        color: var(--color-primary, #055895);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .detail-breadcrumb__link:hover {
+        color: var(--color-primary-dark, #044a7f);
+        text-decoration: underline;
+    }
+
+    .detail-breadcrumb__sep {
+        color: var(--color-text-secondary, #9CA3AF);
+    }
+
+    .detail-breadcrumb__current {
+        color: var(--color-text-secondary, #6B7280);
+    }
+
+    .detail-hero {
+        background: linear-gradient(135deg, #0a192f 0%, #055895 50%, #044a7f 100%);
+        padding: 36px 24px;
+        text-align: center;
+    }
+
+    .detail-hero__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.25rem, 3.5vw, 2.25rem);
+        font-weight: 700;
+        color: #fff;
         margin: 0;
+        max-width: 900px;
+        margin-inline: auto;
+        line-height: 1.2;
+        letter-spacing: 0.3px;
     }
 
-    .directory-title {
-        font-size: clamp(.5rem, 2vh, 3rem);
-	    color: white;
-	    padding: 15px 3rem;
-	    margin: 0;
-    }
-
-    .directory-title a {
-	    text-decoration: none;
-	    color: white;
-    }
-
-    .directory-title a:hover {
-	    text-decoration: underline;
-    }
-
-    .container {
-	    width: 100%;
-	    text-align: center;
-	    background: #425abd;
-	    padding: 3rem;
-    }
-
-    .href2:hover {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-    }
-
-    @media (max-width: 40rem) {
-        .container {
-            padding-block: 1.5rem;
+    @media (max-width: 640px) {
+        .detail-breadcrumb {
+            padding: 10px 16px;
         }
 
-        .directory-title {
-            text-align: center;
-            font-size: clamp(.5rem, 2vh, 3rem);
-            padding-inline: 0;
+        .detail-hero {
+            padding: 28px 16px;
         }
     }
 </style>

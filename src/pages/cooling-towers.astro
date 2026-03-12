@@ -3,50 +3,40 @@ import Layout from "../layouts/Layout.astro";
 import Directory from "../components/MachineDirectory.astro";
 import { Carousel } from "../components/Carousel.jsx";
 import { slides4 } from "../data/carouselData.json";
+import "../styles/product-detail.css";
 ---
 
-<Layout title="Process - Cooling Towers | Gerrard Group Inc" 
-    description="Cooling Towers that will soon be available for purchasing."
+<Layout title="Industrial Cooling Towers - SOLD | Gerrard Group Inc"
+    description="This industrial process cooling tower has been sold. Browse our current surplus machinery inventory for available equipment including air compressors and hydraulic presses."
     canon="https://gerrardgroupinc.com/cooling-towers/"
+    jsonLdType="product"
+    jsonLdData={{
+        name: "Industrial Process Cooling Towers",
+        description: "Industrial process cooling towers - previously available through Gerrard Group Inc",
+        brand: "Various",
+        category: "Cooling Equipment",
+        price: "0",
+        sold: true,
+        condition: "UsedCondition"
+    }}
     >
-    <Directory 
+    <Directory
         title="Process - Cooling Towers"
         page="Cooling Towers"
         page2="Machine Details"
         href="/liquidations"
     />
-    <main class="page-container">
-        <section class="machine-details">
-            <Carousel client:load
-                data={slides4}
-            />
-        </section>
+    <main class="pd-page">
+        <div class="pd-content">
+            <div class="pd-sold-layout">
+                <Carousel client:load data={slides4} />
+                <span class="pd-sold-badge">Sold</span>
+                <p class="pd-sold-text">This item has been sold. Browse our <a href="/liquidations/">current inventory</a> for available equipment.</p>
+            </div>
+            <a href="/liquidations/" class="pd-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to All Equipment
+            </a>
+        </div>
     </main>
 </Layout>
-
-<style is:inline>
-    .page-container {
-        display: flex;
-        justify-content: center;
-        margin-block: 5rem;
-    }
-
-    .machine-details {
-        user-select: none;
-    }
-
-    @media (max-width: 40rem) {
-        .carousel {
-		    width: 300px;
-		    height: 250px;
-	    }
-
-        .arrow-left {
-            left: -1rem;
-        }
-
-        .arrow-right {
-            right: -1rem;
-        }
-    }
-</style>

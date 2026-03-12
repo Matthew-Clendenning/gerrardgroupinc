@@ -1,231 +1,306 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
-<Layout title='Auctions | Gerrard Group Inc' 
-    description="The Gerrard Machinery Company specializes in industrial machinery auctions in the U.S. & throughout the world."
+<Layout title="Industrial Machinery Auctions | Gerrard Group Inc"
+    description="Browse past industrial machinery auctions by Gerrard Group. Specializing in steel processing, manufacturing, and heavy equipment auctions across the United States."
     canon="https://gerrardgroupinc.com/auctions/"
     >
-    <main class="page-container">
-        <h1 class="title"><span class="title-text">Past Auctions</span></h1><!--<span class="cursor">&nbsp;</span>-->
-        <article class="cards">
-            <Card
-                title="Nashville Steel Crop. - Metal Slitting and Cut To Length Equip."
-                href="../images/nashville_steel_1.jpg"
-                href2="https://www.bidspotter.com/en-us/auction-catalogues/bscgerr"
-                name="Nashville Steel Corp. - Steel Processing Equipment"
-                body="Auction Starts Ending: July 23, 10:00 AM CST in Nashville, TN"
-                x_link="Online Bidding on Bidspotter"
-            />
-            <Card 
-                title="Electrolux 3-Day Live/Webcast & Online Auction"
-                href="../images/electrolux_bro_cover.jpg"
-                name="Electrolux 3-Day Live/Webcast & Online Auction"
-                body="Auction Starts Ending January 28, 2020 10:00 AM CST in St. Cloud, MN"
-            />
-            <Card
-                title="Electrolux Day 1 Auction Equipment Preview" 
-                href="https://www.youtube.com/watch?v=qPnewz242x0&feature=youtu.be"
-                name="VIDEO: Electrolux Day 1 Auction Equipment Preview"
-                body="January 28, 2020"
-            />
-            <Card 
-                title="Electrolux Day 2 Auction Equipment Preview" 
-                href="https://www.youtube.com/watch?v=KvgDy_l9_aI&feature=youtu.be"
-                name="VIDEO: Electrolux Day 2 Auction Equipment Preview"
-                body="January 29, 2020"
-            />
-            <Card 
-                title="Electrolux Day 3 Auction Equipment Preview" 
-                href="https://www.youtube.com/watch?v=RYjPigp9f5I&feature=youtu.be"
-                name="VIDEO: Electrolux Day 3 Auction Equipment Preview"
-                body="January 30, 2020"
-            />
-        </article>
+    <main class="auc-page">
+        <!-- Hero -->
+        <section class="auc-hero">
+            <div class="auc-hero__inner">
+                <h1 class="auc-hero__title">Past Auctions</h1>
+                <p class="auc-hero__subtitle">A selection of industrial machinery auctions conducted by Gerrard Group across the United States.</p>
+            </div>
+        </section>
+
+        <!-- Auction Cards -->
+        <section class="auc-grid-section">
+            <div class="auc-grid">
+                <article class="auc-card">
+                    <div class="auc-card__header">
+                        <span class="auc-card__badge">Completed</span>
+                        <span class="auc-card__date">July 2020</span>
+                    </div>
+                    <h2 class="auc-card__title">Nashville Steel Corp. — Steel Processing Equipment</h2>
+                    <p class="auc-card__desc">Metal slitting and cut-to-length equipment auction.</p>
+                    <div class="auc-card__meta">
+                        <span class="auc-card__location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Nashville, TN
+                        </span>
+                    </div>
+                    <a href="https://www.bidspotter.com/en-us/auction-catalogues/bscgerr" target="_blank" rel="noopener noreferrer" class="auc-card__link">View on Bidspotter
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </article>
+                <article class="auc-card">
+                    <div class="auc-card__header">
+                        <span class="auc-card__badge">Completed</span>
+                        <span class="auc-card__date">January 2020</span>
+                    </div>
+                    <h2 class="auc-card__title">Electrolux — 3-Day Live/Webcast & Online Auction</h2>
+                    <p class="auc-card__desc">Large-scale 3-day manufacturing equipment auction for Electrolux facility closure.</p>
+                    <div class="auc-card__meta">
+                        <span class="auc-card__location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            St. Cloud, MN
+                        </span>
+                    </div>
+                </article>
+                <article class="auc-card auc-card--video">
+                    <div class="auc-card__header">
+                        <span class="auc-card__badge auc-card__badge--video">Video</span>
+                        <span class="auc-card__date">Day 1 — Jan 28, 2020</span>
+                    </div>
+                    <h2 class="auc-card__title">Electrolux Day 1 — Equipment Preview</h2>
+                    <p class="auc-card__desc">Video walkthrough of manufacturing equipment available in the Day 1 auction lot.</p>
+                    <a href="https://www.youtube.com/watch?v=qPnewz242x0" target="_blank" rel="noopener noreferrer" class="auc-card__link">Watch on YouTube
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </article>
+                <article class="auc-card auc-card--video">
+                    <div class="auc-card__header">
+                        <span class="auc-card__badge auc-card__badge--video">Video</span>
+                        <span class="auc-card__date">Day 2 — Jan 29, 2020</span>
+                    </div>
+                    <h2 class="auc-card__title">Electrolux Day 2 — Equipment Preview</h2>
+                    <p class="auc-card__desc">Video walkthrough of manufacturing equipment available in the Day 2 auction lot.</p>
+                    <a href="https://www.youtube.com/watch?v=KvgDy_l9_aI" target="_blank" rel="noopener noreferrer" class="auc-card__link">Watch on YouTube
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </article>
+                <article class="auc-card auc-card--video">
+                    <div class="auc-card__header">
+                        <span class="auc-card__badge auc-card__badge--video">Video</span>
+                        <span class="auc-card__date">Day 3 — Jan 30, 2020</span>
+                    </div>
+                    <h2 class="auc-card__title">Electrolux Day 3 — Equipment Preview</h2>
+                    <p class="auc-card__desc">Video walkthrough of manufacturing equipment available in the Day 3 auction lot.</p>
+                    <a href="https://www.youtube.com/watch?v=RYjPigp9f5I" target="_blank" rel="noopener noreferrer" class="auc-card__link">Watch on YouTube
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="auc-cta">
+            <div class="auc-cta__inner">
+                <h2 class="auc-cta__title">Have Equipment to Auction?</h2>
+                <p class="auc-cta__text">Our team develops custom marketing and sale strategies to achieve the highest possible returns for your industrial assets.</p>
+                <a href="/contact/" class="auc-cta__btn">Get Started</a>
+            </div>
+        </section>
     </main>
 </Layout>
 
 <style is:inline>
-    .page-container {
+    .auc-page {
+        background: var(--color-bg, #F9FAFB);
+    }
+
+    .auc-hero {
+        background: linear-gradient(135deg, #0a192f 0%, #055895 50%, #044a7f 100%);
+        padding: 64px 24px 56px;
+        text-align: center;
+    }
+
+    .auc-hero__inner {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .auc-hero__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.75rem, 4vw, 3rem);
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 12px;
+    }
+
+    .auc-hero__subtitle {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+        color: rgba(255, 255, 255, 0.82);
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .auc-grid-section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 48px 24px 56px;
+    }
+
+    .auc-grid {
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        margin: 3rem;
-        margin-inline: 2rem;
+        gap: 20px;
     }
 
-    .cards {
+    .auc-card {
+        background: var(--color-card, #fff);
+        border-radius: var(--radius-md, 10px);
+        padding: 24px 28px;
+        box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.08));
+        border-left: 4px solid var(--color-primary, #055895);
+        transition: box-shadow var(--transition, 0.25s ease);
+    }
+
+    .auc-card:hover {
+        box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,0.08));
+    }
+
+    .auc-card--video {
+        border-left-color: var(--color-accent, #D97706);
+    }
+
+    .auc-card__header {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        gap: 3rem;
-    }
-
-    .card-container {
-        display: grid;
-        justify-content: center;
-        justify-items: center;
         align-items: center;
-        align-content: center;
-        width: 400px;
-        height: 330px;
+        gap: 12px;
+        margin-bottom: 10px;
     }
 
-    .link-text:hover {
-        color:rgb(109, 189, 255);
+    .auc-card__badge {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 3px 10px;
+        border-radius: 4px;
+        background: rgba(5, 88, 149, 0.1);
+        color: var(--color-primary, #055895);
     }
 
-    .card-body {
-        color: #000;
-        font-size: clamp(.5rem, 2.2vh, 3rem);
+    .auc-card__badge--video {
+        background: rgba(217, 119, 6, 0.1);
+        color: var(--color-accent, #D97706);
     }
 
-    .card-phone, .card-email, .image-container, .btn {
-        display: none;
+    .auc-card__date {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.8rem;
+        color: var(--color-text-secondary, #6B7280);
     }
 
-    .catalog a {
-        color: hsl(0, 0%, 30%);
+    .auc-card__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--color-dark, #111827);
+        margin: 0 0 6px;
     }
 
-    .catalog a:hover {
-        color:rgb(109, 189, 255)
+    .auc-card__desc {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.9rem;
+        color: var(--color-text-secondary, #6B7280);
+        line-height: 1.5;
+        margin: 0 0 12px;
     }
 
-    @media (max-width: 40rem) {
-        .card-container:hover {
-            transform: scale(1);
-            box-shadow: none;
-        }
-
-        .catalog a:hover {
-            color: inherit;
-        }
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
-        .card-body {
-            font-size: clamp(1rem, 1.3rem, 3rem);
-        }
-    }
-    /*.cards {
+    .auc-card__meta {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: stretch;
-        gap: 3rem;
-        margin-bottom: 5rem;
+        gap: 16px;
+        margin-bottom: 12px;
     }
 
-    .page-container {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        margin-inline: 2rem;
-    }
-    
-    .title {
-        text-align: center;
-        text-decoration: underline;
-        text-decoration-color: black;
-        text-decoration-thickness: 6%;
-        font-size: clamp(2rem, 3.8vh, 5rem);
-        color: #055895;
-        margin-bottom: 3rem;
-        margin-top: 0;
-    }
-
-    .card-container {
-        display: grid;
-        justify-content: center;
-        justify-items: center;
+    .auc-card__location {
+        display: inline-flex;
         align-items: center;
-        width: 650px;
-        height: auto;
-    }
-    
-    .card-content {
-        display: grid;
-        justify-content: center;
-        text-align: center;
-        padding-inline: 2rem;
-    }
-    
-    .card-title {
-        margin-bottom: .5rem;
-    }
-    
-    .card-body {
-        display: grid;
-        font-size: clamp(.5rem, 2.2vh, 3rem);
-        margin: 1rem 0;
-        gap: .5rem;
+        gap: 4px;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.8rem;
+        color: var(--color-text-secondary, #6B7280);
     }
 
-    .card-phone, .card-email, .image-container, .btn {
-        display: none;
+    .auc-card__location svg {
+        color: var(--color-primary, #055895);
     }
-    
-    .catalog a:hover {
+
+    .auc-card__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-primary, #055895);
+        text-decoration: none;
+        transition: gap var(--transition, 0.25s ease);
+    }
+
+    .auc-card__link:hover {
+        gap: 10px;
         text-decoration: underline;
     }
-    
-    .catalog a {
-        color: #425abd;
-        text-decoration: none;
-    }
-    
-    .link-text {
-        border: 2px solid black;
-        padding: .5rem;
-        color: white;
-        background-color: #5f6ca1;
-        text-decoration: none;
-    }
-    
-    .link-text:hover {
-        box-shadow: 0 0 30px #425abd;
-    }
-    
-    @media (max-width: 40rem) {
-        .card-container:hover {
-            transform: scale(1);
-        }
+
+    .auc-cta {
+        background: linear-gradient(135deg, #0a192f 0%, #1d3557 100%);
+        padding: 64px 24px;
+        text-align: center;
     }
 
-    @media only screen and (orientation: landscape) and (min-width: 40rem) and (max-width: 60rem) {
-        .card-body {
-            font-size: clamp(1rem, 1.3rem, 3rem);
+    .auc-cta__inner {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .auc-cta__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 12px;
+    }
+
+    .auc-cta__text {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.78);
+        margin: 0 0 28px;
+        line-height: 1.6;
+    }
+
+    .auc-cta__btn {
+        display: inline-block;
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 14px 36px;
+        background: var(--color-accent, #D97706);
+        color: #fff;
+        border-radius: var(--radius-sm, 6px);
+        transition: all var(--transition, 0.25s ease);
+    }
+
+    .auc-cta__btn:hover {
+        background: var(--color-accent-hover, #B45309);
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 640px) {
+        .auc-hero {
+            padding: 40px 16px 36px;
         }
-    }*/
+
+        .auc-grid-section {
+            padding: 32px 16px 40px;
+        }
+
+        .auc-card {
+            padding: 20px;
+        }
+
+        .auc-cta {
+            padding: 48px 16px;
+        }
+    }
 </style>
-
-<!--<script async type="text/javascript" defer="defer" is:inline>
-    const typedTextSpan = document.querySelector(".title-text");
-    const cursor = document.querySelector(".cursor");
-    const textArray = ["Past Auctions"];
-    const typingDelay = 70;
-
-    let textArrayIndex = 0;
-    let charIndex = 0;
-    
-    function type() {
-        if(charIndex < textArray[textArrayIndex].length) {
-            if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
-            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-            charIndex++
-            setTimeout(type, typingDelay);
-            }
-            else {
-                cursor.classList.remove("typing");
-        }
-    }
-    
-    document.addEventListener("DOMContentLoaded", function() {
-        if(textArray.length) setTimeout(type, typingDelay + 250);
-    });
-</script>-->
