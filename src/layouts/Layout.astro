@@ -11,10 +11,20 @@ export interface Props {
 	canon: string;
 	jsonLdType?: string;
 	jsonLdData?: Record<string, any>;
+	ogType?: string;
+	ogImage?: string;
+	ogImageWidth?: string;
+	ogImageHeight?: string;
+	ogImageAlt?: string;
+	preloadImage?: string;
 }
 
-const { title, description, canon, jsonLdType, jsonLdData } = Astro.props as Props;
-const ogImage = new URL('/images/dans%20logo%20copy6.png', Astro.site || 'https://gerrardgroupinc.com').href;
+const { title, description, canon, jsonLdType, jsonLdData, ogType = "website", ogImage: ogImageProp, ogImageWidth, ogImageHeight, ogImageAlt, preloadImage } = Astro.props as Props;
+const defaultOgImage = new URL('/images/dans%20logo%20copy6.png', Astro.site || 'https://gerrardgroupinc.com').href;
+const ogImage = ogImageProp || defaultOgImage;
+const finalOgImageWidth = ogImageWidth || (ogImageProp ? "1200" : "500");
+const finalOgImageHeight = ogImageHeight || (ogImageProp ? "630" : "139");
+const finalOgImageAlt = ogImageAlt || `${title} - Gerrard Group Inc`;
 ---
 
 <!DOCTYPE html>
@@ -33,7 +43,10 @@ const ogImage = new URL('/images/dans%20logo%20copy6.png', Astro.site || 'https:
 		<link rel="dns-prefetch" href="https://fonts.googleapis.com">
 
 		<!-- Google Fonts: Barlow Condensed (headings) + Source Sans 3 (body) -->
-		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+		{preloadImage && <link rel="preload" as="image" href={preloadImage}>}
 
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -50,19 +63,19 @@ const ogImage = new URL('/images/dans%20logo%20copy6.png', Astro.site || 'https:
 		<meta property="og:title" content={title}>
 		<meta property="og:description" content={description}>
 		<meta property="og:url" content={canon}>
-		<meta property="og:type" content="website">
+		<meta property="og:type" content={ogType}>
 		<meta property="og:locale" content="en_US">
 		<meta property="og:image" content={ogImage}>
-		<meta property="og:image:width" content="500">
-		<meta property="og:image:height" content="139">
-		<meta property="og:image:alt" content="Gerrard Group Inc - Industrial Machinery Auctions & Liquidations">
+		<meta property="og:image:width" content={finalOgImageWidth}>
+		<meta property="og:image:height" content={finalOgImageHeight}>
+		<meta property="og:image:alt" content={finalOgImageAlt}>
 
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content={title}>
 		<meta name="twitter:description" content={description}>
 		<meta name="twitter:image" content={ogImage}>
-		<meta name="twitter:image:alt" content="Gerrard Group Inc - Industrial Machinery Auctions & Liquidations">
+		<meta name="twitter:image:alt" content={finalOgImageAlt}>
 
 		<!-- Schema.org itemprop -->
 		<meta itemprop="name" content={title}>
@@ -73,6 +86,10 @@ const ogImage = new URL('/images/dans%20logo%20copy6.png', Astro.site || 'https:
 		<meta name="apple-mobile-web-app-title" content="Gerrard Group Inc">
 		<meta name="application-name" content="Gerrard Group Inc">
 		<meta name="google-site-verification" content="-sDys0daq54OU4V_RvMtLAo9ktYFLSXxlG8nyHmzRHQ" />
+		<!-- BING_VERIFICATION: Replace content value with your Bing Webmaster Tools verification code -->
+		<meta name="msvalidate.01" content="BING_VERIFICATION_CODE_HERE" />
+		<!-- YANDEX_VERIFICATION: Replace content value with your Yandex verification code (optional) -->
+		<meta name="yandex-verification" content="YANDEX_VERIFICATION_CODE_HERE" />
 		<Seo type={jsonLdType} data={jsonLdData} />
 		<script src="../scripts/BTT.js"></script>
 	</head>

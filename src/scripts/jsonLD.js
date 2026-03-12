@@ -94,8 +94,27 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
     ]
   };
 
+  // Helper: generate BreadcrumbList schema
+  function breadcrumbList(items) {
+    return {
+      "@type": "BreadcrumbList",
+      "itemListElement": items.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.name,
+        ...(item.url ? { "item": item.url } : {})
+      }))
+    };
+  }
+
   // Product schema for individual machine pages
   if (type === "product" && data) {
+    const productBreadcrumb = breadcrumbList([
+      { name: "Home", url: baseUrl },
+      { name: "Liquidations", url: `${baseUrl}/liquidations/` },
+      { name: data.name || "Product" }
+    ]);
+
     const product = {
       "@context": "https://schema.org",
       "@graph": [
@@ -124,10 +143,35 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
             }
           }
         },
+        productBreadcrumb,
         organization
       ]
     };
     return `<script type="application/ld+json">${JSON.stringify(product)}</script>`;
+  }
+
+  // ItemList schema for liquidations/product listing page
+  if (type === "itemlist" && data && data.items) {
+    const itemList = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ItemList",
+          "name": "Used Industrial Machinery for Sale",
+          "description": "Browse surplus industrial equipment including hydraulic presses, portable air compressors, and more.",
+          "numberOfItems": data.items.length,
+          "itemListElement": data.items.map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": item.name,
+            "url": `${baseUrl}${item.url}`,
+            ...(item.image ? { "image": item.image } : {})
+          }))
+        },
+        organization
+      ]
+    };
+    return `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`;
   }
 
   // Service schema for services page

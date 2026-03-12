@@ -1,11 +1,41 @@
+# robots.txt for gerrardgroupinc.com
+
+# Allow all major search engine crawlers full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Default rule for all other bots
 User-agent: *
 Allow: /
+
+# Block hidden/draft pages
 Disallow: /PacificHP/
 Disallow: /timkenBearings/
 Disallow: /timkenDetails/
 
-# Sitemap
-Sitemap: https://gerrardgroupinc.com/sitemap-index.xml
+# Ensure CSS, JS, and image assets are crawlable
+Allow: /_astro/
+Allow: /images/
+Allow: /fonts/
 
-# Crawl-delay (optional, respected by some bots)
-Crawl-delay: 1
+# Sitemap locations
+Sitemap: https://gerrardgroupinc.com/sitemap-index.xml
+Sitemap: https://gerrardgroupinc.com/image-sitemap.xml
