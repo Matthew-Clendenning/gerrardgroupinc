@@ -39,6 +39,11 @@ export default defineConfig({
         item.priority = 0.8;
         item.changefreq = 'weekly';
       }
+      // Blog pages
+      else if (url.includes('/blog')) {
+        item.priority = 0.7;
+        item.changefreq = 'weekly';
+      }
       // Auctions page
       else if (url.includes('/auctions')) {
         item.priority = 0.7;

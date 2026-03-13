@@ -167,6 +167,50 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
     return `<script type="application/ld+json">${JSON.stringify(product)}</script>`;
   }
 
+  // Article schema for blog posts
+  if (type === "article" && data) {
+    const articleBreadcrumb = breadcrumbList([
+      { name: "Home", url: baseUrl },
+      { name: "Blog", url: `${baseUrl}/blog/` },
+      { name: data.title || "Article" }
+    ]);
+
+    const article = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": data.title || "",
+          "description": data.description || "",
+          "datePublished": data.date || "",
+          "dateModified": data.date || "",
+          "author": {
+            "@type": "Organization",
+            "name": "Gerrard Group Inc",
+            "@id": `${baseUrl}/#organization`
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Gerrard Group Inc",
+            "logo": {
+              "@type": "ImageObject",
+              "url": `${baseUrl}/images/dans%20logo%20copy6.png`
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": url || ""
+          },
+          ...(data.image ? { "image": data.image } : {}),
+          ...(data.tags ? { "keywords": data.tags.join(", ") } : {})
+        },
+        articleBreadcrumb,
+        organization
+      ]
+    };
+    return `<script type="application/ld+json">${JSON.stringify(article)}</script>`;
+  }
+
   // ItemList schema for liquidations/product listing page
   if (type === "itemlist" && data && data.items) {
     const itemList = {

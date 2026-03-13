@@ -82,48 +82,56 @@ import banner from '../assets/gerrard_montage_3.jpg';
                             <div class="img-container">
                                 <RiAuctionLine/>
                             </div>
-                            <p>Auctions</p>
+                            <p class="special-item__title">Auctions</p>
+                            <p class="special-item__desc">We develop and execute optimum marketing and sale strategies to achieve the highest returns on industrial machinery and equipment.</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
                                 <MdOutlineInventory2/>
                             </div>
-                            <p>Liquidation</p>
+                            <p class="special-item__title">Liquidation</p>
+                            <p class="special-item__desc">Complete liquidation services for plant closings, surplus equipment, and asset recovery — from single machines to entire facilities.</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
                                 <TbFileAnalytics/>
                             </div>
-                            <p>Appraisals</p>
+                            <p class="special-item__title">Appraisals</p>
+                            <p class="special-item__desc">USPAP-compliant Forced Liquidation, Orderly Liquidation, and Fair Market Value appraisals to support lending, insurance, and sale decisions.</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
                                 <BsShop/>
                             </div>
-                            <p>Retail Used Machinery Sales</p>
+                            <p class="special-item__title">Retail Used Machinery Sales</p>
+                            <p class="special-item__desc">Our used machinery division buys and sells industrial equipment as a regular course of business, giving us insight into both retail and wholesale markets.</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
                                 <FiDollarSign/>
                             </div>
-                            <p>Machinery & Equipment Buy and Sell Programs</p>
+                            <p class="special-item__title">Buy & Sell Programs</p>
+                            <p class="special-item__desc">Commission programs or outright buy-outs structured to maximize returns and put more money in our clients' pockets.</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
                                 <GiWreckingBall/>
                             </div>
-                            <p>Demolition & Remediation Projects</p>
+                            <p class="special-item__title">Demolition & Remediation</p>
+                            <p class="special-item__desc">Full-scope management of plant relocations, demolition projects, and site remediation — coordinating removal and asset recovery from start to finish.</p>
                         </div>
                         <div class="special-item">
                             <div class="img-container">
                                 <TbBulb/>
                             </div>
-                            <p>Consulting</p>
+                            <p class="special-item__title">Consulting</p>
+                            <p class="special-item__desc">Asset consulting to determine the highest and best use of your company's machinery, equipment, and surplus inventory.</p>
                         </div>
                     </div>
                 </section>
                 <section class="industries">
                     <h2><strong>Industries We Serve</strong></h2>
+                    <p class="industries-intro">With strategic partners around the country and abroad, our group services a wide variety of business sectors. From heavy manufacturing and aerospace to energy and food processing, we understand the equipment, the markets, and the buyers in each industry.</p>
                     <div class="industries-wrapper">
                         <div class="industries-item">
                             <div class="img-container">
@@ -469,6 +477,11 @@ import banner from '../assets/gerrard_montage_3.jpg';
         line-height: 1.4;
     }
 
+    .desc-back .industries-intro {
+        text-align: center;
+        margin: -1rem auto 2.5rem;
+    }
+
     .desc-back img {
         width: 40px;
         height: auto;
@@ -505,7 +518,7 @@ import banner from '../assets/gerrard_montage_3.jpg';
         box-shadow: var(--shadow-lg, 0 10px 28px rgba(0,0,0,0.1));
     }
 
-    .special-item p {
+    .special-item__title {
         font-family: var(--font-body, "Source Sans 3", sans-serif);
         text-align: left;
         max-width: none;
@@ -513,6 +526,16 @@ import banner from '../assets/gerrard_montage_3.jpg';
         font-weight: 600;
         color: var(--color-dark, #111827);
         line-height: 1.4;
+    }
+
+    .special-item__desc {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        text-align: left;
+        font-size: clamp(0.8rem, 0.9rem, 0.95rem);
+        font-weight: 400;
+        color: var(--color-text-secondary, #6B7280);
+        line-height: 1.6;
+        margin-top: -0.25rem;
     }
 
     .specialties svg {
@@ -534,6 +557,16 @@ import banner from '../assets/gerrard_montage_3.jpg';
     .industries {
         background: var(--color-bg, #F9FAFB);
         padding: 4rem 2rem 4.5rem;
+        text-align: center;
+    }
+
+    .industries-intro {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: clamp(0.9rem, 1rem, 1.05rem);
+        color: var(--color-text, #1F2937);
+        line-height: 1.7;
+        max-width: 780px;
+        margin: -1rem auto 2.5rem;
         text-align: center;
     }
 

@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import { RxHamburgerMenu } from 'react-icons/rx/index.js';
 import { BiUpArrowAlt } from 'react-icons/bi/index.js';
 
 import logo from '../assets/dans logo copy6.png';
@@ -25,8 +24,11 @@ import logo from '../assets/dans logo copy6.png';
 		</a>
 	</div>
 	<button type="button" title="Navigation menu" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-		<RxHamburgerMenu />
+		<span class="hamburger-line"></span>
+		<span class="hamburger-line"></span>
+		<span class="hamburger-line"></span>
 	</button>
+	<div class="nav-overlay" data-visible="false"></div>
 	<nav>
 		<ul id="primary-navigation" data-visible="false" class="primary-navigation flex sticky">
 			<li>
@@ -41,7 +43,10 @@ import logo from '../assets/dans logo copy6.png';
 			<li>
 				<a class="nav-text" href="/services/"><strong>Services</strong></a>
 			</li>
-			<li>	
+			<li>
+				<a class="nav-text" href="/blog/"><strong>Blog</strong></a>
+			</li>
+			<li>
 				<a class="nav-text" href="/contact/"><strong>Contact</strong></a>
     		</li>
 		</ul>
@@ -51,11 +56,24 @@ import logo from '../assets/dans logo copy6.png';
 <script is:inline>
 	const primaryNav = document.querySelector(".primary-navigation");
 	const navToggle = document.querySelector(".mobile-nav-toggle");
+	const navOverlay = document.querySelector(".nav-overlay");
 
 	function closeMenu() {
-		primaryNav.setAttribute("data-visible", false);
-		navToggle.setAttribute("data-visible", false);
-		navToggle.style.color = "black";
+		primaryNav.setAttribute("data-visible", "false");
+		navToggle.setAttribute("data-visible", "false");
+		navToggle.classList.remove("is-open");
+		navToggle.setAttribute("aria-expanded", "false");
+		if (navOverlay) navOverlay.setAttribute("data-visible", "false");
+		document.body.style.overflow = "";
+	}
+
+	function openMenu() {
+		primaryNav.setAttribute("data-visible", "true");
+		navToggle.setAttribute("data-visible", "true");
+		navToggle.classList.add("is-open");
+		navToggle.setAttribute("aria-expanded", "true");
+		if (navOverlay) navOverlay.setAttribute("data-visible", "true");
+		document.body.style.overflow = "hidden";
 	}
 
 	window.addEventListener('popstate', function () {
@@ -70,17 +88,18 @@ import logo from '../assets/dans logo copy6.png';
 		});
 	});
 
-	navToggle.addEventListener('click', () => {
-	const visibility = primaryNav.getAttribute("data-visible");
-		
-	if (visibility === "false") {
-		navToggle.style.color = "white";
-		primaryNav.setAttribute("data-visible", true);
-		navToggle.setAttribute("aria-expand", true);
-	} else if (visibility === "true") {
-		navToggle.style.color = "black";
-		primaryNav.setAttribute("data-visible", false);
-		navToggle.setAttribute("aria-expand", false);
+	if (navOverlay) {
+		navOverlay.addEventListener('click', function () {
+			closeMenu();
+		});
 	}
+
+	navToggle.addEventListener('click', () => {
+		const visibility = primaryNav.getAttribute("data-visible");
+		if (visibility === "false") {
+			openMenu();
+		} else {
+			closeMenu();
+		}
 	});
 </script>

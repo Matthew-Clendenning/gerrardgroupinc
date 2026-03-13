@@ -1,0 +1,295 @@
+---
+import Layout from "./Layout.astro";
+
+interface Props {
+    title: string;
+    description: string;
+    date: string;
+    tags?: string[];
+    image?: string;
+    imageAlt?: string;
+    slug: string;
+}
+
+const { title, description, date, tags, image, imageAlt, slug } = Astro.props;
+const canon = `https://gerrardgroupinc.com/blog/${slug}/`;
+const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+});
+---
+
+<Layout
+    title={`${title} | Gerrard Group Blog`}
+    description={description}
+    canon={canon}
+    jsonLdType="article"
+    jsonLdData={{ title, description, date, tags, image }}
+    ogType="article"
+    ogImage={image}
+    ogImageAlt={imageAlt || title}
+>
+    <main class="blog-post-page">
+        <article class="blog-post">
+            <nav class="blog-post__breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span aria-hidden="true">/</span>
+                <a href="/blog/">Blog</a>
+                <span aria-hidden="true">/</span>
+                <span>{title}</span>
+            </nav>
+            <header class="blog-post__header">
+                <h1 class="blog-post__title">{title}</h1>
+                <div class="blog-post__meta">
+                    <time datetime={date}>{formattedDate}</time>
+                    {tags && tags.length > 0 && (
+                        <div class="blog-post__tags">
+                            {tags.map((tag) => (
+                                <span class="blog-post__tag">{tag}</span>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            </header>
+            <div class="blog-post__content">
+                <slot />
+            </div>
+            <footer class="blog-post__footer">
+                <a href="/blog/" class="blog-post__back">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Back to All Articles
+                </a>
+                <div class="blog-post__cta">
+                    <p>Looking for used industrial machinery? <a href="/liquidations/">Browse our equipment</a> or <a href="/contact/">contact us</a> for a quote.</p>
+                </div>
+            </footer>
+        </article>
+    </main>
+</Layout>
+
+<style>
+    .blog-post-page {
+        background: var(--color-bg, #F9FAFB);
+    }
+
+    .blog-post {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 32px 24px 64px;
+    }
+
+    /* Breadcrumb */
+    .blog-post__breadcrumb {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.85rem;
+        color: var(--color-text-secondary, #6B7280);
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .blog-post__breadcrumb a {
+        color: var(--color-primary, #055895);
+        text-decoration: none;
+    }
+
+    .blog-post__breadcrumb a:hover {
+        text-decoration: underline;
+    }
+
+    .blog-post__breadcrumb span:last-child {
+        color: var(--color-text, #1F2937);
+    }
+
+    /* Header */
+    .blog-post__header {
+        margin-bottom: 32px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--color-border, #E5E7EB);
+    }
+
+    .blog-post__title {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-weight: 700;
+        color: var(--color-dark, #111827);
+        line-height: 1.2;
+        margin: 0 0 12px;
+    }
+
+    .blog-post__meta {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .blog-post__meta time {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.9rem;
+        color: var(--color-text-secondary, #6B7280);
+    }
+
+    .blog-post__tags {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .blog-post__tag {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 3px 10px;
+        background: rgba(5, 88, 149, 0.08);
+        color: var(--color-primary, #055895);
+        border-radius: 12px;
+    }
+
+    /* Content */
+    .blog-post__content {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 1.05rem;
+        line-height: 1.75;
+        color: var(--color-text, #1F2937);
+    }
+
+    .blog-post__content :global(h2) {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+        font-weight: 700;
+        color: var(--color-dark, #111827);
+        margin: 40px 0 16px;
+        line-height: 1.25;
+    }
+
+    .blog-post__content :global(h3) {
+        font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        font-weight: 600;
+        color: var(--color-dark, #111827);
+        margin: 32px 0 12px;
+    }
+
+    .blog-post__content :global(p) {
+        margin: 0 0 20px;
+    }
+
+    .blog-post__content :global(ul),
+    .blog-post__content :global(ol) {
+        margin: 0 0 20px;
+        padding-left: 24px;
+    }
+
+    .blog-post__content :global(li) {
+        margin-bottom: 8px;
+        line-height: 1.65;
+    }
+
+    .blog-post__content :global(a) {
+        color: var(--color-primary, #055895);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    .blog-post__content :global(a:hover) {
+        color: var(--color-primary-dark, #044a7f);
+    }
+
+    .blog-post__content :global(strong) {
+        font-weight: 600;
+        color: var(--color-dark, #111827);
+    }
+
+    .blog-post__content :global(table) {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 24px 0;
+        font-size: 0.9rem;
+    }
+
+    .blog-post__content :global(th) {
+        background: var(--color-primary, #055895);
+        color: #fff;
+        font-weight: 600;
+        text-align: left;
+        padding: 10px 14px;
+    }
+
+    .blog-post__content :global(td) {
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--color-border, #E5E7EB);
+    }
+
+    .blog-post__content :global(tr:nth-child(even)) {
+        background: rgba(5, 88, 149, 0.03);
+    }
+
+    /* Footer */
+    .blog-post__footer {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--color-border, #E5E7EB);
+    }
+
+    .blog-post__back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--color-primary, #055895);
+        text-decoration: none;
+        transition: gap var(--transition, 0.25s ease);
+    }
+
+    .blog-post__back:hover {
+        gap: 10px;
+        text-decoration: underline;
+    }
+
+    .blog-post__cta {
+        margin-top: 24px;
+        padding: 20px 24px;
+        background: var(--color-card, #fff);
+        border: 1px solid var(--color-border, #E5E7EB);
+        border-radius: var(--radius-md, 10px);
+    }
+
+    .blog-post__cta p {
+        font-family: var(--font-body, "Source Sans 3", sans-serif);
+        font-size: 0.95rem;
+        color: var(--color-text, #1F2937);
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .blog-post__cta a {
+        color: var(--color-primary, #055895);
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+        .blog-post {
+            padding: 20px 16px 48px;
+        }
+
+        .blog-post__content :global(table) {
+            font-size: 0.8rem;
+        }
+
+        .blog-post__content :global(th),
+        .blog-post__content :global(td) {
+            padding: 8px 10px;
+        }
+    }
+</style>
