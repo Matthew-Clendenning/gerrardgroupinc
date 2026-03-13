@@ -115,37 +115,54 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
       { name: data.name || "Product" }
     ]);
 
+    const graphItems = [
+      {
+        "@type": "Product",
+        "name": data.name || "",
+        "description": data.description || "",
+        "brand": {
+          "@type": "Brand",
+          "name": data.brand || "Various"
+        },
+        "category": data.category || "Industrial Machinery",
+        "url": url || "",
+        ...(data.image ? { "image": data.image } : {}),
+        ...(data.sku ? { "sku": data.sku } : {}),
+        ...(data.condition ? { "itemCondition": `https://schema.org/${data.condition}` } : { "itemCondition": "https://schema.org/UsedCondition" }),
+        "offers": {
+          "@type": "Offer",
+          "url": url || "",
+          "priceCurrency": "USD",
+          "price": data.price || "",
+          "availability": data.sold ? "https://schema.org/SoldOut" : "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Gerrard Group Inc"
+          }
+        }
+      },
+      productBreadcrumb,
+      organization
+    ];
+
+    // Add FAQPage schema if FAQ data is provided
+    if (data.faq && data.faq.length > 0) {
+      graphItems.push({
+        "@type": "FAQPage",
+        "mainEntity": data.faq.map(item => ({
+          "@type": "Question",
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer
+          }
+        }))
+      });
+    }
+
     const product = {
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Product",
-          "name": data.name || "",
-          "description": data.description || "",
-          "brand": {
-            "@type": "Brand",
-            "name": data.brand || "Various"
-          },
-          "category": data.category || "Industrial Machinery",
-          "url": url || "",
-          ...(data.image ? { "image": data.image } : {}),
-          ...(data.sku ? { "sku": data.sku } : {}),
-          ...(data.condition ? { "itemCondition": `https://schema.org/${data.condition}` } : { "itemCondition": "https://schema.org/UsedCondition" }),
-          "offers": {
-            "@type": "Offer",
-            "url": url || "",
-            "priceCurrency": "USD",
-            "price": data.price || "",
-            "availability": data.sold ? "https://schema.org/SoldOut" : "https://schema.org/InStock",
-            "seller": {
-              "@type": "Organization",
-              "name": "Gerrard Group Inc"
-            }
-          }
-        },
-        productBreadcrumb,
-        organization
-      ]
+      "@graph": graphItems
     };
     return `<script type="application/ld+json">${JSON.stringify(product)}</script>`;
   }

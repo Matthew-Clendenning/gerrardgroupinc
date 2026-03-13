@@ -243,6 +243,89 @@
     line-height: 1.6;
 }
 
+/* FAQ Section */
+.pd-faq {
+    margin-top: 40px;
+}
+
+.pd-faq__title {
+    font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    font-weight: 700;
+    color: var(--color-dark, #111827);
+    margin: 0 0 16px;
+}
+
+.pd-faq__item {
+    border-bottom: 1px solid var(--color-border, #E5E7EB);
+    padding: 16px 0;
+}
+
+.pd-faq__item:first-of-type {
+    border-top: 1px solid var(--color-border, #E5E7EB);
+}
+
+.pd-faq__question {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-primary, #055895);
+    margin: 0 0 8px;
+}
+
+.pd-faq__answer {
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.9rem;
+    color: var(--color-text, #1F2937);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Related Equipment */
+.pd-related {
+    margin-top: 40px;
+}
+
+.pd-related__title {
+    font-family: var(--font-heading, "Barlow Condensed", sans-serif);
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    font-weight: 700;
+    color: var(--color-dark, #111827);
+    margin: 0 0 16px;
+}
+
+.pd-related__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pd-related__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body, "Source Sans 3", sans-serif);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-primary, #055895);
+    text-decoration: none;
+    padding: 10px 16px;
+    background: var(--color-card, #fff);
+    border: 1px solid var(--color-border, #E5E7EB);
+    border-radius: var(--radius-sm, 6px);
+    transition: all var(--transition, 0.25s ease);
+}
+
+.pd-related__link:hover {
+    background: var(--color-primary, #055895);
+    color: #fff;
+    border-color: var(--color-primary, #055895);
+}
+
+.pd-related__link svg {
+    flex-shrink: 0;
+}
+
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
     .pd-content {
