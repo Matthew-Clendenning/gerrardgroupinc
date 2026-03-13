@@ -278,6 +278,97 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
     return `<script type="application/ld+json">${JSON.stringify(services)}</script>`;
   }
 
+  // Blog listing schema
+  if (type === "bloglist" && data && data.items) {
+    const blogBreadcrumb = breadcrumbList([
+      { name: "Home", url: baseUrl },
+      { name: "Blog" }
+    ]);
+
+    const blogList = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "name": "Industrial Machinery Blog",
+          "description": "Expert guides on buying used hydraulic presses, air compressors, and industrial equipment.",
+          "url": `${baseUrl}/blog/`,
+          "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": data.items.length,
+            "itemListElement": data.items.map((item, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "name": item.name,
+              "url": `${baseUrl}${item.url}`
+            }))
+          }
+        },
+        blogBreadcrumb,
+        organization
+      ]
+    };
+    return `<script type="application/ld+json">${JSON.stringify(blogList)}</script>`;
+  }
+
+  // Auctions page schema
+  if (type === "auctions") {
+    const auctionsBreadcrumb = breadcrumbList([
+      { name: "Home", url: baseUrl },
+      { name: "Auctions" }
+    ]);
+
+    const auctions = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Past Industrial Machinery Auctions",
+          "description": "A selection of industrial machinery auctions conducted by Gerrard Group across the United States.",
+          "url": `${baseUrl}/auctions/`,
+          "publisher": { "@id": `${baseUrl}/#organization` }
+        },
+        auctionsBreadcrumb,
+        organization
+      ]
+    };
+    return `<script type="application/ld+json">${JSON.stringify(auctions)}</script>`;
+  }
+
+  // Contact page schema
+  if (type === "contact") {
+    const contactBreadcrumb = breadcrumbList([
+      { name: "Home", url: baseUrl },
+      { name: "Contact" }
+    ]);
+
+    const contact = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "name": "Contact Gerrard Group Inc",
+          "description": "Contact Gerrard Group for industrial machinery sales, auctions, liquidations, and appraisals.",
+          "url": `${baseUrl}/contact/`,
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Gerrard Group Inc",
+            "telephone": "+1-847-894-3434",
+            "email": "gerrardmachinery@gmail.com",
+            "address": [
+              { "@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL", "addressCountry": "US" },
+              { "@type": "PostalAddress", "addressLocality": "St. Louis", "addressRegion": "MO", "addressCountry": "US" },
+              { "@type": "PostalAddress", "addressLocality": "Spokane", "addressRegion": "WA", "addressCountry": "US" }
+            ]
+          }
+        },
+        contactBreadcrumb,
+        organization
+      ]
+    };
+    return `<script type="application/ld+json">${JSON.stringify(contact)}</script>`;
+  }
+
   // Default: WebSite + Organization + LocalBusiness (for homepage)
   const defaultSchema = {
     "@context": "https://schema.org",

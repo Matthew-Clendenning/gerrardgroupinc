@@ -10,6 +10,8 @@ import pressOne from "../assets/200-ton-pacific-press-1.jpeg";
 import pressTwo from '../assets/300-ton-pacific-press-1.jpeg';
 import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
 
+import sawOne from "../assets/Gernetti 38-18 Saw.jpg";
+
 import airCompOne from "../assets/sullair-900-1.jpg";
 import airCompTwo from "../assets/atlas-copco-1500-1.jpg";
 import airCompThree from "../assets/atlas-copco-1550-1.jpg";
@@ -22,6 +24,7 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
     jsonLdType="itemlist"
     jsonLdData={{
         items: [
+            { name: "Peddinghaus / Gernetti SHN 38-18 Band Saw", url: "/gernetti-band-saw-38-18/", image: "https://gerrardgroupinc.com/images/gernetti-saw-1.jpg" },
             { name: "Sullair Model 900/1150 Portable Air Compressor", url: "/sullair-air-compressor-900/", image: "https://gerrardgroupinc.com/images/sullair-900-1.jpg" },
             { name: "Atlas Copco XRVS 1550 CD Portable Air Compressor", url: "/atlas-copco-air-compressor-1550-cd/", image: "https://gerrardgroupinc.com/images/atlas-copco-1500-1.jpg" },
             { name: "Atlas Copco XRVS 1550 CD7 Portable Air Compressor", url: "/atlas-copco-air-compressor-1550-cd7/", image: "https://gerrardgroupinc.com/images/atlas-copco-1550-1.jpg" },
@@ -70,6 +73,7 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
                 <button class="liq-filter__btn liq-filter__btn--active" data-filter="all">All Equipment</button>
                 <button class="liq-filter__btn" data-filter="compressor">Air Compressors</button>
                 <button class="liq-filter__btn" data-filter="press">Hydraulic Presses</button>
+                <button class="liq-filter__btn" data-filter="saw">Band Saws</button>
                 <button class="liq-filter__btn" data-filter="sold">Sold Items</button>
             </div>
         </section>
@@ -77,6 +81,19 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
         <!-- Product Grid -->
         <section class="liq-grid-section">
             <div class="liq-grid" id="product-grid">
+                <div class="liq-grid__item" data-category="saw">
+                    <ProductCard
+                        name="Peddinghaus / Gernetti SHN 38-18 Band Saw"
+                        category="Band Saws"
+                        brand="Peddinghaus / Gernetti"
+                        imageURL={sawOne}
+                        alt="Peddinghaus Gernetti SHN 38-18 twin column hydraulic band saw for sale"
+                        href="/gernetti-band-saw-38-18/"
+                        loading="eager"
+                        price="26500"
+                        condition="Used — 1997"
+                    />
+                </div>
                 <div class="liq-grid__item" data-category="compressor">
                     <ProductCard
                         name="Sullair Model 900/1150 Portable Air Compressor"

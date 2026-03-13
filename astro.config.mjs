@@ -34,7 +34,8 @@ export default defineConfig({
       else if (
         url.includes('pacific-hydraulic-press') ||
         url.includes('air-compressor') ||
-        url.includes('sullair')
+        url.includes('sullair') ||
+        url.includes('gernetti-band-saw')
       ) {
         item.priority = 0.8;
         item.changefreq = 'weekly';

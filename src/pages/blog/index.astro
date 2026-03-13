@@ -11,6 +11,14 @@ const posts = (await getCollection("blog")).sort(
     title="Industrial Machinery Blog | Gerrard Group"
     description="Expert guides on buying used hydraulic presses, air compressors, and industrial equipment. Tips, comparisons, and industry insights from Gerrard Group."
     canon="https://gerrardgroupinc.com/blog/"
+    jsonLdType="bloglist"
+    jsonLdData={{
+        items: posts.map((post) => ({
+            name: post.data.title,
+            url: `/blog/${post.id}/`,
+            date: post.data.date,
+        }))
+    }}
 >
     <main class="blog-page">
         <section class="blog-hero">

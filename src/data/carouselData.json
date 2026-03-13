@@ -199,5 +199,20 @@
             "src": "../images/sullair-900-2.jpg",
             "alt": "Sullair 900/1150 portable air compressor - Cat diesel engine and internal components"
         }
+    ],
+
+    "slides11": [
+        {
+            "src": "../images/gernetti-saw-1.jpg",
+            "alt": "Peddinghaus Gernetti SHN 38-18 twin column hydraulic horizontal band saw - front view"
+        },
+        {
+            "src": "../images/gernetti-saw-2.jpg",
+            "alt": "Peddinghaus Gernetti SHN 38-18 band saw - side profile showing twin column frame"
+        },
+        {
+            "src": "../images/gernetti-saw-3.jpg",
+            "alt": "Peddinghaus Gernetti SHN 38-18 band saw - blade and cutting area detail"
+        }
     ]
 }

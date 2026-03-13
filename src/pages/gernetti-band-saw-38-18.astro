@@ -1,0 +1,130 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import { Carousel } from "../components/Carousel.jsx";
+import { slides11 } from "../data/carouselData.json";
+import "../styles/product-detail.css";
+---
+
+<Layout
+    title="Peddinghaus Gernetti 38x18 Band Saw for Sale | Gerrard Group"
+    description="Used 1997 Peddinghaus Gernetti SHN 38-18/III twin column hydraulic horizontal band saw. 37.4 x 18.1 inch capacity, variable blade speed, 12 HP motor. Price $26,500."
+    canon="https://gerrardgroupinc.com/gernetti-band-saw-38-18/"
+    jsonLdType="product"
+    jsonLdData={{
+        name: "Peddinghaus Gernetti SHN 38-18/III Twin Column Hydraulic Horizontal Band Saw",
+        description: "38 x 18 inch Peddinghaus / Gernetti Twin Column Hydraulic Horizontal Band Saw, Model SHN 38-18/III, 37.4 x 18.1 inch max capacity, variable blade speed 50-300 FPM, 12 HP motor, new 1997",
+        brand: "Peddinghaus / Gernetti",
+        category: "Band Saws",
+        price: "26500",
+        sku: "SHN-38-18-III-9577",
+        condition: "UsedCondition",
+        image: "https://gerrardgroupinc.com/images/gernetti-saw-1.jpg",
+        faq: [
+            { question: "What is the Peddinghaus Gernetti SHN 38-18 band saw used for?", answer: "This twin column hydraulic horizontal band saw is used for cutting large structural steel, beams, pipes, and solid bar stock up to 37.4 x 18.1 inches. It is commonly found in steel service centers, fabrication shops, and structural steel operations where precise, high-capacity cutting is required." },
+            { question: "What is the condition of this Gernetti band saw?", answer: "This Peddinghaus / Gernetti Model SHN 38-18/III was manufactured in 1997 (Serial No. 95.77). It features variable blade speed from 50 to 300 FPM, variable sawblade frame feed from 0 to 15 IPM, and is powered by a 12 HP motor." },
+            { question: "What are the key specifications of this band saw?", answer: "Maximum cutting capacity is 37.4 x 18.1 inches. Blade size is 2 x .063 inches x 24 feet 6.5 inches. Blade speed is variable from 50 to 300 FPM. Feed rate is variable from 0 to 15 IPM. The machine weighs approximately 7,000 lbs and measures 157 inches L-R x 52 inches F-B x 92 inches high." },
+            { question: "Can Gerrard Group ship this band saw?", answer: "Yes. Gerrard Group Inc provides rigging, transportation, and installation services for industrial machinery throughout the United States, Mexico, and Canada. Contact us at (847) 894-3434 for a shipping quote." }
+        ]
+    }}
+    ogType="product"
+    ogImage="https://gerrardgroupinc.com/images/gernetti-saw-1.jpg"
+    ogImageAlt="Used Peddinghaus Gernetti SHN 38-18 Twin Column Band Saw for Sale - Gerrard Group"
+    >
+    <Directory
+        title="Peddinghaus / Gernetti SHN 38-18 Band Saw"
+        page="Band Saws"
+        page2="Machine Details"
+        href="/liquidations"
+    />
+    <main class="pd-page">
+        <div class="pd-content">
+            <div class="pd-layout">
+                <Carousel client:load data={slides11} />
+                <article class="pd-info">
+                    <h2 class="pd-info__title">38" x 18" Peddinghaus / Gernetti Twin Column Hydraulic Horizontal Band Saw</h2>
+                    <p class="pd-info__model">Model: <strong>SHN 38-18 / III</strong> — Serial No.: 95.77 (New 1997)</p>
+                    <hr class="pd-info__divider">
+                    <div class="pd-specs">
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Max. Capacity</span>
+                            <span class="pd-spec__value">37.4" x 18.1"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Sawblade Frame Feed</span>
+                            <span class="pd-spec__value">0 – 15 IPM (Variable)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Blade Speed</span>
+                            <span class="pd-spec__value">50 – 300 FPM (Variable)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Blade Size</span>
+                            <span class="pd-spec__value">2" x .063" x 24' 6.5"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Motor HP</span>
+                            <span class="pd-spec__value">12 HP</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Weight Approx.</span>
+                            <span class="pd-spec__value">7,000 lbs</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Physical Dimensions</span>
+                            <span class="pd-spec__value">157" L-R x 52" F-B x 92" H</span>
+                        </div>
+                    </div>
+                    <div class="pd-pricing">
+                        <p class="pd-pricing__sale">$26,500.00</p>
+                        <p class="pd-pricing__label">On Location</p>
+                    </div>
+                    <div class="pd-actions">
+                        <a href="/contact/" class="pd-btn pd-btn--primary">Request a Quote</a>
+                        <a href="tel:+18478943434" class="pd-btn pd-btn--secondary">Call (847) 894-3434</a>
+                    </div>
+                </article>
+            </div>
+            <section class="pd-faq">
+                <h3 class="pd-faq__title">Frequently Asked Questions</h3>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What is the Peddinghaus Gernetti SHN 38-18 band saw used for?</p>
+                    <p class="pd-faq__answer">This twin column hydraulic horizontal band saw is used for cutting large structural steel, beams, pipes, and solid bar stock up to 37.4" x 18.1". It is commonly found in steel service centers, fabrication shops, and structural steel operations where precise, high-capacity cutting is required.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What is the condition of this Gernetti band saw?</p>
+                    <p class="pd-faq__answer">This Peddinghaus / Gernetti Model SHN 38-18/III was manufactured in 1997 (Serial No. 95.77). It features variable blade speed from 50 to 300 FPM, variable sawblade frame feed from 0 to 15 IPM, and is powered by a 12 HP motor.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What are the key specifications of this band saw?</p>
+                    <p class="pd-faq__answer">Maximum cutting capacity is 37.4" x 18.1". Blade size is 2" x .063" x 24' 6.5". Blade speed is variable from 50 to 300 FPM. Feed rate is variable from 0 to 15 IPM. The machine weighs approximately 7,000 lbs and measures 157" L-R x 52" F-B x 92" high.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">Can Gerrard Group ship this band saw?</p>
+                    <p class="pd-faq__answer">Yes. Gerrard Group Inc provides rigging, transportation, and installation services for industrial machinery throughout the United States, Mexico, and Canada. Contact us at (847) 894-3434 for a shipping quote.</p>
+                </div>
+            </section>
+            <section class="pd-related">
+                <h3 class="pd-related__title">Related Equipment</h3>
+                <div class="pd-related__list">
+                    <a href="/200-ton-pacific-hydraulic-press/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        200 Ton Pacific Hydraulic Press
+                    </a>
+                    <a href="/300-ton-pacific-hydraulic-press/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        300 Ton Pacific Hydraulic Press
+                    </a>
+                    <a href="/600-ton-pacific-hydraulic-press/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        600 Ton Pacific Hydraulic Press
+                    </a>
+                </div>
+            </section>
+            <a href="/liquidations/" class="pd-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to All Equipment
+            </a>
+        </div>
+    </main>
+</Layout>
