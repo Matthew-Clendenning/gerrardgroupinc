@@ -12,6 +12,11 @@ import pressThree from '../assets/600-ton-pacific-press-1.jpeg';
 
 import sawOne from "../assets/Gernetti 38-18 Saw.jpg";
 
+import welderOne from "../assets/miller-welder-1.jpg";
+import welderTwo from "../assets/miller-welder-2.jpg";
+import welderThree from "../assets/miller-welder-3.jpg";
+import welderFour from "../assets/miller-welder-4.jpg";
+
 import airCompOne from "../assets/sullair-900-1.jpg";
 import airCompTwo from "../assets/atlas-copco-1500-1.jpg";
 import airCompThree from "../assets/atlas-copco-1550-1.jpg";
@@ -24,6 +29,11 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
     jsonLdType="itemlist"
     jsonLdData={{
         items: [
+            { name: "Miller XMT 450 Multiprocess Welder", url: "/miller-xmt-450/", image: "https://gerrardgroupinc.com/images/miller-welder-1.jpg" },
+            { name: "Miller 456 XMT Welder", url: "/miller-456-xmt/", image: "https://gerrardgroupinc.com/images/miller-welder-1.jpg" },
+            { name: "Miller Phoenix 456 Welder", url: "/miller-phoenix-456/", image: "https://gerrardgroupinc.com/images/miller-welder-1.jpg" },
+            { name: "Miller Invision 456P Welder", url: "/miller-invision-456p/", image: "https://gerrardgroupinc.com/images/miller-welder-1.jpg" },
+            { name: "Miller XMT 350 Multiprocess Welder", url: "/miller-xmt-350/", image: "https://gerrardgroupinc.com/images/miller-welder-1.jpg" },
             { name: "Peddinghaus / Gernetti SHN 38-18 Band Saw", url: "/gernetti-band-saw-38-18/", image: "https://gerrardgroupinc.com/images/gernetti-saw-1.jpg" },
             { name: "Sullair Model 900/1150 Portable Air Compressor", url: "/sullair-air-compressor-900/", image: "https://gerrardgroupinc.com/images/sullair-900-1.jpg" },
             { name: "Atlas Copco XRVS 1550 CD Portable Air Compressor", url: "/atlas-copco-air-compressor-1550-cd/", image: "https://gerrardgroupinc.com/images/atlas-copco-1500-1.jpg" },
@@ -73,6 +83,7 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
                 <button class="liq-filter__btn liq-filter__btn--active" data-filter="all">All Equipment</button>
                 <button class="liq-filter__btn" data-filter="compressor">Air Compressors</button>
                 <button class="liq-filter__btn" data-filter="press">Hydraulic Presses</button>
+                <button class="liq-filter__btn" data-filter="welder">Welders</button>
                 <button class="liq-filter__btn" data-filter="saw">Band Saws</button>
                 <button class="liq-filter__btn" data-filter="sold">Sold Items</button>
             </div>
@@ -81,6 +92,66 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
         <!-- Product Grid -->
         <section class="liq-grid-section">
             <div class="liq-grid" id="product-grid">
+                <div class="liq-grid__item" data-category="welder">
+                    <ProductCard
+                        name="Miller XMT 450 Multiprocess Welder"
+                        category="Welding Equipment"
+                        brand="Miller"
+                        imageURL={welderOne}
+                        alt="Miller XMT 450 multiprocess welder for sale"
+                        href="/miller-xmt-450/"
+                        loading="eager"
+                        condition="Used — 21 Available"
+                    />
+                </div>
+                <div class="liq-grid__item" data-category="welder">
+                    <ProductCard
+                        name="Miller 456 XMT Welder"
+                        category="Welding Equipment"
+                        brand="Miller"
+                        imageURL={welderTwo}
+                        alt="Miller 456 XMT welder for sale"
+                        href="/miller-456-xmt/"
+                        loading="eager"
+                        condition="Used — 20 Available"
+                    />
+                </div>
+                <div class="liq-grid__item" data-category="welder">
+                    <ProductCard
+                        name="Miller Phoenix 456 Welder"
+                        category="Welding Equipment"
+                        brand="Miller"
+                        imageURL={welderThree}
+                        alt="Miller Phoenix 456 multiprocess welder for sale"
+                        href="/miller-phoenix-456/"
+                        loading="eager"
+                        condition="Used — 1 Available"
+                    />
+                </div>
+                <div class="liq-grid__item" data-category="welder">
+                    <ProductCard
+                        name="Miller Invision 456P Welder"
+                        category="Welding Equipment"
+                        brand="Miller"
+                        imageURL={welderFour}
+                        alt="Miller Invision 456P pulsed MIG welder for sale"
+                        href="/miller-invision-456p/"
+                        loading="eager"
+                        condition="Used — 3 Available"
+                    />
+                </div>
+                <div class="liq-grid__item" data-category="welder">
+                    <ProductCard
+                        name="Miller XMT 350 Multiprocess Welder"
+                        category="Welding Equipment"
+                        brand="Miller"
+                        imageURL={welderOne}
+                        alt="Miller XMT 350 multiprocess welder for sale"
+                        href="/miller-xmt-350/"
+                        loading="eager"
+                        condition="Used — 3 Available"
+                    />
+                </div>
                 <div class="liq-grid__item" data-category="saw">
                     <ProductCard
                         name="Peddinghaus / Gernetti SHN 38-18 Band Saw"
@@ -196,7 +267,7 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
                         category="Warehouse Equipment"
                         imageURL={soon2}
                         alt="Collection of warehouse pallet jacks"
-                        href="/palletJackDetails/"
+                        href="/pallet-jack-details/"
                         sold={true}
                         condition="Used"
                     />
@@ -207,7 +278,7 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
                         category="Warehouse Equipment"
                         imageURL={soon3}
                         alt="Industrial warehouse racking system"
-                        href="/rackingDetails/"
+                        href="/racking-details/"
                         sold={true}
                         condition="Used"
                     />

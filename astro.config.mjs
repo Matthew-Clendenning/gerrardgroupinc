@@ -35,7 +35,12 @@ export default defineConfig({
         url.includes('pacific-hydraulic-press') ||
         url.includes('air-compressor') ||
         url.includes('sullair') ||
-        url.includes('gernetti-band-saw')
+        url.includes('gernetti-band-saw') ||
+        url.includes('miller-xmt-450') ||
+        url.includes('miller-456-xmt') ||
+        url.includes('miller-phoenix-456') ||
+        url.includes('miller-invision-456p') ||
+        url.includes('miller-xmt-350')
       ) {
         item.priority = 0.8;
         item.changefreq = 'weekly';
@@ -63,8 +68,8 @@ export default defineConfig({
       // Sold items
       else if (
         url.includes('cooling-towers') ||
-        url.includes('palletJackDetails') ||
-        url.includes('rackingDetails')
+        url.includes('pallet-jack-details') ||
+        url.includes('racking-details')
       ) {
         item.priority = 0.3;
         item.changefreq = 'yearly';
