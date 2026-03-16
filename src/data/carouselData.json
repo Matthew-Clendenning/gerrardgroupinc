@@ -214,5 +214,24 @@
             "src": "../images/gernetti-saw-3.jpg",
             "alt": "Peddinghaus Gernetti SHN 38-18 band saw - blade and cutting area detail"
         }
+    ],
+
+    "slidesWelder": [
+        {
+            "src": "../images/miller-welder-1.jpg",
+            "alt": "Miller welding power source - front view of multiprocess welder"
+        },
+        {
+            "src": "../images/miller-welder-2.jpg",
+            "alt": "Miller welding power source - control panel and wire feeder"
+        },
+        {
+            "src": "../images/miller-welder-3.jpg",
+            "alt": "Miller welding power source - side profile showing connections"
+        },
+        {
+            "src": "../images/miller-welder-4.jpg",
+            "alt": "Miller welding power source - rear view with power connections"
+        }
     ]
 }

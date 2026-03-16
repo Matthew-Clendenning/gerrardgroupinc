@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import { Carousel } from "../components/Carousel.jsx";
+import { slidesWelder } from "../data/carouselData.json";
+import "../styles/product-detail.css";
+---
+
+<Layout
+    title="Miller XMT 450 Multiprocess Welder for Sale (21 Available) | Gerrard Group"
+    description="Used Miller XMT 450 multiprocess welders for sale. 21 units available from Hillsdale Fabricator liquidation. MIG, TIG, Stick, and Flux-Cored capable. Contact Gerrard Group for pricing."
+    canon="https://gerrardgroupinc.com/miller-xmt-450/"
+    jsonLdType="product"
+    jsonLdData={{
+        name: "Miller XMT 450 Multiprocess Welder",
+        description: "Used Miller XMT 450 multiprocess welder. Capable of MIG, TIG, Stick, and Flux-Cored welding. 21 units available from Hillsdale Fabricator liquidation.",
+        brand: "Miller",
+        category: "Welding Equipment",
+        condition: "UsedCondition",
+        image: "https://gerrardgroupinc.com/images/miller-welder-1.jpg",
+        faq: [
+            { question: "How many Miller XMT 450 units are available?", answer: "Gerrard Group currently has 21 Miller XMT 450 multiprocess welders available from a Hillsdale Fabricator liquidation." },
+            { question: "What welding processes does the Miller XMT 450 support?", answer: "The Miller XMT 450 is a multiprocess power source capable of MIG, TIG, Stick (SMAW), and Flux-Cored (FCAW) welding, making it versatile for a wide range of industrial fabrication applications." },
+            { question: "Can Gerrard Group ship these welders?", answer: "Yes. Gerrard Group Inc provides rigging, transportation, and installation services for industrial equipment throughout the United States, Mexico, and Canada. Contact us at (847) 894-3434 for a shipping quote." }
+        ]
+    }}
+    ogType="product"
+    ogImage="https://gerrardgroupinc.com/images/miller-welder-1.jpg"
+    ogImageAlt="Used Miller XMT 450 Multiprocess Welder for Sale - Gerrard Group"
+    >
+    <Directory
+        title="Miller XMT 450 Multiprocess Welder"
+        page="Welding Equipment"
+        page2="Machine Details"
+        href="/liquidations"
+    />
+    <main class="pd-page">
+        <div class="pd-content">
+            <div class="pd-layout">
+                <Carousel client:load data={slidesWelder} />
+                <article class="pd-info">
+                    <h2 class="pd-info__title">Miller XMT 450 Multiprocess Welder</h2>
+                    <p class="pd-info__model"><strong>21 Units Available</strong> — Hillsdale Fabricator Liquidation</p>
+                    <hr class="pd-info__divider">
+                    <div class="pd-specs">
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Brand</span>
+                            <span class="pd-spec__value">Miller Electric</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Model</span>
+                            <span class="pd-spec__value">XMT 450</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Type</span>
+                            <span class="pd-spec__value">Multiprocess Welder</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Processes</span>
+                            <span class="pd-spec__value">MIG / TIG / Stick / Flux-Cored</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Quantity Available</span>
+                            <span class="pd-spec__value">21</span>
+                        </div>
+                    </div>
+                    <div class="pd-pricing">
+                        <p class="pd-pricing__sale">Contact for Pricing</p>
+                        <p class="pd-pricing__label">Volume discounts available</p>
+                    </div>
+                    <div class="pd-actions">
+                        <a href="/contact/" class="pd-btn pd-btn--primary">Request a Quote</a>
+                        <a href="tel:+18478943434" class="pd-btn pd-btn--secondary">Call (847) 894-3434</a>
+                    </div>
+                </article>
+            </div>
+            <section class="pd-faq">
+                <h3 class="pd-faq__title">Frequently Asked Questions</h3>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">How many Miller XMT 450 units are available?</p>
+                    <p class="pd-faq__answer">Gerrard Group currently has 21 Miller XMT 450 multiprocess welders available from a Hillsdale Fabricator liquidation.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What welding processes does the Miller XMT 450 support?</p>
+                    <p class="pd-faq__answer">The Miller XMT 450 is a multiprocess power source capable of MIG, TIG, Stick (SMAW), and Flux-Cored (FCAW) welding, making it versatile for a wide range of industrial fabrication applications.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">Can Gerrard Group ship these welders?</p>
+                    <p class="pd-faq__answer">Yes. Gerrard Group Inc provides rigging, transportation, and installation services for industrial equipment throughout the United States, Mexico, and Canada. Contact us at (847) 894-3434 for a shipping quote.</p>
+                </div>
+            </section>
+            <section class="pd-related">
+                <h3 class="pd-related__title">Related Equipment</h3>
+                <div class="pd-related__list">
+                    <a href="/miller-456-xmt/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller 456 XMT Welder
+                    </a>
+                    <a href="/miller-phoenix-456/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller Phoenix 456 Welder
+                    </a>
+                    <a href="/miller-invision-456p/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller Invision 456P Welder
+                    </a>
+                    <a href="/miller-xmt-350/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller XMT 350 Welder
+                    </a>
+                </div>
+            </section>
+            <a href="/liquidations/" class="pd-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to All Equipment
+            </a>
+        </div>
+    </main>
+</Layout>

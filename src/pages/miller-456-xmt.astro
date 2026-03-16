@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import { Carousel } from "../components/Carousel.jsx";
+import { slidesWelder } from "../data/carouselData.json";
+import "../styles/product-detail.css";
+---
+
+<Layout
+    title="Miller 456 XMT Welder for Sale (20 Available) | Gerrard Group"
+    description="Used Miller 456 XMT welders for sale. 20 units available from Hillsdale Fabricator liquidation. Industrial multiprocess welding power source. Contact Gerrard Group for pricing."
+    canon="https://gerrardgroupinc.com/miller-456-xmt/"
+    jsonLdType="product"
+    jsonLdData={{
+        name: "Miller 456 XMT Welder",
+        description: "Used Miller 456 XMT multiprocess welder. 20 units available from Hillsdale Fabricator liquidation.",
+        brand: "Miller",
+        category: "Welding Equipment",
+        condition: "UsedCondition",
+        image: "https://gerrardgroupinc.com/images/miller-welder-1.jpg",
+        faq: [
+            { question: "How many Miller 456 XMT units are available?", answer: "Gerrard Group currently has 20 Miller 456 XMT welders available from a Hillsdale Fabricator liquidation." },
+            { question: "What is the Miller 456 XMT used for?", answer: "The Miller 456 XMT is a heavy-duty multiprocess welding power source designed for industrial fabrication. It supports MIG, TIG, Stick, and Flux-Cored welding processes." },
+            { question: "Can Gerrard Group ship these welders?", answer: "Yes. Gerrard Group Inc provides rigging, transportation, and installation services for industrial equipment throughout the United States, Mexico, and Canada. Contact us at (847) 894-3434 for a shipping quote." }
+        ]
+    }}
+    ogType="product"
+    ogImage="https://gerrardgroupinc.com/images/miller-welder-1.jpg"
+    ogImageAlt="Used Miller 456 XMT Welder for Sale - Gerrard Group"
+    >
+    <Directory
+        title="Miller 456 XMT Welder"
+        page="Welding Equipment"
+        page2="Machine Details"
+        href="/liquidations"
+    />
+    <main class="pd-page">
+        <div class="pd-content">
+            <div class="pd-layout">
+                <Carousel client:load data={slidesWelder} />
+                <article class="pd-info">
+                    <h2 class="pd-info__title">Miller 456 XMT Welder</h2>
+                    <p class="pd-info__model"><strong>20 Units Available</strong> — Hillsdale Fabricator Liquidation</p>
+                    <hr class="pd-info__divider">
+                    <div class="pd-specs">
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Brand</span>
+                            <span class="pd-spec__value">Miller Electric</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Model</span>
+                            <span class="pd-spec__value">456 XMT</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Type</span>
+                            <span class="pd-spec__value">Multiprocess Welder</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Processes</span>
+                            <span class="pd-spec__value">MIG / TIG / Stick / Flux-Cored</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Quantity Available</span>
+                            <span class="pd-spec__value">20</span>
+                        </div>
+                    </div>
+                    <div class="pd-pricing">
+                        <p class="pd-pricing__sale">Contact for Pricing</p>
+                        <p class="pd-pricing__label">Volume discounts available</p>
+                    </div>
+                    <div class="pd-actions">
+                        <a href="/contact/" class="pd-btn pd-btn--primary">Request a Quote</a>
+                        <a href="tel:+18478943434" class="pd-btn pd-btn--secondary">Call (847) 894-3434</a>
+                    </div>
+                </article>
+            </div>
+            <section class="pd-faq">
+                <h3 class="pd-faq__title">Frequently Asked Questions</h3>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">How many Miller 456 XMT units are available?</p>
+                    <p class="pd-faq__answer">Gerrard Group currently has 20 Miller 456 XMT welders available from a Hillsdale Fabricator liquidation.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What is the Miller 456 XMT used for?</p>
+                    <p class="pd-faq__answer">The Miller 456 XMT is a heavy-duty multiprocess welding power source designed for industrial fabrication. It supports MIG, TIG, Stick, and Flux-Cored welding processes.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">Can Gerrard Group ship these welders?</p>
+                    <p class="pd-faq__answer">Yes. Gerrard Group Inc provides rigging, transportation, and installation services for industrial equipment throughout the United States, Mexico, and Canada. Contact us at (847) 894-3434 for a shipping quote.</p>
+                </div>
+            </section>
+            <section class="pd-related">
+                <h3 class="pd-related__title">Related Equipment</h3>
+                <div class="pd-related__list">
+                    <a href="/miller-xmt-450/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller XMT 450 Welder
+                    </a>
+                    <a href="/miller-phoenix-456/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller Phoenix 456 Welder
+                    </a>
+                    <a href="/miller-invision-456p/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller Invision 456P Welder
+                    </a>
+                    <a href="/miller-xmt-350/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller XMT 350 Welder
+                    </a>
+                </div>
+            </section>
+            <a href="/liquidations/" class="pd-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to All Equipment
+            </a>
+        </div>
+    </main>
+</Layout>
