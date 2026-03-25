@@ -514,7 +514,7 @@ body {
 
 @media (min-width: 1920px) {
 	.nav-text {
-		font-size: clamp(.5rem, 1vw, 2rem);
+		font-size: clamp(.5rem, 0.8vw, 2rem);
 	}
 
 }
