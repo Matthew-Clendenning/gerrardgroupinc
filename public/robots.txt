@@ -3,18 +3,33 @@
 # Allow all major search engine crawlers full access
 User-agent: Googlebot
 Allow: /
+Disallow: /PacificHP/
+Disallow: /timkenBearings/
+Disallow: /timkenDetails/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /PacificHP/
+Disallow: /timkenBearings/
+Disallow: /timkenDetails/
 
 User-agent: Slurp
 Allow: /
+Disallow: /PacificHP/
+Disallow: /timkenBearings/
+Disallow: /timkenDetails/
 
 User-agent: DuckDuckBot
 Allow: /
+Disallow: /PacificHP/
+Disallow: /timkenBearings/
+Disallow: /timkenDetails/
 
 User-agent: Yandex
 Allow: /
+Disallow: /PacificHP/
+Disallow: /timkenBearings/
+Disallow: /timkenDetails/
 
 User-agent: facebookexternalhit
 Allow: /
@@ -25,8 +40,6 @@ Allow: /
 # Default rule for all other bots
 User-agent: *
 Allow: /
-
-# Block hidden/draft pages
 Disallow: /PacificHP/
 Disallow: /timkenBearings/
 Disallow: /timkenDetails/

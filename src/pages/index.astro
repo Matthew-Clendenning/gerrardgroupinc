@@ -24,7 +24,10 @@ import banner from '../assets/gerrard_montage_3.jpg';
         <section class="welcome">
             <div>
                 <p class="welcome-start">Welcome To</p>
-                <h1 class="welcome-text"><strong><span class="intro">Gerrard Machinery Company</span></strong><span class="cursor">&nbsp;</span></h1>
+                <h1 class="welcome-text">
+                    <strong><span class="intro" aria-label="Gerrard Machinery Company">Gerrard Machinery Company</span></strong>
+                    <span class="cursor">&nbsp;</span>
+                </h1>
                 <p class="welcome-tagline">Buyers &amp; Sellers of Industrial Machinery and Equipment</p>
                 <div class="hero-cta">
                     <a href="/contact/" class="hero-btn">Contact Us</a>
@@ -1019,7 +1022,10 @@ import banner from '../assets/gerrard_montage_3.jpg';
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-	    typedTextSpan.textContent = "";
+	    if(typedTextSpan) {
+		    typedTextSpan.textContent = "";
+		    typedTextSpan.setAttribute("aria-label", textArray[0]);
+	    }
 	    if(textArray.length) setTimeout(type, typingDelay + 250);
 	    if(titleArray.length) setTimeout(typer, typingDelay + 3700);
     });
