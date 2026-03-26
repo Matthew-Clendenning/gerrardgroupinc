@@ -10,7 +10,7 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
     "url": baseUrl,
     "logo": {
       "@type": "ImageObject",
-      "url": `${baseUrl}/images/dans%20logo%20copy6.png`,
+      "url": `${baseUrl}/images/dans%20logo%20copy6.webp`,
       "width": 1200,
       "height": 630
     },
@@ -60,7 +60,7 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
     "url": baseUrl,
     "telephone": "+1-847-894-3434",
     "email": "gerrardmachinery@gmail.com",
-    "image": `${baseUrl}/images/dans%20logo%20copy6.png`,
+    "image": `${baseUrl}/images/dans%20logo%20copy6.webp`,
     "priceRange": "$$$$",
     "currenciesAccepted": "USD",
     "paymentAccepted": "Cash, Wire Transfer",
@@ -128,8 +128,22 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
         "url": url || "",
         ...(data.image ? { "image": data.image } : {}),
         ...(data.sku ? { "sku": data.sku } : {}),
+        ...(data.mpn ? { "mpn": data.mpn } : {}),
+        ...(data.productID ? { "productID": data.productID } : {}),
         ...(data.condition ? { "itemCondition": `https://schema.org/${data.condition}` } : { "itemCondition": "https://schema.org/UsedCondition" }),
-        "offers": {
+        "offers": data.offerCount && data.offerCount > 1 ? {
+          "@type": "AggregateOffer",
+          "url": url || "",
+          "priceCurrency": "USD",
+          "lowPrice": data.lowPrice || data.price || "",
+          "highPrice": data.highPrice || data.price || "",
+          "offerCount": data.offerCount,
+          "availability": data.sold ? "https://schema.org/SoldOut" : "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Gerrard Group Inc"
+          }
+        } : {
           "@type": "Offer",
           "url": url || "",
           "priceCurrency": "USD",
@@ -194,7 +208,7 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
             "name": "Gerrard Group Inc",
             "logo": {
               "@type": "ImageObject",
-              "url": `${baseUrl}/images/dans%20logo%20copy6.png`
+              "url": `${baseUrl}/images/dans%20logo%20copy6.webp`
             }
           },
           "mainEntityOfPage": {
@@ -378,7 +392,15 @@ export default function jsonLDGenerator({ type = "website", data = {}, url = "" 
         "@id": `${baseUrl}/#website`,
         "name": "Gerrard Group Inc",
         "alternateName": "Gerrard Machinery Company",
-        "url": baseUrl
+        "url": baseUrl,
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": `${baseUrl}/liquidations/?q={search_term_string}`
+          },
+          "query-input": "required name=search_term_string"
+        }
       },
       organization,
       ...(type === "homepage" ? [localBusiness] : [])

@@ -1,9 +1,18 @@
+/* Self-hosted fonts — eliminates Google Fonts round-trips */
+@import '@fontsource/barlow-condensed/500.css';
+@import '@fontsource/barlow-condensed/600.css';
+@import '@fontsource/barlow-condensed/700.css';
+@import '@fontsource/source-sans-3/400.css';
+@import '@fontsource/source-sans-3/500.css';
+@import '@fontsource/source-sans-3/600.css';
+@import '@fontsource/source-sans-3/700.css';
+
 @font-face {
     font-family: "Roboto", sans-serif;
   	font-weight: 400;
   	font-style: normal;
 	font-display: swap;
-    src: local('Roboto'), 
+    src: local('Roboto'),
 	url('/fonts/Roboto-Regular.ttf')
 	format('ttf');
 }

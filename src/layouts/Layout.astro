@@ -21,7 +21,7 @@ export interface Props {
 }
 
 const { title, description, canon, jsonLdType, jsonLdData, ogType = "website", ogImage: ogImageProp, ogImageWidth, ogImageHeight, ogImageAlt, preloadImage, articleDate } = Astro.props as Props;
-const defaultOgImage = new URL('/images/dans%20logo%20copy6.png', Astro.site || 'https://gerrardgroupinc.com').href;
+const defaultOgImage = new URL('/images/dans%20logo%20copy6.webp', Astro.site || 'https://gerrardgroupinc.com').href;
 const ogImage = ogImageProp || defaultOgImage;
 const finalOgImageWidth = ogImageWidth || (ogImageProp ? "1200" : "500");
 const finalOgImageHeight = ogImageHeight || (ogImageProp ? "630" : "139");
@@ -38,14 +38,7 @@ const finalOgImageAlt = ogImageAlt || `${title} - Gerrard Group Inc`;
 		<meta name="robots" content="index, follow">
 		<link rel="canonical" href={canon}>
 
-		<!-- Preconnect hints -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-
-		<!-- Google Fonts: Barlow Condensed (headings) + Source Sans 3 (body) -->
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+		<!-- Fonts are self-hosted via @fontsource (imported in global.css) -->
 
 		{preloadImage && <link rel="preload" as="image" href={preloadImage}>}
 
