@@ -27,7 +27,7 @@
 	--color-text: #1F2937;
 	--color-text-secondary: #6B7280;
 	--color-border: #E5E7EB;
-	--color-bg: #F9FAFB;
+	--color-bg: #f5f8fc;
 	--color-card: #FFFFFF;
 	--color-success: #059669;
 	--color-sold: #DC2626;
@@ -134,7 +134,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5rem 0.5rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0px 3px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-nav-toggle {
