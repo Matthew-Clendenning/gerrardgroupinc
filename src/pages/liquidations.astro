@@ -196,7 +196,7 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
                         condition="Used — 1997"
                     />
                 </div>
-                <div class="liq-grid__item" data-category="compressor">
+                <div class="liq-grid__item" data-category="compressor sold">
                     <ProductCard
                         name="Sullair Model 900/1150 Portable Air Compressor"
                         category="Portable Air Compressors"
@@ -205,11 +205,11 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
                         alt="Sullair Model 900/1150 portable diesel air compressor for sale"
                         href="/sullair-air-compressor-900/"
                         loading="eager"
-                        price="199000"
                         condition="Used — 1,601 Hrs"
+                        sold={true}
                     />
                 </div>
-                <div class="liq-grid__item" data-category="compressor">
+                <div class="liq-grid__item" data-category="compressor sold">
                     <ProductCard
                         name="Atlas Copco XRVS 1550 CD Portable Air Compressor"
                         category="Portable Air Compressors"
@@ -218,11 +218,11 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
                         alt="Atlas Copco XRVS 1550 CD portable air compressor for sale"
                         href="/atlas-copco-air-compressor-1550-cd/"
                         loading="eager"
-                        price="200000"
                         condition="Used — 1,942 Hrs"
+                        sold={true}
                     />
                 </div>
-                <div class="liq-grid__item" data-category="compressor">
+                <div class="liq-grid__item" data-category="compressor sold">
                     <ProductCard
                         name="Atlas Copco XRVS 1550 CD7 Portable Air Compressor"
                         category="Portable Air Compressors"
@@ -231,11 +231,11 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
                         alt="Atlas Copco XRVS 1550 CD7 portable air compressor for sale"
                         href="/atlas-copco-air-compressor-1550-cd7/"
                         loading="eager"
-                        price="200000"
                         condition="Used — 2,827 Hrs"
+                        sold={true}
                     />
                 </div>
-                <div class="liq-grid__item" data-category="compressor">
+                <div class="liq-grid__item" data-category="compressor sold">
                     <ProductCard
                         name="Atlas Copco XAS 1600 CD6 Portable Air Compressor"
                         category="Portable Air Compressors"
@@ -244,8 +244,8 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
                         alt="Atlas Copco XAS 1600 CD6 portable air compressor for sale"
                         href="/atlas-copco-air-compressor-1600/"
                         loading="eager"
-                        price="275000"
                         condition="Used — 2,093 Hrs"
+                        sold={true}
                     />
                 </div>
                 <div class="liq-grid__item" data-category="press">
@@ -591,8 +591,8 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
                 this.classList.add('liq-filter__btn--active');
 
                 items.forEach(function(item) {
-                    var cat = item.getAttribute('data-category');
-                    if (filter === 'all' || cat === filter) {
+                    var cats = (item.getAttribute('data-category') || '').split(' ');
+                    if (filter === 'all' || cats.indexOf(filter) !== -1) {
                         item.classList.remove('liq-grid__item--hidden');
                     } else {
                         item.classList.add('liq-grid__item--hidden');
