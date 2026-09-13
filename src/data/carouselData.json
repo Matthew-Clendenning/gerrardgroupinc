@@ -233,5 +233,63 @@
             "src": "../images/miller-welder-4.webp",
             "alt": "Miller welding power source - rear view with power connections"
         }
+    ],
+
+    "slides12": [
+        {
+            "src": "../images/peddibot-1200-1.webp",
+            "alt": "Peddinghaus PeddiBot-1200 6-axis robotic CNC plasma cutting machine - front view of machine housing"
+        }
+    ],
+
+    "slides13": [
+        {
+            "src": "../images/tishken-rollformer-1.webp",
+            "alt": "28-stand Tishken rollformer - full rollforming line showing both forming sections"
+        },
+        {
+            "src": "../images/tishken-rollformer-2.webp",
+            "alt": "Tishken rollformer - top view of forming stands with drive shafts"
+        },
+        {
+            "src": "../images/tishken-rollformer-3.webp",
+            "alt": "Tishken rollformer - full machine with yellow guarding and drive end"
+        },
+        {
+            "src": "../images/tishken-rollformer-4.webp",
+            "alt": "Tishken rollformer - junction between the 12-stand and 16-stand sections"
+        },
+        {
+            "src": "../images/tishken-rollformer-5.webp",
+            "alt": "Tishken rollformer - drive motor and spindle coupling detail between sections"
+        },
+        {
+            "src": "../images/tishken-rollformer-6.webp",
+            "alt": "Tishken rollformer - Tishken Detroit nameplate close-up"
+        },
+        {
+            "src": "../images/tishken-rollformer-7.webp",
+            "alt": "Tishken rollformer - angled view of forming stands along the line"
+        },
+        {
+            "src": "../images/tishken-rollformer-8.webp",
+            "alt": "Tishken rollformer - forming section with Tishken oval logo, front view"
+        },
+        {
+            "src": "../images/tishken-rollformer-9.webp",
+            "alt": "Tishken rollformer - Tishken oval nameplate and control buttons close-up"
+        },
+        {
+            "src": "../images/tishken-rollformer-10.webp",
+            "alt": "Tishken rollformer - forming section drive end with yellow guarding"
+        },
+        {
+            "src": "../images/tishken-rollformer-11.webp",
+            "alt": "Tishken rollformer - top-down view along the forming stands"
+        },
+        {
+            "src": "../images/tishken-rollformer-12.webp",
+            "alt": "Tishken rollformer - top-down view along the second forming section"
+        }
     ]
 }

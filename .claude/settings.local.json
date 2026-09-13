@@ -1,0 +1,32 @@
+﻿{
+    "autoMode":  {
+                     "environment":  {
+                                         "value":  [
+                                                       "### Org-wide",
+                                                       "**Organization**: None configured â€” personal project (remote is github.com/Matthew-Clendenning)",
+                                                       "**Cloud provider(s)**: Netlify (static-site hosting/deploy â€” per netlify.toml)",
+                                                       "**Repository visibility**: source repo github.com/Matthew-Clendenning/gerrardgroupinc â€” visibility unconfirmed (gh unavailable), assume private for the repo; the built site is public-facing",
+                                                       "**Internal sharing / snippet hosting**: None configured â€” treat public paste/gist services as outside the trust boundary",
+                                                       "**Secrets management**: local .env / .env.production files (both gitignored) â€” no secrets manager configured",
+                                                       "**Default / protected branches**: master â€” treat as protected (direct pushes trigger the Netlify build/deploy)",
+                                                       "**CI/CD deploy targets**: Netlify (build via `astro build`, config in netlify.toml)",
+                                                       "**Network posture**: None configured â€” open internet",
+                                                       "**Source control**: this repo and its remote (github.com/Matthew-Clendenning/gerrardgroupinc) only â€” no additional orgs configured",
+                                                       "**Trusted internal domains**: None configured",
+                                                       "**Trusted cloud buckets**: None configured",
+                                                       "**Key internal services**: Netlify (deploy target)",
+                                                       "**Internal package registry**: None configured â€” uses public npm",
+                                                       "**Sensitive data locations \u0026 audiences**: none found in scan; `.env` / `.env.production` (gitignored) may hold deploy/API credentials â€” never commit or share",
+                                                       "**Data retention / declassification**: None configured â€” static content site, no database found",
+                                                       "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment (hyphen/underscore/dot-delimited)",
+                                                       "**Protected deployment namespaces / environments**: Netlify production deploy is the sensitive target",
+                                                       "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment â€” none present in this repo",
+                                                       "### User-specific",
+                                                       "**Primary use of Claude Code**: web development (Astro static site for Gerrard Group Inc)",
+                                                       "**Trusted repo**: github.com/Matthew-Clendenning/gerrardgroupinc (assume private; OK for this project\u0027s own work)",
+                                                       "**Org-specific CLIs**: None found â€” standard tooling (npm, astro, git)"
+                                                   ],
+                                         "Count":  23
+                                     }
+                 }
+}

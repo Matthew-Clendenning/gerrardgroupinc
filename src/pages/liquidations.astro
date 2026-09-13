@@ -21,6 +21,9 @@ import airCompOne from "../assets/sullair-900-1.jpg";
 import airCompTwo from "../assets/atlas-copco-1500-1.jpg";
 import airCompThree from "../assets/atlas-copco-1550-1.jpg";
 import airCompFour from "../assets/atlas-copco-1600-1.jpg";
+
+import peddibotOne from "../assets/peddibot-1200-1.png";
+import tishkenOne from "../assets/tishken-rollformer-1.jpg";
 ---
 
 <Layout title="Used Machinery for Sale - Liquidation & Surplus | Gerrard Group"
@@ -29,6 +32,8 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
     jsonLdType="itemlist"
     jsonLdData={{
         items: [
+            { name: "Peddinghaus PeddiBot-1200 6-Axis Robotic CNC Plasma Cutting Machine", url: "/peddinghaus-peddibot-1200/", image: "https://gerrardgroupinc.com/images/peddibot-1200-1.webp" },
+            { name: '28-Stand Tishken Rollformer 8"/10" x 1.50"', url: "/tishken-28-stand-rollformer/", image: "https://gerrardgroupinc.com/images/tishken-rollformer-1.webp" },
             { name: "Miller XMT 450 Multiprocess Welder", url: "/miller-xmt-450/", image: "https://gerrardgroupinc.com/images/miller-welder-1.webp" },
             { name: "Miller 456 XMT Welder", url: "/miller-456-xmt/", image: "https://gerrardgroupinc.com/images/miller-welder-1.webp" },
             { name: "Miller Phoenix 456 Welder", url: "/miller-phoenix-456/", image: "https://gerrardgroupinc.com/images/miller-welder-1.webp" },
@@ -81,6 +86,8 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
             <div class="liq-filter__inner">
                 <span class="liq-filter__label">Filter:</span>
                 <button class="liq-filter__btn liq-filter__btn--active" data-filter="all">All Equipment</button>
+                <button class="liq-filter__btn" data-filter="cnc">CNC / Robotic</button>
+                <button class="liq-filter__btn" data-filter="rollformer">Roll Formers</button>
                 <button class="liq-filter__btn" data-filter="compressor">Air Compressors</button>
                 <button class="liq-filter__btn" data-filter="press">Hydraulic Presses</button>
                 <button class="liq-filter__btn" data-filter="welder">Welders</button>
@@ -92,6 +99,30 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
         <!-- Product Grid -->
         <section class="liq-grid-section">
             <div class="liq-grid" id="product-grid">
+                <div class="liq-grid__item" data-category="cnc">
+                    <ProductCard
+                        name="Peddinghaus PeddiBot-1200 6-Axis Robotic CNC Cutting Machine"
+                        category="CNC Robotic Cutting"
+                        brand="Peddinghaus"
+                        imageURL={peddibotOne}
+                        alt="Peddinghaus PeddiBot-1200 6-axis robotic CNC plasma cutting machine for sale"
+                        href="/peddinghaus-peddibot-1200/"
+                        loading="eager"
+                        condition="Used — 2022"
+                    />
+                </div>
+                <div class="liq-grid__item" data-category="rollformer">
+                    <ProductCard
+                        name={'28-Stand Tishken Rollformer 8"/10" x 1.50"'}
+                        category="Roll Forming"
+                        brand="Tishken"
+                        imageURL={tishkenOne}
+                        alt="28-stand Tishken rollformer with 12-stand and 16-stand forming sections for sale"
+                        href="/tishken-28-stand-rollformer/"
+                        loading="eager"
+                        condition="Used"
+                    />
+                </div>
                 <div class="liq-grid__item" data-category="welder">
                     <ProductCard
                         name="Miller XMT 450 Multiprocess Welder"

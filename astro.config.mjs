@@ -36,6 +36,8 @@ export default defineConfig({
         url.includes('air-compressor') ||
         url.includes('sullair') ||
         url.includes('gernetti-band-saw') ||
+        url.includes('peddibot') ||
+        url.includes('tishken') ||
         url.includes('miller-xmt-450') ||
         url.includes('miller-456-xmt') ||
         url.includes('miller-phoenix-456') ||

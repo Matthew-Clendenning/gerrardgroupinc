@@ -1,0 +1,169 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import { Carousel } from "../components/Carousel.jsx";
+import { slides12 } from "../data/carouselData.json";
+import "../styles/product-detail.css";
+---
+
+<Layout
+    title="Peddinghaus PeddiBot-1200 Robotic Plasma Cutting Machine | Gerrard"
+    description="Used 2022 Peddinghaus PeddiBot-1200 6-axis robotic CNC thermal cutting machine. Kjellberg HiFocus 440i plasma torch, Stäubli robot arm, 4-sided processing and layout marking. Contact for pricing."
+    canon="https://gerrardgroupinc.com/peddinghaus-peddibot-1200/"
+    jsonLdType="product"
+    jsonLdData={{
+        name: "Peddinghaus PeddiBot-1200 6-Axis Robotic CNC Plasma Cutting Machine",
+        description: "2022 Peddinghaus PeddiBot-1200 6-axis robotic CNC thermal cutting machine with a Kjellberg HiFocus 440i plasma torch and Stäubli robot arm. Processes beam, tube, channel, and angle profiles on all 4 sides with plasma cutting and layout marking. Raptor 3D CAD/CAM integration, profile scanning, and trailing edge detection.",
+        brand: "Peddinghaus",
+        category: "CNC Robotic Cutting Systems",
+        price: "0",
+        sku: "PEDDIBOT-1200-2022",
+        condition: "UsedCondition",
+        mpn: "PeddiBot-1200",
+        image: "https://gerrardgroupinc.com/images/peddibot-1200-1.webp",
+        faq: [
+            { question: "What is the Peddinghaus PeddiBot-1200 used for?", answer: "The PeddiBot-1200 is a 6-axis robotic CNC thermal cutting machine built for structural steel fabrication. It plasma cuts and layout marks beam, tube, channel, and angle profiles — as well as plate — on all four sides in a single setup, handling copes, holes, weld prep bevels, slots, and part marking for beam lines and fabrication shops." },
+            { question: "What plasma torch and robot does the PeddiBot-1200 use?", answer: "This 2022 unit is equipped with a Kjellberg HiFocus 440i plasma torch rated at 440 amps, mounted on a 6-axis Stäubli robot arm. It includes Raptor 3D CAD/CAM software integration, a profile scanning system, trailing edge detection, and machine housing for clean, accurate cutting and 4-sided layout marking." },
+            { question: "What material sizes can the PeddiBot-1200 process?", answer: "Profiles range from a minimum of 3\" x 3\" up to a maximum of 48\" x 16.5\", with material thickness from 3/16\" to 2\" and a maximum profile weight of 26,455 lbs (12,000 kg). It also processes plate up to 48\" wide x 120\" long within a 48\" x 59\" effective cutting zone, with bevels up to 45°." },
+            { question: "Does Gerrard Group offer shipping and installation?", answer: "Yes. Gerrard Group Inc provides full rigging, transportation, and installation services for heavy industrial equipment across the United States, Mexico, and Canada. Contact us at (847) 894-3434 for a quote." }
+        ]
+    }}
+    ogType="product"
+    ogImage="https://gerrardgroupinc.com/images/peddibot-1200-1.webp"
+    ogImageAlt="Used Peddinghaus PeddiBot-1200 Robotic Plasma Cutting Machine for Sale - Gerrard Group"
+    >
+    <Directory
+        title="Peddinghaus PeddiBot-1200 6-Axis Robotic CNC Cutting Machine"
+        page="CNC Robotic Cutting"
+        page2="Machine Details"
+        href="/liquidations"
+    />
+    <main class="pd-page">
+        <div class="pd-content">
+            <div class="pd-layout">
+                <Carousel client:load data={slides12} />
+                <article class="pd-info">
+                    <h2 class="pd-info__title">Peddinghaus PeddiBot-1200 6-Axis Robotic CNC Thermal Cutting Machine</h2>
+                    <p class="pd-info__model">Model: <strong>PeddiBot-1200</strong> — New 2022</p>
+                    <hr class="pd-info__divider">
+                    <div class="pd-specs">
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Robotic Arm</span>
+                            <span class="pd-spec__value">6-Axis Stäubli Robot Arm</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Plasma Torch</span>
+                            <span class="pd-spec__value">Kjellberg HiFocus 440i (440 Amps)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Material Types</span>
+                            <span class="pd-spec__value">Beam, Tube, Channel, Angle</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Max. Profile Dimensions</span>
+                            <span class="pd-spec__value">48" x 16.5"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Min. Profile Dimensions</span>
+                            <span class="pd-spec__value">3" x 3"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Profile Thickness</span>
+                            <span class="pd-spec__value">3/16" — 2"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Max. Profile Weight</span>
+                            <span class="pd-spec__value">26,455 lbs (12,000 kg)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Max. Bevel Angle</span>
+                            <span class="pd-spec__value">45°</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Material Processing</span>
+                            <span class="pd-spec__value">4 Sides</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Max. Edge Start / Piercing Thickness</span>
+                            <span class="pd-spec__value">2"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Plasma Processing Speed</span>
+                            <span class="pd-spec__value">20"/min @ 2"</span>
+                        </div>
+                        <div class="pd-spec-sub">
+                            <span class="pd-spec-sub__value">70"/min @ 1/4"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Effective Cutting Zone</span>
+                            <span class="pd-spec__value">48" x 59"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Plate Width</span>
+                            <span class="pd-spec__value">7-7/8" — 48"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Plate Thickness</span>
+                            <span class="pd-spec__value">5/16" — 1-5/8"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Plate Length</span>
+                            <span class="pd-spec__value">11-13/16" — 120"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Positioning Accuracy</span>
+                            <span class="pd-spec__value">±0.04" Robot; ±0.03" Straight Cut / ±0.06" 45° Bevel</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Equipped With</span>
+                            <span class="pd-spec__value">Raptor 3D CAD/CAM Integration, Trailing Edge Detection, Machine Housing, Profile Scanning System, 4-Sided Layout Marking</span>
+                        </div>
+                    </div>
+                    <div class="pd-pricing">
+                        <p class="pd-pricing__contact">Contact for Pricing</p>
+                    </div>
+                    <div class="pd-actions">
+                        <a href="/contact/" class="pd-btn pd-btn--primary">Request a Quote</a>
+                        <a href="tel:+18478943434" class="pd-btn pd-btn--secondary">Call (847) 894-3434</a>
+                    </div>
+                </article>
+            </div>
+            <section class="pd-faq">
+                <h3 class="pd-faq__title">Frequently Asked Questions</h3>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What is the Peddinghaus PeddiBot-1200 used for?</p>
+                    <p class="pd-faq__answer">The PeddiBot-1200 is a 6-axis robotic CNC thermal cutting machine built for structural steel fabrication. It plasma cuts and layout marks beam, tube, channel, and angle profiles — as well as plate — on all four sides in a single setup, handling copes, holes, weld prep bevels, slots, and part marking for beam lines and fabrication shops.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What plasma torch and robot does the PeddiBot-1200 use?</p>
+                    <p class="pd-faq__answer">This 2022 unit is equipped with a Kjellberg HiFocus 440i plasma torch rated at 440 amps, mounted on a 6-axis Stäubli robot arm. It includes Raptor 3D CAD/CAM software integration, a profile scanning system, trailing edge detection, and machine housing for clean, accurate cutting and 4-sided layout marking.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What material sizes can the PeddiBot-1200 process?</p>
+                    <p class="pd-faq__answer">Profiles range from a minimum of 3" x 3" up to a maximum of 48" x 16.5", with material thickness from 3/16" to 2" and a maximum profile weight of 26,455 lbs (12,000 kg). It also processes plate up to 48" wide x 120" long within a 48" x 59" effective cutting zone, with bevels up to 45°.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">Does Gerrard Group offer shipping and installation?</p>
+                    <p class="pd-faq__answer">Yes. Gerrard Group Inc provides full rigging, transportation, and installation services for heavy industrial equipment across the United States, Mexico, and Canada. Contact us at (847) 894-3434 for a quote.</p>
+                </div>
+            </section>
+            <section class="pd-related">
+                <h3 class="pd-related__title">Related Equipment</h3>
+                <div class="pd-related__list">
+                    <a href="/gernetti-band-saw-38-18/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Peddinghaus / Gernetti SHN 38-18 Band Saw
+                    </a>
+                    <a href="/miller-xmt-450/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Miller XMT 450 Multiprocess Welder
+                    </a>
+                </div>
+            </section>
+            <a href="/liquidations/" class="pd-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to All Equipment
+            </a>
+        </div>
+    </main>
+</Layout>
