@@ -238,7 +238,23 @@
     "slides12": [
         {
             "src": "../images/peddibot-1200-1.webp",
-            "alt": "Peddinghaus PeddiBot-1200 6-axis robotic CNC plasma cutting machine - front view of machine housing"
+            "alt": "Peddinghaus PeddiBot-1200 6-axis robotic CNC plasma cutting machine - full view with steel beam on infeed conveyor"
+        },
+        {
+            "src": "../images/peddibot-1200-2.webp",
+            "alt": "Peddinghaus PeddiBot-1200 with Kjellberg Finsterwalde HiFocus plasma power source"
+        },
+        {
+            "src": "../images/peddibot-1200-3.webp",
+            "alt": "Peddinghaus PeddiBot-1200 control station with HMI touchscreen and RPC 1200 cutting enclosure"
+        },
+        {
+            "src": "../images/peddibot-1200-4.webp",
+            "alt": "Peddinghaus PeddiBot-1200 interior showing 6-axis Staubli TX2 90 robot arm over a steel beam"
+        },
+        {
+            "src": "../images/peddibot-1200-5.webp",
+            "alt": "Peddinghaus PeddiBot-1200 operator control screen and keyboard"
         }
     ],
 
