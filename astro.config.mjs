@@ -38,6 +38,8 @@ export default defineConfig({
         url.includes('gernetti-band-saw') ||
         url.includes('peddibot') ||
         url.includes('tishken') ||
+        url.includes('stamco') ||
+        url.includes('paxson') ||
         url.includes('miller-xmt-450') ||
         url.includes('miller-456-xmt') ||
         url.includes('miller-phoenix-456') ||

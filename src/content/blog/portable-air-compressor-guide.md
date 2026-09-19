@@ -1,5 +1,5 @@
 ---
-title: "Used Portable Air Compressor Guide: Atlas Copco vs Sullair"
+title: "Portable Air Compressor Guide: Atlas Copco vs Sullair"
 description: "Compare used Atlas Copco and Sullair portable diesel air compressors. Covers CFM, PSI, applications, hours, and what to look for when buying used."
 date: "2026-03-06"
 tags: ["air compressor", "Atlas Copco", "Sullair", "buying guide"]

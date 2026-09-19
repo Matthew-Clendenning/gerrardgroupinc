@@ -307,5 +307,183 @@
             "src": "../images/tishken-rollformer-12.webp",
             "alt": "Tishken rollformer - top-down view along the second forming section"
         }
+    ],
+
+    "slides14": [
+        {
+            "src": "../images/stamco-slitting-1.webp",
+            "alt": "Stamco slitting line - mandrel uncoiler with 56 inch face and coil car lift arms"
+        },
+        {
+            "src": "../images/stamco-slitting-2.webp",
+            "alt": "Stamco slitting line - entry peeler table with hydraulic lift"
+        },
+        {
+            "src": "../images/stamco-slitting-3.webp",
+            "alt": "Stamco slitting line - slitter entry unit with operator control station"
+        },
+        {
+            "src": "../images/stamco-slitting-4.webp",
+            "alt": "Stamco slitting line - entry hydraulic power unit with 20 HP Baldor motor"
+        },
+        {
+            "src": "../images/stamco-slitting-5.webp",
+            "alt": "Stamco slitting line - removable head slitter with 6.50 inch arbors and overarm holddown"
+        },
+        {
+            "src": "../images/stamco-slitting-6.webp",
+            "alt": "Stamco slitting line - Baldor 40 HP DC slitter drive motor nameplate"
+        },
+        {
+            "src": "../images/stamco-slitting-7.webp",
+            "alt": "Stamco slitting line - electrical control cabinet"
+        },
+        {
+            "src": "../images/stamco-slitting-8.webp",
+            "alt": "Stamco 54 inch coil slitting line overview with coil loaded"
+        },
+        {
+            "src": "../images/stamco-slitting-9.webp",
+            "alt": "Stamco slitting line - exit end with processed coil"
+        },
+        {
+            "src": "../images/stamco-slitting-10.webp",
+            "alt": "Stamco slitting line - recoiler drive and hydraulic power unit"
+        },
+        {
+            "src": "../images/stamco-slitting-11.webp",
+            "alt": "Stamco slitting line - recoiler with 20 inch face drum"
+        },
+        {
+            "src": "../images/stamco-slitting-12.webp",
+            "alt": "Stamco slitting line - Baldor 75 HP DC recoiler drive motor nameplate"
+        },
+        {
+            "src": "../images/stamco-slitting-13.webp",
+            "alt": "Stamco slitting line - scrap winder with level wind"
+        },
+        {
+            "src": "../images/stamco-slitting-14.webp",
+            "alt": "Stamco slitting line - exit section overview"
+        },
+        {
+            "src": "../images/stamco-slitting-15.webp",
+            "alt": "Stamco slitting line - two-arm exit turnstile with C-hook arms and coil"
+        },
+        {
+            "src": "../images/stamco-slitting-16.webp",
+            "alt": "Stamco slitting line - master coil at line entry"
+        },
+        {
+            "src": "../images/stamco-slitting-17.webp",
+            "alt": "Stamco slitting line - uncoiler loaded with steel coil"
+        },
+        {
+            "src": "../images/stamco-slitting-18.webp",
+            "alt": "Stamco slitting line - slitter tooling with knives and spacers"
+        }
+    ],
+
+    "slides15": [
+        {
+            "src": "../images/paxson-slitting-1.webp",
+            "alt": "Paxson slitting line - driven slitter head with 6 inch arbors"
+        },
+        {
+            "src": "../images/paxson-slitting-2.webp",
+            "alt": "Paxson slitting line - expanding mandrel uncoiler with water-cooled drag brake"
+        },
+        {
+            "src": "../images/paxson-slitting-3.webp",
+            "alt": "Paxson slitting line - water-cooled drag brake detail"
+        },
+        {
+            "src": "../images/paxson-slitting-4.webp",
+            "alt": "Paxson slitting line - control pulpit upgraded in 2009 with new PLC touchscreen"
+        },
+        {
+            "src": "../images/paxson-slitting-5.webp",
+            "alt": "Paxson slitting line - entry separator tooling bar"
+        },
+        {
+            "src": "../images/paxson-slitting-6.webp",
+            "alt": "Paxson slitting line - Braner two-arm exit turnstile"
+        },
+        {
+            "src": "../images/paxson-slitting-7.webp",
+            "alt": "Paxson slitting line - recoiler and looping section"
+        },
+        {
+            "src": "../images/paxson-slitting-8.webp",
+            "alt": "Paxson slitting line - tension stand rolls"
+        },
+        {
+            "src": "../images/paxson-slitting-9.webp",
+            "alt": "Paxson slitting line - Loopco drag-board tension stand"
+        },
+        {
+            "src": "../images/paxson-slitting-10.webp",
+            "alt": "Paxson coil slitting line - overhead view of the full line"
+        },
+        {
+            "src": "../images/paxson-slitting-11.webp",
+            "alt": "Paxson coil slitting line - overhead view with coils"
+        },
+        {
+            "src": "../images/paxson-slitting-12.webp",
+            "alt": "Paxson coil slitting line - overhead view of the processing line"
+        },
+        {
+            "src": "../images/paxson-slitting-13.webp",
+            "alt": "Paxson coil slitting line - overhead view of the line and finished coils"
+        },
+        {
+            "src": "../images/paxson-slitting-14.webp",
+            "alt": "Paxson slitting line - recoiler with slit coil"
+        },
+        {
+            "src": "../images/paxson-slitting-15.webp",
+            "alt": "Paxson slitting line - self-dumping scrap winder"
+        },
+        {
+            "src": "../images/paxson-slitting-16.webp",
+            "alt": "Paxson slitting line - leveler and tension rolls"
+        },
+        {
+            "src": "../images/paxson-slitting-17.webp",
+            "alt": "Paxson slitting line - roll stand with handwheel adjustment"
+        },
+        {
+            "src": "../images/paxson-slitting-18.webp",
+            "alt": "Paxson slitting line - roll stand close-up"
+        },
+        {
+            "src": "../images/paxson-slitting-19.webp",
+            "alt": "Paxson slitting line - recoiler drum with overarm separator"
+        },
+        {
+            "src": "../images/paxson-slitting-20.webp",
+            "alt": "Paxson slitting line - Loopco tension stand exit"
+        },
+        {
+            "src": "../images/paxson-slitting-21.webp",
+            "alt": "Paxson slitting line - exit passline roll table"
+        },
+        {
+            "src": "../images/paxson-slitting-22.webp",
+            "alt": "Paxson slitting line - L-type entry coil car"
+        },
+        {
+            "src": "../images/paxson-slitting-23.webp",
+            "alt": "Paxson slitting line - exit coil car rated for 30,000 lb coils"
+        },
+        {
+            "src": "../images/paxson-slitting-24.webp",
+            "alt": "Paxson slitting line - main hydraulic power unit"
+        },
+        {
+            "src": "../images/paxson-slitting-25.webp",
+            "alt": "Paxson slitting line - expanding mandrel uncoiler with slitter arbors"
+        }
     ]
 }

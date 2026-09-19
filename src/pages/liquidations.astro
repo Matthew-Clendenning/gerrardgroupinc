@@ -24,6 +24,8 @@ import airCompFour from "../assets/atlas-copco-1600-1.jpg";
 
 import peddibotOne from "../assets/peddibot-1200-1.png";
 import tishkenOne from "../assets/tishken-rollformer-1.jpg";
+import stamcoOne from "../assets/stamco-slitting-card.jpg";
+import paxsonOne from "../assets/paxson-slitting-card.jpg";
 ---
 
 <Layout title="Used Machinery for Sale - Liquidation & Surplus | Gerrard Group"
@@ -34,6 +36,8 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
         items: [
             { name: "Peddinghaus PeddiBot-1200 6-Axis Robotic CNC Plasma Cutting Machine", url: "/peddinghaus-peddibot-1200/", image: "https://gerrardgroupinc.com/images/peddibot-1200-1.webp" },
             { name: '28-Stand Tishken Rollformer 8"/10" x 1.50"', url: "/tishken-28-stand-rollformer/", image: "https://gerrardgroupinc.com/images/tishken-rollformer-1.webp" },
+            { name: '54" x 6.50" x 20,000# Stamco Coil Slitting Line', url: "/stamco-slitting-line/", image: "https://gerrardgroupinc.com/images/stamco-slitting-8.webp" },
+            { name: '52" x 6.00" x 30,000# Paxson Coil Slitting Line', url: "/paxson-slitting-line/", image: "https://gerrardgroupinc.com/images/paxson-slitting-10.webp" },
             { name: "Miller XMT 450 Multiprocess Welder", url: "/miller-xmt-450/", image: "https://gerrardgroupinc.com/images/miller-welder-1.webp" },
             { name: "Miller 456 XMT Welder", url: "/miller-456-xmt/", image: "https://gerrardgroupinc.com/images/miller-welder-1.webp" },
             { name: "Miller Phoenix 456 Welder", url: "/miller-phoenix-456/", image: "https://gerrardgroupinc.com/images/miller-welder-1.webp" },
@@ -88,6 +92,7 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
                 <button class="liq-filter__btn liq-filter__btn--active" data-filter="all">All Equipment</button>
                 <button class="liq-filter__btn" data-filter="cnc">CNC / Robotic</button>
                 <button class="liq-filter__btn" data-filter="rollformer">Roll Formers</button>
+                <button class="liq-filter__btn" data-filter="slitting">Slitting Lines</button>
                 <button class="liq-filter__btn" data-filter="compressor">Air Compressors</button>
                 <button class="liq-filter__btn" data-filter="press">Hydraulic Presses</button>
                 <button class="liq-filter__btn" data-filter="welder">Welders</button>
@@ -119,6 +124,30 @@ import tishkenOne from "../assets/tishken-rollformer-1.jpg";
                         imageURL={tishkenOne}
                         alt="28-stand Tishken rollformer with 12-stand and 16-stand forming sections for sale"
                         href="/tishken-28-stand-rollformer/"
+                        loading="eager"
+                        condition="Used"
+                    />
+                </div>
+                <div class="liq-grid__item" data-category="slitting">
+                    <ProductCard
+                        name={'54" x 6.50" x 20,000# Stamco Coil Slitting Line'}
+                        category="Coil Slitting Line"
+                        brand="Stamco"
+                        imageURL={stamcoOne}
+                        alt="54 inch Stamco coil slitting line with uncoiler, slitter, and recoiler for sale"
+                        href="/stamco-slitting-line/"
+                        loading="eager"
+                        condition="Used"
+                    />
+                </div>
+                <div class="liq-grid__item" data-category="slitting">
+                    <ProductCard
+                        name={'52" x 6.00" x 30,000# Paxson Coil Slitting Line'}
+                        category="Coil Slitting Line"
+                        brand="Paxson"
+                        imageURL={paxsonOne}
+                        alt="52 inch Paxson loop-type coil slitting line with driven slitter and Braner turnstile for sale"
+                        href="/paxson-slitting-line/"
                         loading="eager"
                         condition="Used"
                     />

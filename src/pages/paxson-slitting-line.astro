@@ -1,0 +1,185 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import { Carousel } from "../components/Carousel.jsx";
+import { slides15 } from "../data/carouselData.json";
+import "../styles/product-detail.css";
+---
+
+<Layout
+    title={'52" Paxson Slitting Line 6.00" x 30,000# for Sale | Gerrard Group'}
+    description={'Used 52" Paxson loop-type coil slitting line — 30,000 lb, driven slitter, 350-400 FPM, 75 HP DC drive, Braner turnstile, 2009 PLC upgrade. Ref 10846-C, Toledo OH.'}
+    canon="https://gerrardgroupinc.com/paxson-slitting-line/"
+    jsonLdType="product"
+    jsonLdData={{
+        name: '52" x 6.00" x 30,000# Paxson Coil Slitting Line',
+        description: 'Used Paxson loop-type coil slitting line rated for 52" wide coils up to 30,000 lbs at 350-400 FPM. Includes a Paxson "L"-type entry coil car, expanding mandrel uncoiler, driven slitter with (2) drop-in heads and 6" arbors on a 75 HP Reliance DC drive, Loopco drag-board tension stand, recoiler with 60 HP Reliance AC drive, and a Braner two-arm exit turnstile. Controls upgraded in 2009 with a new PLC and control pulpit. Ref #10846-C. In storage in Toledo, OH.',
+        brand: "Paxson",
+        category: "Coil Slitting Lines",
+        price: "0",
+        sku: "10846-C",
+        condition: "UsedCondition",
+        mpn: "Paxson Slitting Line",
+        image: "https://gerrardgroupinc.com/images/paxson-slitting-10.webp",
+        faq: [
+            { question: "What is a coil slitting line used for?", answer: "A coil slitting line uncoils a master coil, runs it through driven rotary slitter heads that cut it lengthwise into narrower strips, then recoils the finished strips. This loop-type Paxson line handles coils up to 52\" wide and 30,000 lbs at 350-400 FPM, and is used by steel service centers and fabricators to produce made-to-width coil." },
+            { question: "What are the main components and drives on this Paxson line?", answer: "The line consists of a Paxson \"L\"-type above-ground entry coil car (7.5 HP), an expanding-mandrel uncoiler with a water-cooled drag brake, a hydraulic peeler table, a driven slitter with 52\" arbor face, two drop-in heads and 6\" arbors on a 75 HP Reliance DC drive, a looping pit and cross-over table, a self-dumping scrap winder, a Loopco drag-board tension stand, a recoiler with a 20\" x 54\" face drum on a 60 HP Reliance AC drive with a Foote-Jones reducer, an exit coil car, and a Braner two-arm exit turnstile." },
+            { question: "What coil sizes and speed can this line run, and are the controls updated?", answer: "The line runs coils up to 52\" wide and 30,000 lbs, with a 20\" I.D. and 72\" O.D., left to right, at 350-400 FPM. The controls were upgraded in 2009 with a new PLC and control pulpit." },
+            { question: "What condition is this slitting line in and where is it located?", answer: "This is a used Paxson slitting line (Ref #10846-C) currently in storage in Toledo, OH. It is available for inspection by appointment; contact Gerrard Group for details, rigging, and transportation." }
+        ]
+    }}
+    ogType="product"
+    ogImage="https://gerrardgroupinc.com/images/paxson-slitting-10.webp"
+    ogImageAlt="Used 52 inch Paxson Coil Slitting Line for Sale - Gerrard Group"
+    >
+    <Directory
+        title={'52" x 6.00" x 30,000# Paxson Slitting Line'}
+        page="Slitting Lines"
+        page2="Machine Details"
+        href="/liquidations"
+    />
+    <main class="pd-page">
+        <div class="pd-content">
+            <div class="pd-layout">
+                <Carousel client:load data={slides15} />
+                <article class="pd-info">
+                    <h2 class="pd-info__title">52" x 6.00" x 30,000# Paxson Coil Slitting Line</h2>
+                    <p class="pd-info__model">Ref #: <strong>10846-C</strong> — Paxson · Loop Type, Driven Slitter</p>
+                    <hr class="pd-info__divider">
+                    <div class="pd-specs">
+                        <p class="pd-specs__group-title">Line Specifications</p>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Manufacturer</span>
+                            <span class="pd-spec__value">Paxson</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Capacity</span>
+                            <span class="pd-spec__value">52" Wide x 30,000 lb Coils</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Style</span>
+                            <span class="pd-spec__value">Loop Type, Driven Slitter</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Coil Size</span>
+                            <span class="pd-spec__value">20" I.D. x 72" O.D.</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Direction</span>
+                            <span class="pd-spec__value">Left to Right</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Speed</span>
+                            <span class="pd-spec__value">350 – 400 FPM</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Controls</span>
+                            <span class="pd-spec__value">Upgraded in 2009 — New PLC and Control Pulpit</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Condition / Location</span>
+                            <span class="pd-spec__value">Used — In Storage, Toledo, OH</span>
+                        </div>
+
+                        <p class="pd-specs__group-title">Line Components</p>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Entry Coil Car</span>
+                            <span class="pd-spec__value">Above ground, "L" type, self-contained hydraulics, 7.5 HP AC motor (1750 RPM, 230/460 V)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Uncoiler</span>
+                            <span class="pd-spec__value">Expanding mandrel type, hydraulic expansion, water-cooled drag brake, sliding base, powered holddown arm</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Peeler</span>
+                            <span class="pd-spec__value">Hydraulic peeler table with pinch rolls</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Slitter Heads</span>
+                            <span class="pd-spec__value">52" arbor face, (2) drop-in heads, 6" diameter arbors, entry side guides, 75 HP Reliance DC drive motor (1750 RPM, 500 V)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Looping Pit</span>
+                            <span class="pd-spec__value">Included</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Cross Over Table</span>
+                            <span class="pd-spec__value">Included</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Scrap Winder</span>
+                            <span class="pd-spec__value">(1) self-dumping, oscillating scrap guide, hydraulic motor driven</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Tension Stand (Loopco)</span>
+                            <span class="pd-spec__value">Drag-board type with air cylinders for pressure, entry separator tooling bar, exit passline roll</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Recoiler</span>
+                            <span class="pd-spec__value">20" dia. drum, 54" drum face, manual expand and gripper, hydraulic pushoff, overarm separator, Foote-Jones 16.692:1 reducer, 60 HP Reliance AC motor w/ belt drive (1770 RPM, 230/460 V)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Exit Coil Car</span>
+                            <span class="pd-spec__value">48" wide deck, self-contained hydraulics, hand pendant control</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Exit Turnstile (Braner)</span>
+                            <span class="pd-spec__value">Two arms, powered rotation, pushoffs</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Main Operator's Control Panel</span>
+                            <span class="pd-spec__value">Included</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Main Hydraulic Power Unit</span>
+                            <span class="pd-spec__value">Included</span>
+                        </div>
+                    </div>
+                    <div class="pd-pricing">
+                        <p class="pd-pricing__contact">Contact for Pricing</p>
+                    </div>
+                    <div class="pd-actions">
+                        <a href="/contact/" class="pd-btn pd-btn--primary">Request a Quote</a>
+                        <a href="tel:+18478943434" class="pd-btn pd-btn--secondary">Call (847) 894-3434</a>
+                    </div>
+                </article>
+            </div>
+            <section class="pd-faq">
+                <h3 class="pd-faq__title">Frequently Asked Questions</h3>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What is a coil slitting line used for?</p>
+                    <p class="pd-faq__answer">A coil slitting line uncoils a master coil, runs it through driven rotary slitter heads that cut it lengthwise into narrower strips, then recoils the finished strips. This loop-type Paxson line handles coils up to 52" wide and 30,000 lbs at 350-400 FPM, and is used by steel service centers and fabricators to produce made-to-width coil.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What are the main components and drives on this Paxson line?</p>
+                    <p class="pd-faq__answer">The line consists of a Paxson "L"-type above-ground entry coil car (7.5 HP), an expanding-mandrel uncoiler with a water-cooled drag brake, a hydraulic peeler table, a driven slitter with 52" arbor face, two drop-in heads and 6" arbors on a 75 HP Reliance DC drive, a looping pit and cross-over table, a self-dumping scrap winder, a Loopco drag-board tension stand, a recoiler with a 20" x 54" face drum on a 60 HP Reliance AC drive with a Foote-Jones reducer, an exit coil car, and a Braner two-arm exit turnstile.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What coil sizes and speed can this line run, and are the controls updated?</p>
+                    <p class="pd-faq__answer">The line runs coils up to 52" wide and 30,000 lbs, with a 20" I.D. and 72" O.D., left to right, at 350-400 FPM. The controls were upgraded in 2009 with a new PLC and control pulpit.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What condition is this slitting line in and where is it located?</p>
+                    <p class="pd-faq__answer">This is a used Paxson slitting line (Ref #10846-C) currently in storage in Toledo, OH. It is available for inspection by appointment; contact Gerrard Group for details, rigging, and transportation.</p>
+                </div>
+            </section>
+            <section class="pd-related">
+                <h3 class="pd-related__title">Related Equipment</h3>
+                <div class="pd-related__list">
+                    <a href="/stamco-slitting-line/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        54" Stamco Coil Slitting Line
+                    </a>
+                    <a href="/tishken-28-stand-rollformer/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        28-Stand Tishken Rollformer
+                    </a>
+                </div>
+            </section>
+            <a href="/liquidations/" class="pd-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to All Equipment
+            </a>
+        </div>
+    </main>
+</Layout>

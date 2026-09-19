@@ -1,5 +1,5 @@
 ---
-title: "Pacific Hydraulic Press Models Compared: 200 vs 300 vs 600 Ton"
+title: "Pacific Hydraulic Press Models: 200 vs 300 vs 600 Ton"
 description: "Compare the Pacific 200-D, 300-D, and 600-D hydraulic press models side by side. Specs, applications, and which tonnage is right for your operation."
 date: "2026-03-10"
 tags: ["hydraulic press", "Pacific", "comparison"]

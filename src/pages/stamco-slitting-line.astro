@@ -1,0 +1,201 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Directory from "../components/MachineDirectory.astro";
+import { Carousel } from "../components/Carousel.jsx";
+import { slides14 } from "../data/carouselData.json";
+import "../styles/product-detail.css";
+---
+
+<Layout
+    title={'54" Stamco Slitting Line 6.50" x 20,000# for Sale | Gerrard Group'}
+    description={'Used 54" Stamco coil slitting line — 6.50" arbors, 20,000 lb, 250/300 FPM. Uncoiler, slitter, recoiler & exit turnstile. Ref 11849-HK, in storage, Toledo OH.'}
+    canon="https://gerrardgroupinc.com/stamco-slitting-line/"
+    jsonLdType="product"
+    jsonLdData={{
+        name: '54" x 6.50" x 20,000# Stamco Coil Slitting Line',
+        description: 'Used Stamco coil slitting line rated for 54" wide coils up to 20,000 lbs at 250/300 FPM. Includes Paxson entry coil car, mandrel uncoiler (56" face), removable-head slitter with 6.50" arbors and 40 HP DC drive, drag-board tension stand, recoiler with 75 HP DC drive, scrap winder, and 2-arm exit turnstile. Ref #11849-HK. Removed and in storage in Toledo, OH.',
+        brand: "Stamco",
+        category: "Coil Slitting Lines",
+        price: "0",
+        sku: "11849-HK",
+        condition: "UsedCondition",
+        mpn: "Stamco Slitting Line",
+        image: "https://gerrardgroupinc.com/images/stamco-slitting-8.webp",
+        faq: [
+            { question: "What is a coil slitting line used for?", answer: "A coil slitting line uncoils a master coil, passes it through rotary slitter knives that cut it lengthwise into narrower strips (mults), then recoils the finished strips. This 54\" Stamco line handles coils up to 54\" wide and 20,000 lbs, with coil O.D. up to 72\", running at a constant 250/300 FPM. It is used by service centers and fabricators to produce made-to-width steel and aluminum coil." },
+            { question: "What are the main components and drives on this Stamco line?", answer: "The line consists of a Paxson entry coil car, a mandrel uncoiler with a 56\" face and two Fawick water-cooled brakes, a peeler table, a removable-head slitter with 6.50\" dia. x 60\" face arbors driven by a 40 HP Baldor DC motor, a drag-board tension stand, a recoiler with a 20\" x 60\" face drum driven by a 75 HP Baldor DC motor, an overarm separator, paper unwinder, scrap winder, and a 2-arm exit turnstile with C-hook arms." },
+            { question: "What coil sizes can this line process?", answer: "The line runs coils up to 54\" wide and 20,000 lbs, with a coil O.D. up to 72\". Coil I.D. is 16\"–20\" at entry and 20\" at exit. Line direction is left to right. The slitter arbors are 6.50\" diameter with a 60\" face." },
+            { question: "What condition is this slitting line in and where is it located?", answer: "This is a used Stamco slitting line (Ref #11849-HK) that has been removed and is in storage in Toledo, OH. It is available for inspection by appointment; contact Gerrard Group for details, rigging, and transportation." }
+        ]
+    }}
+    ogType="product"
+    ogImage="https://gerrardgroupinc.com/images/stamco-slitting-8.webp"
+    ogImageAlt="Used 54 inch Stamco Coil Slitting Line for Sale - Gerrard Group"
+    >
+    <Directory
+        title={'54" x 6.50" x 20,000# Stamco Slitting Line'}
+        page="Slitting Lines"
+        page2="Machine Details"
+        href="/liquidations"
+    />
+    <main class="pd-page">
+        <div class="pd-content">
+            <div class="pd-layout">
+                <Carousel client:load data={slides14} />
+                <article class="pd-info">
+                    <h2 class="pd-info__title">54" x 6.50" x 20,000# Stamco Coil Slitting Line</h2>
+                    <p class="pd-info__model">Ref #: <strong>11849-HK</strong> — Stamco</p>
+                    <hr class="pd-info__divider">
+                    <div class="pd-specs">
+                        <p class="pd-specs__group-title">Line Specifications</p>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Manufacturer</span>
+                            <span class="pd-spec__value">Stamco</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Weight Capacity</span>
+                            <span class="pd-spec__value">20,000 lbs</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Coil Width</span>
+                            <span class="pd-spec__value">54"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Arbor Diameter</span>
+                            <span class="pd-spec__value">6.50"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Coil I.D. (Entry)</span>
+                            <span class="pd-spec__value">16" – 20"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Coil I.D. (Exit)</span>
+                            <span class="pd-spec__value">20"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Coil O.D.</span>
+                            <span class="pd-spec__value">72"</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Line Direction</span>
+                            <span class="pd-spec__value">Left to Right</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Line Speed</span>
+                            <span class="pd-spec__value">250 / 300 FPM (Constant)</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Condition / Location</span>
+                            <span class="pd-spec__value">Used — Removed and in Storage, Toledo, OH</span>
+                        </div>
+
+                        <p class="pd-specs__group-title">Line Components</p>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Entry Coil Car (Paxson)</span>
+                            <span class="pd-spec__value">Hydraulic motorized screw jack lift, hydraulic motorized travel, removable riser for small coil O.D.s, self-contained hydraulic power unit, hand pendant control</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Mandrel Uncoiler</span>
+                            <span class="pd-spec__value">56" face mandrel, hydraulic expansion, slide base, (2) Fawick water-cooled brakes, 1.5 HP AC feedup gearmotor (220/440 V), Stamco 5.4:1 reducer, lube pump; 52" passline; shipping weight 17,500#</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Overarm Holddown Roll</span>
+                            <span class="pd-spec__value">Free standing</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Entry Hydraulic Power Unit</span>
+                            <span class="pd-spec__value">20 HP Baldor AC motor (1760 RPM, 230/460 V), 60-gallon tank, valve stand</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Peeler Table</span>
+                            <span class="pd-spec__value">Hydraulic lift and extend, 60" wide passline roll</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Slitter Entry Unit</span>
+                            <span class="pd-spec__value">Entry passline roll, adjustable roller side guides, driven pinch rolls</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Removable Head Slitter</span>
+                            <span class="pd-spec__value">6.50" dia. x 60" face arbors, eccentric arbor adjustment, 40 HP Baldor DC motor (1750/2100 RPM, 500 V), Stamco 3.2:1 reducer/pinion box, Hansen 8.3:1 secondary reducer, slitter tooling</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Drag Board Tension Stand</span>
+                            <span class="pd-spec__value">Entry separator tooling bar, exit passline roll, (3) air-cylinder tension control</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Recoiler</span>
+                            <span class="pd-spec__value">20" dia. x 60" face drum, manual clamp and expansion, hydraulic pushoff, 75 HP Baldor DC motor (1750/2100 RPM, 500 V) w/ blower, Stamco 3.697:1 integral reducer, Hansen 10:1 secondary reducer; shipping weight 17,000#</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Overarm Separator</span>
+                            <span class="pd-spec__value">Free standing</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Paper Unwinder</span>
+                            <span class="pd-spec__value">Included</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Scrap Winder</span>
+                            <span class="pd-spec__value">Hydraulic motor drive, level wind, manual ball removal</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Exit Hydraulic Power Unit</span>
+                            <span class="pd-spec__value">Included</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">2-Arm Exit Turnstile</span>
+                            <span class="pd-spec__value">C-hook type arms, 6.5" W x 12" H slot, 67" long arms, 18" min I.D., 47" floor to top of arm, hydraulic pushoff, power rotation; overall 184" L x 48" W x 54" H; shipping weight 11,000#</span>
+                        </div>
+                        <div class="pd-spec">
+                            <span class="pd-spec__label">Operator Controls</span>
+                            <span class="pd-spec__value">Included</span>
+                        </div>
+                    </div>
+                    <div class="pd-pricing">
+                        <p class="pd-pricing__contact">Contact for Pricing</p>
+                    </div>
+                    <div class="pd-actions">
+                        <a href="/contact/" class="pd-btn pd-btn--primary">Request a Quote</a>
+                        <a href="tel:+18478943434" class="pd-btn pd-btn--secondary">Call (847) 894-3434</a>
+                    </div>
+                </article>
+            </div>
+            <section class="pd-faq">
+                <h3 class="pd-faq__title">Frequently Asked Questions</h3>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What is a coil slitting line used for?</p>
+                    <p class="pd-faq__answer">A coil slitting line uncoils a master coil, passes it through rotary slitter knives that cut it lengthwise into narrower strips (mults), then recoils the finished strips. This 54" Stamco line handles coils up to 54" wide and 20,000 lbs, with coil O.D. up to 72", running at a constant 250/300 FPM. It is used by service centers and fabricators to produce made-to-width steel and aluminum coil.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What are the main components and drives on this Stamco line?</p>
+                    <p class="pd-faq__answer">The line consists of a Paxson entry coil car, a mandrel uncoiler with a 56" face and two Fawick water-cooled brakes, a peeler table, a removable-head slitter with 6.50" dia. x 60" face arbors driven by a 40 HP Baldor DC motor, a drag-board tension stand, a recoiler with a 20" x 60" face drum driven by a 75 HP Baldor DC motor, an overarm separator, paper unwinder, scrap winder, and a 2-arm exit turnstile with C-hook arms.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What coil sizes can this line process?</p>
+                    <p class="pd-faq__answer">The line runs coils up to 54" wide and 20,000 lbs, with a coil O.D. up to 72". Coil I.D. is 16"–20" at entry and 20" at exit. Line direction is left to right. The slitter arbors are 6.50" diameter with a 60" face.</p>
+                </div>
+                <div class="pd-faq__item">
+                    <p class="pd-faq__question">What condition is this slitting line in and where is it located?</p>
+                    <p class="pd-faq__answer">This is a used Stamco slitting line (Ref #11849-HK) that has been removed and is in storage in Toledo, OH. It is available for inspection by appointment; contact Gerrard Group for details, rigging, and transportation.</p>
+                </div>
+            </section>
+            <section class="pd-related">
+                <h3 class="pd-related__title">Related Equipment</h3>
+                <div class="pd-related__list">
+                    <a href="/tishken-28-stand-rollformer/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        28-Stand Tishken Rollformer
+                    </a>
+                    <a href="/peddinghaus-peddibot-1200/" class="pd-related__link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Peddinghaus PeddiBot-1200 Robotic CNC Cutting Machine
+                    </a>
+                </div>
+            </section>
+            <a href="/liquidations/" class="pd-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 13l-5-5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Back to All Equipment
+            </a>
+        </div>
+    </main>
+</Layout>
